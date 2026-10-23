@@ -758,7 +758,6 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
         <li><a href="#find">Search products</a></li>
         <li><a href="#story">Our Story</a></li>
         <li><a href="#members">Members</a></li>
-        <li><a href="#help">Help</a></li>
         <li><a href="#visit">Visit</a></li>
       </ul>
     </nav>
@@ -789,14 +788,6 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
           </tbody>
         </table>
         <p class="addr"><strong>160 E Valley River Rd #2</strong>Rexburg, ID 83440 · (208) 356-5284</p>
-        <div class="delivery" id="delivery">
-          <span class="preview-tag">Preview · not live yet</span>
-          <p>We don't take online orders on this site. Want it delivered? We're on DoorDash.</p>
-          <a class="btn btn-dd" href="https://www.doordash.com/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.8" fill="currentColor"/><circle cx="17" cy="17.5" r="1.8" fill="currentColor"/></svg>
-            Order delivery on DoorDash
-          </a>
-          <p class="fine">Delivery prices and availability are set in the DoorDash app.</p>
         </div>
       </aside>
     </div>
@@ -958,39 +949,6 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
     </div>
   </section>
 
-  <section id="help" class="help">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <p class="eyebrow">Have a question?</p>
-          <h2>Ask our staff</h2>
-        </div>
-        <p class="note">Wondering if we carry something, or want us to set a product aside? Chat with us during store hours or send a message anytime.</p>
-      </div>
-      <div class="help-grid">
-        <div class="help-card">
-          <span class="preview-tag">Preview · not live yet</span>
-          <h3>Chat with us</h3>
-          <p>Get a quick answer from someone in the store. Mon–Fri 9–6, Sat 9–5.</p>
-          <p class="chat-status" id="chat-status"><i></i><span>Checking hours…</span></p>
-          <button type="button" class="btn btn-main" id="open-chat">Start a chat</button>
-        </div>
-        <form class="help-card help-form" id="help-form" novalidate>
-          <span class="preview-tag">Preview · not live yet</span>
-          <h3>Send us a message</h3>
-          <div class="field-row">
-            <label for="hf-name">Name<input id="hf-name" name="name" autocomplete="name" required></label>
-            <label for="hf-email">Email<input id="hf-email" name="email" type="email" autocomplete="email" required></label>
-          </div>
-          <label for="hf-msg">Your question<textarea id="hf-msg" name="message" rows="3" required placeholder="Do you carry Solaray Berberine Phytosome?"></textarea></label>
-          <button type="submit" class="btn btn-main">Send message</button>
-          <p class="form-msg" id="hf-out" aria-live="polite"></p>
-          <p class="fine">We can help you find products, but we can't give medical advice.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
   <section id="visit" class="visit">
     <div class="wrap visit-grid">
       <div>
@@ -1011,15 +969,6 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
   </section>
 </main>
 
-<button type="button" class="chat-fab" id="chat-fab" aria-label="Chat with us"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Chat with us</span></button>
-<div class="chat-panel" id="chat-panel" hidden role="dialog" aria-label="Chat with Nature's Nook">
-  <div class="cp-head"><strong>Nature's Nook</strong><span>Usually replies in a few minutes</span><button type="button" id="chat-close" aria-label="Close chat">×</button></div>
-  <div class="cp-body">
-    <p class="cp-bubble">Hi! How can we help you today?</p>
-    <p class="cp-preview">Preview only. On the live site, this window is run by the chat service and messages go to the store's phones.</p>
-  </div>
-  <div class="cp-input"><input id="cp-text" placeholder="Type a message…" aria-label="Message" disabled><button type="button" disabled>Send</button></div>
-</div>
 <div class="pd-backdrop" id="pd" hidden>
   <div class="pd" role="dialog" aria-modal="true" aria-labelledby="pd-name">
     <button type="button" class="pd-close" id="pd-close" aria-label="Close">×</button>
@@ -1227,30 +1176,6 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 (function(){
   var b=document.getElementById('shop-line'), q=document.getElementById('q');
   if(b&&q) b.addEventListener('click',function(e){ if(window.nnFilter){e.preventDefault(); window.nnFilter("Nature's Nook");} });
-})();
-</script>
-<script>
-(function(){
-  var fab=document.getElementById('chat-fab'), panel=document.getElementById('chat-panel');
-  function openChat(){panel.hidden=false; document.getElementById('chat-close').focus();}
-  fab.addEventListener('click',function(){ panel.hidden?openChat():(panel.hidden=true); });
-  document.getElementById('open-chat').addEventListener('click',openChat);
-  document.getElementById('chat-close').addEventListener('click',function(){panel.hidden=true; fab.focus();});
-  try{
-    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Boise',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
-    var g=function(t){return (parts.find(function(p){return p.type===t})||{}).value};
-    var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday')), hr=parseInt(g('hour'),10)%24;
-    var open=(d>=1&&d<=5&&hr>=9&&hr<18)||(d===6&&hr>=9&&hr<17);
-    var st=document.getElementById('chat-status');
-    st.classList.add(open?'on':'off');
-    st.querySelector('span').textContent=open?'Staff online now':'Closed now. Leave a message and we\'ll reply when we open.';
-  }catch(e){}
-  var f=document.getElementById('help-form'), out=document.getElementById('hf-out');
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(!f.checkValidity()){ out.textContent='Please fill in your name, a valid email and your question.'; return; }
-    out.textContent='Preview only: on the live site, this message would go to the store\'s email.';
-  });
 })();
 </script>
 
