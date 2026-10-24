@@ -20,3 +20,6 @@ Live at **naturesnook.co** via GitHub Pages (this repo's `main` branch, root fol
 
 ## Update workflow
 Edit `data/*.json` or add photos, run `python3 tools/rebuild.py`, commit, push. Pages redeploys in ~1 minute.
+
+## Important
+index.html must keep its first lines (`<!doctype html>`, `<meta charset="utf-8">`, `<meta name="viewport" ...>`). Without them phones show the desktop layout zoomed out.
