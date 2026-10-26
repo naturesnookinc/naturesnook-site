@@ -239,7 +239,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 
 
 /* "This month" banner */
-.month-bar{background:#1b2a21;color:#f3f7f4;position:relative;z-index:5}
+.month-bar{background:#1b2a21;color:#f3f7f4;position:relative;z-index:5;margin-bottom:-1px}
 .month-bar::before{content:"";position:absolute;inset:0;background:var(--hexbg) 0 0/64px 115px;opacity:.12;pointer-events:none}
 .mb-in{position:relative;display:flex;align-items:center;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
 .mb-tag{flex:none;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:#a8d8b2;color:#1b2a21;padding:.3rem .65rem;border-radius:999px}
@@ -834,8 +834,6 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
       </ul>
     </nav>
   </div>
-</header>
-
 <aside class="month-bar" id="this-month" aria-label="This month at Nature's Nook" data-until="2026-11-15T00:00:00-07:00">
   <div class="wrap mb-in">
     <span class="mb-tag">This month</span>
@@ -844,6 +842,8 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
     <button type="button" class="mb-x" aria-label="Hide this message">×</button>
   </div>
 </aside>
+</header>
+
 <main id="top">
   <div class="hero has-photo">
     <div class="hero-photo"><img src="img/storefront.jpg" alt="The Nature's Nook storefront on Valley River Road in Rexburg" width="900" height="1200"><span class="scroll-hint" aria-hidden="true">Scroll ↓</span></div>
@@ -1353,7 +1353,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 </script>
 
 <script>
-(function(){var hd=document.querySelector('header'); if(!hd) return; function s(){document.documentElement.style.setProperty('--hdr',hd.offsetHeight+'px')} s(); addEventListener('resize',s);})();
+(function(){var hd=document.querySelector('header'); if(!hd) return; function s(){document.documentElement.style.setProperty('--hdr',hd.offsetHeight+'px')} s(); addEventListener('resize',s); if(window.ResizeObserver) new ResizeObserver(s).observe(hd);})();
 </script>
 
 <script>
