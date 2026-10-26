@@ -1435,3 +1435,15 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
   mark(); restart();
 })();
 </script>
+<script>
+/* Home / logo / "Back to home": always go to the very top of the page */
+(function(){
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href="#top"]'); if(!a) return;
+    e.preventDefault();
+    if(location.hash){ try{history.pushState(null,'',location.pathname+location.search)}catch(_){location.hash=''} window.dispatchEvent(new HashChangeEvent('hashchange')); }
+    var m=document.getElementById('main-nav'); if(m) m.classList.remove('open');
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
