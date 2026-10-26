@@ -95,7 +95,6 @@ body.spotlight main>*:not(.is-spot),body.spotlight footer.site-foot{filter:blur(
 @media (prefers-reduced-motion: reduce){main>*,footer.site-foot{transition:none}}
 /* storefront photo: desktop = left panel only; mobile = full-screen photo that the words scroll up over */
 .hero-photo{display:none}
-.hero-bottles{display:none}
 .hero.has-photo .hero-copy{color:#f3f7f4;background:linear-gradient(180deg,rgba(12,20,15,0) 0%,rgba(12,20,15,.05) 22%,rgba(12,20,15,.72) 48%,rgba(12,20,15,.9) 100%),#1b2a21 url("img/storefront.jpg") center 8%/cover no-repeat;border-radius:20px;padding:clamp(11rem,20vw,15rem) clamp(1.5rem,3.2vw,2.6rem) clamp(1.5rem,3.2vw,2.6rem);box-shadow:0 18px 40px rgba(0,0,0,.18);align-self:stretch;display:flex;flex-direction:column;justify-content:flex-end}
 .hero.has-photo .hero-copy h1{font-size:clamp(2.2rem,4.6vw,3.6rem)}
 .hero.has-photo .hero-copy .eyebrow,.hero.has-photo .hero-copy h1,.hero.has-photo .hero-copy .lede{color:#f3f7f4;text-shadow:0 1px 12px rgba(0,0,0,.35)}
@@ -121,18 +120,10 @@ body.spotlight main>*:not(.is-spot),body.spotlight footer.site-foot{filter:blur(
   .hero.has-photo .hero-photo{display:block;position:sticky;top:var(--hdr,74px);height:calc(100vh - var(--hdr,74px));min-height:520px;overflow:hidden;z-index:0;background:#101a14}
   .hero.has-photo .hero-photo{background:linear-gradient(115deg,#d3e4d6 0%,#8dbb9b 55%,#5f9a73 100%)}
   .hero.has-photo .hero-photo::before{content:"";position:absolute;inset:0;background:var(--hexbg) 0 0/96px 172px;opacity:.4;pointer-events:none}
-  .hero-bottles{display:block;position:absolute;inset:0;pointer-events:none}
-  .hero-bottles{--side:20vw;--hbw:min(clamp(120px,9.5vw,190px),20vh)}
-  .hero.has-photo .hero-photo img.hb{position:absolute;margin:0;height:auto;max-width:none;object-fit:cover;width:var(--hbw);aspect-ratio:4/5;border:7px solid #fff;border-radius:6px;box-shadow:0 2px 4px rgba(20,40,25,.12),0 16px 34px -10px rgba(20,40,25,.45)}
-  .hero.has-photo .hero-photo img.hb-l1{left:calc(var(--side) * .5 - var(--hbw) * .85);top:7%;transform:rotate(-5deg)}
-  .hero.has-photo .hero-photo img.hb-l2{left:calc(var(--side) * .5 - var(--hbw) * .15);top:37%;transform:rotate(4deg)}
-  .hero.has-photo .hero-photo img.hb-l3{left:calc(var(--side) * .5 - var(--hbw) * .8);top:67%;transform:rotate(-3deg)}
-  .hero.has-photo .hero-photo img.hb-r1{right:calc(var(--side) * .5 - var(--hbw) * .85);top:9%;transform:rotate(5deg)}
-  .hero.has-photo .hero-photo img.hb-r2{right:calc(var(--side) * .5 - var(--hbw) * .15);top:39%;transform:rotate(-4deg)}
-  .hero.has-photo .hero-photo img.hb-r3{right:calc(var(--side) * .5 - var(--hbw) * .8);top:69%;transform:rotate(3deg)}
-  @media (max-width:1100px){.hero-bottles{display:none}}
-  .hero.has-photo .hero-photo img:not(.hb){position:relative;display:block;height:100%;width:60vw;max-width:100%;margin:0 auto;object-fit:cover;object-position:center 22%;box-shadow:0 24px 60px -10px rgba(20,40,25,.55);border-left:8px solid #1b1f1c;border-right:8px solid #1b1f1c}
+  .hero.has-photo .hero-photo img{position:relative;display:block;height:100%;width:60vw;max-width:100%;margin:0 auto;object-fit:cover;object-position:center 22%;box-shadow:0 24px 60px -10px rgba(20,40,25,.55);border-left:8px solid #1b1f1c;border-right:8px solid #1b1f1c}
   .hero.has-photo .hero-photo .scroll-hint{position:absolute;left:50%;bottom:1.4rem;transform:translateX(-50%);color:#fff;font-weight:600;font-size:.95rem;background:rgba(0,0,0,.5);padding:.5rem 1rem;border-radius:999px;display:flex;align-items:center;gap:.4rem}
+  .hero.has-photo .hero-photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(16,26,20,0) 0%,rgba(16,26,20,.35) 45%,rgba(16,26,20,.85) 85%,#101a14 100%);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 55%);mask-image:linear-gradient(180deg,transparent 0%,#000 55%)}
+  .hero.has-photo .hero-photo .scroll-hint{z-index:3}
   .hero.has-photo .hero-grid{position:relative;z-index:1;margin-top:-14vh;padding-top:18vh;padding-bottom:clamp(3rem,6vw,5rem);max-width:none;background:linear-gradient(180deg,rgba(16,26,20,0) 0,rgba(16,26,20,.82) 14vh,#101a14 100%);padding-inline:max(1.5rem,calc((100vw - var(--wrap))/2 + 16px))}
   .hero.has-photo .hero-copy{background:none;box-shadow:none;padding:0;border-radius:0}
 }
@@ -795,7 +786,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 
 <main id="top">
   <div class="hero has-photo">
-    <div class="hero-photo"><div class="hero-bottles" aria-hidden="true"><img class="hb hb-l1" src="img/line-echinacea.jpg" alt="" width="320" height="400" loading="eager"><img class="hb hb-l2" src="img/line-elderplus.jpg" alt="" width="320" height="400" loading="eager"><img class="hb hb-l3" src="img/line-turmeric.jpg" alt="" width="320" height="400" loading="eager"><img class="hb hb-r1" src="img/line-olive.jpg" alt="" width="320" height="400" loading="eager"><img class="hb hb-r2" src="img/line-ginkgo.jpg" alt="" width="320" height="400" loading="eager"><img class="hb hb-r3" src="img/line-valerian.jpg" alt="" width="320" height="400" loading="eager"></div><img src="img/storefront.jpg" alt="The Nature's Nook storefront on Valley River Road in Rexburg" width="900" height="1200"><span class="scroll-hint" aria-hidden="true">Scroll ↓</span></div>
+    <div class="hero-photo"><img src="img/storefront.jpg" alt="The Nature's Nook storefront on Valley River Road in Rexburg" width="900" height="1200"><span class="scroll-hint" aria-hidden="true">Scroll ↓</span></div>
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Rexburg, Idaho</p>
