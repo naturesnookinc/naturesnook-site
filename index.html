@@ -930,8 +930,6 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <input id="q" type="search" placeholder="Try &quot;magnesium&quot; or &quot;gluten free&quot;" autocomplete="off" aria-label="Search products">
         </label>
-        <label class="toggle" for="photos"><input id="photos" type="checkbox" checked> Show photos</label>
-        <label class="toggle" for="prices"><input id="prices" type="checkbox" checked> Show prices</label>
       </div>
       <details class="dept-browse" id="dept-browse">
         <summary>Browse by department</summary>
@@ -1229,9 +1227,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
   var timer;
   document.getElementById('q').addEventListener('input',function(e){clearTimeout(timer); timer=setTimeout(function(){state.q=e.target.value; shown=PAGE; render();},120);});
   more.addEventListener('click',function(){shown+=PAGE*2; render();});
-  var ph=document.getElementById('photos'), pr=document.getElementById('prices'), pn=document.getElementById('price-note');
-  function setView(){sec.classList.toggle('no-photos',!ph.checked); sec.classList.toggle('no-prices',!pr.checked); pn.hidden=!pr.checked;}
-  ph.addEventListener('change',setView); pr.addEventListener('change',setView); setView(); render();
+  render();
   window.nnFilter=function(q,dept){
     var input=document.getElementById('q'); input.value=q||''; state.q=q||'';
     state.dept=(dept&&depts.indexOf(dept)>-1)?dept:'All';
