@@ -196,6 +196,13 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .inside-shot figcaption strong{font-family:var(--display);font-size:clamp(1.25rem,2.4vw,1.8rem);line-height:1.2;max-width:34rem}
 .inside-shot figcaption span:last-child{font-size:.9rem;opacity:.85}
 @media (max-width:760px){.inside-shot{aspect-ratio:4/5;margin-top:2rem}.inside-shot img{object-position:30% center}}
+.inside-gallery{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2vw,1.5rem);margin-top:clamp(2.2rem,5vw,3.5rem)}
+.inside-gallery .inside-shot{margin:0;aspect-ratio:4/3}
+.inside-gallery .inside-shot img{object-position:center 55%}
+.inside-gallery .inside-shot figcaption{padding-top:clamp(3rem,7vw,5rem)}
+.inside-gallery .inside-shot figcaption strong{font-size:clamp(1.1rem,1.9vw,1.45rem);max-width:26rem}
+@media (max-width:760px){.inside-gallery{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:88%;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin-top:2rem;padding-bottom:.5rem;scrollbar-width:none}.inside-gallery::-webkit-scrollbar{display:none}.inside-gallery .inside-shot{aspect-ratio:4/5;margin:0;scroll-snap-align:start}}
+
 
 
 /* Departments on the search page */
@@ -950,10 +957,16 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
       </ol>
     </div>
     <div class="wrap">
+      <div class="inside-gallery">
       <figure class="inside-shot">
-        <img src="img/inside.jpg" srcset="img/inside-900.jpg 900w, img/inside.jpg 1448w" sizes="(max-width:760px) 100vw, 1200px" alt="Inside Nature's Nook: bright aisles of vitamins, herbs and supplements, with the checkout counter on the left" width="1448" height="1086" loading="lazy">
+        <img src="img/inside.jpg" srcset="img/inside-900.jpg 900w, img/inside.jpg 1448w" sizes="(max-width:760px) 88vw, 600px" alt="Inside Nature's Nook: bright aisles of vitamins, herbs and supplements, with the checkout counter on the left" width="1448" height="1086" loading="lazy">
         <figcaption><span class="eyebrow">Step inside</span><strong>Aisles of vitamins, herbs and good food, and people who know them.</strong><span>160 E Valley River Rd, Rexburg</span></figcaption>
       </figure>
+      <figure class="inside-shot inside-shot-2">
+        <img src="img/inside2.jpg" srcset="img/inside2-900.jpg 900w, img/inside2.jpg 1448w" sizes="(max-width:760px) 88vw, 600px" alt="The Nature's Nook checkout counter with aisles of supplements and the drink coolers behind it" width="1448" height="1086" loading="lazy">
+        <figcaption><span class="eyebrow">Front counter</span><strong>Questions welcome at the register.</strong></figcaption>
+      </figure>
+      </div>
     </div>
   </section>
 
