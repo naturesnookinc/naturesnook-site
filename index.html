@@ -240,12 +240,17 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 /* Reviews */
 .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
 .reviews>*{min-width:0}
-.rv-track{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:100%;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;max-width:46rem;margin:0 auto}
+.rv-track{display:grid;grid-template-columns:none;width:100%;grid-auto-flow:column;grid-auto-columns:100%;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;max-width:46rem;margin:0 auto}
 .rv-track::-webkit-scrollbar{display:none}
-.rv-track .rv{scroll-snap-align:start;scroll-snap-stop:always;align-items:center;text-align:center;padding:.5rem 1rem 0}
+.rv-track .rv{min-width:0;scroll-snap-align:start;scroll-snap-stop:always;align-items:center;text-align:center;padding:.5rem 1rem 0}
 .rv-track .rv p{font-size:clamp(1.25rem,2.6vw,1.65rem);line-height:1.45;max-width:40rem}
 .rv-track .rv footer{font-size:1rem}
 .rv-dots button{background:var(--moss)}
+.rv-stars{color:#e8a91a;font-size:1.15rem;letter-spacing:.15em}
+.rv-track .rv::before{display:none}
+.rv-src{font-weight:400;opacity:.8}
+.rv-more{text-align:center;margin-top:.8rem;font-size:.95rem}
+.rv-more a{color:var(--moss);font-weight:700}
 blockquote{margin:0;display:flex;flex-direction:column;gap:1rem}
 blockquote p{font-family:var(--display);font-style:italic;font-weight:500;font-size:1.12rem;line-height:1.5}
 blockquote footer{color:var(--muted);font-size:.92rem;font-weight:600}
@@ -676,7 +681,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 
 @media (max-width:860px){
   .hero-grid,.story-grid,.visit-grid{grid-template-columns:1fr}
-  .reviews{grid-template-columns:1fr}
+  .reviews:not(.rv-track){grid-template-columns:1fr}
 }
 .ph-note{font-size:.85rem;color:var(--muted);margin-top:.35rem;line-height:1.45}
 .ph-note b{color:inherit;font-weight:600}
@@ -1000,11 +1005,19 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
     <div class="wrap">
       <div class="sec-head"><div><p class="eyebrow">What people are saying</p><h2>From our customers</h2></div></div>
       <div class="reviews rv-track" id="rv-track" aria-label="Customer reviews">
-        <blockquote class="rv"><p>Very helpful and knowledgeable. If they don't have what you need they will order it. I've learned so much about natural ways to help my family.</p><footer>L. Swanson</footer></blockquote>
-        <blockquote class="rv"><p>Great staff and service, always very helpful and knowledgeable. They carry tons of vitamins and natural products.</p><footer>Brian Bell</footer></blockquote>
-        <blockquote class="rv"><p>Very knowledgeable and reliable service, with a great selection of vitamins to choose from.</p><footer>Nature's Nook customer</footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>Nature’s Nook is a valued member of the Rexburg Area Chamber of Commerce, offering a variety of natural, healthy, and sustainable products for our community. Their commitment to quality, wellness, and supporting local initiatives makes them a trusted resource for residents. We’re proud to have Nature’s Nook as part of our Chamber family!</p><footer>Rexburg Chamber <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>I had assumed everything in Nature’s Nook would be over priced. I was WRONG! The prices are not more than what I would pay anywhere else for supplements. Including on-line. SHOP LOCAL! …</p><footer>Diane Bruce <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>I get my supplements, vitamins, A2 milk, silver, and gluten free items here. The staff is amazing and friendly. If you are looking vitamins, teas, essential oils, and natural remedies this is the place for you. I love Natures Nook.</p><footer>Kylie Kay <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>The vitamin and essential oil selection was amazing, and exactly what I came in for. On top of the shop being welcoming, clean and well stocked, the staff was helpful and the owner was kind and attentive! Highly recommend for your alternative health needs. Big fan! Thanks Natures Nook! ❤️</p><footer>M D <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>This is the best health store I’ve been to and I find one in every town I visit. Friendly helpful staff and fantastic customer service which seems hard to find these days. They have had everything I’ve ever been looking for with very reasonable prices and a rewards program.</p><footer>Angel Hadfield <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>My husband and I love this store! The employees are always super nice and really helpful. They have everything organic and natural that you can think of. …</p><footer>Alyssa Carman <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>I was looking for dropper and glass bottles that I could exactly measure some supplements we were taking. The staff was exceptionally friendly and very helpful and we got what we were looking. A fun place to visit and and work on getting healthy. Would highly recommend.</p><footer>Alban Hatch <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>Went their yesterday for the first time. Really nice place. Well lit, organized, lots of variety. I wished we had one of these in Idaho Falls</p><footer>Clifford270 <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>Always smells so good when you walk in and they have a great selection of goods</p><footer>Shanna Sunderlin <span class="rv-src">· Google review</span></footer></blockquote>
+        <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>A wonderful health store. Great staff!</p><footer>Sage Lee <span class="rv-src">· Google review</span></footer></blockquote>
       </div>
       <div class="gal-dots rv-dots" id="rv-dots" role="group" aria-label="Choose a review"></div>
+      <p class="rv-more"><a href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Read all our reviews on Google →</a></p>
     </div>
   </section>
 
