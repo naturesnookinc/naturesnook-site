@@ -237,6 +237,20 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .depts-compact .dept>p,.depts-compact .tags{display:none}
 @media (max-width:760px){#products{display:none}.depts-compact{grid-template-columns:1fr 1fr}.depts-compact .dept{padding:.65rem .8rem}.depts-compact .dept h3{font-size:.82rem;line-height:1.25}}
 
+
+/* "This month" banner */
+.month-bar{background:#1b2a21;color:#f3f7f4;position:relative;z-index:5}
+.month-bar::before{content:"";position:absolute;inset:0;background:var(--hexbg) 0 0/64px 115px;opacity:.12;pointer-events:none}
+.mb-in{position:relative;display:flex;align-items:center;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+.mb-tag{flex:none;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:#a8d8b2;color:#1b2a21;padding:.3rem .65rem;border-radius:999px}
+.mb-text{margin:0;font-size:.95rem;line-height:1.4;flex:1}
+.mb-text strong{color:#fff}
+.mb-link{flex:none;color:#a8d8b2;font-weight:700;font-size:.95rem;text-decoration:none;white-space:nowrap}
+.mb-link:hover{text-decoration:underline}
+.mb-x{flex:none;background:none;border:0;color:#f3f7f4;opacity:.7;font-size:1.4rem;line-height:1;cursor:pointer;padding:.2rem .4rem}
+.mb-x:hover{opacity:1}
+@media (max-width:760px){.mb-in{flex-wrap:wrap;gap:.45rem .7rem;padding-top:.65rem;padding-bottom:.7rem}.mb-text{flex-basis:100%;order:3;font-size:.9rem}.mb-link{order:4}.mb-x{margin-left:auto}}
+
 /* Reviews */
 .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
 .reviews>*{min-width:0}
@@ -822,6 +836,14 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
   </div>
 </header>
 
+<aside class="month-bar" id="this-month" aria-label="This month at Nature's Nook" data-until="2026-11-15T00:00:00-07:00">
+  <div class="wrap mb-in">
+    <span class="mb-tag">This month</span>
+    <p class="mb-text"><strong>Anniversary Sale · Thursday–Saturday, November 12–14.</strong> 20% off storewide. Thank you for helping us serve Rexburg for three generations!</p>
+    <a class="mb-link" href="#visit">Plan your visit →</a>
+    <button type="button" class="mb-x" aria-label="Hide this message">×</button>
+  </div>
+</aside>
 <main id="top">
   <div class="hero has-photo">
     <div class="hero-photo"><img src="img/storefront.jpg" alt="The Nature's Nook storefront on Valley River Road in Rexburg" width="900" height="1200"><span class="scroll-hint" aria-hidden="true">Scroll ↓</span></div>
@@ -1445,5 +1467,14 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
     var m=document.getElementById('main-nav'); if(m) m.classList.remove('open');
     window.scrollTo({top:0,behavior:'smooth'});
   });
+})();
+</script>
+<script>
+/* "This month" banner: hides itself after its end date; customers can close it */
+(function(){var bar=document.getElementById('this-month');if(!bar)return;
+  var until=Date.parse(bar.dataset.until||'');if(until&&Date.now()>=until){bar.hidden=true;return;}
+  var key='nn-month-hidden-'+(bar.dataset.until||'')+(bar.querySelector('.mb-text')||{}).textContent.length;
+  try{if(localStorage.getItem(key)){bar.hidden=true;return;}}catch(e){}
+  bar.querySelector('.mb-x').addEventListener('click',function(){bar.hidden=true;try{localStorage.setItem(key,'1')}catch(e){}});
 })();
 </script>
