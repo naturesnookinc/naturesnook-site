@@ -810,6 +810,16 @@ section{padding-block:clamp(3.75rem,9vw,7rem)}
 }
 .own-label{border-top-color:var(--pine)!important;border-bottom-color:var(--pine)!important}
 .month-bar .mb-text,.month-bar .mb-text *{color:var(--ink)}
+
+/* hero readability on the lighter background */
+.hero.has-photo .hero-copy h1,.hero.has-photo .hero-copy .lede,.hero.has-photo .hero-copy .eyebrow{text-shadow:0 0 18px rgba(234,245,236,.95),0 0 4px rgba(234,245,236,.9)}
+.hero.has-photo .hero-copy .lede{color:#1b1f1c;font-weight:500}
+@media (max-width:760px){
+  .hero.has-photo .hero-grid{background:linear-gradient(180deg,rgba(234,245,236,0) 0,rgba(234,245,236,.9) 5svh,var(--mint) 9svh,var(--mint) 100%)}
+}
+@media (min-width:761px){
+  .hero.has-photo .hero-grid{background:linear-gradient(180deg,rgba(234,245,236,0) 0,rgba(234,245,236,.88) 7vh,rgba(234,245,236,.97) 14vh,var(--mint) 100%)}
+}
 </style>
 
 <header>
