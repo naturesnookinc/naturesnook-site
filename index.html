@@ -878,6 +878,16 @@ header .bar{color:#fff}
   .cp-actions{margin-top:1rem}
   .coupon-sec .m-points{margin-top:.7rem;font-size:.85rem}
 }
+
+/* Specials link in the top bar */
+@media (min-width:761px){
+  header nav a.nav-specials{background:#cfe8d6;color:#1d4a31;padding:.38rem .9rem;border-radius:999px;font-weight:700}
+  header nav a.nav-specials:hover{background:#fff;color:#1d4a31}
+  header nav ul{align-items:center}
+}
+@media (max-width:760px){
+  header nav a.nav-specials{color:var(--pine);font-weight:800}
+}
 </style>
 
 <header>
@@ -1005,10 +1015,10 @@ header .bar{color:#fff}
     <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
     <nav aria-label="Main" id="main-nav">
       <ul>
+        <li><a href="#members" class="nav-specials">Specials</a></li>
         <li><a href="#our-line">Our Line</a></li>
         <li><a href="#find">Search products</a></li>
         <li><a href="#story">Our Story</a></li>
-        <li><a href="#members">Members</a></li>
         <li><a href="#visit">Visit</a></li>
       </ul>
     </nav>
