@@ -23,3 +23,5 @@ Edit `data/*.json` or add photos, run `python3 tools/rebuild.py`, commit, push. 
 
 ## Important
 index.html must keep its first lines (`<!doctype html>`, `<meta charset="utf-8">`, `<meta name="viewport" ...>`). Without them phones show the desktop layout zoomed out.
+
+The site is light-only: keep `<html lang="en" data-theme="light">` and `<meta name="color-scheme" content="light">`. Removing them lets phones in dark mode turn the text light on the light background (unreadable).
