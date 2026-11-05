@@ -699,6 +699,117 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 }
 .ph-note{font-size:.85rem;color:var(--muted);margin-top:.35rem;line-height:1.45}
 .ph-note b{color:inherit;font-weight:600}
+
+/* ---- Member coupon ---- */
+.coupon-sec{background:var(--honey-soft);border-block:1px solid var(--line)}
+.coupon{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);background:var(--surface);border:2px dashed var(--pine);border-radius:22px;box-shadow:0 18px 40px -24px rgba(27,31,28,.35);overflow:hidden}
+.coupon::before,.coupon::after{content:"";position:absolute;top:50%;width:34px;height:34px;margin-top:-17px;border-radius:50%;background:var(--honey-soft);border:2px dashed var(--pine)}
+.coupon::before{left:-19px}.coupon::after{right:-19px}
+.cp-main{padding:clamp(1.5rem,4vw,2.6rem) clamp(1.5rem,4vw,2.8rem)}
+.cp-stamp{display:inline-block;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--on-pine);background:var(--pine);padding:.35rem .8rem;border-radius:999px;margin-bottom:1.1rem}
+.cp-big{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,5.2vw,3.6rem);line-height:1;letter-spacing:-.01em}
+.cp-big strong{color:var(--pine)}
+.cp-sub{font-size:1.1rem;margin-top:.6rem}
+.cp-how{margin-top:1.2rem;color:var(--muted);max-width:30rem}
+.cp-how strong{color:var(--ink)}
+.cp-brands-h{margin-top:1.4rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
+.cp-brands{list-style:none;padding:0;margin:.5rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem}
+.cp-brands li{font-size:.85rem;font-weight:600;padding:.3rem .7rem;border-radius:999px;background:var(--tile)}
+.cp-side{padding:clamp(1.5rem,4vw,2.4rem) clamp(1.5rem,4vw,2.4rem);border-left:2px dashed var(--line);background:color-mix(in srgb,var(--tile) 45%,var(--surface))}
+.cp-label{font-family:var(--display);font-style:italic;font-weight:600;color:var(--moss);margin-bottom:.8rem}
+.cp-deals{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+.cp-deals a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.2rem 1rem;align-items:center;padding:.8rem .95rem;border-radius:14px;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+.cp-deals a:hover{transform:translateY(-1px);box-shadow:0 8px 18px -12px rgba(27,31,28,.4)}
+.cp-d-name{font-weight:700;line-height:1.25}
+.cp-d-meta{grid-column:1;font-size:.82rem;color:var(--muted)}
+.cp-d-price{grid-row:1/3;grid-column:2;text-align:right;line-height:1.2}
+.cp-d-price s{display:block;font-size:.8rem;color:var(--muted)}
+.cp-d-price b{display:block;font-size:1.15rem;color:var(--pine)}
+.cp-d-off{display:inline-block;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--pine)}
+.cp-foot{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.3rem 1rem;margin:0;padding:.85rem clamp(1.5rem,4vw,2.8rem);border-top:2px dashed var(--line);font-size:.82rem;color:var(--muted)}
+.cp-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
+.coupon-sec .m-points{margin-top:1.2rem;color:var(--muted);font-size:.92rem;max-width:44rem}
+@media (max-width:760px){
+  .coupon{grid-template-columns:1fr}
+.coupon::before,.coupon::after{top:auto;margin-top:0;bottom:calc(2.5rem - 18px)}
+  .coupon::before,.coupon::after{top:auto;bottom:auto}
+  .coupon::before,.coupon::after{display:none}
+  .cp-side{border-left:0;border-top:2px dashed var(--line)}
+  .cp-actions .btn{flex:1 1 100%;justify-content:center}
+}
+@media print{
+  html.pc body *{visibility:hidden!important}
+  html.pc #coupon,html.pc #coupon *{visibility:visible!important}
+  html.pc #coupon{position:absolute;left:0;top:0;width:100%;box-shadow:none}
+  html.pc #coupon::before,html.pc #coupon::after{display:none}
+}
+
+
+/* coupon v2: product shelf with member price tags */
+.coupon{grid-template-columns:1fr}
+.coupon::before,.coupon::after{top:auto;margin-top:0;bottom:calc(2.5rem - 18px)}
+.cpn-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:1.2rem clamp(1.5rem,4vw,3rem);align-items:end;padding:clamp(1.5rem,4vw,2.6rem) clamp(1.5rem,4vw,2.8rem) .5rem}
+.cpn-head .cp-how{margin-top:0}
+.cp-shelf{padding:.5rem clamp(1rem,3vw,2.2rem) clamp(1.4rem,3vw,2rem);background:var(--surface)}
+.cp-shelf img{display:block;width:100%;height:auto;filter:drop-shadow(0 14px 16px rgba(20,40,25,.18))}
+.cp-shelf .cp-deals{grid-template-columns:22fr 20fr 17fr 21fr 20fr;gap:.6rem;margin-top:.9rem}
+.cp-shelf .cp-deals a{display:flex;flex-direction:column;align-items:flex-start;gap:.15rem;height:100%;padding:.75rem .85rem;border-top:4px solid var(--pine)}
+.cp-shelf .cp-d-off{background:var(--pine);color:#fff;padding:.15rem .5rem;border-radius:999px;font-size:.7rem;margin-bottom:.2rem}
+.cp-shelf .cp-d-name{font-size:.95rem}
+.cp-shelf .cp-d-meta{font-size:.76rem}
+.cp-shelf .cp-d-price{margin-top:auto;padding-top:.35rem;text-align:left;display:flex;align-items:baseline;gap:.45rem}
+.cp-shelf .cp-d-price s,.cp-shelf .cp-d-price b{display:inline}
+.cp-shelf .cp-d-price b{font-size:1.25rem}
+@media (max-width:760px){
+  .cpn-head{grid-template-columns:1fr;align-items:start}
+  .cp-shelf .cp-deals{grid-template-columns:1fr 1fr}
+  .cp-shelf .cp-deals li:last-child{grid-column:1/-1}
+}
+
+
+.cp-shelf .cp-deals a{align-items:center;text-align:center;padding:.9rem .7rem 1rem}
+.cp-shelf .cp-d-off{font-family:var(--display);font-size:1.45rem;font-weight:800;text-transform:uppercase;letter-spacing:0;padding:.3rem .9rem;margin-bottom:.45rem}
+.cp-shelf .cp-d-name{font-size:.92rem}
+
+/* ---- More breathing room ---- */
+section{padding-block:clamp(3.75rem,9vw,7rem)}
+.sec-head{margin-bottom:clamp(2rem,4vw,3rem)}
+#products .depts{gap:1rem;background:none;border:0;border-radius:0;overflow:visible;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+#products .dept{border:1px solid var(--line);border-radius:18px;padding:1.5rem 1.5rem 1.6rem;transition:transform .15s,box-shadow .15s,border-color .15s;cursor:pointer}
+#products .dept:hover{transform:translateY(-2px);border-color:var(--sage-a);box-shadow:0 14px 28px -20px rgba(27,31,28,.45)}
+#products .dept .tags{display:none}
+#products .dept p{margin-top:.15rem}
+.learn{padding-block:clamp(3.75rem,9vw,6rem)}
+.learn-tags li.ttn-more{display:none}
+.learn-tags.open li.ttn-more{display:list-item}
+.ttn-toggle{margin-top:1rem;background:none;border:0;padding:0;font:inherit;font-weight:700;color:var(--pine);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* ---- Lighter palette: matched to the logo and the storefront sign ---- */
+:root{--pine:#23854c;--moss:#23854c;--logo-main:#23854c;--band:#cfe8d6;--honey-soft:#e9f5ec;--mint:#eaf5ec}
+.month-bar{background:#dcefe2;color:var(--ink);border-bottom:1px solid var(--line)}
+.month-bar::before{opacity:.5}
+.month-bar a{color:var(--pine)}
+.month-bar button{color:var(--ink)}
+.month-bar .mb-tag{background:var(--pine);color:#fff}
+.hero.has-photo .hero-copy .eyebrow{color:var(--pine);text-shadow:none}
+.hero.has-photo .hero-copy h1,.hero.has-photo .hero-copy .lede{color:var(--ink);text-shadow:none}
+.hero.has-photo .hero-copy h1 em{color:var(--pine)}
+.hero.has-photo .btn-ghost{color:var(--pine);border-color:var(--pine);background:rgba(255,255,255,.6)}
+.hero.has-photo .btn-ghost:hover{background:#fff}
+@media (max-width:760px){
+  .hero.has-photo{background:var(--mint)}
+  .hero.has-photo .hero-grid{background:linear-gradient(180deg,rgba(234,245,236,0) 0,rgba(234,245,236,.92) 10svh,var(--mint) 100%)}
+}
+@media (min-width:761px){
+  .hero.has-photo{background:var(--mint)}
+  .hero.has-photo .hero-photo{background:linear-gradient(115deg,#eef7f0 0%,#bfe0c9 55%,#8cc7a0 100%)}
+  .hero.has-photo .hero-photo::before{opacity:.55}
+  .hero.has-photo .hero-photo img{border-left:8px solid #fff;border-right:8px solid #fff;box-shadow:0 24px 60px -18px rgba(20,60,35,.35)}
+  .hero.has-photo .hero-photo::after{background:linear-gradient(180deg,rgba(234,245,236,0) 0%,rgba(234,245,236,.35) 40%,rgba(234,245,236,.85) 80%,var(--mint) 100%)}
+  .hero.has-photo .hero-grid{background:linear-gradient(180deg,rgba(234,245,236,0) 0,rgba(234,245,236,.7) 18vh,rgba(234,245,236,.96) 40vh,var(--mint) 100%)}
+}
+.own-label{border-top-color:var(--pine)!important;border-bottom-color:var(--pine)!important}
+.month-bar .mb-text,.month-bar .mb-text *{color:var(--ink)}
 </style>
 
 <header>
@@ -872,6 +983,43 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
     </div>
   </div>
 
+  <section id="members" class="coupon-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Cold &amp; flu season is here</p>
+          <h2>Your member coupon</h2>
+        </div>
+        <p class="note">Bring this in, or just show it on your phone. Membership is free, and we can sign you up at the register in about a minute.</p>
+      </div>
+      <div class="coupon" id="coupon">
+        <div class="cpn-head">
+          <div>
+            <p class="cp-stamp">Nature's Nook member savings</p>
+            <p class="cp-big">Save up to <strong id="cp-max">$6</strong></p>
+            <p class="cp-sub">Come in for some of our best sellers. <strong>Bring this in</strong> (or show it on your phone) for the amount shown off each product, plus member deals on <strong id="cp-count">489</strong> vitamins, supplements and body care products.</p>
+          </div>
+          <div class="cpn-head-r">
+            <p class="cp-how"><strong>Not a member yet?</strong> It's free. We'll sign you up on the spot, and your savings start with that visit.</p>
+            <p class="cp-brands-h">Deals from</p>
+            <ul class="cp-brands" id="cp-brands"><li>Solaray</li><li>Irwin Naturals</li><li>Garden of Life</li><li>Nature's Way</li><li>Terry Naturally</li><li>KAL</li><li>Natural Factors</li><li>and more</li></ul>
+          </div>
+        </div>
+        <div class="cp-shelf">
+          <img src="img/coupon-products.webp" width="1400" height="655" loading="lazy" alt="Terry Naturally Curamin and CuraMed, Natural Factors Oil of Oregano, KAL Magnesium Glycinate 350 and Solaray Mushroom Herb Complete">
+          <ul class="cp-deals" id="cp-deals"></ul>
+        </div>
+        <p class="cp-foot"><span>Valid at Nature's Nook, 160 E Valley River Rd #2, Rexburg. Member price rings up at the register.</span><span id="cp-until">Through December 29, 2026</span></p>
+      </div>
+      <div class="cp-actions">
+        <button type="button" class="btn btn-main" id="see-member-deals">See all member deals</button>
+        <button type="button" class="btn btn-ghost" id="cp-print">Print coupon</button>
+        <button type="button" class="btn btn-ghost" id="cp-share">Send to a friend</button>
+      </div>
+      <p class="m-points"><strong>Loyalty points:</strong> members also earn points on purchases of $10 or more, to use toward future purchases. Ask us at the register for details.</p>
+    </div>
+  </section>
+
   <section id="our-line" class="own-line">
     <div class="wrap own-grid">
       <div class="own-label" role="img" aria-label="Nature's Nook label design: logo panel over a sage green honeycomb background">
@@ -921,21 +1069,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
     </div>
   </section>
 
-  <section id="members" class="members">
-    <div class="wrap members-in">
-      <div class="m-badge" aria-hidden="true"><span>Free</span><strong>Membership</strong></div>
-      <div class="m-copy">
-        <p class="eyebrow">Nature's Nook members</p>
-        <h2>Become a member</h2>
-        <p>Membership is free. Members get member-only savings and hear about our sales first. To sign up, just ask at the register next time you're in the store.</p>
-        <p class="m-points"><strong>Loyalty points:</strong> members earn points on qualifying purchases of $10 or more, and those points can be used toward future purchases. Ask us at the register for details.</p>
-      </div>
-      <div class="m-cta">
-        <a class="btn btn-main" href="#visit">Find the store</a>
-        <button type="button" class="btn btn-ghost" id="see-member-deals">See member deals</button>
-      </div>
-    </div>
-  </section>
+  
 
   <section id="find" class="catalog">
     <div class="wrap">
@@ -986,7 +1120,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
         <p>Our <strong>Terry Talks Nutrition</strong> rack by the Terry Naturally endcap has free, easy-to-read handouts on dozens of health topics. Grab one next time you're in, or ask any of us to point you to the right one.</p>
         <p class="learn-note">Pick a topic to see the products it covers.</p>
       </div>
-      <ul class="tags learn-tags"><li><button type="button" class="tag-link" data-q="curamin">Acute & chronic pain</button></li><li><button type="button" class="tag-link" data-q="curamed">Muscle pain & recovery</button></li><li><button type="button" class="tag-link" data-q="anxiocalm">Anxiety & stress</button></li><li><button type="button" class="tag-link" data-q="anxiocalm kids">Anxiety relief for kids</button></li><li><button type="button" class="tag-link" data-q="ashwagandha">Adaptogens</button></li><li><button type="button" class="tag-link" data-q="healthy feet">Neuropathy & nerve numbness</button></li><li><button type="button" class="tag-link" data-q="andrographis">Colds & flu</button></li><li><button type="button" class="tag-link" data-q="bronchial">Bronchitis & respiratory health</button></li><li><button type="button" class="tag-link" data-q="propolis">Ear infections & candida</button></li><li><button type="button" class="tag-link" data-q="clinical opc">French grape seed OPCs</button></li><li><button type="button" class="tag-link" data-q="resveratrol">Healthy aging</button></li><li><button type="button" class="tag-link" data-q="healthy cholesterol">Heart health</button></li><li><button type="button" class="tag-link" data-q="healthy liver">Healthy liver</button></li><li><button type="button" class="tag-link" data-q="sucontral">Blood sugar balance</button></li><li><button type="button" class="tag-link" data-q="berberine">Berberine & metabolic health</button></li><li><button type="button" class="tag-link" data-q="sagapro">Bladder health</button></li><li><button type="button" class="tag-link" data-q="menopause">Menopause relief</button></li><li><button type="button" class="tag-link" data-q="tri-iodine">Thyroid & iodine</button></li><li><button type="button" class="tag-link" data-q="melatonin ep120">Sleep</button></li></ul>
+      <div class="learn-list"><ul class="tags learn-tags"><li><button type="button" class="tag-link" data-q="curamin">Acute & chronic pain</button></li><li><button type="button" class="tag-link" data-q="curamed">Muscle pain & recovery</button></li><li><button type="button" class="tag-link" data-q="anxiocalm">Anxiety & stress</button></li><li><button type="button" class="tag-link" data-q="anxiocalm kids">Anxiety relief for kids</button></li><li><button type="button" class="tag-link" data-q="ashwagandha">Adaptogens</button></li><li><button type="button" class="tag-link" data-q="healthy feet">Neuropathy & nerve numbness</button></li><li><button type="button" class="tag-link" data-q="andrographis">Colds & flu</button></li><li><button type="button" class="tag-link" data-q="bronchial">Bronchitis & respiratory health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="propolis">Ear infections & candida</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="clinical opc">French grape seed OPCs</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="resveratrol">Healthy aging</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy cholesterol">Heart health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy liver">Healthy liver</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sucontral">Blood sugar balance</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="berberine">Berberine & metabolic health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sagapro">Bladder health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="menopause">Menopause relief</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="tri-iodine">Thyroid & iodine</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="melatonin ep120">Sleep</button></li></ul><button type="button" class="ttn-toggle" id="ttn-toggle" aria-expanded="false">Show 11 more topics</button></div>
     </div>
   </section>
 
@@ -1477,4 +1611,40 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
   try{if(localStorage.getItem(key)){bar.hidden=true;return;}}catch(e){}
   bar.querySelector('.mb-x').addEventListener('click',function(){bar.hidden=true;try{localStorage.setItem(key,'1')}catch(e){}});
 })();
+</script><script>
+(function(){
+  var raw=document.getElementById('catalog-data'); if(!raw) return;
+  var items; try{items=JSON.parse(raw.textContent)}catch(e){return}
+  var today=new Date().toISOString().slice(0,10);
+  var deals=items.filter(function(i){return i[8] && (!i[9]||i[9]>=today)});
+  var sec=document.getElementById('members');
+  if(!deals.length){ var c=document.getElementById('coupon'); if(c) c.style.display='none'; return; }
+  function money(v){return '$'+Number(v).toFixed(2)}
+  var max=Math.max.apply(null,deals.map(function(i){return +i[8]}));
+  document.getElementById('cp-max').textContent='$'+(max%1?max.toFixed(2):max);
+  document.getElementById('cp-count').textContent=deals.length;
+  var until=deals.map(function(i){return i[9]}).filter(Boolean).sort()[0];
+  if(until){var d=new Date(until+'T12:00:00'); document.getElementById('cp-until').textContent='Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});}
+  var picks=['367703112028','367703202927','68958045733','21245390220','76280600438'];
+  var by={}; deals.forEach(function(i){by[i[6]]=i});
+  var list=picks.map(function(u){return by[u]}).filter(Boolean);
+  if(list.length<5) deals.slice().sort(function(a,b){return b[8]-a[8]}).forEach(function(i){if(list.length<5&&list.indexOf(i)<0) list.push(i)});
+  var ul=document.getElementById('cp-deals');
+  ul.innerHTML=list.map(function(i){
+    var size=(i[4].split(' · ')[1]||i[4]||'');
+    return '<li><a href="#p'+i[6]+'"><span class="cp-d-off">'+money(i[8]).replace('.00','')+' off</span><span class="cp-d-name">'+i[2]+'</span><span class="cp-d-meta">'+[i[1],size].filter(Boolean).join(' · ')+'</span></a></li>';
+  }).join('');
+  var pr=document.getElementById('cp-print');
+  if(pr) pr.addEventListener('click',function(){document.documentElement.classList.add('pc'); window.print(); setTimeout(function(){document.documentElement.classList.remove('pc')},500);});
+  var sh=document.getElementById('cp-share');
+  if(sh) sh.addEventListener('click',function(){
+    var url='https://naturesnook.co/coupon/', text="Cold and flu season is here! Nature's Nook members save up to "+document.getElementById('cp-max').textContent+" on "+deals.length+" products. Membership is free!";
+    if(navigator.share){navigator.share({title:"Nature's Nook member coupon",text:text,url:url}).catch(function(){});}
+    else if(navigator.clipboard){navigator.clipboard.writeText(text+' '+url).then(function(){sh.textContent='Link copied!'; setTimeout(function(){sh.textContent='Send to a friend'},2000)});}
+  });
+  var tt=document.getElementById('ttn-toggle');
+  if(tt){var n=tt.textContent; tt.addEventListener('click',function(){var ul=tt.previousElementSibling, o=ul.classList.toggle('open'); tt.setAttribute('aria-expanded',o); tt.textContent=o?'Show fewer topics':n;});}
+  document.querySelectorAll('#products .dept').forEach(function(a){a.addEventListener('click',function(e){if(e.target.closest('button'))return; var b=a.querySelector('.dept-link'); if(b) b.click();});});
+})();
 </script>
+
