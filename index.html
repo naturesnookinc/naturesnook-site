@@ -841,6 +841,43 @@ section{padding-block:clamp(3.75rem,9vw,7rem)}
 }
 
 :root{color-scheme:light}
+
+/* ---- Dark top bar ---- */
+header{background:#1d4a31;border-bottom:0;--logo-main:#ffffff;--logo-sub:#cfe8d6;backdrop-filter:none}
+header .bar{color:#fff}
+.menu-btn{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.35);color:#fff}
+@media (min-width:761px){
+  header nav a{color:rgba(255,255,255,.86)}
+  header nav a:hover,header nav a[href="#find"]{color:#fff}
+}
+.month-bar{border-top:0}
+
+/* ---- Coupon fits one screen on desktop ---- */
+.cp-eyebrow{display:none}
+@media (min-width:1000px){
+  #members.coupon-sec{padding-block:clamp(1.6rem,3vh,2.6rem);scroll-margin-top:var(--hdr,74px)}
+  #members .sec-head{display:none}
+  .cp-eyebrow{display:block;font-family:var(--display);font-style:italic;font-weight:700;color:var(--pine);font-size:1.15rem;margin-bottom:.6rem}
+  .coupon{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);align-items:center}
+  .cpn-head{grid-template-columns:1fr;gap:.9rem;padding:1.6rem 0 1.4rem 2.2rem;align-items:start;align-self:center}
+  .cp-stamp{margin-bottom:.7rem;font-size:.72rem}
+  .cp-big{font-size:clamp(2.2rem,3.2vw,2.9rem)}
+  .cp-sub{font-size:1rem;margin-top:.5rem}
+  .cpn-head .cp-how{font-size:.93rem}
+  .cp-brands-h{margin-top:.6rem}
+  .cp-brands li{font-size:.78rem;padding:.22rem .6rem}
+  .cp-shelf{padding:1.2rem 1.6rem 1.2rem 1rem;background:none}
+  .cp-shelf img{max-height:min(270px,34vh);width:auto;max-width:100%;margin:0 auto}
+  .cp-shelf .cp-deals{margin-top:.6rem;gap:.45rem}
+  .cp-shelf .cp-deals a{padding:.55rem .4rem .6rem}
+  .cp-shelf .cp-d-off{font-size:1.1rem;padding:.2rem .65rem;margin-bottom:.3rem}
+  .cp-shelf .cp-d-name{font-size:.82rem}
+  .cp-shelf .cp-d-meta{font-size:.7rem}
+  .cp-foot{padding:.65rem 2.2rem}
+  .coupon::before,.coupon::after{bottom:calc(1.15rem - 16px)}
+  .cp-actions{margin-top:1rem}
+  .coupon-sec .m-points{margin-top:.7rem;font-size:.85rem}
+}
 </style>
 
 <header>
@@ -1027,6 +1064,7 @@ section{padding-block:clamp(3.75rem,9vw,7rem)}
         <div class="cp-print-only" style="padding:1.2rem 1.6rem 0"><div style="display:flex;align-items:center;justify-content:space-between;gap:1rem"><img src="img/logo.svg" alt="Nature&#39;s Nook" style="height:60px;width:auto"><span style="font-family:var(--display);font-style:italic;font-weight:700;color:var(--pine);font-size:1.25rem">Cold &amp; flu season is here</span></div></div>
         <div class="cpn-head">
           <div>
+            <p class="cp-eyebrow">Cold &amp; flu season is here</p>
             <p class="cp-stamp">Nature's Nook member savings</p>
             <p class="cp-big">Save up to <strong id="cp-max">$6</strong></p>
             <p class="cp-sub">Come in for some of our best sellers. <strong>Bring this in</strong> (or show it on your phone) for the amount shown off each product, plus member deals on <strong id="cp-count">489</strong> vitamins, supplements and body care products.</p>
