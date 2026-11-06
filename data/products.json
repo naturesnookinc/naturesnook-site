@@ -64358,18 +64358,6 @@
   "msrp": "29.99"
  },
  {
-  "name": "Vitamin E Oil",
-  "variant": "23,000 IU",
-  "form": "Skin oil \u00b7 1 fl oz",
-  "brand": "NOW Solutions",
-  "dept": "Beauty & Personal Care",
-  "price": "14.39",
-  "shelf_price": "14.39",
-  "upc": "733739009203",
-  "pos": "E OIL DA 1 OZ",
-  "source": "oils & body care shelf photos 2026-10-14"
- },
- {
   "name": "Vitamin E-Oil",
   "variant": "With mixed tocopherols",
   "form": "Skin oil \u00b7 4 fl oz (118 ml)",
@@ -64379,6 +64367,18 @@
   "shelf_price": "15.99",
   "upc": "733739009302",
   "pos": "E OIL MIXED TOC 4 OZ",
+  "source": "oils & body care shelf photos 2026-10-14"
+ },
+ {
+  "name": "Vitamin E-Oil",
+  "variant": "d-alpha tocopherol, 170 mg (253 IU) per serving",
+  "form": "Skin oil \u00b7 1 fl oz",
+  "brand": "NOW Solutions",
+  "dept": "Beauty & Personal Care",
+  "price": "14.39",
+  "shelf_price": "14.39",
+  "upc": "733739009203",
+  "pos": "E OIL DA 1 OZ",
   "source": "oils & body care shelf photos 2026-10-14"
  },
  {
