@@ -888,6 +888,20 @@ header .bar{color:#fff}
 @media (max-width:760px){
   header nav a.nav-specials{color:var(--pine);font-weight:800}
 }
+
+/* This-month banner: mid green, between the page and the dark top bar */
+.month-bar{background:#a9d4b6;border-bottom:1px solid #8fc19f;margin-bottom:0}
+.month-bar::before{opacity:.25}
+.month-bar .mb-tag{background:#1d4a31;color:#fff}
+.month-bar .mb-link{color:#1d4a31}
+@media (max-width:760px){
+  .mb-in{padding-top:.5rem;padding-bottom:.55rem;gap:.3rem .6rem}
+  .mb-text{font-size:.86rem;line-height:1.35}
+  .mb-link{font-size:.88rem}
+}
+/* keep the whole storefront visible below the header + banner */
+.hero.has-photo .hero-photo{top:var(--hdr,74px)}
+@media (min-width:761px){.hero.has-photo .hero-photo img{object-position:center top}}
 </style>
 
 <header>
