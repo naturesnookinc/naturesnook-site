@@ -26,16 +26,22 @@ open(ROOT+'index.html','w').write(h)
 json.dump(p,open(ROOT+'data/products.json','w'),indent=1)
 print(len(rows),'products; new brand colors:',list(new))
 # --- attach photo library (photo_lib/UPC-front|back|facts.jpg) to products on the site ---
-import os
+import os, sys
 h=open(ROOT+'index.html').read()
 m=re.search(r'(<script id="photo-data" type="application/json">)(.*?)(</script>)',h,re.S)
 ph=json.loads(m.group(2)); ph.setdefault('_facts',{})
 lib=set(os.listdir(ROOT+'photo_lib')) if os.path.isdir(ROOT+'photo_lib') else set()
+try:
+    sys.path.insert(0,ROOT+'tools'); import flatten as _fl; _fl.run()
+    lib=set(os.listdir(ROOT+'photo_lib'))
+except Exception as e: print('flatten skipped',e)
 onsite={x['upc'] for x in p}; n=0
+ph['_flat']=[]
 for u in onsite:
     if f'{u}-front.jpg' in lib:
         ph[u]=[f'photo_lib/{u}-{k}.jpg' for k in ('front','back') if f'{u}-{k}.jpg' in lib]
         if f'{u}-facts.jpg' in lib: ph['_facts'][u]=f'photo_lib/{u}-facts.jpg'
+        if f'{u}-flat.jpg' in lib: ph['_flat'].append(u)
         n+=1
 h=h[:m.start(2)]+json.dumps(ph,separators=(',',':'))+h[m.end(2):]
 open(ROOT+'index.html','w').write(h)
