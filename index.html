@@ -899,6 +899,11 @@ header .bar{color:#fff}
   .mb-text{font-size:.86rem;line-height:1.35}
   .mb-link{font-size:.88rem}
 }
+
+/* member deal: show $ off and new total */
+.m-off{font-weight:800;font-size:.9rem;color:var(--ink);white-space:nowrap}
+.m-arrow{color:var(--muted);font-size:.85rem}
+.member-deal .m-price{white-space:nowrap}
 </style>
 
 <header>
@@ -1434,7 +1439,7 @@ header .bar{color:#fff}
     var out='<div class="price"><span class="now">'+money(i[5])+'</span>';
     if(i[7]) out+='<s class="was" aria-label="Regular price '+money(i[7])+'">'+money(i[7])+'</s>';
     out+='</div>';
-    if(i[8]) out+='<div class="member-deal" title="'+money(i[8])+' off through '+fmtDate(i[9])+'"><span class="m-tag">Members</span><span class="m-price">'+money(i[5]-i[8])+'</span><span class="m-note">thru '+fmtDate(i[9])+'</span></div>';
+    if(i[8]) out+='<div class="member-deal" title="'+money(i[8])+' off through '+fmtDate(i[9])+'"><span class="m-tag">Members</span>'+'<span class="m-off">'+money(i[8]).replace(/\.00$/,'')+' off</span><span class="m-arrow" aria-hidden="true">→</span><span class="m-price" aria-label="Member total '+money(i[5]-i[8])+'">'+money(i[5]-i[8])+'</span>'+'<span class="m-note">thru '+fmtDate(i[9])+'</span></div>';
     return out;
   }
   function favInfo(i){if(!i[10])return null; var a=String(i[10]).split('|'); return a[1]?{who:a[0],org:a[1],label:a[0]+'\u2019s Pick!',note:'Recommended by '+a[0]+' of '+a[1]+'.'}:{who:a[0],org:'Nature\u2019s Nook',label:a[0]+'\u2019s Favorite!',note:'A staff pick. Ask '+a[0]+' about it in store.'}}
@@ -1521,7 +1526,7 @@ header .bar{color:#fff}
     var size=i[4].split(' · ')[1]||'';
     document.getElementById('pd-variant').textContent=[i[3],size].filter(Boolean).join(' · ');
     var pr='<div class="price"><span class="now">'+money(i[5])+'</span>'+(i[7]?'<s class="was">'+money(i[7])+'</s>':'')+'</div>';
-    if(i[8]) pr+='<div class="member-deal"><span class="m-tag">Members</span><span class="m-price">'+money(i[5]-i[8])+'</span><span class="m-note">through '+fmtDate(i[9])+'</span></div>';
+    if(i[8]) pr+='<div class="member-deal"><span class="m-tag">Members</span>'+'<span class="m-off">'+money(i[8]).replace(/\.00$/,'')+' off</span><span class="m-arrow" aria-hidden="true">→</span><span class="m-price" aria-label="Member total '+money(i[5]-i[8])+'">'+money(i[5]-i[8])+'</span>'+'<span class="m-note">Member total, through '+fmtDate(i[9])+'</span></div>';
     if(i[10]){var fi=window.nnFavInfo(i); pr='<div class="pd-fav"><span class="fav-tag fav-inline"><span class="ft-store">'+esc(fi.org)+'</span><span class="ft-who">'+esc(fi.label)+'</span></span><span class="pd-fav-note">'+esc(fi.note)+'</span></div>'+pr;}
     document.getElementById('pd-price').innerHTML=pr;
     document.getElementById('pd-meta').innerHTML='<dt>Type</dt><dd>'+esc(i[4].split(' · ')[0])+'</dd><dt>Department</dt><dd>'+esc(i[0])+'</dd><dt>Barcode</dt><dd>'+esc(/^\d+$/.test(i[6])?i[6]:'Ask in store')+'</dd>';
