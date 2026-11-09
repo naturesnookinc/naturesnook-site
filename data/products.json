@@ -16614,6 +16614,19 @@
   "msrp": "27.49"
  },
  {
+  "name": "Daily Immune Support Supplement",
+  "variant": "With SilverSol Technology, new packaging for ASAP 10 Silver Solution",
+  "form": "8 fl oz",
+  "brand": "Silver Biotics",
+  "dept": "Vitamins & Supplements",
+  "price": "24.89",
+  "shelf_price": "24.89",
+  "upc": "831060001856",
+  "pos": "IMMUNE SUPPORT SILVER",
+  "source": "probiotic & silver shelf photos 2026-11-09",
+  "msrp": "27.49"
+ },
+ {
   "name": "Daily Longevity Complex",
   "variant": "Berry Fusion, creatine & amino acid complex",
   "form": "1 stick pack",
@@ -62697,7 +62710,23 @@
   "shelf_price": "62.99",
   "upc": "850964006897",
   "pos": "100 ADVANCED BIOME FLORA",
-  "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)"
+  "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)",
+  "member_off": "10.00",
+  "member_until": "2026-12-29"
+ },
+ {
+  "name": "Vital Flora Ultra Daily Probiotic",
+  "variant": "Brenda Watson's, 60 billion, 60 strains, +7 prebiotics",
+  "form": "30 delayed release vegetable capsules",
+  "brand": "Vital Planet",
+  "dept": "Vitamins & Supplements",
+  "price": "42.29",
+  "shelf_price": "42.29",
+  "upc": "850964006613",
+  "pos": "60B 60 ULTRA DAILY PROBIOTIC",
+  "source": "probiotic & silver shelf photos 2026-11-09",
+  "member_off": "5.00",
+  "member_until": "2026-12-29"
  },
  {
   "name": "Vital Flora Women 55+ Daily Probiotic",
@@ -62721,7 +62750,9 @@
   "shelf_price": "42.29",
   "upc": "850964006590",
   "pos": "60B 60 WOMEN'S DAILY PRO",
-  "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)"
+  "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)",
+  "member_off": "5.00",
+  "member_until": "2026-12-29"
  },
  {
   "name": "Vital Lax",
