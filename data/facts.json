@@ -9855,5 +9855,79 @@
    ]
   ],
   "other": "Grain alcohol (65-75% by volume), deionized water."
+ },
+ "788332042119": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Selectively Imported Vanuatu Kava Root (Piper methysticum)",
+    "500 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:2",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (55-65% by volume), deionized water."
+ },
+ "788332207747": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "1 Level Scoop (approx. 3.4 grams)",
+  "servings": "About 33",
+  "notes": "Organic, 100% vegetarian, gluten free. 4 oz (114 g) powder.",
+  "rows": [
+   [
+    "Organic Maca Root, raw and gelatinized (Lepidium meyenii)",
+    "3.4 g",
+    "*",
+    0
+   ]
+  ],
+  "other": ""
+ },
+ "788332198205": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "2 Veggie Caps",
+  "servings": "45",
+  "notes": "100% vegetarian, gluten free. 90 veggie caps.",
+  "rows": [
+   [
+    "Organic Maca Root, raw and gelatinized (Lepidium meyenii)",
+    "1000 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable cellulose."
+ },
+ "788332198403": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "2 Veggie Caps",
+  "servings": "45",
+  "notes": "100% vegetarian, gluten free. 90 veggie caps.",
+  "rows": [
+   [
+    "Wild Harvested Pau D'arco Bark (Tabebuia impetiginosa)",
+    "1000 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable cellulose."
  }
 }
