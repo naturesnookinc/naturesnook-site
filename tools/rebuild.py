@@ -31,6 +31,11 @@ h=open(ROOT+'index.html').read()
 m=re.search(r'(<script id="photo-data" type="application/json">)(.*?)(</script>)',h,re.S)
 ph=json.loads(m.group(2)); ph.setdefault('_facts',{})
 lib=set(os.listdir(ROOT+'photo_lib')) if os.path.isdir(ROOT+'photo_lib') else set()
+try:
+    import sys as _s; _s.path.insert(0,ROOT+'tools'); import recenter as _rc
+    for _f in lib:
+        if _f.endswith(('-front.jpg','-facts.jpg','-back.jpg')): _rc.recenter(ROOT+'photo_lib/'+_f)
+except Exception as e: print('recenter skipped',e)
 onsite={x['upc'] for x in p}; n=0
 for u in onsite:
     if f'{u}-front.jpg' in lib:
