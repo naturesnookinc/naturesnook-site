@@ -9201,5 +9201,108 @@
   ],
   "other": "Vegetable cellulose, omega 3 (flax seed).",
   "notes": "100% vegetarian."
+ },
+ "788332173608": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "2 Veggie Caps",
+  "servings": "45",
+  "rows": [
+   [
+    "Organic Elderberry Fruit",
+    "750 mg",
+    "*",
+    0
+   ],
+   [
+    "Ethically Wild Harvested Elder Flower",
+    "200 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable cellulose. Gluten free.",
+  "notes": "100% vegetarian, plant-based formula. Sambucus fruit and flower."
+ },
+ "788332066313": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Organic Elderberry Berries (Sambucus nigra)",
+    "500 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:2",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (47-57% by volume), deionized water."
+ },
+ "788332173707": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "1 Veggie Cap",
+  "servings": "90",
+  "rows": [
+   [
+    "Organic Fenugreek Seed",
+    "600 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable cellulose.",
+  "notes": "100% vegetarian."
+ },
+ "788332154805": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "1 Veggie Cap",
+  "servings": "90",
+  "rows": [
+   [
+    "Organic Garlic Bulb (Allium sativum)",
+    "500 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable cellulose.",
+  "notes": "100% vegetarian."
+ },
+ "788332041112": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Ethically Wild Harvested Fresh and Organic Dry Ginkgo biloba Leaf",
+    "467 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:2.1",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (51-61% by volume), deionized water."
  }
 }
