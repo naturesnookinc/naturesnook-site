@@ -9929,5 +9929,108 @@
    ]
   ],
   "other": "Vegetable cellulose."
+ },
+ "788332043611": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Ethically Wild Harvested Fresh Osha Root (Ligusticum porteri)",
+    "666 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:1.5",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (66-76% by volume), deionized water."
+ },
+ "788332044113": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Propolis Resin Extract",
+    "200 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:5",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (85-95% by volume)."
+ },
+ "788332043710": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Organic Passion Flower Herb (Passiflora incarnata)",
+    "333 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:3",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (45-55% by volume), deionized water."
+ },
+ "788332051418": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "4 Drops",
+  "servings": "270",
+  "notes": "1 fl oz. 4 drops (108 mg) deliver 43 mg oregano oil and a minimum of 30 mg carvacrol.",
+  "rows": [
+   [
+    "Wild Mediterranean Oregano Oil (Origanum vulgare), standardized to a minimum 70% carvacrol",
+    "108 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Extra virgin olive oil."
+ },
+ "788332232701": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "2 Veggie Caps",
+  "servings": "45",
+  "notes": "100% vegetarian, gluten free. 90 veggie caps.",
+  "rows": [
+   [
+    "Organic Passion Flower Herb (Passiflora incarnata)",
+    "700 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable cellulose."
  }
 }
