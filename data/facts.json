@@ -12634,5 +12634,108 @@
    ]
   ],
   "other": "Vegetable cellulose."
+ },
+ "788332233401": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "1 Capsule",
+  "servings": "90",
+  "notes": "USDA Organic, gluten free. 90 veggie caps.",
+  "rows": [
+   [
+    "Organic Clove Bud (Syzygium aromaticum)",
+    "500 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Organic pullulan capsule."
+ },
+ "788332083921": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "1 Veggie Cap",
+  "servings": "120",
+  "notes": "100% vegetarian. 120 liquid veggie caps. Each cap contains 45 mg pure oregano oil, which delivers 32 mg carvacrol.",
+  "rows": [
+   [
+    "Oil of Oregano",
+    "510 mg",
+    "*",
+    0
+   ],
+   [
+    "Wild Mediterranean Oregano Leaf (Origanum vulgare), guaranteed to contain at least 70% carvacrol",
+    "",
+    "",
+    1
+   ]
+  ],
+  "other": "Non-GMO soy lecithin, vegetable cellulose, extra virgin olive oil."
+ },
+ "788332083815": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "1 Veggie Cap",
+  "servings": "60",
+  "notes": "100% vegetarian. 60 liquid veggie caps. Each cap contains 45 mg pure oregano oil, which delivers 32 mg carvacrol.",
+  "rows": [
+   [
+    "Oil of Oregano",
+    "510 mg",
+    "*",
+    0
+   ],
+   [
+    "Wild Mediterranean Oregano Leaf (Origanum vulgare), guaranteed to contain at least 70% carvacrol",
+    "",
+    "",
+    1
+   ]
+  ],
+  "other": "Non-GMO soy lecithin, vegetable cellulose, extra virgin olive oil."
+ },
+ "788332214301": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "1 Veggie Cap",
+  "servings": "180",
+  "notes": "100% vegetarian, gluten free. 180 veggie caps.",
+  "rows": [
+   [
+    "Milk Thistle Seed Extract (80% Silymarin)",
+    "250 mg",
+    "*",
+    0
+   ],
+   [
+    "Organic Milk Thistle Seed (Silybum marianum)",
+    "200 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable cellulose."
+ },
+ "788332235702": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "2 Capsules",
+  "servings": "45",
+  "notes": "USDA Organic. 90 veggie caps.",
+  "rows": [
+   [
+    "Organic Beet Root (Beta vulgaris)",
+    "1000 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Organic pullulan capsule, organic brown rice flour."
  }
 }
