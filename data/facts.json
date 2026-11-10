@@ -10717,5 +10717,138 @@
    ]
   ],
   "other": "Organic pullulan capsule."
+ },
+ "788332224812": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value (DV) not established. + Organic.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "About 30",
+  "notes": "Berry flavor, alcohol free, 1 fl oz.",
+  "rows": [
+   [
+    "Vitamin C (as ascorbic acid)",
+    "20 mg",
+    "22%",
+    0
+   ],
+   [
+    "Proprietary Blend",
+    "250 mg",
+    "*",
+    0
+   ],
+   [
+    "Fresh Echinacea angustifolia Root+, Elderberry Fruit+, Astragalus Root+, Fresh Echinacea purpurea Flower+",
+    "",
+    "",
+    1
+   ],
+   [
+    "Herb strength ratio",
+    "1:4",
+    "",
+    1
+   ]
+  ],
+  "other": "Vegetable glycerin, deionized water, mixed berry natural flavor."
+ },
+ "788332175244": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value (DV) not established.",
+  "serving": "2 Teaspoons (10 ml)",
+  "servings": "About 12",
+  "notes": "Gluten free. 4 fl oz (118 ml).",
+  "rows": [
+   [
+    "Calories",
+    "25",
+    "",
+    0
+   ],
+   [
+    "Total Carbohydrates",
+    "6 g",
+    "2%*",
+    0
+   ],
+   [
+    "Organic Elderberry Fruit (Sambucus nigra)",
+    "6400 mg",
+    "**",
+    0
+   ]
+  ],
+  "other": "Vegetable glycerin, deionized water."
+ },
+ "788332230226": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established. + Organic, > Ethically wild harvested.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "59",
+  "notes": "Liquid herbal extract, 2 fl oz (59 ml).",
+  "rows": [
+   [
+    "Proprietary Blend",
+    "450 mg",
+    "*",
+    0
+   ],
+   [
+    "Chanca Piedra (Stone Breaker) Aerial Parts>, Hydrangea Root>, Celery Seed+, Fresh Marshmallow Root+, Dandelion Root+",
+    "",
+    "",
+    1
+   ]
+  ],
+  "other": "Deionized water, grain alcohol (45-55% by volume)."
+ },
+ "788332205613": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "",
+  "serving": "5 drops",
+  "servings": "About 177",
+  "notes": "Citrus flavor, gluten free. 1 fl oz (30 ml).",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5000 IU)",
+    "625%",
+    0
+   ]
+  ],
+  "other": "Medium chain triglycerides, orange and lemon essential oils."
+ },
+ "788332061615": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established. + Organic, > Ethically wild harvested.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Alcohol free liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Proprietary Blend",
+    "338 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Gentian Root+, Fennel Seed+, Oregon Grape Root>, Licorice Root+, Fresh Ginger Root+, Prickly Ash Bark>, Blue Flag Root>, Peppermint Spirits, Potassium bicarbonate",
+    "",
+    "",
+    1
+   ],
+   [
+    "Herb strength ratio",
+    "1:3",
+    "",
+    1
+   ]
+  ],
+  "other": "Vegetable glycerin, deionized water."
  }
 }
