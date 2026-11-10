@@ -11341,5 +11341,120 @@
    ]
   ],
   "other": "Vegetable glycerin, deionized water, peppermint essential oil."
+ },
+ "788332052613": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established. + Organic, > Ethically wild harvested, ~ Selectively imported.",
+  "serving": "60 Drops (2 ml)",
+  "servings": "15",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Proprietary Blend",
+    "492 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Goldenseal Root+, Bayberry Root>, Prickly Ash Bark>, Myrrh Gum~, Coptis Root~",
+    "",
+    "",
+    1
+   ],
+   [
+    "Herb strength ratio",
+    "1:4",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (59-69% by volume), deionized water."
+ },
+ "788332041525": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "59",
+  "notes": "Liquid herbal extract, 2 fl oz (59 ml).",
+  "rows": [
+   [
+    "Organic Goldenseal Root (Hydrastis canadensis)",
+    "200 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:5",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (65-75% by volume), deionized water."
+ },
+ "788332166211": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Graviola Leaf (Annona muricata)",
+    "500 mg",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:2",
+    "",
+    1
+   ]
+  ],
+  "other": "Deionized water, grain alcohol (45-55% by volume)."
+ },
+ "788332157813": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Organic Holy Basil Herb (Ocimum sanctum)",
+    "500 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Herb strength ratio",
+    "1:2",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (45-55% by volume), deionized water."
+ },
+ "788332176524": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "",
+  "serving": "1 Drop (0.045 ml)",
+  "servings": "About 1,300",
+  "notes": "Liquid iodine, 2 fl oz (59 ml).",
+  "rows": [
+   [
+    "Iodine (as Potassium Iodide)",
+    "150 mcg",
+    "100%",
+    0
+   ]
+  ],
+  "other": "Vegetable glycerin, deionized water."
  }
 }
