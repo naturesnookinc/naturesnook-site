@@ -11456,5 +11456,132 @@
    ]
   ],
   "other": "Vegetable glycerin, deionized water."
+ },
+ "788332166921": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value (DV) not established.",
+  "serving": "1 Drop",
+  "servings": "Approx. 1,300",
+  "notes": "Liquid iodine with kelp, 2 fl oz (59 ml).",
+  "rows": [
+   [
+    "Iodine (as Potassium Iodide)",
+    "150 mcg",
+    "100%",
+    0
+   ],
+   [
+    "Organic Kelp",
+    "2 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable glycerin, deionized water."
+ },
+ "788332235429": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value (DV) not established.",
+  "serving": "60 drops (2 ml)",
+  "servings": "About 30",
+  "notes": "USDA Organic. 2 fl oz (59 ml).",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Total Carbohydrates",
+    "1 g",
+    "<1%*",
+    0
+   ],
+   [
+    "Organic Lion's Mane mycelia and fruiting body",
+    "500 mg",
+    "**",
+    0
+   ]
+  ],
+  "other": "Organic vegetable glycerin, purified water."
+ },
+ "788332130021": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "59",
+  "notes": "Liquid melatonin, 2 fl oz (59 ml).",
+  "rows": [
+   [
+    "Melatonin",
+    "3 mg",
+    "*",
+    0
+   ]
+  ],
+  "other": "Vegetable glycerin, deionized water, raspberry and vanilla natural flavors."
+ },
+ "788332048227": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established. + Organic, > Ethically wild harvested.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "59",
+  "notes": "Liquid herbal extract, 2 fl oz (59 ml).",
+  "rows": [
+   [
+    "Proprietary Blend",
+    "406 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Red Root>, Fresh Ocotillo Bark>, Stillingia Root>, Astragalus Root+, Fresh Ginger Root+",
+    "",
+    "",
+    1
+   ],
+   [
+    "Herb strength ratio",
+    "1:2.5",
+    "",
+    1
+   ]
+  ],
+  "other": "Grain alcohol (56-66% by volume), deionized water."
+ },
+ "788332068317": {
+  "title": "Supplement Facts",
+  "by": "Nature's Nook, Rexburg, ID",
+  "foot": "* Daily Value not established. + Organic, ~ Selectively imported.",
+  "serving": "30 Drops (1 ml)",
+  "servings": "30",
+  "notes": "Alcohol free liquid herbal extract, 1 fl oz.",
+  "rows": [
+   [
+    "Proprietary Blend",
+    "390 mg herb weight equivalence",
+    "*",
+    0
+   ],
+   [
+    "Ginkgo Leaf+, Gotu Kola Leaf+, Licorice Root+, Fresh Lobelia Herb+, Rhodiola Root Extract+",
+    "",
+    "",
+    1
+   ],
+   [
+    "Herb strength ratio",
+    "1:2.6",
+    "",
+    1
+   ]
+  ],
+  "other": "Vegetable glycerin, deionized water."
  }
 }
