@@ -904,8 +904,43 @@ header .bar{color:#fff}
 .m-off{font-weight:800;font-size:.9rem;color:var(--ink);white-space:nowrap}
 .m-arrow{color:var(--muted);font-size:.85rem}
 .member-deal .m-price{white-space:nowrap}
+
+/* ---- Accessibility and policy footer (November 2026) ---- */
+:root{--pine:#1d7542;--moss:#1d7542}
+.skip-link{position:absolute;left:8px;top:-80px;z-index:100;background:#fff;color:#1b1f1c;font-weight:700;padding:.7rem 1rem;border-radius:8px;border:2px solid #1b1f1c;text-decoration:none}
+.skip-link:focus{top:8px}
+main:focus{outline:none}
+.hours-card h2.h-sm{font-size:1.3rem;margin-bottom:.8rem;text-transform:none;letter-spacing:0;font-weight:700;line-height:1.2}
+.search input:focus-visible{outline:3px solid var(--honey);outline-offset:2px}
+summary:focus-visible,.item:focus-visible,[role="tab"]:focus-visible{outline:3px solid var(--honey);outline-offset:3px;border-radius:4px}
+header a:focus-visible,header button:focus-visible,.hero.has-photo .hero-copy a:focus-visible{outline-color:#fff}
+.month-bar a:focus-visible,.month-bar button:focus-visible{outline-color:#1b1f1c}
+@media (min-width:761px){body.search-mode header nav a[href="#find"]{color:#fff}header nav a{display:inline-block;padding:.45rem 0}}
+.rv-stars{color:#8a6100}
+.rv-src{opacity:1}
+.rv-more a{display:inline-block;padding:.3rem 0}
+.gal-dots{gap:14px;align-items:center}
+.gal-dots button{position:relative}
+.gal-dots button::after{content:"";position:absolute;inset:-7px}
+.gal-dots .gal-pause{width:auto;height:auto;min-height:24px;border-radius:999px;opacity:1;background:none;color:inherit;font:inherit;font-size:.8rem;font-weight:700;padding:.15rem .7rem;border:1.5px solid currentColor;margin-left:.4rem;transform:none}
+.gal-dots .gal-pause::after{display:none}
+.rv-dots .gal-pause{color:var(--ink)}
+.dept-link{display:inline-block;padding:.2rem 0;min-height:24px}
+.mb-link{display:inline-block;padding:.15rem 0}
+.own-facts a{color:var(--pine);font-weight:600;display:inline-block;padding:.25rem 0}
+.price-note a{display:inline-block;padding:.2rem 0}
+.site-foot .wrap.foot-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:1.2rem 2.5rem;padding-block:2rem;justify-content:normal}
+.site-foot p{margin:0;line-height:1.55}
+.foot-biz strong{color:var(--ink)}
+.foot-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.1rem 1rem}
+.site-foot a{color:var(--ink);font-weight:600;display:inline-block;padding:.3rem 0}
+.foot-disc,.foot-copy{grid-column:1/-1;font-size:.82rem}
+.foot-disc{border-top:1px solid var(--line);padding-top:1rem}
+@media (max-width:700px){.site-foot .wrap.foot-grid{grid-template-columns:1fr}}
+@media print{.skip-link,.gal-pause{display:none}}
 </style>
 
+<a class="skip-link" href="#top">Skip to main content</a>
 <header>
   <div class="wrap bar">
     <a class="brand" href="#top" aria-label="Nature's Nook home">
@@ -1049,22 +1084,22 @@ header .bar{color:#fff}
 </aside>
 </header>
 
-<main id="top">
+<main id="top" tabindex="-1">
   <div class="hero has-photo">
     <div class="hero-photo"><img src="img/storefront.jpg" alt="The Nature's Nook storefront on Valley River Road in Rexburg" width="900" height="1200"><span class="scroll-hint" aria-hidden="true">Scroll ↓</span></div>
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Rexburg, Idaho</p>
         <h1>Rexburg's local, <em>natural</em> grocer.</h1>
-        <p class="lede">Vitamins, supplements, herbs, essential oils, gluten-free foods and healthy snacks, with a knowledgeable staff to help you find what you need. If we don't carry it, ask and we'll order it.</p>
+        <p class="lede">Vitamins, supplements, herbs, essential oils, gluten-free foods and healthy snacks, with a knowledgeable staff to help you find what you need. If we don't carry it, ask and we'll do our best to order it.</p>
         <div class="ctas">
-          <a class="btn btn-main" href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-main" href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Get directions<span class="vh"> (opens in a new tab)</span></a>
           <a class="btn btn-ghost" href="#products">Browse departments</a>
         </div>
       </div>
       <aside class="hours-card" aria-labelledby="hours-h">
         <div class="status" id="status"><i></i><span>Store hours</span></div>
-        <h3 id="hours-h">Hours</h3>
+        <h2 id="hours-h" class="h-sm">Hours</h2>
         <table class="hours">
           <tbody>
             <tr data-days="1,2,3,4,5"><td>Monday – Friday</td><td>9:00 AM – 6:00 PM</td></tr>
@@ -1132,7 +1167,7 @@ header .bar{color:#fff}
           <li><strong>Premium quality</strong><span>Products you can trust</span></li>
           <li><strong>Glass bottles</strong><span>Amber glass, sealed for your protection</span></li>
           <li><strong>Consistent</strong><span>The same quality every time you buy</span></li>
-          <li><strong>Money-back guarantee</strong><span>100% money-back guarantee</span></li>
+          <li><strong>Money-back guarantee</strong><span>Within 30 days with your receipt. <a href="returns/">Return policy</a></span></li>
         </ul>
         <a class="btn btn-main" href="#find" id="shop-line">Browse our line</a>
       </div>
@@ -1160,7 +1195,7 @@ header .bar{color:#fff}
         <article class="dept"><h3><button type="button" class="dept-link" data-dept="" data-q="Snacks &amp; Pantry">Snacks &amp; Pantry<span aria-hidden="true"> →</span></button></h3><p>Healthy snacks and cooking staples.</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Protein bars">Protein bars</button></li><li><button type="button" class="tag-link" data-q="Jerky">Jerky</button></li><li><button type="button" class="tag-link" data-q="Nuts &amp; dried fruit">Nuts &amp; dried fruit</button></li><li><button type="button" class="tag-link" data-q="Natural sweeteners">Natural sweeteners</button></li><li><button type="button" class="tag-link" data-dept="Grocery" data-q="Spices &amp; seasonings">Spices &amp; seasonings</button></li></ul></article>
         <article class="dept"><h3><button type="button" class="dept-link" data-dept="" data-q="Beverages">Beverages<span aria-hidden="true"> →</span></button></h3><p>Better-for-you drinks.</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Naturally sweetened soda">Naturally sweetened soda</button></li><li><button type="button" class="tag-link" data-q="Natural energy">Natural energy</button></li></ul></article>
         <article class="dept"><h3><button type="button" class="dept-link" data-dept="" data-q="Super Greens &amp; Homeopathics">Super Greens &amp; Homeopathics<span aria-hidden="true"> →</span></button></h3><p>Greens powders and homeopathic remedies.</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Greens">Greens</button></li><li><button type="button" class="tag-link" data-q="Homeopathics">Homeopathics</button></li></ul></article>
-        <article class="dept feature"><h3><button type="button" class="dept-link" data-dept="" data-q="Refills">Onsite Distilled Water<span aria-hidden="true"> →</span></button></h3><p>Bring your jugs and fill up with water distilled right here in the store. </p><p class="ph-note"><b>pH water too:</b> 8.5 drinking · 9.0 tea &amp; coffee · 9.5 antioxidant · 7.0 neutral · 6.0 beauty · 3.5 cleaning · 11.5 cooking (don't drink)</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Refills">Refills</button></li></ul></article>
+        <article class="dept feature"><h3><button type="button" class="dept-link" data-dept="" data-q="Refills">Onsite Distilled Water<span aria-hidden="true"> →</span></button></h3><p>Bring your jugs and fill up with water distilled right here in the store. </p><p class="ph-note"><b>pH water too:</b> 8.5 and 9.5 drinking · 9.0 tea &amp; coffee · 7.0 neutral · 6.0 beauty · 3.5 cleaning · 11.5 cooking (don't drink)</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Refills">Refills</button></li></ul></article>
       </div>
     </div>
   </section>
@@ -1197,7 +1232,7 @@ header .bar{color:#fff}
         <article class="dept"><h3><button type="button" class="dept-link" data-dept="" data-q="Snacks &amp; Pantry">Snacks &amp; Pantry<span aria-hidden="true"> →</span></button></h3><p>Healthy snacks and cooking staples.</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Protein bars">Protein bars</button></li><li><button type="button" class="tag-link" data-q="Jerky">Jerky</button></li><li><button type="button" class="tag-link" data-q="Nuts &amp; dried fruit">Nuts &amp; dried fruit</button></li><li><button type="button" class="tag-link" data-q="Natural sweeteners">Natural sweeteners</button></li><li><button type="button" class="tag-link" data-dept="Grocery" data-q="Spices &amp; seasonings">Spices &amp; seasonings</button></li></ul></article>
         <article class="dept"><h3><button type="button" class="dept-link" data-dept="" data-q="Beverages">Beverages<span aria-hidden="true"> →</span></button></h3><p>Better-for-you drinks.</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Naturally sweetened soda">Naturally sweetened soda</button></li><li><button type="button" class="tag-link" data-q="Natural energy">Natural energy</button></li></ul></article>
         <article class="dept"><h3><button type="button" class="dept-link" data-dept="" data-q="Super Greens &amp; Homeopathics">Super Greens &amp; Homeopathics<span aria-hidden="true"> →</span></button></h3><p>Greens powders and homeopathic remedies.</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Greens">Greens</button></li><li><button type="button" class="tag-link" data-q="Homeopathics">Homeopathics</button></li></ul></article>
-        <article class="dept feature"><h3><button type="button" class="dept-link" data-dept="" data-q="Refills">Onsite Distilled Water<span aria-hidden="true"> →</span></button></h3><p>Bring your jugs and fill up with water distilled right here in the store. </p><p class="ph-note"><b>pH water too:</b> 8.5 drinking · 9.0 tea &amp; coffee · 9.5 antioxidant · 7.0 neutral · 6.0 beauty · 3.5 cleaning · 11.5 cooking (don't drink)</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Refills">Refills</button></li></ul></article>
+        <article class="dept feature"><h3><button type="button" class="dept-link" data-dept="" data-q="Refills">Onsite Distilled Water<span aria-hidden="true"> →</span></button></h3><p>Bring your jugs and fill up with water distilled right here in the store. </p><p class="ph-note"><b>pH water too:</b> 8.5 and 9.5 drinking · 9.0 tea &amp; coffee · 7.0 neutral · 6.0 beauty · 3.5 cleaning · 11.5 cooking (don't drink)</p><ul class="tags"><li><button type="button" class="tag-link" data-q="Refills">Refills</button></li></ul></article>
       </div>
       </details>
       <div class="chips" id="chips" role="group" aria-label="Filter by department"></div>
@@ -1213,10 +1248,10 @@ header .bar{color:#fff}
       <div class="learn-copy">
         <p class="eyebrow">Free in store</p>
         <h2>Ask us for a TTN</h2>
-        <p>Our <strong>Terry Talks Nutrition</strong> rack by the Terry Naturally endcap has free, easy-to-read handouts on dozens of health topics. Grab one next time you're in, or ask any of us to point you to the right one.</p>
-        <p class="learn-note">Pick a topic to see the products it covers.</p>
+        <p>Our <strong>Terry Talks Nutrition</strong> rack by the Terry Naturally endcap has free, easy-to-read handouts from the manufacturer on dozens of topics. Grab one next time you're in, or ask any of us to point you to the right one.</p>
+        <p class="learn-note">Pick a product to find it on our shelves.</p>
       </div>
-      <div class="learn-list"><ul class="tags learn-tags"><li><button type="button" class="tag-link" data-q="curamin">Acute & chronic pain</button></li><li><button type="button" class="tag-link" data-q="curamed">Muscle pain & recovery</button></li><li><button type="button" class="tag-link" data-q="anxiocalm">Anxiety & stress</button></li><li><button type="button" class="tag-link" data-q="anxiocalm kids">Anxiety relief for kids</button></li><li><button type="button" class="tag-link" data-q="ashwagandha">Adaptogens</button></li><li><button type="button" class="tag-link" data-q="healthy feet">Neuropathy & nerve numbness</button></li><li><button type="button" class="tag-link" data-q="andrographis">Colds & flu</button></li><li><button type="button" class="tag-link" data-q="bronchial">Bronchitis & respiratory health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="propolis">Ear infections & candida</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="clinical opc">French grape seed OPCs</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="resveratrol">Healthy aging</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy cholesterol">Heart health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy liver">Healthy liver</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sucontral">Blood sugar balance</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="berberine">Berberine & metabolic health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sagapro">Bladder health</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="menopause">Menopause relief</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="tri-iodine">Thyroid & iodine</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="melatonin ep120">Sleep</button></li></ul><button type="button" class="ttn-toggle" id="ttn-toggle" aria-expanded="false">Show 11 more topics</button></div>
+      <div class="learn-list"><ul class="tags learn-tags"><li><button type="button" class="tag-link" data-q="curamin">Curamin</button></li><li><button type="button" class="tag-link" data-q="curamed">CuraMed</button></li><li><button type="button" class="tag-link" data-q="anxiocalm">AnxioCalm</button></li><li><button type="button" class="tag-link" data-q="anxiocalm kids">AnxioCalm Kids</button></li><li><button type="button" class="tag-link" data-q="ashwagandha">Ashwagandha EP35</button></li><li><button type="button" class="tag-link" data-q="healthy feet">Healthy Feet &amp; Nerves</button></li><li><button type="button" class="tag-link" data-q="andrographis">Andrographis EP80</button></li><li><button type="button" class="tag-link" data-q="bronchial">Bronchial Clear</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="propolis">Propolis Extract EP300</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="clinical opc">Clinical OPC</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="resveratrol">Resveratrol Complex</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy cholesterol">Healthy Cholesterol</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy liver">Healthy Liver</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sucontral">Sucontral D</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="berberine">Berberine MetX</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sagapro">SagaPro</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="menopause">Menopause Relief Plus</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="tri-iodine">Tri-Iodine</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="melatonin ep120">Melatonin EP120</button></li></ul><button type="button" class="ttn-toggle" id="ttn-toggle" aria-expanded="false">Show 11 more products</button></div>
     </div>
   </section>
 
@@ -1253,7 +1288,7 @@ header .bar{color:#fff}
 
   <section id="reviews">
     <div class="wrap">
-      <div class="sec-head"><div><p class="eyebrow">What people are saying</p><h2>From our customers</h2></div></div>
+      <div class="sec-head"><div><p class="eyebrow">What people are saying</p><h2>From our customers</h2></div><p class="note">A selection of reviews customers posted on our Google page, quoted as written.</p></div>
       <div class="reviews rv-track" id="rv-track" aria-label="Customer reviews">
         <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>Nature’s Nook is a valued member of the Rexburg Area Chamber of Commerce, offering a variety of natural, healthy, and sustainable products for our community. Their commitment to quality, wellness, and supporting local initiatives makes them a trusted resource for residents. We’re proud to have Nature’s Nook as part of our Chamber family!</p><footer>Rexburg Chamber <span class="rv-src">· Google review</span></footer></blockquote>
         <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>I had assumed everything in Nature’s Nook would be over priced. I was WRONG! The prices are not more than what I would pay anywhere else for supplements. Including on-line. SHOP LOCAL! …</p><footer>Diane Bruce <span class="rv-src">· Google review</span></footer></blockquote>
@@ -1267,7 +1302,7 @@ header .bar{color:#fff}
         <blockquote class="rv"><span class="rv-stars" aria-label="5 out of 5 stars">★★★★★</span><p>A wonderful health store. Great staff!</p><footer>Sage Lee <span class="rv-src">· Google review</span></footer></blockquote>
       </div>
       <div class="gal-dots rv-dots" id="rv-dots" role="group" aria-label="Choose a review"></div>
-      <p class="rv-more"><a href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Read all our reviews on Google →</a></p>
+      <p class="rv-more"><a href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Read all our reviews on Google<span aria-hidden="true"> →</span><span class="vh"> (opens in a new tab)</span></a></p>
     </div>
   </section>
 
@@ -1280,7 +1315,7 @@ header .bar{color:#fff}
       <div>
         <h3>Address</h3>
         <p>160 E Valley River Rd #2<br>Rexburg, ID 83440</p>
-        <a class="big" href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Open in Maps →</a>
+        <a class="big" href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Open in Maps<span aria-hidden="true"> →</span><span class="vh"> (opens in a new tab)</span></a>
       </div>
       <div>
         <h3>Call us</h3>
@@ -1308,14 +1343,30 @@ header .bar{color:#fff}
         <button type="button" role="tab" id="tab-facts" aria-selected="true">Supplement Facts</button>
       </div>
       <div class="pd-panel" id="pd-panel"></div>
-      <p class="pd-note">Product information comes from the label. Ask our staff in store if you have questions about a product. We can't give medical advice.</p>
+      <p class="pd-note">Product information is copied from the label and may be out of date or contain errors. Always read the label on the product itself, especially for allergens, before you buy or use it. We can't give medical advice. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
     </div>
   </div>
 </div>
 <footer class="site-foot">
-  <div class="wrap">
-    <span>© <span id="yr">2026</span> Nature's Nook · Rexburg, Idaho</span>
-    <a href="https://www.facebook.com/Natures-Nook-Health-and-Nutrition-151944521484912/" target="_blank" rel="noopener">Facebook</a>
+  <div class="wrap foot-grid">
+    <div class="foot-biz">
+      <p><strong>Nature's Nook</strong> Health &amp; Nutrition</p>
+      <p>160 E Valley River Rd #2, Rexburg, ID 83440</p>
+      <p><a href="tel:+12083565284">(208) 356-5284</a></p>
+      <p>Monday–Friday 9 AM–6 PM · Saturday 9 AM–5 PM · Closed Sunday</p>
+    </div>
+    <nav class="foot-links" aria-label="Store policies">
+      <ul>
+        <li><a href="returns/">Returns &amp; refunds</a></li>
+        <li><a href="privacy/">Privacy policy</a></li>
+        <li><a href="cookies/">Cookie policy</a></li>
+        <li><a href="terms/">Terms of use</a></li>
+        <li><a href="accessibility/">Accessibility</a></li>
+        <li><a href="https://www.facebook.com/Natures-Nook-Health-and-Nutrition-151944521484912/" target="_blank" rel="noopener">Facebook<span class="vh"> (opens in a new tab)</span></a></li>
+      </ul>
+    </nav>
+    <p class="foot-disc">Statements about dietary supplements on this site have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Nothing on this site is medical advice; talk with your doctor before starting a supplement, especially if you are pregnant, nursing, taking medication or have a medical condition. Brand names and product images belong to their owners and are shown to identify products we carry.</p>
+    <p class="foot-copy">© <span id="yr">2026</span> Nature's Nook · Rexburg, Idaho. Prices and stock can change; the price in store applies.</p>
   </div>
 </footer>
 
@@ -1373,7 +1424,7 @@ header .bar{color:#fff}
   });
   var hay=items.map(function(i){return (i[1]+' '+i[2]+' '+i[3]+' '+i[4]+' '+i[0]+' '+i[6]).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/['’]/g,'').replace(/^.*$/,function(s){var j=s.replace(/-/g,''); return j===s?s:s+' '+j})});
   // "We don't carry that" suggestions: known look-alikes first, then spelling-tolerant word matching
-  var ALIKE={"nora tea":{"t":["nettle leaf","oatstraw","raspberry leaf","alfalfa leaf","pregnancy tea"],"n":"NORA tea is a blend of nettle, oatstraw, red raspberry leaf and alfalfa. We carry each herb, plus a ready-made pregnancy tea."},"phyto melatonin":{"t":["sleepmag","tart cherry"],"n":"Our closest match is SleepMag, made with plant melatonin. Tart cherry is a natural food source of melatonin."},"plant melatonin":{"t":["sleepmag","tart cherry"],"n":"Our closest match is SleepMag, made with plant melatonin. Tart cherry is a natural food source of melatonin."},"soursop":{"t":["graviola","swedish bitters"],"n":"Soursop is also called graviola. Here's what we carry."},"guanabana":{"t":["graviola"],"n":"Guanabana is also called soursop or graviola."},"bitters":{"t":["swedish bitters","dandelion root"],"n":"Here are our digestive bitters and bitter herbs."},"dead sea mud":{"t":["dead sea","clay powder","bentonite","facial mud"],"n":"We don't carry Dead Sea mud powder, but here are our Dead Sea products and clay masks."},"mud mask":{"t":["clay powder","bentonite","facial mud","dead sea mud"],"n":"Here are our clays and mud masks."},"urolithin":{"t":["nmn","pqq","coq10","nad"],"n":"We don't carry urolithin A. These also support cellular energy and healthy aging."},"mitopure":{"t":["nmn","pqq","coq10","nad"],"n":"We don't carry Mitopure (urolithin A). These also support cellular energy and healthy aging."},"athletic greens":{"t":["greens","spirulina","chlorella"],"n":"Here are our greens powders."},"ag1":{"t":["greens","spirulina","chlorella"],"n":"Here are our greens powders."},"liquid iv":{"t":["re-lyte","hydration","electrolyte"],"n":"Here are our electrolyte and hydration mixes."},"lmnt":{"t":["re-lyte","zerolyte","electrolyte"],"n":"Here are our electrolyte mixes, including salty, zero-sugar options."},"nuun":{"t":["electrolyte","hydration"],"n":"Here are our electrolyte and hydration options."},"airborne":{"t":["vitamin c","zinc lozenges","elderberry","immune"],"n":"Here are our immune support options."},"emergen-c":{"t":["vitamin c","electrolyte stamina"],"n":"Here are our vitamin C drink mixes and supplements."},"zyrtec":{"t":["allergy","sinus","quercetin","nettle"],"n":"We don't carry over-the-counter medicines. These are natural options for seasonal allergies."},"claritin":{"t":["allergy","sinus","quercetin","nettle"],"n":"We don't carry over-the-counter medicines. These are natural options for seasonal allergies."},"benadryl":{"t":["allergy","quercetin","nettle"],"n":"We don't carry over-the-counter medicines. These are natural options for seasonal allergies."},"sudafed":{"t":["sinus","nasal spray","decongest"],"n":"We don't carry over-the-counter medicines. These are natural options for sinus congestion."},"tylenol":{"t":["pain relief","turmeric","arnica","white willow"],"n":"We don't carry over-the-counter medicines. These are natural options for aches and pains."},"advil":{"t":["pain relief","turmeric","arnica","white willow"],"n":"We don't carry over-the-counter medicines. These are natural options for aches and pains."},"ibuprofen":{"t":["pain relief","turmeric","arnica","white willow"],"n":"We don't carry over-the-counter medicines. These are natural options for aches and pains."},"metamucil":{"t":["psyllium"],"n":"Metamucil is psyllium fiber. Here's what we carry."},"miralax":{"t":["smooth move","senna","psyllium","magnesium citrate"],"n":"Here are our natural options for regularity."},"tums":{"t":["heartburn","dgl","papaya enzyme"],"n":"Here are our natural options for heartburn and indigestion."},"antacid":{"t":["heartburn","dgl","papaya enzyme"],"n":"Here are our natural options for heartburn and indigestion."},"pepto":{"t":["digest","ginger","papaya enzyme"],"n":"Here are our natural options for an upset stomach."},"dramamine":{"t":["ginger trips","ginger chews","ginger root"],"n":"Ginger is a traditional choice for motion sickness."},"motion sickness":{"t":["ginger trips","ginger chews","ginger root"],"n":"Ginger is a traditional choice for motion sickness."},"neosporin":{"t":["ointment","salve","res-q"],"n":"Here are our natural ointments and salves."},"chapstick":{"t":["lip balm"],"n":"Here are our lip balms."},"crest":{"t":["toothpaste"],"n":"Here are our natural toothpastes."},"colgate":{"t":["toothpaste"],"n":"Here are our natural toothpastes."},"listerine":{"t":["mouthwash","oral rinse"],"n":"Here are our natural mouthwashes."},"dandruff":{"t":["tea tree shampoo","tea tree"],"n":"Here are our tea tree and scalp care options."},"red bull":{"t":["energy","yerba mate","guarana"],"n":"Here are our natural energy options."},"monster energy":{"t":["energy","yerba mate","guarana"],"n":"Here are our natural energy options."},"energy drink":{"t":["energy","yerba mate","guarana"],"n":"Here are our natural energy options."},"coffee alternative":{"t":["crio bru","mycobrew","cacao noir","mushroom coffee"],"n":"Here are our coffee alternatives."},"ozempic":{"t":["berberine","glp","metabolism","appetite"],"n":"We can't offer prescriptions, but these natural supplements support healthy metabolism and appetite."},"glp-1":{"t":["berberine","glp","metabolism","appetite"],"n":"These natural supplements support healthy metabolism and appetite."},"sea moss":{"t":["sea moss","irish moss","kelp","bladderwrack"],"n":"Here are our sea vegetables and mineral-rich seaweeds."},"irish moss":{"t":["sea moss","irish moss","kelp","bladderwrack"],"n":"Here are our sea vegetables and mineral-rich seaweeds."},"tallow":{"t":["shea butter","balm","body butter"],"n":"We don't carry tallow. Here are our rich balms and butters."},"mushroom coffee":{"t":["mycobrew","mushroom coffee","cacao noir","lions mane"],"n":"Here are our mushroom drinks and blends."},"weight loss":{"t":["weight","metabolism","appetite","berberine"],"n":"Here are our weight management options."},"gut health":{"t":["probiotic","digest","glutamine"],"n":"Here are our gut health options."},"hair growth":{"t":["hair, skin","biotin","silica"],"n":"Here are our hair, skin and nails supplements."},"anxiety":{"t":["stress","calm","ashwagandha","theanine"],"n":"Here are our stress and calm support options."},"sleep aid":{"t":["sleep","melatonin","valerian","magnesium glycinate"],"n":"Here are our sleep support options."},"cold sore":{"t":["lysine","cold sore","lip repair"],"n":"Here are our cold sore and lip support options."}};
+  var ALIKE={"nora tea":{"t":["nettle leaf","oatstraw","raspberry leaf","alfalfa leaf","pregnancy tea"],"n":"NORA tea is a blend of nettle, oatstraw, red raspberry leaf and alfalfa. We carry each herb, plus a ready-made pregnancy tea."},"phyto melatonin":{"t":["sleepmag","tart cherry"],"n":"Our closest match is SleepMag, made with plant melatonin. Tart cherry is a natural food source of melatonin."},"plant melatonin":{"t":["sleepmag","tart cherry"],"n":"Our closest match is SleepMag, made with plant melatonin. Tart cherry is a natural food source of melatonin."},"soursop":{"t":["graviola","swedish bitters"],"n":"Soursop is also called graviola. Here's what we carry."},"guanabana":{"t":["graviola"],"n":"Guanabana is also called soursop or graviola."},"bitters":{"t":["swedish bitters","dandelion root"],"n":"Here are our digestive bitters and bitter herbs."},"dead sea mud":{"t":["dead sea","clay powder","bentonite","facial mud"],"n":"We don't carry Dead Sea mud powder, but here are our Dead Sea products and clay masks."},"mud mask":{"t":["clay powder","bentonite","facial mud","dead sea mud"],"n":"Here are our clays and mud masks."},"urolithin":{"t":["nmn","pqq","coq10","nad"],"n":"We don't carry urolithin A. Here are some other supplements customers ask about."},"mitopure":{"t":["nmn","pqq","coq10","nad"],"n":"We don't carry Mitopure (urolithin A). Here are some other supplements customers ask about."},"athletic greens":{"t":["greens","spirulina","chlorella"],"n":"Here are our greens powders."},"ag1":{"t":["greens","spirulina","chlorella"],"n":"Here are our greens powders."},"liquid iv":{"t":["re-lyte","hydration","electrolyte"],"n":"Here are our electrolyte and hydration mixes."},"lmnt":{"t":["re-lyte","zerolyte","electrolyte"],"n":"Here are our electrolyte mixes, including salty, zero-sugar options."},"nuun":{"t":["electrolyte","hydration"],"n":"Here are our electrolyte and hydration options."},"airborne":{"t":["vitamin c","zinc lozenges","elderberry","immune"],"n":"Here are our immune support options."},"emergen-c":{"t":["vitamin c","electrolyte stamina"],"n":"Here are our vitamin C drink mixes and supplements."},"zyrtec":{"t":["allergy","sinus","quercetin","nettle"],"n":"We don't carry over-the-counter medicines, and these products are not a replacement for them. Here are the seasonal and sinus products we stock."},"claritin":{"t":["allergy","sinus","quercetin","nettle"],"n":"We don't carry over-the-counter medicines, and these products are not a replacement for them. Here are the seasonal and sinus products we stock."},"benadryl":{"t":["allergy","quercetin","nettle"],"n":"We don't carry over-the-counter medicines, and these products are not a replacement for them. Here are the seasonal products we stock."},"sudafed":{"t":["sinus","nasal spray","decongest"],"n":"We don't carry over-the-counter medicines, and these products are not a replacement for them. Here are the sinus and nasal products we stock."},"tylenol":{"t":["pain relief","turmeric","arnica","white willow"],"n":"We don't carry over-the-counter medicines, and these products are not a replacement for them. Here are the muscle and joint products we stock."},"advil":{"t":["pain relief","turmeric","arnica","white willow"],"n":"We don't carry over-the-counter medicines, and these products are not a replacement for them. Here are the muscle and joint products we stock."},"ibuprofen":{"t":["pain relief","turmeric","arnica","white willow"],"n":"We don't carry over-the-counter medicines, and these products are not a replacement for them. Here are the muscle and joint products we stock."},"metamucil":{"t":["psyllium"],"n":"Metamucil is psyllium fiber. Here's what we carry."},"miralax":{"t":["smooth move","senna","psyllium","magnesium citrate"],"n":"Here are our natural options for regularity."},"tums":{"t":["heartburn","dgl","papaya enzyme"],"n":"Here are our digestive products."},"antacid":{"t":["heartburn","dgl","papaya enzyme"],"n":"Here are our digestive products."},"pepto":{"t":["digest","ginger","papaya enzyme"],"n":"Here are our digestive products."},"dramamine":{"t":["ginger trips","ginger chews","ginger root"],"n":"Here are our ginger products."},"motion sickness":{"t":["ginger trips","ginger chews","ginger root"],"n":"Here are our ginger products."},"neosporin":{"t":["ointment","salve","res-q"],"n":"Here are our natural ointments and salves."},"chapstick":{"t":["lip balm"],"n":"Here are our lip balms."},"crest":{"t":["toothpaste"],"n":"Here are our natural toothpastes."},"colgate":{"t":["toothpaste"],"n":"Here are our natural toothpastes."},"listerine":{"t":["mouthwash","oral rinse"],"n":"Here are our natural mouthwashes."},"dandruff":{"t":["tea tree shampoo","tea tree"],"n":"Here are our tea tree and scalp care options."},"red bull":{"t":["energy","yerba mate","guarana"],"n":"Here are our natural energy options."},"monster energy":{"t":["energy","yerba mate","guarana"],"n":"Here are our natural energy options."},"energy drink":{"t":["energy","yerba mate","guarana"],"n":"Here are our natural energy options."},"coffee alternative":{"t":["crio bru","mycobrew","cacao noir","mushroom coffee"],"n":"Here are our coffee alternatives."},"ozempic":{"t":["berberine","glp","metabolism","appetite"],"n":"We can't offer prescriptions, and supplements are not a substitute for prescription medicine. Here are the metabolism and appetite supplements we carry."},"glp-1":{"t":["berberine","glp","metabolism","appetite"],"n":"Supplements are not a substitute for prescription medicine. Here are the metabolism and appetite supplements we carry."},"sea moss":{"t":["sea moss","irish moss","kelp","bladderwrack"],"n":"Here are our sea vegetables and mineral-rich seaweeds."},"irish moss":{"t":["sea moss","irish moss","kelp","bladderwrack"],"n":"Here are our sea vegetables and mineral-rich seaweeds."},"tallow":{"t":["shea butter","balm","body butter"],"n":"We don't carry tallow. Here are our rich balms and butters."},"mushroom coffee":{"t":["mycobrew","mushroom coffee","cacao noir","lions mane"],"n":"Here are our mushroom drinks and blends."},"weight loss":{"t":["weight","metabolism","appetite","berberine"],"n":"Here are our weight management options."},"gut health":{"t":["probiotic","digest","glutamine"],"n":"Here are our gut health options."},"hair growth":{"t":["hair, skin","biotin","silica"],"n":"Here are our hair, skin and nails supplements."},"anxiety":{"t":["stress","calm","ashwagandha","theanine"],"n":"Here are our stress and calm support options."},"sleep aid":{"t":["sleep","melatonin","valerian","magnesium glycinate"],"n":"Here are our sleep support options."},"cold sore":{"t":["lysine","cold sore","lip repair"],"n":"Here are our lysine and lip care products."}};
   var STOP={the:1,and:1,for:1,with:1,from:1,brand:1,organic:1,natural:1,capsules:1,caps:1,capsule:1,tablets:1,tablet:1,tabs:1,softgels:1,supplement:1,supplements:1,count:1,pack:1,size:1,best:1,good:1,some:1,any:1,you:1,have:1,carry:1,something:1,like:1,similar:1,mg:1,oz:1,ml:1,pills:1,pill:1,a:1,an:1,of:1,in:1,to:1,my:1,is:1,are:1,what:1,where:1,need:1,want:1,looking:1,buy:1,store:1};
   var VCOUNT={}; hay.forEach(function(h){var s={}; h.split(/[^a-z0-9-]+/).forEach(function(w){if(w.length>2&&!s[w]){s[w]=1;VCOUNT[w]=(VCOUNT[w]||0)+1}})});
   var VOCAB=VCOUNT, VLIST=Object.keys(VCOUNT);
@@ -1525,7 +1576,7 @@ header .bar{color:#fff}
     document.getElementById('pd-name').textContent=i[2];
     var size=i[4].split(' · ')[1]||'';
     document.getElementById('pd-variant').textContent=[i[3],size].filter(Boolean).join(' · ');
-    var pr='<div class="price"><span class="now">'+money(i[5])+'</span>'+(i[7]?'<s class="was">'+money(i[7])+'</s>':'')+'</div>';
+    var pr='<div class="price"><span class="now">'+money(i[5])+'</span>'+(i[7]?'<s class="was" aria-label="Regular price '+money(i[7])+'">'+money(i[7])+'</s>':'')+'</div>';
     if(i[8]) pr+='<div class="member-deal"><span class="m-tag">Members</span>'+'<span class="m-off">'+money(i[8]).replace(/\.00$/,'')+' off</span><span class="m-arrow" aria-hidden="true">→</span><span class="m-price" aria-label="Member total '+money(i[5]-i[8])+'">'+money(i[5]-i[8])+'</span>'+'<span class="m-note">Member total, through '+fmtDate(i[9])+'</span></div>';
     if(i[10]){var fi=window.nnFavInfo(i); pr='<div class="pd-fav"><span class="fav-tag fav-inline"><span class="ft-store">'+esc(fi.org)+'</span><span class="ft-who">'+esc(fi.label)+'</span></span><span class="pd-fav-note">'+esc(fi.note)+'</span></div>'+pr;}
     document.getElementById('pd-price').innerHTML=pr;
@@ -1663,11 +1714,13 @@ header .bar{color:#fff}
   var slides=[].slice.call(g.querySelectorAll('.inside-shot')), n=slides.length, cur=0, timer=null, paused=false;
   if(n<2){dots.hidden=true;return;}
   slides.forEach(function(sl,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Photo '+(i+1)+' of '+n);b.addEventListener('click',function(){go(i);restart();});dots.appendChild(b);});
-  function mark(){[].forEach.call(dots.children,function(b,i){b.setAttribute('aria-current',i===cur?'true':'false')});}
+  function mark(){[].forEach.call(dots.querySelectorAll('button:not(.gal-pause)'),function(b,i){b.setAttribute('aria-current',i===cur?'true':'false')});}
   function go(i){cur=(i+n)%n;g.scrollTo({left:slides[cur].offsetLeft-g.offsetLeft,behavior:'smooth'});mark();}
   g.addEventListener('scroll',function(){var i=Math.round(g.scrollLeft/g.clientWidth);if(i!==cur){cur=Math.max(0,Math.min(n-1,i));mark();}},{passive:true});
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function restart(){clearInterval(timer);if(!reduce) timer=setInterval(function(){if(!paused&&!document.hidden) go(cur+1);},5000);}
+  var stopped=false;
+  function restart(){clearInterval(timer);if(!reduce&&!stopped) timer=setInterval(function(){if(!paused&&!document.hidden) go(cur+1);},5000);}
+  if(!reduce){var pb=document.createElement('button');pb.type='button';pb.className='gal-pause';pb.textContent='Pause';pb.setAttribute('aria-label','Pause the photos slideshow');pb.addEventListener('click',function(){stopped=!stopped;pb.textContent=stopped?'Play':'Pause';pb.setAttribute('aria-label',(stopped?'Play':'Pause')+' the photos slideshow');restart();});dots.appendChild(pb);}
   ['mouseenter','touchstart','focusin'].forEach(function(e){g.addEventListener(e,function(){paused=true},{passive:true})});
   ['mouseleave','touchend','focusout'].forEach(function(e){g.addEventListener(e,function(){paused=false},{passive:true})});
   mark(); restart();
@@ -1680,11 +1733,13 @@ header .bar{color:#fff}
   var slides=[].slice.call(g.querySelectorAll('.rv')), n=slides.length, cur=0, timer=null, paused=false;
   if(n<2){dots.hidden=true;return;}
   slides.forEach(function(sl,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Review '+(i+1)+' of '+n);b.addEventListener('click',function(){go(i);restart();});dots.appendChild(b);});
-  function mark(){[].forEach.call(dots.children,function(b,i){b.setAttribute('aria-current',i===cur?'true':'false')});}
+  function mark(){[].forEach.call(dots.querySelectorAll('button:not(.gal-pause)'),function(b,i){b.setAttribute('aria-current',i===cur?'true':'false')});}
   function go(i){cur=(i+n)%n;g.scrollTo({left:slides[cur].offsetLeft-g.offsetLeft,behavior:'smooth'});mark();}
   g.addEventListener('scroll',function(){var i=Math.round(g.scrollLeft/g.clientWidth);if(i!==cur){cur=Math.max(0,Math.min(n-1,i));mark();}},{passive:true});
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function restart(){clearInterval(timer);if(!reduce) timer=setInterval(function(){if(!paused&&!document.hidden) go(cur+1);},7000);}
+  var stopped=false;
+  function restart(){clearInterval(timer);if(!reduce&&!stopped) timer=setInterval(function(){if(!paused&&!document.hidden) go(cur+1);},7000);}
+  if(!reduce){var pb=document.createElement('button');pb.type='button';pb.className='gal-pause';pb.textContent='Pause';pb.setAttribute('aria-label','Pause the reviews slideshow');pb.addEventListener('click',function(){stopped=!stopped;pb.textContent=stopped?'Play':'Pause';pb.setAttribute('aria-label',(stopped?'Play':'Pause')+' the reviews slideshow');restart();});dots.appendChild(pb);}
   ['mouseenter','touchstart','focusin'].forEach(function(e){g.addEventListener(e,function(){paused=true},{passive:true})});
   ['mouseleave','touchend','focusout'].forEach(function(e){g.addEventListener(e,function(){paused=false},{passive:true})});
   mark(); restart();
@@ -1742,8 +1797,33 @@ header .bar{color:#fff}
     else if(navigator.clipboard){navigator.clipboard.writeText(text+' '+url).then(function(){sh.textContent='Link copied!'; setTimeout(function(){sh.textContent='Send to a friend'},2000)});}
   });
   var tt=document.getElementById('ttn-toggle');
-  if(tt){var n=tt.textContent; tt.addEventListener('click',function(){var ul=tt.previousElementSibling, o=ul.classList.toggle('open'); tt.setAttribute('aria-expanded',o); tt.textContent=o?'Show fewer topics':n;});}
+  if(tt){var n=tt.textContent; tt.addEventListener('click',function(){var ul=tt.previousElementSibling, o=ul.classList.toggle('open'); tt.setAttribute('aria-expanded',o); tt.textContent=o?'Show fewer products':n;});}
   document.querySelectorAll('#products .dept').forEach(function(a){a.addEventListener('click',function(e){if(e.target.closest('button'))return; var b=a.querySelector('.dept-link'); if(b) b.click();});});
 })();
 </script>
 
+<script>
+/* Accessibility helpers: skip link, dialog focus trap, pause buttons for the slideshows */
+(function(){
+  var sk=document.querySelector('.skip-link'), mainEl=document.getElementById('top');
+  if(sk&&mainEl) sk.addEventListener('click',function(){setTimeout(function(){mainEl.focus({preventScroll:true})},0)});
+  var bd=document.getElementById('pd');
+  if(bd){
+    document.addEventListener('keydown',function(e){
+      if(e.key!=='Tab'||bd.hidden) return;
+      var f=[].filter.call(bd.querySelectorAll('a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])'),function(el){return el.offsetParent!==null});
+      if(!f.length) return;
+      var first=f[0], last=f[f.length-1], a=document.activeElement;
+      if(!bd.contains(a)){e.preventDefault();first.focus();}
+      else if(e.shiftKey&&a===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey&&a===last){e.preventDefault();first.focus();}
+    });
+    var others=[].filter.call(document.body.children,function(el){return el!==bd&&el.tagName!=='SCRIPT'&&el.tagName!=='STYLE'}), prev=null;
+    document.addEventListener('focusin',function(e){if(bd.hidden) prev=e.target});
+    new MutationObserver(function(){
+      others.forEach(function(el){if(bd.hidden) el.removeAttribute('inert'); else el.setAttribute('inert','')});
+      if(bd.hidden&&prev&&document.contains(prev)&&(!document.activeElement||document.activeElement===document.body||bd.contains(document.activeElement))) prev.focus({preventScroll:true});
+    }).observe(bd,{attributes:true,attributeFilter:['hidden']});
+  }
+})();
+</script>
