@@ -13737,5 +13737,105 @@
   "other": "Soy Lecithin, Vegetable Cellulose, Medium Chain Triglycerides.",
   "by": "Nature's Nook, Rexburg, ID",
   "notes": "Gluten Free."
+ },
+ "788332214202": {
+  "title": "Supplement Facts",
+  "serving": "1 Veggie Cap",
+  "servings": "120",
+  "rows": [
+   [
+    "Turmeric Root Extract (95% Curcuminoids)",
+    "450 mg",
+    "*",
+    0
+   ],
+   [
+    "Black Pepper Fruit Extract",
+    "5 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value Not Established.",
+  "other": "Vegetable Cellulose, Silica (Natural).",
+  "by": "Nature's Nook, Rexburg, ID",
+  "notes": "Gluten Free."
+ },
+ "788332174506": {
+  "title": "Supplement Facts",
+  "serving": "2 Veggie Caps",
+  "servings": "45",
+  "rows": [
+   [
+    "Pantothenic Acid (as Calcium D-Pantothenate)",
+    "30 mg",
+    "600%",
+    0
+   ],
+   [
+    "Iodine (as Potassium Iodide)",
+    "200 mcg",
+    "133%",
+    0
+   ],
+   [
+    "Zinc (as Zinc Citrate)",
+    "10 mg",
+    "91%",
+    0
+   ],
+   [
+    "Copper (as Copper Gluconate)",
+    "1 mg",
+    "111%",
+    0
+   ],
+   [
+    "L-Tyrosine",
+    "400 mg",
+    "+",
+    0
+   ],
+   [
+    "Ashwagandha Root +",
+    "100 mg",
+    "+",
+    0
+   ],
+   [
+    "Gotu Kola Herb +",
+    "100 mg",
+    "+",
+    0
+   ],
+   [
+    "Bacopa Herb +",
+    "100 mg",
+    "+",
+    0
+   ],
+   [
+    "Kelp Thallus +",
+    "50 mg",
+    "+",
+    0
+   ],
+   [
+    "Bladderwrack Thallus +",
+    "50 mg",
+    "+",
+    0
+   ],
+   [
+    "Black Pepper Fruit Extract ~",
+    "1 mg",
+    "+",
+    0
+   ]
+  ],
+  "foot": "+ Daily Value Not Established. Organic (+), ~ Selectively Imported.",
+  "other": "Vegetable Cellulose.",
+  "by": "Nature's Nook, Rexburg, ID",
+  "notes": "Gluten Free."
  }
 }
