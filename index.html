@@ -1516,6 +1516,12 @@ header a:focus-visible,header button:focus-visible,.hero.has-photo .hero-copy a:
     // Pinned results: show a specific product first for certain searches
     var PINS=[[/\basap\b|silver ?10\b|silver ?sol\b|silversol/,'831060001856']];
     PINS.forEach(function(pn){ if(pn[0].test(raw)){ var k=-1; current.forEach(function(x,j){if(x[6]===pn[1])k=j}); if(k<0){var it=items.find(function(x){return x[6]===pn[1]}); if(it) current.unshift(it)} else if(k>0) current.unshift(current.splice(k,1)[0]); } });
+    // Electrolyte / hydration searches: always lead with Superieur, then every Re-Lyte product
+    if(state.dept==='All'&&/\belectrolytes?\b|\bhydrat/.test(raw)){
+      var isSup=function(x){return x[1]==='Superieur'}, isRe=function(x){return /^re-lyte/i.test(x[2])};
+      var rest=current.filter(function(x){return !isSup(x)&&!isRe(x)});
+      current=items.filter(isSup).concat(items.filter(isRe),rest);
+    }
     var alt=null;
     if(!current.length&&raw&&state.dept==='All'){ alt=suggest(raw); if(alt.items.length) current=alt.items; else alt=null; }
     count.textContent=alt&&!alt.fix?'No exact match':current.length.toLocaleString()+(current.length===1?' product':' products');
