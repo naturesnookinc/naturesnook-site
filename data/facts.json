@@ -13423,5 +13423,111 @@
   "other": "Organic Rice Syrup Solids, Non-GMO Citric Acid, Natural Lemon Flavor, Natural Strawberry Flavor.",
   "by": "Manufactured for & distributed by Superieur, Inc., P.O. Box 444, Southampton, NY 11969.",
   "notes": ""
+ },
+ "788332154003": {
+  "title": "Supplement Facts",
+  "serving": "1 Veggie Cap",
+  "servings": "60",
+  "rows": [
+   [
+    "Organic Bilberry Leaf (Vaccinium myrtillus)",
+    "250 mg",
+    "*",
+    0
+   ],
+   [
+    "Bilberry Fruit Extract, 25% anthocyanidins",
+    "50 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value Not Established",
+  "other": "Vegetable Cellulose.",
+  "by": "Nature's Nook, Rexburg, ID",
+  "notes": "100% vegetarian, full spectrum. Gluten free."
+ },
+ "788332235306": {
+  "title": "Supplement Facts",
+  "serving": "3 Capsules",
+  "servings": "40",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Total Carbohydrates",
+    "1 g",
+    "<1%*",
+    0
+   ],
+   [
+    "D-Mannose",
+    "1,500 mg",
+    "†",
+    0
+   ]
+  ],
+  "foot": "* Percent Daily Values are based on a 2,000 calorie diet. † Daily Value (DV) Not Established.",
+  "other": "Vegan Capsule (Hypromellose), Vegetable Cellulose, Organic Rice Flour, Omega 3 (Flax Seed).",
+  "by": "Nature's Nook, Rexburg, ID",
+  "notes": "100% vegetarian. Gluten free. GMO free. Suggested use: take 3 capsules 1-3 times daily or as directed by a healthcare professional. Keep out of the reach of children."
+ },
+ "788332231100": {
+  "title": "Supplement Facts",
+  "serving": "1 Capsule",
+  "servings": "30",
+  "rows": [
+   [
+    "Proprietary Blend: Hops Strobiles †, Lemon Balm Herb †, Passion Flower Aerial Vine †, California Poppy Herb †, Ashwagandha Root †",
+    "500 mg",
+    "*",
+    0
+   ],
+   [
+    "Broad and Full Spectrum Hemp Extract (Cannabis sativa) (aerial parts)",
+    "240 mg",
+    "*",
+    0
+   ],
+   [
+    "Total CBD",
+    "30 mg",
+    "",
+    1
+   ],
+   [
+    "L-Theanine",
+    "90 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value Not Established. † Organic.",
+  "other": "Organic Sunflower Lecithin, Vegetable Cellulose, Organic MCT Oil (from coconut).",
+  "by": "Nature's Nook, Rexburg, ID",
+  "notes": "CBD + herbal blend, 30 mg CBD per serving, 900 mg CBD per bottle. 30 liquid veggie caps."
+ },
+ "788332231919": {
+  "kind": "oil",
+  "fields": [
+   [
+    "Ingredients",
+    "Organic Caprylic/Capric Triglyceride (MCT Oil), DMSO, Olea europaea (Olive) Fruit Oil, Broad and Full Spectrum Cannabis sativa (Hemp) Flower and Aerial Parts Extract, Arnica montana Flower, Hypericum perforatum (St. John's Wort) Flowering Herb, Menthol, Capsicum annuum Resin."
+   ],
+   [
+    "Also on the label",
+    "USA Grown Hemp. Vegan. Non-GMO. Contains <0.3% THC."
+   ],
+   [
+    "Size",
+    "1 fl oz (30 ml), 900 mg CBD per bottle"
+   ]
+  ],
+  "caution": "",
+  "by": "Nature's Nook, Rexburg, ID"
  }
 }
