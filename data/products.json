@@ -50599,6 +50599,18 @@
   "source": "Re-Lyte end cap photos 2026-10-20"
  },
  {
+  "name": "Re-Lyte Energy Sample Pack",
+  "variant": "6 stick packs",
+  "form": "Stick packs \u00b7 6 count",
+  "brand": "Redmond",
+  "dept": "Vitamins & Supplements",
+  "price": "12.89",
+  "shelf_price": "12.89",
+  "upc": "18788119371",
+  "pos": "ENERGY SAMPLE PACK RE-LYTE",
+  "source": "Re-Lyte shelf photos 2026-11-16"
+ },
+ {
   "name": "Re-Lyte Hydration Electrolyte Drink Mix",
   "variant": "Chocolate",
   "form": "30 stick packs \u00b7 4.13 oz",
@@ -50961,6 +50973,30 @@
  },
  {
   "name": "Re-Lyte Immunity",
+  "variant": "Blackberry, 15 stick packs",
+  "form": "Stick packs \u00b7 15 \u00d7 5.5 g",
+  "brand": "Redmond",
+  "dept": "Vitamins & Supplements",
+  "price": "24.99",
+  "shelf_price": "24.99",
+  "upc": "18788104445",
+  "pos": "RE-LYTE IMMUNITY BLACKBERRY STICK PACK",
+  "source": "Re-Lyte shelf photos 2026-11-16"
+ },
+ {
+  "name": "Re-Lyte Immunity",
+  "variant": "Pineapple Orange, 15 stick packs",
+  "form": "Stick packs \u00b7 15 \u00d7 5.5 g",
+  "brand": "Redmond",
+  "dept": "Vitamins & Supplements",
+  "price": "24.99",
+  "shelf_price": "24.99",
+  "upc": "18788104438",
+  "pos": "IMMUNITY RE-LYTE STICK PACK",
+  "source": "Re-Lyte shelf photos 2026-11-16"
+ },
+ {
+  "name": "Re-Lyte Immunity",
   "variant": "Blackberry, 45 servings",
   "form": "Powder \u00b7 8.73 oz",
   "brand": "Redmond",
@@ -51009,6 +51045,18 @@
   "pos": "RE-LYTE KIDS ELECTROLYTE DRINK MIX PINK LEMONADE, 45 SERVINGS",
   "source": "Re-Lyte end cap photos 2026-10-20",
   "msrp": "34.99"
+ },
+ {
+  "name": "Re-Lyte Kids Sample Pack",
+  "variant": "Grape, Pineapple & Pink Lemonade, 6 stick packs",
+  "form": "Stick packs \u00b7 6 count",
+  "brand": "Redmond",
+  "dept": "Vitamins & Supplements",
+  "price": "12.49",
+  "shelf_price": "12.49",
+  "upc": "18788118565",
+  "pos": "KIDS SAMPLE PACK RE-LYTE",
+  "source": "Re-Lyte shelf photos 2026-11-16"
  },
  {
   "name": "Re-Lyte Pre-Workout",
