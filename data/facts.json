@@ -13631,5 +13631,111 @@
   "other": "Organic Pullulan Capsule, Organic Myceliated Brown Rice.",
   "by": "Nature's Nook, Rexburg, ID",
   "notes": "USDA Organic."
+ },
+ "788332128806": {
+  "title": "Supplement Facts",
+  "serving": "1 Veggie Cap",
+  "servings": "60",
+  "rows": [
+   [
+    "Proprietary Blend (Herb Weight Equivalence): Valerian Root +, Hops Strobiles +, Fresh Skullcap Herb +, Passion Flower Herb +, Chamomile Flower +, Fresh California Poppy Herb +",
+    "1,000 mg",
+    "*",
+    0
+   ],
+   [
+    "STANDARDIZED Melatonin",
+    "3 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value Not Established. + Organic.",
+  "other": "Non-GMO Soy Lecithin, Vegetable Cellulose, Medium Chain Triglycerides.",
+  "by": "Nature's Nook, Rexburg, ID"
+ },
+ "788332237102": {
+  "title": "Supplement Facts",
+  "serving": "2 Capsules",
+  "servings": "60",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Shilajit Extract 10:1** (20% Fulvic Acid, 100 mg)",
+    "500 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value (DV) Not Established. ** Equivalent to 5,000 mg raw material.",
+  "other": "Non-GMO Soy Lecithin, Vegan Capsule (Hypromellose), Medium Chain Triglycerides Oil, Chlorophyll.",
+  "by": "Nature's Nook, Rexburg, ID"
+ },
+ "788332227400": {
+  "title": "Supplement Facts",
+  "serving": "2 Veggie Caps",
+  "servings": "30",
+  "rows": [
+   [
+    "Proprietary Blend: Organic Turkey Tail Fruiting Body and Mycelia",
+    "1,000 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value Not Established.",
+  "other": "Organic Pullulan Capsule, Organic Myceliated Brown Rice.",
+  "by": "Nature's Nook, Rexburg, ID",
+  "notes": "USDA Organic. Made with U.S. Grown Certified Organic Mushrooms."
+ },
+ "788332198601": {
+  "title": "Supplement Facts",
+  "serving": "1 Veggie Cap",
+  "servings": "90",
+  "rows": [
+   [
+    "Organic Spirulina algae (Arthrospira spp.)",
+    "450 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value Not Established.",
+  "other": "Vegetable Cellulose.",
+  "by": "Nature's Nook, Rexburg, ID"
+ },
+ "788332215803": {
+  "title": "Supplement Facts",
+  "serving": "2 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Proprietary Extract Blend: Ashwagandha Root +, Lemon Balm Herb +, Bacopa Herb +, Passion Flower Herb +",
+    "1,400 mg",
+    "*",
+    0
+   ],
+   [
+    "Rhodiola Root Extract (3 mg Rosavins)",
+    "100 mg",
+    "*",
+    0
+   ],
+   [
+    "Holy Basil Leaf CO2 Supercritical Extract (15 mg Eugenol)",
+    "100 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "* Daily Value Not Established. + Organic.",
+  "other": "Soy Lecithin, Vegetable Cellulose, Medium Chain Triglycerides.",
+  "by": "Nature's Nook, Rexburg, ID",
+  "notes": "Gluten Free."
  }
 }
