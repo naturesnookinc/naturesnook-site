@@ -33,3 +33,8 @@ The site is light-only: keep `<html lang="en" data-theme="light">` and `<meta na
 - No health claims in our own words: never tie a product to a disease or to replacing a medicine (search notes, section labels, banners). Label wording copied from the package is fine. Keep the FDA disclaimer in the footer and product view.
 - Reviews must be real Google reviews quoted as written, labeled as a selection.
 - Accessibility: keep text contrast at 4.5:1 or better (`--pine` is `#1d7542` for this reason), keep alt text, visible focus outlines, the skip link, the dialog focus trap and the slideshow Pause buttons.
+
+## Product photo standard (added November 2026)
+- Each product has two photos: **front** = the full-body product picture, and **facts** = the full-body side/back picture with the clean Supplement Facts panel (never crop the facts picture down to just the panel).
+- Only use the good product pictures the owner uploads for this. **Never crop pictures out of shelf/tag photos** used to add or update products; add the product data from the tag and leave the photo empty until good pictures arrive.
+- Each picture is its own product on its own: no edges of neighboring containers.
