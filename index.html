@@ -336,6 +336,8 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .alt-note{grid-column:1/-1;list-style:none;padding:.9rem 1rem;border:1px solid var(--line);border-left:4px solid var(--moss);border-radius:10px;background:var(--honey-soft);color:var(--muted);line-height:1.5;font-size:.95rem}
 .alt-note .an-lead{color:var(--ink);font-weight:600}
 .alt-note strong{color:var(--ink)}
+.topic-note .an-lead{display:block;margin-bottom:.2rem}
+.item .why{display:block;font-size:.82rem;color:var(--muted);line-height:1.35;margin:.2rem 0 .1rem}
 
 .lbl-tile{position:relative;display:flex!important;flex-direction:column;align-items:center;justify-content:flex-end;gap:.15rem;padding:0 .8rem 1rem!important;background:linear-gradient(115deg,#d3e4d6 0%,#8dbb9b 55%,#5f9a73 100%)!important;color:#1b1f1c!important;border-top:5px solid #1b1f1c;border-bottom:5px solid #1b1f1c;overflow:hidden;text-align:center}
 .lbl-tile::before{content:"";position:absolute;inset:0;background:var(--hexbg) 0 0/70px 125px;opacity:.35;pointer-events:none}
@@ -1522,6 +1524,47 @@ header a:focus-visible,header button:focus-visible,.hero.has-photo .hero-copy a:
       var rest=current.filter(function(x){return !isSup(x)&&!isRe(x)});
       current=items.filter(isSup).concat(items.filter(isRe),rest);
     }
+// Topic search: match by name and by the ingredients printed on the label. No claims about what a product does.
+    var topicNote='';
+    window.NN_WHY=window.NN_WHY||{}; var WHY=window.NN_WHY; for(var wk in WHY) delete WHY[wk];
+    var TOPICS=[
+      {k:'sleep',word:'sleep',alias:['sleep','sleeping','sleep aid','sleep aids','sleep support'],terms:['valerian','melatonin','chamomile','passion flower','hops','skullcap','california poppy','lemon balm','theanine','tart cherry','glycine','5-htp','lavender','magnesium glycinate']},
+      {k:'stress',word:'stress',alias:['stress','stressed','stress support','calm','calming'],terms:['ashwagandha','rhodiola','holy basil','lemon balm','theanine','bacopa','passion flower','schisandra','eleuthero','magnesium glycinate']},
+      {k:'cramps',word:'cramp',alias:['cramp','cramps','muscle cramps','leg cramps','menstrual cramps','period cramps'],terms:['cramp bark','magnesium','wild yam','raspberry leaf']},
+      {k:'immune',word:'immune',alias:['immune','immunity','immune support'],terms:['elderberry','echinacea','astragalus','reishi','turkey tail','shiitake','maitake','olive leaf','andrographis']},
+      {k:'digestion',word:'digest',alias:['digestion','digestive','digestive health','digestive support','gut health','gut'],terms:['probiotic','digestive enzyme','enzymes','ginger','peppermint','fennel','psyllium','fiber','bitters','gentian','papaya','bromelain','aloe','slippery elm','marshmallow root']},
+      {k:'energy',word:'energy',alias:['energy','energy support'],terms:['b12','methylcobalamin','b-complex','b complex','ginseng','rhodiola','cordyceps','maca','guarana','green tea','yerba mate']}
+    ];
+    var TOP=null; for(var ti=0;ti<TOPICS.length&&!TOP;ti++){ if(TOPICS[ti].alias.indexOf(raw.replace(/\s+/g,' '))>-1) TOP=TOPICS[ti]; }
+    if(TOP&&(state.dept==='All'||state.dept==='Vitamins & Supplements'||state.dept==='Herbs & Tinctures'||state.dept==='Teas')){
+      var BROAD={'Vitamins & Supplements':1,'Herbs & Tinctures':1,'Teas':1}, NAMEONLY={'Essential Oils':1,'Homeopathic':1};
+      var norm=function(t){return String(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/['\u2019]/g,'')};
+      var wrx=new RegExp('(^|[^a-z0-9])'+TOP.word);
+      var termRx=TOP.terms.map(function(t){return [t,new RegExp('(^|[^a-z0-9])'+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/ /g,'[ -]?')+'(?![a-z])')]});
+      var scored=[];
+      for(var q2=0;q2<items.length;q2++){
+        var it=items[q2], dp=it[0];
+        if(state.dept!=='All'&&dp!==state.dept) continue;
+        if(!BROAD[dp]&&!NAMEONLY[dp]) continue;
+        var nameTxt=norm(it[1]+' '+it[2]+' '+it[3]), nameHit=wrx.test(nameTxt), why=[], fromLabel=[], fromName=[];
+        if(BROAD[dp]){
+          var fd=(PHOTOS._factsData||{})[it[6]], rowTxt='';
+          if(fd&&fd.rows) rowTxt=norm(fd.rows.map(function(r){return r[0]}).join(' | '));
+          termRx.forEach(function(p){ if(rowTxt&&p[1].test(rowTxt)) fromLabel.push(p[0]); else if(p[1].test(nameTxt)) fromName.push(p[0]); });
+        }
+        if(!nameHit&&!fromLabel.length&&!fromName.length) continue;
+        var rank=(nameHit?100:0)+fromLabel.length*10+fromName.length*5+(it[1]==="Nature's Nook"?3:0);
+        if(fromLabel.length) WHY[it[6]]='Label lists: '+fromLabel.slice(0,4).map(function(t){return t.charAt(0).toUpperCase()+t.slice(1)}).join(', ');
+        else if(fromName.length) WHY[it[6]]='Name includes \u201c'+fromName[0]+'\u201d';
+        else WHY[it[6]]='Name includes \u201c'+TOP.word+'\u201d';
+        scored.push([rank,q2]);
+      }
+      if(scored.length){
+        scored.sort(function(a,b){return b[0]-a[0]||a[1]-b[1]});
+        current=scored.map(function(x){return items[x[1]]});
+        topicNote='<li class="alt-note topic-note"><span class="an-lead">Products matching \u201c'+esc(state.q.trim())+'\u201d</span> Each product below is here because of its name or an ingredient printed on its label. We don\u2019t claim any product treats or prevents anything. Statements on this site have not been evaluated by the FDA. Questions about what\u2019s right for you? Ask us in store or call (208) 356-5284, and talk with your health care provider.</li>';
+      }
+    }
     var alt=null;
     if(!current.length&&raw&&state.dept==='All'){ alt=suggest(raw); if(alt.items.length) current=alt.items; else alt=null; }
     count.textContent=alt&&!alt.fix?'No exact match':current.length.toLocaleString()+(current.length===1?' product':' products');
@@ -1531,8 +1574,8 @@ header a:focus-visible,header button:focus-visible,.hero.has-photo .hero-copy a:
       var size=i[4].split(' · ')[1]||'';
       var pic=(own||window.NN_FLAT_CARDS)?null:PHOTOS[i[6]]; if(Array.isArray(pic)) pic=pic[0];
       var tile=pic?'<div class="ph ph-photo'+((PHOTOS._cutout||[]).indexOf(i[6])>-1?' ph-cutout':'')+'"><img src="'+pic+'" alt="'+esc(i[1]+' '+i[2])+'" loading="lazy"></div>':own?'<div class="ph lbl-tile" aria-hidden="true"><span class="lt-logo"></span><span class="lt-name">'+esc(i[2])+'</span></div>':'<div class="ph gen-tile b-'+brandKey(i[1])+'" aria-hidden="true"><span class="gt-band"></span><span class="gt-brand">'+esc(i[1])+'</span></div>';
-      return '<li class="item" tabindex="0" role="button" data-upc="'+esc(i[6])+'" aria-label="'+esc(i[1]+' '+i[2]+(i[3]?', '+i[3]:''))+', view details">'+(i[10]?tile.replace(/<\/div>$/,favTag(i)+'</div>'):tile)+'<div class="info">'+(i[10]?'<span class="fav-line">'+esc(favInfo(i).label)+'</span>':'')+'<span class="brand-name">'+esc(i[1])+'</span><h3>'+esc(i[2])+'</h3><span class="size">'+esc([i[3],size].filter(Boolean).join(' · '))+'</span>'+priceHTML(i)+'</div></li>';
-    }).join('').replace(/^/,alt?(alt.fix?'<li class="alt-note">No results for <strong>'+esc(state.q.trim())+'</strong>. '+alt.note+' instead.</li>':'<li class="alt-note"><span class="an-lead">No exact match for <strong>'+esc(state.q.trim())+'</strong>.</span> '+(alt.html?alt.note:esc(alt.note))+' Not quite right? Call us at (208) 356-5284 and we\u2019ll help you find it or order it.</li>'):''):'<li class="empty">'+(state.q.trim()?'<strong>'+esc(state.q.trim())+'</strong> isn\'t in our online list yet. We\'re still adding sections, and we may carry it in store or be able to order it. Call us at (208) 356-5284.':'Nothing here yet. We\'re still adding sections to our online list. Call us at (208) 356-5284.')+'</li>';
+      return '<li class="item" tabindex="0" role="button" data-upc="'+esc(i[6])+'" aria-label="'+esc(i[1]+' '+i[2]+(i[3]?', '+i[3]:''))+', view details">'+(i[10]?tile.replace(/<\/div>$/,favTag(i)+'</div>'):tile)+'<div class="info">'+(i[10]?'<span class="fav-line">'+esc(favInfo(i).label)+'</span>':'')+'<span class="brand-name">'+esc(i[1])+'</span><h3>'+esc(i[2])+'</h3><span class="size">'+esc([i[3],size].filter(Boolean).join(' · '))+'</span>'+(WHY[i[6]]?'<span class="why">'+esc(WHY[i[6]])+'</span>':'')+priceHTML(i)+'</div></li>';
+    }).join('').replace(/^/,topicNote?topicNote:alt?(alt.fix?'<li class="alt-note">No results for <strong>'+esc(state.q.trim())+'</strong>. '+alt.note+' instead.</li>':'<li class="alt-note"><span class="an-lead">No exact match for <strong>'+esc(state.q.trim())+'</strong>.</span> '+(alt.html?alt.note:esc(alt.note))+' Not quite right? Call us at (208) 356-5284 and we\u2019ll help you find it or order it.</li>'):''):'<li class="empty">'+(state.q.trim()?'<strong>'+esc(state.q.trim())+'</strong> isn\'t in our online list yet. We\'re still adding sections, and we may carry it in store or be able to order it. Call us at (208) 356-5284.':'Nothing here yet. We\'re still adding sections to our online list. Call us at (208) 356-5284.')+'</li>';
     more.hidden=current.length<=shown;
     if(!more.hidden) more.textContent='Show more ('+(current.length-shown).toLocaleString()+' left)';
   }
