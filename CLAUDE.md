@@ -38,3 +38,10 @@ The site is light-only: keep `<html lang="en" data-theme="light">` and `<meta na
 - Each product has two photos: **front** = the full-body product picture, and **facts** = the full-body side/back picture with the clean Supplement Facts panel (never crop the facts picture down to just the panel).
 - Only use the good product pictures the owner uploads for this. **Never crop pictures out of shelf/tag photos** used to add or update products; add the product data from the tag and leave the photo empty until good pictures arrive.
 - Each picture is its own product on its own: no edges of neighboring containers.
+
+## SEO (added November 2026)
+- `tools/seo.py` builds the six Rexburg department pages, `sitemap.xml` and `robots.txt`. Run it after `rebuild.py` whenever the catalog changes, then commit the generated folders.
+- `index.html` carries HealthFoodStore JSON-LD (address, phone, hours, map). If hours, phone or address change, update the JSON-LD, the hours table, and `tools/seo.py` together.
+- Never add aggregateRating/review markup unless it comes from real Google reviews.
+- Department pages describe what we carry only (brands, product names). No health claims; `seo.py` skips disease-implying product names in sample lists.
+- `?dept=` and `?q=` links open the product search pre-filtered.
