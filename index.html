@@ -940,6 +940,21 @@ header a:focus-visible,header button:focus-visible,.hero.has-photo .hero-copy a:
 .foot-disc{border-top:1px solid var(--line);padding-top:1rem}
 @media (max-width:700px){.site-foot .wrap.foot-grid{grid-template-columns:1fr}}
 @media print{.skip-link,.gal-pause{display:none}}
+
+/* GOLD PREVIEW: honey accent, used in small doses (fills and lines only, never text on white) */
+:root{--gold:#e8a33d;--gold-deep:#c9831a;--gold-soft:#fdf1d8}
+header{border-bottom:3px solid var(--gold)!important}
+h2::after{content:"";display:block;width:56px;height:4px;border-radius:2px;background:var(--gold);margin-top:.55rem}
+.eyebrow::before{content:"";display:inline-block;width:.6em;height:.6em;margin-right:.5em;background:var(--gold);clip-path:polygon(25% 5%,75% 5%,100% 50%,75% 95%,25% 95%,0 50%);vertical-align:.02em}
+.btn-main{box-shadow:0 3px 0 var(--gold)}
+.btn-main:hover{transform:translateY(-1px);box-shadow:0 4px 0 var(--gold)}
+.chip[aria-pressed="true"]{box-shadow:inset 0 -3px 0 var(--gold)}
+.m-tag{background:var(--gold)!important;color:#1b1f1c!important}
+.member-deal{background:var(--gold-soft)!important;border-color:var(--gold)!important}
+.fav-tag,.fav-line{background:var(--gold)!important;color:#1b1f1c!important}
+.alt-note{border-left-color:var(--gold)!important;background:var(--gold-soft)!important}
+.item:hover,.item:focus-visible{border-color:var(--gold)}
+footer{border-top:3px solid var(--gold)}
 </style>
 
 <a class="skip-link" href="#top">Skip to main content</a>
