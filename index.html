@@ -51,7 +51,7 @@
   --sage-a:#1f4a34; --sage-b:#2c5a42; --hex:rgba(255,255,255,.07); --band:#070a08;
   --story-a:#2f6747; --story-b:#1f4a34; --story-fg:#eef4ef; --story-dot:#eef4ef;
   --on-pine:#eef4ef; --tile:#22302a; --dd:#d4372a; --open:#6cc48f; --closed:#e08a78; color-scheme:dark}}
-:root[data-theme="dark"]{
+:root[data-theme="never-dark"]{
   --bg:#111613; --surface:#1a211c; --ink:#e6eee8; --muted:#a3b3a7;
   --line:#2a3a30; --pine:#2f6747; --logo-main:#8cc497; --logo-sub:#e6eee8; --moss:#8cc4a0; --honey:#d99a63; --honey-soft:#203128;
   --sage-a:#1f4a34; --sage-b:#2c5a42; --hex:rgba(255,255,255,.07); --band:#070a08;
@@ -132,7 +132,7 @@ body.spotlight main>*:not(.is-spot),body.spotlight footer.site-foot{filter:blur(
   .hero.has-photo .hero-grid{position:relative;z-index:1;margin-top:-6svh;padding-top:12svh;background:linear-gradient(180deg,rgba(16,26,20,0) 0,rgba(16,26,20,.78) 10svh,rgba(16,26,20,.9) 100%)}
   .hero.has-photo .hero-copy{background:none;box-shadow:none;padding:0;border-radius:0}
 }
-:root[data-theme="dark"] .hero:not(.has-photo)::before{opacity:.12}
+:root[data-theme="never-dark"] .hero:not(.has-photo)::before{opacity:.12}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .hero:not(.has-photo)::before{opacity:.12}}
 
 /* Desktop hero: storefront photo as the centerpiece, text scrolls up over it */
@@ -361,11 +361,11 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .b-life-flo{--b1:#d9534f;--b2:#f2a59a}
 .b-heritage-store{--b1:#9b3d5a;--b2:#e7b6c4}
 .b-theraneem{--b1:#3f6b3a;--b2:#a9c79a}
-:root[data-theme="dark"] .b-now-essential-oils,:root[data-theme="dark"] .b-now-solutions{--b1:#c8a6ea}
-:root[data-theme="dark"] .b-garden-essence-oils{--b1:#d6a3e6}
-:root[data-theme="dark"] .b-life-flo{--b1:#f08f86}
-:root[data-theme="dark"] .b-heritage-store{--b1:#e39ab2}
-:root[data-theme="dark"] .b-theraneem{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-now-essential-oils,:root[data-theme="never-dark"] .b-now-solutions{--b1:#c8a6ea}
+:root[data-theme="never-dark"] .b-garden-essence-oils{--b1:#d6a3e6}
+:root[data-theme="never-dark"] .b-life-flo{--b1:#f08f86}
+:root[data-theme="never-dark"] .b-heritage-store{--b1:#e39ab2}
+:root[data-theme="never-dark"] .b-theraneem{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){
 :root:not([data-theme="light"]) .b-now-essential-oils,:root:not([data-theme="light"]) .b-now-solutions{--b1:#c8a6ea}
 :root:not([data-theme="light"]) .b-garden-essence-oils{--b1:#d6a3e6}
@@ -376,7 +376,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .chip-member{border-color:var(--pine)!important;color:var(--pine)!important}
 .chip-member[aria-pressed="true"]{color:var(--on-pine)!important}
 .b-solaray{--b1:#1f3b73;--b2:#b48ad0}
-:root[data-theme="dark"] .b-solaray{--b1:#9db5ea}
+:root[data-theme="never-dark"] .b-solaray{--b1:#9db5ea}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-solaray{--b1:#9db5ea}}
 .item .price{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem .5rem;margin-top:.35rem;font-variant-numeric:tabular-nums}
 .item .price .now{font-family:var(--display);font-weight:800;font-size:1.25rem;color:var(--ink)}
@@ -428,7 +428,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .b-thunder-ridge{--b1:#7a4a1e;--b2:#d9a066}
 .b-sva-organics{--b1:#2f7d32;--b2:#8bc34a}
 .b-now-real-food{--b1:#2e7d32;--b2:#f5c400}
-:root[data-theme="dark"] .b-pranar-m{--b1:#b6d36c}:root[data-theme="dark"] .b-aura-cacia{--b1:#8fd0c8}:root[data-theme="dark"] .b-thunder-ridge{--b1:#e0aa72}:root[data-theme="dark"] .b-sva-organics,:root[data-theme="dark"] .b-now-real-food{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-pranar-m{--b1:#b6d36c}:root[data-theme="never-dark"] .b-aura-cacia{--b1:#8fd0c8}:root[data-theme="never-dark"] .b-thunder-ridge{--b1:#e0aa72}:root[data-theme="never-dark"] .b-sva-organics,:root[data-theme="never-dark"] .b-now-real-food{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-pranar-m{--b1:#b6d36c}:root:not([data-theme="light"]) .b-aura-cacia{--b1:#8fd0c8}:root:not([data-theme="light"]) .b-thunder-ridge{--b1:#e0aa72}:root:not([data-theme="light"]) .b-sva-organics,:root:not([data-theme="light"]) .b-now-real-food{--b1:#9ccc8f}}
 
 /* Compact product cards */
@@ -472,7 +472,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .b-naturalcare{--b1:#5b3f8f;--b2:#c9b6e6}
 .b-forces-of-nature{--b1:#7a3e2a;--b2:#d9a37f}
 .b-nutribiotic{--b1:#b3262a;--b2:#f2a59a}
-:root[data-theme="dark"] .b-boiron,:root[data-theme="dark"] .b-hyland-s,:root[data-theme="dark"] .b-hyland-s-naturals{--b1:#9db5ea}:root[data-theme="dark"] .b-bach{--b1:#f2d84a}:root[data-theme="dark"] .b-medinatura,:root[data-theme="dark"] .b-nutribiotic{--b1:#f08f86}:root[data-theme="dark"] .b-ollo-s{--b1:#8fd0d6}:root[data-theme="dark"] .b-naturalcare{--b1:#c9b6e6}:root[data-theme="dark"] .b-forces-of-nature{--b1:#e0aa72}:root[data-theme="dark"] .b-bhi{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-boiron,:root[data-theme="never-dark"] .b-hyland-s,:root[data-theme="never-dark"] .b-hyland-s-naturals{--b1:#9db5ea}:root[data-theme="never-dark"] .b-bach{--b1:#f2d84a}:root[data-theme="never-dark"] .b-medinatura,:root[data-theme="never-dark"] .b-nutribiotic{--b1:#f08f86}:root[data-theme="never-dark"] .b-ollo-s{--b1:#8fd0d6}:root[data-theme="never-dark"] .b-naturalcare{--b1:#c9b6e6}:root[data-theme="never-dark"] .b-forces-of-nature{--b1:#e0aa72}:root[data-theme="never-dark"] .b-bhi{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-boiron,:root:not([data-theme="light"]) .b-hyland-s,:root:not([data-theme="light"]) .b-hyland-s-naturals{--b1:#9db5ea}:root:not([data-theme="light"]) .b-bach{--b1:#f2d84a}:root:not([data-theme="light"]) .b-medinatura,:root:not([data-theme="light"]) .b-nutribiotic{--b1:#f08f86}:root:not([data-theme="light"]) .b-ollo-s{--b1:#8fd0d6}:root:not([data-theme="light"]) .b-naturalcare{--b1:#c9b6e6}:root:not([data-theme="light"]) .b-forces-of-nature{--b1:#e0aa72}:root:not([data-theme="light"]) .b-bhi{--b1:#9ccc8f}}
 .b-dr-christopher-s{--b1:#2f6d3a;--b2:#a9d39a}
 .b-puremedy{--b1:#1f6e7a;--b2:#f2a33a}
@@ -485,10 +485,10 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .b-herb-lore{--b1:#5b4fa0;--b2:#c9c2ea}
 .b-country-comfort{--b1:#7a2a1e;--b2:#d9a37f}
 .b-quantum-health{--b1:#2f7d32;--b2:#f2a33a}
-:root[data-theme="dark"] .b-dr-christopher-s,:root[data-theme="dark"] .b-quantum-health{--b1:#9ccc8f}:root[data-theme="dark"] .b-puremedy,:root[data-theme="dark"] .b-derma-e{--b1:#8fd0d6}:root[data-theme="dark"] .b-boericke-tafel,:root[data-theme="dark"] .b-dmso,:root[data-theme="dark"] .b-nature-s-gift{--b1:#9db5ea}:root[data-theme="dark"] .b-terry-naturally,:root[data-theme="dark"] .b-herb-lore{--b1:#d6b3e6}:root[data-theme="dark"] .b-tiger-balm,:root[data-theme="dark"] .b-country-comfort{--b1:#f08f86}:root[data-theme="dark"] .b-burt-s-bees{--b1:#f2d84a}
+:root[data-theme="never-dark"] .b-dr-christopher-s,:root[data-theme="never-dark"] .b-quantum-health{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-puremedy,:root[data-theme="never-dark"] .b-derma-e{--b1:#8fd0d6}:root[data-theme="never-dark"] .b-boericke-tafel,:root[data-theme="never-dark"] .b-dmso,:root[data-theme="never-dark"] .b-nature-s-gift{--b1:#9db5ea}:root[data-theme="never-dark"] .b-terry-naturally,:root[data-theme="never-dark"] .b-herb-lore{--b1:#d6b3e6}:root[data-theme="never-dark"] .b-tiger-balm,:root[data-theme="never-dark"] .b-country-comfort{--b1:#f08f86}:root[data-theme="never-dark"] .b-burt-s-bees{--b1:#f2d84a}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-dr-christopher-s,:root:not([data-theme="light"]) .b-quantum-health{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-puremedy,:root:not([data-theme="light"]) .b-derma-e{--b1:#8fd0d6}:root:not([data-theme="light"]) .b-boericke-tafel,:root:not([data-theme="light"]) .b-dmso,:root:not([data-theme="light"]) .b-nature-s-gift{--b1:#9db5ea}:root:not([data-theme="light"]) .b-terry-naturally,:root:not([data-theme="light"]) .b-herb-lore{--b1:#d6b3e6}:root:not([data-theme="light"]) .b-tiger-balm,:root:not([data-theme="light"]) .b-country-comfort{--b1:#f08f86}:root:not([data-theme="light"]) .b-burt-s-bees{--b1:#f2d84a}}
 .b-lifeseasons{--b1:#3a2f8f;--b2:#e0457b}
-:root[data-theme="dark"] .b-lifeseasons{--b1:#b8aef0}
+:root[data-theme="never-dark"] .b-lifeseasons{--b1:#b8aef0}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-lifeseasons{--b1:#b8aef0}}
 .ph-photo{background:#fff!important;padding:0!important;display:flex!important;align-items:center;justify-content:center;overflow:hidden}
 .item .ph.ph-cutout{aspect-ratio:1/1!important}
@@ -556,17 +556,17 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .b-triple-leaf-tea{--b1:#2f6d3a;--b2:#e0a020}
 .b-celebration-herbals{--b1:#3f7d4a;--b2:#d9302a}
 .b-teapigs,.b-stash,.b-bravo-tea,.b-imperial-organic,.b-hobe-labs,.b-bio-nutrition,.b-prince-of-peace{--b1:#7a4a1e;--b2:#e0aa72}
-:root[data-theme="dark"] .b-buddha-teas,:root[data-theme="dark"] .b-numi{--b1:#e6d29a}:root[data-theme="dark"] .b-yogi{--b1:#c8a6ea}:root[data-theme="dark"] .b-triple-leaf-tea,:root[data-theme="dark"] .b-celebration-herbals{--b1:#9ccc8f}:root[data-theme="dark"] .b-teapigs,:root[data-theme="dark"] .b-stash,:root[data-theme="dark"] .b-bravo-tea,:root[data-theme="dark"] .b-imperial-organic,:root[data-theme="dark"] .b-hobe-labs,:root[data-theme="dark"] .b-bio-nutrition,:root[data-theme="dark"] .b-prince-of-peace{--b1:#e0aa72}
+:root[data-theme="never-dark"] .b-buddha-teas,:root[data-theme="never-dark"] .b-numi{--b1:#e6d29a}:root[data-theme="never-dark"] .b-yogi{--b1:#c8a6ea}:root[data-theme="never-dark"] .b-triple-leaf-tea,:root[data-theme="never-dark"] .b-celebration-herbals{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-teapigs,:root[data-theme="never-dark"] .b-stash,:root[data-theme="never-dark"] .b-bravo-tea,:root[data-theme="never-dark"] .b-imperial-organic,:root[data-theme="never-dark"] .b-hobe-labs,:root[data-theme="never-dark"] .b-bio-nutrition,:root[data-theme="never-dark"] .b-prince-of-peace{--b1:#e0aa72}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-buddha-teas,:root:not([data-theme="light"]) .b-numi{--b1:#e6d29a}:root:not([data-theme="light"]) .b-yogi{--b1:#c8a6ea}:root:not([data-theme="light"]) .b-triple-leaf-tea,:root:not([data-theme="light"]) .b-celebration-herbals{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-teapigs,:root:not([data-theme="light"]) .b-stash,:root:not([data-theme="light"]) .b-bravo-tea,:root:not([data-theme="light"]) .b-imperial-organic,:root:not([data-theme="light"]) .b-hobe-labs,:root:not([data-theme="light"]) .b-bio-nutrition,:root:not([data-theme="light"]) .b-prince-of-peace{--b1:#e0aa72}}
 .b-teeccino{--b1:#2a7f9e;--b2:#e0702a}
 .b-celestial-seasonings{--b1:#7a1f2b;--b2:#f2b632}
 .b-traditional-medicinals{--b1:#1f5a32;--b2:#e0a020}
-:root[data-theme="dark"] .b-teeccino{--b1:#8fd0e6}:root[data-theme="dark"] .b-celestial-seasonings{--b1:#f08f86}:root[data-theme="dark"] .b-traditional-medicinals{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-teeccino{--b1:#8fd0e6}:root[data-theme="never-dark"] .b-celestial-seasonings{--b1:#f08f86}:root[data-theme="never-dark"] .b-traditional-medicinals{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-teeccino{--b1:#8fd0e6}:root:not([data-theme="light"]) .b-celestial-seasonings{--b1:#f08f86}:root:not([data-theme="light"]) .b-traditional-medicinals{--b1:#9ccc8f}}
 .b-crio-bru{--b1:#5a2a24;--b2:#c9a24a}
 .b-t-che{--b1:#3f7d32;--b2:#a9d68a}
 .b-ovente,.b-french-press{--b1:#57665b;--b2:#c96a3a}
-:root[data-theme="dark"] .b-crio-bru{--b1:#e0aa72}:root[data-theme="dark"] .b-t-che{--b1:#9ccc8f}:root[data-theme="dark"] .b-ovente,.b-french-press{--b1:#c8d0ca}
+:root[data-theme="never-dark"] .b-crio-bru{--b1:#e0aa72}:root[data-theme="never-dark"] .b-t-che{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-ovente,.b-french-press{--b1:#c8d0ca}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-crio-bru{--b1:#e0aa72}:root:not([data-theme="light"]) .b-t-che{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-ovente,.b-french-press{--b1:#c8d0ca}}
 .b-sweetleaf{--b1:#1f7a6a;--b2:#d9302a}
 .b-now-better-stevia,.b-now-real-food{--b1:#2e7d32;--b2:#f5c400}
@@ -577,7 +577,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .b-kaffree-roma,.b-mount-hagen{--b1:#5a2a24;--b2:#e0aa72}
 .b-nunaturals{--b1:#4b2d82;--b2:#f2d84a}
 .b-lakanto{--b1:#c8102e;--b2:#f2a59a}
-:root[data-theme="dark"] .b-sweetleaf{--b1:#8fd0c8}:root[data-theme="dark"] .b-now-better-stevia,:root[data-theme="dark"] .b-now-real-food{--b1:#9ccc8f}:root[data-theme="dark"] .b-kal,:root[data-theme="dark"] .b-lakanto{--b1:#f08f86}:root[data-theme="dark"] .b-host-defense,:root[data-theme="dark"] .b-rasa{--b1:#9db5ea}:root[data-theme="dark"] .b-blume,:root[data-theme="dark"] .b-kaffree-roma,:root[data-theme="dark"] .b-mount-hagen{--b1:#e0aa72}:root[data-theme="dark"] .b-nunaturals{--b1:#c8a6ea}
+:root[data-theme="never-dark"] .b-sweetleaf{--b1:#8fd0c8}:root[data-theme="never-dark"] .b-now-better-stevia,:root[data-theme="never-dark"] .b-now-real-food{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-kal,:root[data-theme="never-dark"] .b-lakanto{--b1:#f08f86}:root[data-theme="never-dark"] .b-host-defense,:root[data-theme="never-dark"] .b-rasa{--b1:#9db5ea}:root[data-theme="never-dark"] .b-blume,:root[data-theme="never-dark"] .b-kaffree-roma,:root[data-theme="never-dark"] .b-mount-hagen{--b1:#e0aa72}:root[data-theme="never-dark"] .b-nunaturals{--b1:#c8a6ea}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-sweetleaf{--b1:#8fd0c8}:root:not([data-theme="light"]) .b-now-better-stevia,:root:not([data-theme="light"]) .b-now-real-food{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-kal,:root:not([data-theme="light"]) .b-lakanto{--b1:#f08f86}:root:not([data-theme="light"]) .b-host-defense,:root:not([data-theme="light"]) .b-rasa{--b1:#9db5ea}:root:not([data-theme="light"]) .b-blume,:root:not([data-theme="light"]) .b-kaffree-roma,:root:not([data-theme="light"]) .b-mount-hagen{--b1:#e0aa72}:root:not([data-theme="light"]) .b-nunaturals{--b1:#c8a6ea}}
 .b-now-foods{--b1:#2e7d32;--b2:#f5c400}
 .b-natural-factors{--b1:#1f3f8f;--b2:#f2b632}
@@ -593,16 +593,16 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .b-nature-s-plus{--b1:#1f3f8f;--b2:#e0702a}
 .b-nature-s-way,.b-nature-s-life{--b1:#2e7d32;--b2:#f2b632}
 
-:root[data-theme="dark"] .b-now-foods{--b1:#9ccc8f}:root[data-theme="dark"] .b-natural-factors{--b1:#9db5ea}:root[data-theme="dark"] .b-zhou{--b1:#e6eee8}:root[data-theme="dark"] .b-sigform{--b1:#8fd0e6}:root[data-theme="dark"] .b-garden-of-life{--b1:#f08f86}:root[data-theme="dark"] .b-irwin-naturals{--b1:#9ccc8f}:root[data-theme="dark"] .b-organic-india{--b1:#e0aa72}:root[data-theme="dark"] .b-source-naturals,:root[data-theme="dark"] .b-planetary-herbals,:root[data-theme="dark"] .b-natural-balance{--b1:#9db5ea}:root[data-theme="dark"] .b-gaia-herbs{--b1:#9ccc8f}:root[data-theme="dark"] .b-enzymedica{--b1:#9db5ea}:root[data-theme="dark"] .b-ancient-nutrition{--b1:#f08f86}:root[data-theme="dark"] .b-nature-s-plus{--b1:#9db5ea}:root[data-theme="dark"] .b-nature-s-way,:root[data-theme="dark"] .b-nature-s-life{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-now-foods{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-natural-factors{--b1:#9db5ea}:root[data-theme="never-dark"] .b-zhou{--b1:#e6eee8}:root[data-theme="never-dark"] .b-sigform{--b1:#8fd0e6}:root[data-theme="never-dark"] .b-garden-of-life{--b1:#f08f86}:root[data-theme="never-dark"] .b-irwin-naturals{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-organic-india{--b1:#e0aa72}:root[data-theme="never-dark"] .b-source-naturals,:root[data-theme="never-dark"] .b-planetary-herbals,:root[data-theme="never-dark"] .b-natural-balance{--b1:#9db5ea}:root[data-theme="never-dark"] .b-gaia-herbs{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-enzymedica{--b1:#9db5ea}:root[data-theme="never-dark"] .b-ancient-nutrition{--b1:#f08f86}:root[data-theme="never-dark"] .b-nature-s-plus{--b1:#9db5ea}:root[data-theme="never-dark"] .b-nature-s-way,:root[data-theme="never-dark"] .b-nature-s-life{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-now-foods{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-natural-factors{--b1:#9db5ea}:root:not([data-theme="light"]) .b-zhou{--b1:#e6eee8}:root:not([data-theme="light"]) .b-sigform{--b1:#8fd0e6}:root:not([data-theme="light"]) .b-garden-of-life{--b1:#f08f86}:root:not([data-theme="light"]) .b-irwin-naturals{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-organic-india{--b1:#e0aa72}:root:not([data-theme="light"]) .b-source-naturals,:root:not([data-theme="light"]) .b-planetary-herbals,:root:not([data-theme="light"]) .b-natural-balance{--b1:#9db5ea}:root:not([data-theme="light"]) .b-gaia-herbs{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-enzymedica{--b1:#9db5ea}:root:not([data-theme="light"]) .b-ancient-nutrition{--b1:#f08f86}:root:not([data-theme="light"]) .b-nature-s-plus{--b1:#9db5ea}:root:not([data-theme="light"]) .b-nature-s-way,:root:not([data-theme="light"]) .b-nature-s-life{--b1:#9ccc8f}}.b-solgar{--b1:#7a5a1e;--b2:#c9a24a}
 .b-jarrow-formulas{--b1:#1b1f1c;--b2:#c8102e}
 .b-pure-encapsulations{--b1:#1f4f9c;--b2:#a9c7ea}
 .b-life-extension{--b1:#1f3f8f;--b2:#8fb5ea}
-:root[data-theme="dark"] .b-solgar{--b1:#e6d29a}:root[data-theme="dark"] .b-jarrow-formulas{--b1:#e6eee8}:root[data-theme="dark"] .b-pure-encapsulations,:root[data-theme="dark"] .b-life-extension{--b1:#9db5ea}
+:root[data-theme="never-dark"] .b-solgar{--b1:#e6d29a}:root[data-theme="never-dark"] .b-jarrow-formulas{--b1:#e6eee8}:root[data-theme="never-dark"] .b-pure-encapsulations,:root[data-theme="never-dark"] .b-life-extension{--b1:#9db5ea}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-solgar{--b1:#e6d29a}:root:not([data-theme="light"]) .b-jarrow-formulas{--b1:#e6eee8}:root:not([data-theme="light"]) .b-pure-encapsulations,:root:not([data-theme="light"]) .b-life-extension{--b1:#9db5ea}}
 
 .b-plantfusion{--b1:#1f4d2b;--b2:#7cb342}.b-country-life{--b1:#2e6b30;--b2:#f2c230}.b-amazon-therapeutic-laboratories{--b1:#7a2a1f;--b2:#2a8a4a}.b-livon-labs{--b1:#d35400;--b2:#f6b26b}.b-american-health{--b1:#b03a2e;--b2:#f39c12}.b-nutraceutical-solutions{--b1:#b71c1c;--b2:#9e9e9e}.b-nature-s-way{--b1:#2e7d32;--b2:#8bc34a}
-:root[data-theme="dark"] .b-plantfusion{--b1:#9ccc8f}:root[data-theme="dark"] .b-country-life{--b1:#9ccc8f}:root[data-theme="dark"] .b-amazon-therapeutic-laboratories{--b1:#e6a99c}:root[data-theme="dark"] .b-livon-labs{--b1:#f5b98a}:root[data-theme="dark"] .b-american-health{--b1:#f0a39b}:root[data-theme="dark"] .b-nutraceutical-solutions{--b1:#ef9a9a}:root[data-theme="dark"] .b-nature-s-way{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-plantfusion{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-country-life{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-amazon-therapeutic-laboratories{--b1:#e6a99c}:root[data-theme="never-dark"] .b-livon-labs{--b1:#f5b98a}:root[data-theme="never-dark"] .b-american-health{--b1:#f0a39b}:root[data-theme="never-dark"] .b-nutraceutical-solutions{--b1:#ef9a9a}:root[data-theme="never-dark"] .b-nature-s-way{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-plantfusion{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-country-life{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-amazon-therapeutic-laboratories{--b1:#e6a99c}:root:not([data-theme="light"]) .b-livon-labs{--b1:#f5b98a}:root:not([data-theme="light"]) .b-american-health{--b1:#f0a39b}:root:not([data-theme="light"]) .b-nutraceutical-solutions{--b1:#ef9a9a}:root:not([data-theme="light"]) .b-nature-s-way{--b1:#9ccc8f}}
 /* Staff favorite tag (matches the yellow shelf tag) */
 .item{position:relative}
@@ -620,28 +620,28 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .pd-fav-note{font-size:.85rem;color:var(--muted)}
 
 .b-barlean-s{--b1:#8a1538;--b2:#f2a7b9}.b-dynamic-health{--b1:#1f5f2e;--b2:#f39c12}.b-nordic-naturals{--b1:#1d3e78;--b2:#9cc3e6}.b-trace-minerals{--b1:#1b2f5c;--b2:#4da3d9}
-:root[data-theme="dark"] .b-barlean-s{--b1:#f0a3b8}:root[data-theme="dark"] .b-dynamic-health{--b1:#9ccc8f}:root[data-theme="dark"] .b-nordic-naturals{--b1:#9db5ea}:root[data-theme="dark"] .b-trace-minerals{--b1:#9db5ea}
+:root[data-theme="never-dark"] .b-barlean-s{--b1:#f0a3b8}:root[data-theme="never-dark"] .b-dynamic-health{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-nordic-naturals{--b1:#9db5ea}:root[data-theme="never-dark"] .b-trace-minerals{--b1:#9db5ea}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-barlean-s{--b1:#f0a3b8}:root:not([data-theme="light"]) .b-dynamic-health{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-nordic-naturals{--b1:#9db5ea}:root:not([data-theme="light"]) .b-trace-minerals{--b1:#9db5ea}}
 .b-floradix{--b1:#e0702a;--b2:#2e7d32}.b-natural-vitality{--b1:#1f7a8c;--b2:#7b2d82}.b-lifetime{--b1:#1f5f8a;--b2:#8ac4e6}
-:root[data-theme="dark"] .b-floradix{--b1:#f5b98a}:root[data-theme="dark"] .b-natural-vitality{--b1:#8fd0dc}:root[data-theme="dark"] .b-lifetime{--b1:#9db5ea}
+:root[data-theme="never-dark"] .b-floradix{--b1:#f5b98a}:root[data-theme="never-dark"] .b-natural-vitality{--b1:#8fd0dc}:root[data-theme="never-dark"] .b-lifetime{--b1:#9db5ea}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-floradix{--b1:#f5b98a}:root:not([data-theme="light"]) .b-natural-vitality{--b1:#8fd0dc}:root:not([data-theme="light"]) .b-lifetime{--b1:#9db5ea}}
 .b-one-with-nature{--b1:#1f3a93;--b2:#6c8fd8}.b-white-egret{--b1:#2f5d4a;--b2:#9fc7b4}
-:root[data-theme="dark"] .b-one-with-nature{--b1:#9db5ea}:root[data-theme="dark"] .b-white-egret{--b1:#9fd3c7}
+:root[data-theme="never-dark"] .b-one-with-nature{--b1:#9db5ea}:root[data-theme="never-dark"] .b-white-egret{--b1:#9fd3c7}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-one-with-nature{--b1:#9db5ea}:root:not([data-theme="light"]) .b-white-egret{--b1:#9fd3c7}}
 .b-alta-health{--b1:#2e6b30;--b2:#a5d6a7}
-:root[data-theme="dark"] .b-alta-health{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-alta-health{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-alta-health{--b1:#9ccc8f}}
 .b-sunwarrior{--b1:#1b1f1c;--b2:#c9a34a}.b-sovereign-silver{--b1:#5a3a1f;--b2:#c98a4a}.b-nutricology{--b1:#1f6b4a;--b2:#7fc8a9}
-:root[data-theme="dark"] .b-sunwarrior{--b1:#e6c870}:root[data-theme="dark"] .b-sovereign-silver{--b1:#e6b98a}:root[data-theme="dark"] .b-nutricology{--b1:#9fd3c7}
+:root[data-theme="never-dark"] .b-sunwarrior{--b1:#e6c870}:root[data-theme="never-dark"] .b-sovereign-silver{--b1:#e6b98a}:root[data-theme="never-dark"] .b-nutricology{--b1:#9fd3c7}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-sunwarrior{--b1:#e6c870}:root:not([data-theme="light"]) .b-sovereign-silver{--b1:#e6b98a}:root:not([data-theme="light"]) .b-nutricology{--b1:#9fd3c7}}
 .b-hyalogic{--b1:#4a2d82;--b2:#9b8ad0}
-:root[data-theme="dark"] .b-hyalogic{--b1:#c9a7e6}
+:root[data-theme="never-dark"] .b-hyalogic{--b1:#c9a7e6}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-hyalogic{--b1:#c9a7e6}}
 .b-sombra{--b1:#b8860b;--b2:#2a7ab8}.b-sunfood{--b1:#c8102e;--b2:#f2b632}.b-inner-eco{--b1:#3b2a1f;--b2:#f2a65a}
-:root[data-theme="dark"] .b-sombra{--b1:#e6c870}:root[data-theme="dark"] .b-sunfood{--b1:#f0a39b}:root[data-theme="dark"] .b-inner-eco{--b1:#e6b98a}
+:root[data-theme="never-dark"] .b-sombra{--b1:#e6c870}:root[data-theme="never-dark"] .b-sunfood{--b1:#f0a39b}:root[data-theme="never-dark"] .b-inner-eco{--b1:#e6b98a}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-sombra{--b1:#e6c870}:root:not([data-theme="light"]) .b-sunfood{--b1:#f0a39b}:root:not([data-theme="light"]) .b-inner-eco{--b1:#e6b98a}}
 .b-herbs-etc{--b1:#2e6b30;--b2:#e0702a}.b-green-foods{--b1:#1f6b4a;--b2:#2a7ab8}.b-organic-traditions{--b1:#2e7d32;--b2:#8bc34a}.b-nutrex-hawaii{--b1:#1f6b3a;--b2:#f2b632}.b-kyolic{--b1:#1f5f2e;--b2:#d7262e}
-:root[data-theme="dark"] .b-herbs-etc{--b1:#9ccc8f}:root[data-theme="dark"] .b-green-foods{--b1:#9fd3c7}:root[data-theme="dark"] .b-organic-traditions{--b1:#9ccc8f}:root[data-theme="dark"] .b-nutrex-hawaii{--b1:#9ccc8f}:root[data-theme="dark"] .b-kyolic{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-herbs-etc{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-green-foods{--b1:#9fd3c7}:root[data-theme="never-dark"] .b-organic-traditions{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-nutrex-hawaii{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-kyolic{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-herbs-etc{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-green-foods{--b1:#9fd3c7}:root:not([data-theme="light"]) .b-organic-traditions{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-nutrex-hawaii{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-kyolic{--b1:#9ccc8f}}
 .m-points{margin-top:.6rem;font-size:.92rem;color:var(--muted)}
 .m-points strong{color:var(--ink)}
@@ -653,7 +653,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 @media (max-width:760px){.learn-in{grid-template-columns:1fr}}
 
 .b-grandma-s-herbs{--b1:#6b3a1f;--b2:#e0a050}
-:root[data-theme="dark"] .b-grandma-s-herbs{--b1:#e6b98a}
+:root[data-theme="never-dark"] .b-grandma-s-herbs{--b1:#e6b98a}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-grandma-s-herbs{--b1:#e6b98a}}
 .storefront{margin:1.2rem 0 0}
 .storefront img{display:block;width:100%;max-width:420px;height:auto;border-radius:12px;border:1px solid var(--line)}
@@ -663,22 +663,22 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 @media (max-width:760px){.storefront img{max-width:100%}}
 
 .b-action-labs{--b1:#1b1f1c;--b2:#c8102e}.b-e-a{--b1:#5a2d82;--b2:#c9a7e6}.b-emerita{--b1:#c98a1f;--b2:#f2c230}.b-now-sports{--b1:#1f3f8f;--b2:#d7262e}
-:root[data-theme="dark"] .b-action-labs{--b1:#e6eee8}:root[data-theme="dark"] .b-e-a{--b1:#c9a7e6}:root[data-theme="dark"] .b-emerita{--b1:#e6c870}:root[data-theme="dark"] .b-now-sports{--b1:#9db5ea}
+:root[data-theme="never-dark"] .b-action-labs{--b1:#e6eee8}:root[data-theme="never-dark"] .b-e-a{--b1:#c9a7e6}:root[data-theme="never-dark"] .b-emerita{--b1:#e6c870}:root[data-theme="never-dark"] .b-now-sports{--b1:#9db5ea}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-action-labs{--b1:#e6eee8}:root:not([data-theme="light"]) .b-e-a{--b1:#c9a7e6}:root:not([data-theme="light"]) .b-emerita{--b1:#e6c870}:root:not([data-theme="light"]) .b-now-sports{--b1:#9db5ea}}
 .b-rainbow-light{--b1:#5a2d82;--b2:#f2b632}.b-sea-band{--b1:#1f5f8a;--b2:#8ac4e6}.b-three-lollies{--b1:#c8102e;--b2:#f2a65a}
-:root[data-theme="dark"] .b-rainbow-light{--b1:#c9a7e6}:root[data-theme="dark"] .b-sea-band{--b1:#9db5ea}:root[data-theme="dark"] .b-three-lollies{--b1:#f0a39b}
+:root[data-theme="never-dark"] .b-rainbow-light{--b1:#c9a7e6}:root[data-theme="never-dark"] .b-sea-band{--b1:#9db5ea}:root[data-theme="never-dark"] .b-three-lollies{--b1:#f0a39b}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-rainbow-light{--b1:#c9a7e6}:root:not([data-theme="light"]) .b-sea-band{--b1:#9db5ea}:root:not([data-theme="light"]) .b-three-lollies{--b1:#f0a39b}}
 .b-herbs-for-kids{--b1:#5a2d82;--b2:#f2c230}.b-progena{--b1:#1f5f8a;--b2:#f2a65a}.b-nature-s-answer{--b1:#2e6b30;--b2:#8bc34a}.b-mommy-s-bliss{--b1:#1f4f9c;--b2:#8ac4e6}.b-xlear{--b1:#d35400;--b2:#4da3d9}.b-north-american-herb-spice{--b1:#6b1f1f;--b2:#d4a24a}.b-smartypants{--b1:#c8102e;--b2:#f2b632}
-:root[data-theme="dark"] .b-herbs-for-kids{--b1:#c9a7e6}:root[data-theme="dark"] .b-progena{--b1:#9db5ea}:root[data-theme="dark"] .b-nature-s-answer{--b1:#9ccc8f}:root[data-theme="dark"] .b-mommy-s-bliss{--b1:#9db5ea}:root[data-theme="dark"] .b-xlear{--b1:#f5b98a}:root[data-theme="dark"] .b-north-american-herb-spice{--b1:#e6a99c}:root[data-theme="dark"] .b-smartypants{--b1:#f0a39b}
+:root[data-theme="never-dark"] .b-herbs-for-kids{--b1:#c9a7e6}:root[data-theme="never-dark"] .b-progena{--b1:#9db5ea}:root[data-theme="never-dark"] .b-nature-s-answer{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-mommy-s-bliss{--b1:#9db5ea}:root[data-theme="never-dark"] .b-xlear{--b1:#f5b98a}:root[data-theme="never-dark"] .b-north-american-herb-spice{--b1:#e6a99c}:root[data-theme="never-dark"] .b-smartypants{--b1:#f0a39b}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-herbs-for-kids{--b1:#c9a7e6}:root:not([data-theme="light"]) .b-progena{--b1:#9db5ea}:root:not([data-theme="light"]) .b-nature-s-answer{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-mommy-s-bliss{--b1:#9db5ea}:root:not([data-theme="light"]) .b-xlear{--b1:#f5b98a}:root:not([data-theme="light"]) .b-north-american-herb-spice{--b1:#e6a99c}:root:not([data-theme="light"]) .b-smartypants{--b1:#f0a39b}}
 .b-simply-organic{--b1:#2e5e3a;--b2:#c98a1f}.b-flavorganics{--b1:#c9a31f;--b2:#5a3a1f}.b-siete{--b1:#5a2d82;--b2:#f2b632}.b-redmond-real-salt{--b1:#c8102e;--b2:#1f3f8f}.b-spike{--b1:#c8102e;--b2:#f2c230}.b-spice-hunter{--b1:#1b1f1c;--b2:#c98a1f}
-:root[data-theme="dark"] .b-simply-organic{--b1:#9ccc8f}:root[data-theme="dark"] .b-flavorganics{--b1:#e6c870}:root[data-theme="dark"] .b-siete{--b1:#c9a7e6}:root[data-theme="dark"] .b-redmond-real-salt{--b1:#f0a39b}:root[data-theme="dark"] .b-spike{--b1:#f0a39b}:root[data-theme="dark"] .b-spice-hunter{--b1:#e6c870}
+:root[data-theme="never-dark"] .b-simply-organic{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-flavorganics{--b1:#e6c870}:root[data-theme="never-dark"] .b-siete{--b1:#c9a7e6}:root[data-theme="never-dark"] .b-redmond-real-salt{--b1:#f0a39b}:root[data-theme="never-dark"] .b-spike{--b1:#f0a39b}:root[data-theme="never-dark"] .b-spice-hunter{--b1:#e6c870}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-simply-organic{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-flavorganics{--b1:#e6c870}:root:not([data-theme="light"]) .b-siete{--b1:#c9a7e6}:root:not([data-theme="light"]) .b-redmond-real-salt{--b1:#f0a39b}:root:not([data-theme="light"]) .b-spike{--b1:#f0a39b}:root:not([data-theme="light"]) .b-spice-hunter{--b1:#e6c870}}
 .b-twinlab{--b1:#1f6b8a;--b2:#4da3d9}.b-positive-power{--b1:#2e7d32;--b2:#d7262e}.b-hu-mineral{--b1:#b8860b;--b2:#5a3a1f}.b-flora{--b1:#2e6b30;--b2:#c9a31f}
-:root[data-theme="dark"] .b-twinlab{--b1:#8fd0dc}:root[data-theme="dark"] .b-positive-power{--b1:#9ccc8f}:root[data-theme="dark"] .b-hu-mineral{--b1:#e6c870}:root[data-theme="dark"] .b-flora{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-twinlab{--b1:#8fd0dc}:root[data-theme="never-dark"] .b-positive-power{--b1:#9ccc8f}:root[data-theme="never-dark"] .b-hu-mineral{--b1:#e6c870}:root[data-theme="never-dark"] .b-flora{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-twinlab{--b1:#8fd0dc}:root:not([data-theme="light"]) .b-positive-power{--b1:#9ccc8f}:root:not([data-theme="light"]) .b-hu-mineral{--b1:#e6c870}:root:not([data-theme="light"]) .b-flora{--b1:#9ccc8f}}
 .b-tpcs{--b1:#7a1f1f;--b2:#f2a65a}.b-horbaach{--b1:#2e6b30;--b2:#a5d6a7}
-:root[data-theme="dark"] .b-tpcs{--b1:#e6a99c}:root[data-theme="dark"] .b-horbaach{--b1:#9ccc8f}
+:root[data-theme="never-dark"] .b-tpcs{--b1:#e6a99c}:root[data-theme="never-dark"] .b-horbaach{--b1:#9ccc8f}
 @media (prefers-color-scheme: dark) and (min-width:99999px){:root:not([data-theme="light"]) .b-tpcs{--b1:#e6a99c}:root:not([data-theme="light"]) .b-horbaach{--b1:#9ccc8f}}
 /* Our own line */
 .own-line{background:var(--surface)}
