@@ -982,6 +982,41 @@ blockquote::before{color:var(--gold)!important}
 h2::after{width:72px;height:5px}
 mark,.pd-body h3::after{background:var(--gold-soft)}
 .btn-ghost:hover{border-color:var(--gold)}
+
+/* LESS-GENERIC PREVIEW: fewer pills, fewer boxed containers, square corners, no repeated label/underline template */
+.btn,.chip,.tag-link,.dept .tags li,.mb-tag,.item .price .save,header nav a.nav-specials,.cp-stamp,.cp-brands li,.cp-shelf .cp-d-off,.scroll-hint,.gal-dots .gal-pause,.hero-photo .scroll-hint,.toggle input{border-radius:2px!important}
+.hours-card,.depts,.dept,#products .dept,.dept-browse,.inside-shot,.inside-gallery,.item,.alt-note,.member-deal,.search input,.help-form input,.help-form textarea,.pd,.pd-main,.example-note,.cp-deals a,.chat-panel,.storefront img,.hero.has-photo .hero-copy{border-radius:3px!important}
+.eyebrow::before{display:none!important}
+h2::after{display:none!important}
+section .eyebrow{display:none}
+.hero .eyebrow{display:block}
+/* departments: open list instead of bordered cards */
+.dept,#products .dept{background:transparent!important;border:0!important;border-top:2px solid var(--ink)!important;box-shadow:none!important;padding:.9rem 0 1rem!important}
+.dept.feature{background:var(--gold-soft)!important;border-top-color:var(--gold)!important;padding:.9rem 1rem 1rem!important}
+.dept .tags{display:block!important;margin:.5rem 0 0!important;padding:0!important;font-size:.88rem;line-height:1.7}
+.dept .tags li{display:inline!important;background:none!important;border:0!important;padding:0!important}
+.dept .tags li+li::before{content:" / ";color:var(--muted)}
+.tag-link{background:none!important;border:0!important;padding:0!important;color:var(--pine)!important;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.tag-link:hover{background:none!important;color:var(--ink)!important}
+/* filter chips: plain tabs */
+.chip{background:transparent!important;border:0!important;border-bottom:2px solid transparent!important;border-radius:0!important;padding:.35rem .15rem!important;margin-right:.7rem;color:var(--muted)}
+.chip:hover{border-bottom-color:var(--gold)!important}
+.chip[aria-pressed="true"]{background:transparent!important;color:var(--ink)!important;box-shadow:none!important;border-bottom:2px solid var(--pine)!important;font-weight:800}
+/* product cards: no outline box */
+.item{border:0!important;box-shadow:none!important;background:transparent!important;border-bottom:1px solid var(--line)!important}
+.item:hover,.item:focus-visible{border-bottom:3px solid var(--gold)!important}
+/* hours: a plain sheet with a gold top, no shadow */
+.hours-card{box-shadow:none!important;border:0!important;border-top:6px solid var(--gold)!important}
+/* notes: a left rule only */
+.alt-note{border:0!important;border-left:4px solid var(--gold)!important;border-radius:0!important}
+/* buttons: flat */
+.btn{box-shadow:none!important;border-bottom:3px solid var(--gold)!important}
+.btn-ghost{border:1.5px solid var(--ink)!important;border-bottom:3px solid var(--gold)!important}
+
+.cp-brands{display:block!important;font-size:.9rem;line-height:1.7}
+.cp-brands li{display:inline!important;background:none!important;border:0!important;padding:0!important}
+.cp-brands li+li::before{content:" / ";color:var(--muted)}
+.cp-card,.cp-ticket,.coupon,.cp-wrap{border-radius:3px!important}
 </style>
 
 <a class="skip-link" href="#top">Skip to main content</a>
@@ -1134,7 +1169,7 @@ mark,.pd-body h3::after{background:var(--gold-soft)}
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Rexburg, Idaho</p>
-        <h1>Rexburg's local, <em>natural</em> grocer.</h1>
+        <h1>Rexburg's local, <em>natural</em> grocer</h1>
         <p class="lede">Vitamins, supplements, herbs, essential oils, gluten-free foods and healthy snacks, with a knowledgeable staff to help you find what you need. If we don't carry it, ask and we'll do our best to order it.</p>
         <div class="ctas">
           <a class="btn btn-main" href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" target="_blank" rel="noopener">Get directions<span class="vh"> (opens in a new tab)</span></a>
@@ -1303,7 +1338,7 @@ mark,.pd-body h3::after{background:var(--gold-soft)}
     <div class="wrap story-grid">
       <div class="story-intro">
         <p class="eyebrow">Our story</p>
-        <h2>Our customers are our friends.</h2>
+        <h2>Our customers are our friends</h2>
         <p>Nature's Nook began in a family home and has grown with Rexburg ever since. Three generations of our family have run the store. Our size and location have changed over the years. Our commitment to the people who shop with us hasn't.</p>
 
       </div>
@@ -1354,7 +1389,7 @@ mark,.pd-body h3::after{background:var(--gold-soft)}
     <div class="wrap visit-grid">
       <div>
         <p class="eyebrow">Come see us</p>
-        <h2>Head on over today.</h2>
+        <h2>Head on over today</h2>
       </div>
       <div>
         <h3>Address</h3>
