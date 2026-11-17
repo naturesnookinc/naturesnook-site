@@ -1032,11 +1032,12 @@ footer{border-top-width:2px!important}
 .chip[aria-pressed="true"]{color:var(--pine)!important}
 h1,h2,h3{color:#26302a}
 
-/* TTN + visit read as one continuous band after reviews */
-#reviews{padding-bottom:clamp(1.5rem,3vw,2.2rem)}
-#learn.learn{border-top:0!important;padding-block:clamp(1.2rem,3vw,2rem) clamp(1rem,2vw,1.4rem)!important}
-#visit.visit{border-top:0!important;padding-block:clamp(.6rem,2vw,1rem) clamp(2.4rem,5vw,3.5rem)!important}
-#visit .visit-grid{padding-top:clamp(1rem,2vw,1.4rem)}
+/* Reviews end with a clear break; TTN + visit are one white band with room to breathe */
+#reviews{padding-bottom:clamp(2.6rem,5vw,3.6rem)}
+#learn.learn,#visit.visit{background:var(--surface)}
+#learn.learn{border-top:1px solid var(--gold)!important;padding-block:clamp(3.2rem,6vw,4.4rem) clamp(1.6rem,3vw,2.2rem)!important}
+#visit.visit{border-top:0!important;padding-block:clamp(1.6rem,3vw,2.2rem) clamp(3rem,6vw,4.2rem)!important}
+#visit .visit-grid{padding-top:clamp(1.8rem,3.5vw,2.6rem);border-top:1px solid var(--line)}
 </style>
 
 <a class="skip-link" href="#top">Skip to main content</a>
