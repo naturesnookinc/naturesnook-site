@@ -1031,6 +1031,12 @@ footer{border-top-width:2px!important}
 .btn-ghost{border-color:var(--pine)!important}
 .chip[aria-pressed="true"]{color:var(--pine)!important}
 h1,h2,h3{color:#26302a}
+
+/* TTN + visit read as one continuous band after reviews */
+#reviews{padding-bottom:clamp(1.5rem,3vw,2.2rem)}
+#learn.learn{border-top:0!important;padding-block:clamp(1.2rem,3vw,2rem) clamp(1rem,2vw,1.4rem)!important}
+#visit.visit{border-top:0!important;padding-block:clamp(.6rem,2vw,1rem) clamp(2.4rem,5vw,3.5rem)!important}
+#visit .visit-grid{padding-top:clamp(1rem,2vw,1.4rem)}
 </style>
 
 <a class="skip-link" href="#top">Skip to main content</a>
@@ -1336,17 +1342,7 @@ h1,h2,h3{color:#26302a}
     </div>
   </section>
 
-  <section id="learn" class="learn">
-    <div class="wrap learn-in">
-      <div class="learn-copy">
-        <p class="eyebrow">Free in store</p>
-        <h2>Ask us for a TTN</h2>
-        <p>Our <strong>Terry Talks Nutrition</strong> rack by the Terry Naturally endcap has free, easy-to-read handouts from the manufacturer on dozens of topics. Grab one next time you're in, or ask any of us to point you to the right one.</p>
-        <p class="learn-note">Pick a product to find it on our shelves.</p>
-      </div>
-      <div class="learn-list"><ul class="tags learn-tags"><li><button type="button" class="tag-link" data-q="curamin">Curamin</button></li><li><button type="button" class="tag-link" data-q="curamed">CuraMed</button></li><li><button type="button" class="tag-link" data-q="anxiocalm">AnxioCalm</button></li><li><button type="button" class="tag-link" data-q="anxiocalm kids">AnxioCalm Kids</button></li><li><button type="button" class="tag-link" data-q="ashwagandha">Ashwagandha EP35</button></li><li><button type="button" class="tag-link" data-q="healthy feet">Healthy Feet &amp; Nerves</button></li><li><button type="button" class="tag-link" data-q="andrographis">Andrographis EP80</button></li><li><button type="button" class="tag-link" data-q="bronchial">Bronchial Clear</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="propolis">Propolis Extract EP300</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="clinical opc">Clinical OPC</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="resveratrol">Resveratrol Complex</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy cholesterol">Healthy Cholesterol</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy liver">Healthy Liver</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sucontral">Sucontral D</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="berberine">Berberine MetX</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sagapro">SagaPro</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="menopause">Menopause Relief Plus</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="tri-iodine">Tri-Iodine</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="melatonin ep120">Melatonin EP120</button></li></ul><button type="button" class="ttn-toggle" id="ttn-toggle" aria-expanded="false">Show 11 more products</button></div>
-    </div>
-  </section>
+  
 
   <section id="story" class="story">
     <div class="wrap story-grid">
@@ -1399,7 +1395,18 @@ h1,h2,h3{color:#26302a}
     </div>
   </section>
 
-  <section id="visit" class="visit">
+  <section id="learn" class="learn">
+    <div class="wrap learn-in">
+      <div class="learn-copy">
+        <p class="eyebrow">Free in store</p>
+        <h2>Ask us for a TTN</h2>
+        <p>Our <strong>Terry Talks Nutrition</strong> rack by the Terry Naturally endcap has free, easy-to-read handouts from the manufacturer on dozens of topics. Grab one next time you're in, or ask any of us to point you to the right one.</p>
+        <p class="learn-note">Pick a product to find it on our shelves.</p>
+      </div>
+      <div class="learn-list"><ul class="tags learn-tags"><li><button type="button" class="tag-link" data-q="curamin">Curamin</button></li><li><button type="button" class="tag-link" data-q="curamed">CuraMed</button></li><li><button type="button" class="tag-link" data-q="anxiocalm">AnxioCalm</button></li><li><button type="button" class="tag-link" data-q="anxiocalm kids">AnxioCalm Kids</button></li><li><button type="button" class="tag-link" data-q="ashwagandha">Ashwagandha EP35</button></li><li><button type="button" class="tag-link" data-q="healthy feet">Healthy Feet &amp; Nerves</button></li><li><button type="button" class="tag-link" data-q="andrographis">Andrographis EP80</button></li><li><button type="button" class="tag-link" data-q="bronchial">Bronchial Clear</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="propolis">Propolis Extract EP300</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="clinical opc">Clinical OPC</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="resveratrol">Resveratrol Complex</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy cholesterol">Healthy Cholesterol</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy liver">Healthy Liver</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sucontral">Sucontral D</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="berberine">Berberine MetX</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sagapro">SagaPro</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="menopause">Menopause Relief Plus</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="tri-iodine">Tri-Iodine</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="melatonin ep120">Melatonin EP120</button></li></ul><button type="button" class="ttn-toggle" id="ttn-toggle" aria-expanded="false">Show 11 more products</button></div>
+    </div>
+  </section>
+<section id="visit" class="visit">
     <div class="wrap visit-grid">
       <div>
         <p class="eyebrow">Come see us</p>
