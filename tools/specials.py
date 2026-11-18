@@ -18,3 +18,8 @@ for s in specs:
 json.dump(P, open(ROOT + 'data/products.json', 'w'), indent=1)
 subprocess.run([sys.executable, ROOT + 'tools/rebuild.py'], check=True)
 subprocess.run([sys.executable, ROOT + 'tools/coupon_page.py'], check=True)
+import urllib.parse as _u
+print('\nAfter it is live, ask Google to re-fetch (Search Console > paste the address > Request indexing):')
+for _p in ('https://naturesnook.co/coupon/', 'https://naturesnook.co/'):
+    print('  ' + _p)
+    print('    shortcut: https://search.google.com/search-console/inspect?resource_id=' + _u.quote('sc-domain:naturesnook.co', safe='') + '&id=' + _u.quote(_p, safe=''))
