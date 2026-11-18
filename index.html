@@ -1299,23 +1299,21 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
             <div class="sec-head">
         <div>
           <p class="eyebrow">Specials this month</p>
-          <h2>Your member coupon</h2>
+          <h2>Your coupon this month</h2>
         </div>
-        <p class="note">Bring this in, or just show it on your phone. Membership is free, and we can sign you up at the register in about a minute.</p>
+        <p class="note">Bring this in, or just show it on your phone. Everyone saves, member or not.</p>
       </div>
       <div class="coupon" id="coupon">
         <div class="cp-print-only" style="padding:1.2rem 1.6rem 0"><div style="display:flex;align-items:center;justify-content:space-between;gap:1rem"><img src="img/logo.svg" alt="Nature&#39;s Nook" style="height:60px;width:auto"><span style="font-family:var(--display);font-style:italic;font-weight:700;color:var(--pine);font-size:1.25rem">Specials this month</span></div></div>
         <div class="cpn-head">
           <div>
             <p class="cp-eyebrow">Specials this month</p>
-            <p class="cp-stamp">Nature's Nook member savings</p>
+            <p class="cp-stamp">Monthly specials for everyone</p>
             <p class="cp-big" id="cp-big">Save up to <strong id="cp-max">$6</strong></p>
-            <p class="cp-sub">Come in for some of our best sellers. <strong>Bring this in</strong> (or show it on your phone) for the amount shown off each product, plus member deals on <strong id="cp-count">489</strong> vitamins, supplements and body care products.</p>
+            <p class="cp-sub">Come in for some of our best sellers. <strong>Bring this in</strong> (or show it on your phone) for the amount shown off each product. No membership needed.</p>
           </div>
           <div class="cpn-head-r">
-            <p class="cp-how"><strong>Not a member yet?</strong> It's free. We'll sign you up on the spot, and your savings start with that visit.</p>
-            <p class="cp-brands-h">Deals from</p>
-            <ul class="cp-brands" id="cp-brands"><li>Solaray</li><li>Irwin Naturals</li><li>Garden of Life</li><li>Nature's Way</li><li>Terry Naturally</li><li>KAL</li><li>Natural Factors</li><li>and more</li></ul>
+            
           </div>
         </div>
         <div class="cp-shelf">
@@ -1323,14 +1321,25 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
           <ul class="cp-deals cp-store" id="cp-store"></ul>
           <ul class="cp-deals" id="cp-deals" style="display:none"></ul>
         </div>
-        <p class="cp-foot"><span class="cp-print-only" style="flex-basis:100%;font-weight:700;color:var(--ink)">Bring this coupon to the register. Not a member? Membership is free, we&#39;ll sign you up on the spot.</span><span>Valid at Nature's Nook, 160 E Valley River Rd #2, Rexburg. Member price rings up at the register.</span><span id="cp-until">Through December 29, 2026</span></p>
+        <p class="cp-foot"><span class="cp-print-only" style="flex-basis:100%;font-weight:700;color:var(--ink)">Bring this coupon to the register. No membership needed.</span><span>Valid at Nature's Nook, 160 E Valley River Rd #2, Rexburg.</span><span id="cp-until">Through December 29, 2026</span></p>
       </div>
       <div class="cp-actions">
-        <button type="button" class="btn btn-main" id="see-member-deals">See all member deals</button>
-        <button type="button" class="btn btn-ghost" id="cp-print">Print coupon</button>
+        <button type="button" class="btn btn-main" id="cp-print">Print coupon</button>
         <button type="button" class="btn btn-ghost" id="cp-share">Send to a friend</button>
       </div>
-      <p class="m-points"><strong>Loyalty points:</strong> members also earn points on purchases of $10 or more, to use toward future purchases. Ask us at the register for details.</p>
+      <div class="mem-more">
+        <div>
+          <p class="eyebrow">For members</p>
+          <h3>More savings for members</h3>
+          <p>Members get a lower price on <strong id="cp-count">489</strong> vitamins, supplements and body care products, marked with a blue SaveNaturally tag on the shelf. Membership is free, and we can sign you up at the register in about a minute.</p>
+          <p class="m-points"><strong>Loyalty points:</strong> members also earn points on purchases of $10 or more, to use toward future purchases. Ask us at the register for details.</p>
+          <p><button type="button" class="btn btn-main" id="see-member-deals">See all member deals</button></p>
+        </div>
+        <div>
+          <p class="cp-brands-h">Member deals from</p>
+          <ul class="cp-brands" id="cp-brands"><li>Solaray</li><li>Irwin Naturals</li><li>Garden of Life</li><li>Nature's Way</li><li>Terry Naturally</li><li>KAL</li><li>Natural Factors</li><li>and more</li></ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2047,8 +2056,8 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   if(pr) pr.addEventListener('click',function(){document.documentElement.classList.add('pc'); window.print(); setTimeout(function(){document.documentElement.classList.remove('pc')},500);});
   var sh=document.getElementById('cp-share');
   if(sh) sh.addEventListener('click',function(){
-    var url='https://naturesnook.co/coupon/', text="Nature's Nook members save up to "+document.getElementById('cp-max').textContent+" on "+deals.length+" products. Membership is free!";
-    if(navigator.share){navigator.share({title:"Nature's Nook member coupon",text:text,url:url}).catch(function(){});}
+    var url='https://naturesnook.co/coupon/', text="Nature's Nook monthly specials: bring this in and save, no membership needed.";
+    if(navigator.share){navigator.share({title:"Nature's Nook monthly specials",text:text,url:url}).catch(function(){});}
     else if(navigator.clipboard){navigator.clipboard.writeText(text+' '+url).then(function(){sh.textContent='Link copied!'; setTimeout(function(){sh.textContent='Send to a friend'},2000)});}
   });
   var tt=document.getElementById('ttn-toggle');
@@ -2105,9 +2114,18 @@ html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
   var big=document.getElementById('cp-big'),old=(document.getElementById('cp-max')||{}).textContent||'';
   if(big)big.innerHTML=(same?'Save ':'Save up to ')+'<strong>$'+(mx%1?mx.toFixed(2):mx)+'</strong><span id="cp-max" hidden>'+old+'</span>';
   var u=deals.map(function(i){return i[12]}).filter(Boolean).sort()[0];
-  if(u){var d=new Date(u+'T12:00:00');document.getElementById('cp-sp-s').textContent='Bring this in or show us at the register. No membership needed. Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric'})+'.'}
+  if(u){var d=new Date(u+'T12:00:00');document.getElementById('cp-sp-s').textContent='Bring this in or show us at the register. No membership needed. Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric'})+'.';document.getElementById('cp-until').textContent='Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}
 })();
 </script>
+<style>
+/* members section under the coupon */
+.mem-more{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;margin-top:2.6rem;padding-top:1.8rem;border-top:2px solid var(--gold)}
+.mem-more h3{font-family:var(--display);font-size:1.6rem;margin:.1rem 0 .6rem}
+.mem-more p{max-width:40rem}
+.mem-more .m-points{margin-top:.8rem}
+@media(max-width:720px){.mem-more{grid-template-columns:1fr;gap:1.2rem;margin-top:1.8rem}}
+@media print{.mem-more{display:none}}
+</style>
 <style>
 /* Click a product photo to enlarge it */
 .pd-main.can-zoom img{cursor:zoom-in}
