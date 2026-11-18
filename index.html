@@ -1296,15 +1296,6 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
 
   <section id="members" class="coupon-sec">
     <div class="wrap">
-      <div class="sp-block" id="store-specials" hidden>
-        <div class="sp-head">
-          <p class="eyebrow">This month</p>
-          <h3>Store specials</h3>
-          <p class="sp-how">Bring this in or show it on your phone at the register for the amount off. No membership needed.</p>
-        </div>
-        <ul class="sp-list" id="sp-list"></ul>
-        <p class="sp-foot" id="sp-foot"></p>
-      </div>
             <div class="sec-head">
         <div>
           <p class="eyebrow">Cold &amp; flu season is here</p>
@@ -1330,6 +1321,8 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
         <div class="cp-shelf">
           <img src="img/coupon-products.webp" width="1400" height="655" loading="lazy" alt="Terry Naturally Curamin and CuraMed, Natural Factors Oil of Oregano, KAL Magnesium Glycinate 350 and Solaray Mushroom Herb Complete">
           <ul class="cp-deals" id="cp-deals"></ul>
+          <p class="cp-sp-h" id="cp-sp-h" hidden><strong>Also $2 off with this coupon</strong> <span id="cp-sp-s">No membership needed</span></p>
+          <ul class="cp-deals cp-store" id="cp-store" hidden></ul>
         </div>
         <p class="cp-foot"><span class="cp-print-only" style="flex-basis:100%;font-weight:700;color:var(--ink)">Bring this coupon to the register. Not a member? Membership is free, we&#39;ll sign you up on the spot.</span><span>Valid at Nature's Nook, 160 E Valley River Rd #2, Rexburg. Member price rings up at the register.</span><span id="cp-until">Through December 29, 2026</span></p>
       </div>
@@ -1705,7 +1698,6 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     var out='<div class="price"><span class="now">'+money(i[5])+'</span>';
     if(i[7]) out+='<s class="was" aria-label="Regular price '+money(i[7])+'">'+money(i[7])+'</s>';
     out+='</div>';
-    if(i[11]&&(!i[12]||i[12]>=new Date().toISOString().slice(0,10))) out+='<div class="member-deal store-deal" title="'+money(i[11])+' off, show us at the register, through '+fmtDate(i[12])+'"><span class="m-tag">Special</span><span class="m-off">'+money(i[11]).replace(/\.00$/,'')+' off</span><span class="m-arrow" aria-hidden="true">→</span><span class="m-price" aria-label="Special price '+money(i[5]-i[11])+'">'+money(i[5]-i[11])+'</span><span class="m-note">show us at the register, thru '+fmtDate(i[12])+'</span></div>';
     if(i[8]) out+='<div class="member-deal" title="'+money(i[8])+' off through '+fmtDate(i[9])+'"><span class="m-tag">Members</span>'+'<span class="m-off">'+money(i[8]).replace(/\.00$/,'')+' off</span><span class="m-arrow" aria-hidden="true">→</span><span class="m-price" aria-label="Member total '+money(i[5]-i[8])+'">'+money(i[5]-i[8])+'</span>'+'<span class="m-note">thru '+fmtDate(i[9])+'</span></div>';
     return out;
   }
@@ -1840,7 +1832,6 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     var size=i[4].split(' · ')[1]||'';
     document.getElementById('pd-variant').textContent=[i[3],size].filter(Boolean).join(' · ');
     var pr='<div class="price"><span class="now">'+money(i[5])+'</span>'+(i[7]?'<s class="was" aria-label="Regular price '+money(i[7])+'">'+money(i[7])+'</s>':'')+'</div>';
-    if(i[11]&&(!i[12]||i[12]>=new Date().toISOString().slice(0,10))) pr+='<div class="member-deal store-deal"><span class="m-tag">Special</span><span class="m-off">'+money(i[11]).replace(/\.00$/,'')+' off</span><span class="m-arrow" aria-hidden="true">→</span><span class="m-price" aria-label="Special price '+money(i[5]-i[11])+'">'+money(i[5]-i[11])+'</span><span class="m-note">Show this or bring it in at the register, no membership needed, through '+fmtDate(i[12])+'</span></div>';
     if(i[8]) pr+='<div class="member-deal"><span class="m-tag">Members</span>'+'<span class="m-off">'+money(i[8]).replace(/\.00$/,'')+' off</span><span class="m-arrow" aria-hidden="true">→</span><span class="m-price" aria-label="Member total '+money(i[5]-i[8])+'">'+money(i[5]-i[8])+'</span>'+'<span class="m-note">Member total, through '+fmtDate(i[9])+'</span></div>';
     if(i[10]){var fi=window.nnFavInfo(i); pr='<div class="pd-fav"><span class="fav-tag fav-inline"><span class="ft-store">'+esc(fi.org)+'</span><span class="ft-who">'+esc(fi.label)+'</span></span><span class="pd-fav-note">'+esc(fi.note)+'</span></div>'+pr;}
     document.getElementById('pd-price').innerHTML=pr;
@@ -2068,39 +2059,32 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
 </script>
 
 <style>
-/* Store specials (bring in / show at register) */
-.sp-block{margin:0 0 clamp(2rem,4vw,3rem);padding:clamp(1.2rem,3vw,1.9rem) clamp(1.1rem,3vw,2rem);background:var(--gold-soft);border-radius:6px}
-.sp-head h3{font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.15;margin:.1rem 0 .35rem}
-.sp-how{margin:0 0 1rem;max-width:46ch;color:var(--ink)}
-.sp-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.2rem,4vw,3rem)}
-.sp-list li{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:.2rem .9rem;align-items:center;padding:.7rem 0;border-top:1px solid rgba(27,31,28,.14)}
-.sp-list li.no-img{grid-template-columns:minmax(0,1fr) auto}
-.sp-list img{width:64px;height:64px;object-fit:contain;background:#fff;border-radius:4px}
-.sp-n{display:block;font-weight:700;line-height:1.25}
-.sp-m{display:block;font-size:.85rem;color:var(--muted);margin-top:.1rem}
-.sp-p{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
-.sp-p b{display:block;font-size:1.2rem}
-.sp-p s{font-size:.82rem;color:var(--muted)}
-.sp-p span{display:block;font-size:.78rem;font-weight:800;color:var(--pine);letter-spacing:.02em}
-.sp-foot{margin:.9rem 0 0;font-size:.85rem;color:var(--muted)}
-.sp-list a{color:inherit;text-decoration:none}.sp-list a:hover .sp-n{text-decoration:underline}
-@media (max-width:760px){.sp-list{grid-template-columns:1fr}.sp-list li{grid-template-columns:56px minmax(0,1fr) auto}.sp-list img{width:56px;height:56px}}
+/* Coupon: extra bring-in specials (no membership needed) */
+.cp-sp-h{margin:1.1rem 0 .1rem;font-size:.9rem;color:var(--ink)}
+.cp-sp-h span{color:var(--muted)}
+.cp-shelf .cp-store{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:.6rem}
+.cp-shelf .cp-store li:last-child{grid-column:auto}
+.cp-store .cp-d-price{margin-top:.2rem;display:flex;gap:.45rem;align-items:baseline;justify-content:center}
+.cp-store .cp-d-price s{font-size:.8rem;color:var(--muted)}
+.cp-store .cp-d-price b{font-size:1.05rem}
+@media (max-width:760px){.cp-shelf .cp-store{grid-template-columns:1fr 1fr}.cp-shelf .cp-store li:last-child{grid-column:auto}}
+html.pc .cp-shelf .cp-store{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+html.pc .cp-shelf .cp-store li:last-child{grid-column:auto!important}
 </style>
 <script>
 (function(){
-  var raw=document.getElementById('catalog-data'),pd=document.getElementById('photo-data'),box=document.getElementById('store-specials');
-  if(!raw||!box)return; var items,ph={};try{items=JSON.parse(raw.textContent);ph=JSON.parse(pd.textContent)}catch(e){return}
+  var raw=document.getElementById('catalog-data'),ul=document.getElementById('cp-store');if(!raw||!ul)return;
+  var items;try{items=JSON.parse(raw.textContent)}catch(e){return}
   var today=new Date().toISOString().slice(0,10);
-  var deals=items.filter(function(i){return i[11]&&(!i[12]||i[12]>=today)}); if(!deals.length)return;
+  var deals=items.filter(function(i){return i[11]&&(!i[12]||i[12]>=today)});if(!deals.length)return;
   function money(v){return '$'+Number(v).toFixed(2)}
-  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
-  document.getElementById('sp-list').innerHTML=deals.map(function(i){
-    var im=ph[i[6]]&&ph[i[6]][0], size=i[4].split(' \u00b7 ').pop();
-    return '<li'+(im?'':' class="no-img"')+'>'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy">':'')+'<a href="#p'+esc(i[6])+'"><span class="sp-n">'+esc(i[2])+'</span><span class="sp-m">'+esc([i[1],size].filter(Boolean).join(' \u00b7 '))+'</span></a><span class="sp-p"><s>'+money(i[5])+'</s><b>'+money(i[5]-i[11])+'</b><span>'+money(i[11]).replace('.00','')+' OFF</span></span></li>';
+  ul.innerHTML=deals.map(function(i){
+    var size=i[4].split(' \u00b7 ').pop();
+    return '<li><a href="#p'+i[6]+'"><span class="cp-d-off">'+money(i[11]).replace('.00','')+' off</span><span class="cp-d-name">'+i[2]+'</span><span class="cp-d-meta">'+[i[1],size].filter(Boolean).join(' \u00b7 ')+'</span><span class="cp-d-price"><s>'+money(i[5])+'</s><b>'+money(i[5]-i[11])+'</b></span></a></li>';
   }).join('');
   var u=deals.map(function(i){return i[12]}).filter(Boolean).sort()[0];
-  if(u){var d=new Date(u+'T12:00:00');document.getElementById('sp-foot').textContent='Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+'.'}
-  box.hidden=false;
+  if(u){var d=new Date(u+'T12:00:00');document.getElementById('cp-sp-s').textContent='No membership needed. Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric'})+'.'}
+  ul.hidden=false;document.getElementById('cp-sp-h').hidden=false;
 })();
 </script>
 <script>
