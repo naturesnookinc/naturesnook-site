@@ -1309,7 +1309,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
           <div>
             <p class="cp-eyebrow">Specials this month</p>
             <p class="cp-stamp">Nature's Nook member savings</p>
-            <p class="cp-big">Save up to <strong id="cp-max">$6</strong></p>
+            <p class="cp-big" id="cp-big">Save up to <strong id="cp-max">$6</strong></p>
             <p class="cp-sub">Come in for some of our best sellers. <strong>Bring this in</strong> (or show it on your phone) for the amount shown off each product, plus member deals on <strong id="cp-count">489</strong> vitamins, supplements and body care products.</p>
           </div>
           <div class="cpn-head-r">
@@ -1319,7 +1319,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
           </div>
         </div>
         <div class="cp-shelf">
-          <p class="cp-sp-h" id="cp-sp-h"><strong>Specials this month</strong> <span id="cp-sp-s">Bring this in or show us at the register. No membership needed.</span></p>
+          <p class="cp-sp-h" id="cp-sp-h"><span id="cp-sp-s">Bring this in or show us at the register. No membership needed.</span></p>
           <ul class="cp-deals cp-store" id="cp-store"></ul>
           <ul class="cp-deals" id="cp-deals" style="display:none"></ul>
         </div>
@@ -2060,7 +2060,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
 <style>
 /* Coupon: monthly specials cards. Standard: photo, gold badge, name, brand and size, was/now price. */
 .cp-sp-h{margin:0 0 .8rem;font-size:.95rem;color:var(--ink)}
-.cp-sp-h span{display:block;color:var(--muted);font-size:.85rem;margin-top:.1rem}
+.cp-sp-h span{display:block;color:var(--ink);font-size:.95rem}
 .cp-shelf .cp-store{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;margin-top:0}
 .cp-shelf .cp-store li:last-child{grid-column:auto}
 .cp-store a{position:relative;display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center;gap:.2rem;padding:.8rem .7rem .9rem!important;border-top:4px solid var(--gold)!important;background:#fff!important}
@@ -2071,9 +2071,15 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
 .cp-store .cp-d-name{font-weight:700;line-height:1.25}
 .cp-store .cp-d-meta{color:var(--muted)}
 .cp-store .cp-d-price{display:flex;gap:.45rem;align-items:baseline;justify-content:center;margin-top:auto;padding-top:.4rem}
-.cp-store .cp-d-price s{font-size:.82rem;color:var(--muted)}
-.cp-store .cp-d-price b{font-size:1.2rem;color:var(--pine)}
-@media (max-width:760px){.cp-shelf .cp-store{grid-template-columns:1fr 1fr}.cp-store .cp-ph{height:108px}}
+.cp-store .cp-d-price s{font-size:1rem;color:var(--muted)}
+.cp-store .cp-d-price b{font-size:1.75rem;line-height:1;color:var(--pine)}
+.cp-store a{cursor:pointer;transition:transform .15s,box-shadow .15s}
+.cp-store a:hover{transform:translateY(-2px);box-shadow:0 10px 20px -12px rgba(27,31,28,.45)}
+.cp-store .cp-go{font-size:.85rem;font-weight:700;color:var(--pine);margin-top:.3rem}
+.cp-store a:hover .cp-go,.cp-store a:focus-visible .cp-go{text-decoration:underline}
+html.pc .cp-store .cp-go{display:none}
+.cp-store li{min-width:0}.cp-store .cp-d-price{flex-wrap:wrap;row-gap:0}
+@media (max-width:760px){.cp-shelf .cp-store{grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}.cp-store .cp-ph{height:108px}.cp-store .cp-d-price b{font-size:1.4rem}.cp-store a{padding:.7rem .4rem .8rem!important}}
 html.pc .cp-shelf .cp-store{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 html.pc .cp-shelf .cp-store li:last-child{grid-column:auto!important}
 html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
@@ -2093,8 +2099,11 @@ html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
     return '<li><a href="#p'+esc(i[6])+'"><span class="cp-d-off">'+money(i[11]).replace('.00','')+' off</span>'+
       (im?'<span class="cp-ph"><img src="'+esc(im)+'" alt="" loading="lazy"></span>':'<span class="cp-ph none" aria-hidden="true">'+esc(i[1].charAt(0))+'</span>')+
       '<span class="cp-d-name">'+esc(i[2])+'</span><span class="cp-d-meta">'+esc([i[1],size].filter(Boolean).join(' \u00b7 '))+'</span>'+
-      '<span class="cp-d-price"><s>'+money(i[5])+'</s><b>'+money(i[5]-i[11])+'</b></span></a></li>';
+      '<span class="cp-d-price"><s>'+money(i[5])+'</s><b>'+money(i[5]-i[11])+'</b></span><span class="cp-go" aria-hidden="true">See this product →</span></a></li>';
   }).join('');
+  var offs=deals.map(function(i){return +i[11]}),mx=Math.max.apply(null,offs),same=offs.every(function(o){return o===offs[0]});
+  var big=document.getElementById('cp-big'),old=(document.getElementById('cp-max')||{}).textContent||'';
+  if(big)big.innerHTML=(same?'Save ':'Save up to ')+'<strong>$'+(mx%1?mx.toFixed(2):mx)+'</strong><span id="cp-max" hidden>'+old+'</span>';
   var u=deals.map(function(i){return i[12]}).filter(Boolean).sort()[0];
   if(u){var d=new Date(u+'T12:00:00');document.getElementById('cp-sp-s').textContent='Bring this in or show us at the register. No membership needed. Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric'})+'.'}
 })();
