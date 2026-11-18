@@ -3,7 +3,7 @@ Usage: python3 tools/seo.py   (run after rebuild.py whenever the catalog changes
 Pages describe what the store carries (brands and product names from data/products.json).
 No health claims: nothing here says what a product does."""
 import json, os, collections, html, datetime, re
-SKIP = re.compile(r'parasit|paracide|bronch|blood sugar|thyroid|adrenal rx|diabet|cancer|arthrit|inflamm|\bpain\b|\bcold\b|\bflu\b|anxiety|depress|\bcure|detox|cleanse', re.I)  # keep disease-implying names out of the sample lists
+SKIP = re.compile(r'parasit|paracide|bronch|blood sugar|thyroid|adrenal rx|diabet|cancer|arthrit|inflamm|\bpain\b|\bcold\b|\bflu\b|anxiety|depress|\bcure|detox|cleanse|cramp|immun', re.I)  # keep disease-implying names out of the sample lists
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
 SITE = 'https://naturesnook.co'
@@ -54,13 +54,39 @@ PAGES = [
       intro="Nature's Nook carries cleaner skin care, hair care, soaps, lotions, lip care and everyday personal care products from brands like Dr. Bronner's, Burt's Bees, NOW Solutions and Heritage Store.",
       more="Search the online list for a brand or product, or stop in to see what is on the shelf.",
       fda=False),
+ dict(slug='protein-powder-rexburg', dept=('protein|whey|collagen|bone broth', ('Vitamins & Supplements','Grocery')), q='Protein', short='Protein & Protein Powder',
+      title="Protein Powder & Protein Products in Rexburg, Idaho | Nature's Nook",
+      desc="Protein powder in Rexburg, Idaho: plant-based, whey, collagen and bone broth protein, bars and shakes from Garden of Life, Ancient Nutrition, NOW Sports, Sunwarrior and more at Nature's Nook.",
+      h1='Protein powder & protein products in Rexburg',
+      intro="Nature's Nook carries protein powders, collagen and bone broth protein, ready-to-drink shakes and protein bars. Plant-based, whey and egg-white options come from brands like Garden of Life, Ancient Nutrition, NOW Sports, Sunwarrior, Biochem, Natural Factors and Nature's Plus.",
+      more="Ingredients and allergens differ by flavor and size, so read the package before you buy. Ask our staff what is on the shelf today, or search the online list by brand or flavor.",
+      fda=True),
+ dict(slug='electrolytes-rexburg', dept=('electrolyte|re-lyte|zerolyte|hydro[ -]?(pak|fuel|magnesium)|rapid hydration|coconut water|super fruit water', ('Vitamins & Supplements','Grocery')), q='Electrolyte', short='Electrolyte Drink Mixes',
+      title="Electrolyte Drink Mixes in Rexburg, Idaho | Nature's Nook",
+      desc="Electrolyte powders, stick packs and drink mixes in Rexburg, Idaho: Re-Lyte, Trace Minerals, Zhou, Ancient Nutrition, Superieur and coconut water at Nature's Nook.",
+      h1='Electrolyte drink mixes in Rexburg',
+      intro="Nature's Nook carries electrolyte powders, stick packs and drink mixes in many flavors, including Redmond Re-Lyte, Trace Minerals, Zhou, Ancient Nutrition, Superieur and KAL, plus coconut waters and fruit waters in the cooler.",
+      more="Flavors and sizes change, so ask our staff what is on the shelf, or search the online list by brand or flavor.",
+      fda=True),
 ]
 
-DEPTS = {p['dept'] for p in PAGES}
+DEPTS = {p['dept'] for p in PAGES if isinstance(p['dept'], str)}
+
+
+DENY = re.compile(r'proline|burrito|ramen|biscuit|gravy|beauty|bromelain|big stick|smoothie|hydrangea', re.I)
+
+
+def pool(key):
+    """products for a page: a department name, or a (regex, depts) filter"""
+    if isinstance(key, tuple):
+        rx, depts = key
+        r = re.compile(rx, re.I)
+        return [x for x in P if x['dept'] in depts and r.search(x['name']) and not DENY.search(x['name'])]
+    return [x for x in P if x['dept'] == key]
 
 
 def brands_for(dept):
-    c = collections.Counter(x['brand'] for x in P if x['dept'] == dept)
+    c = collections.Counter(x['brand'] for x in pool(dept))
     out = [b for b, n in c.most_common()]
     own = "Nature's Nook"
     if own in out:
@@ -72,8 +98,8 @@ def examples_for(dept, n=24):
     seen, out = set(), []
     # one product name per brand first, round-robin, so the list is varied
     by = collections.defaultdict(list)
-    for x in P:
-        if x['dept'] == dept and not SKIP.search(x['name']):
+    for x in pool(dept):
+        if not SKIP.search(x['name']):
             by[x['brand']].append(x['name'])
     order = brands_for(dept)
     i = 0
@@ -137,7 +163,9 @@ FDA = '<p class="fda">Statements about dietary supplements on this site have not
 def link(page):
     from urllib.parse import quote
     qs = []
-    if page['dept'] != 'Grocery':
+    if page.get('q'):
+        qs.append('q=' + quote(page['q']))
+    elif page['dept'] != 'Grocery':
         qs.append('dept=' + quote(page['dept']))
     else:
         qs.append('q=' + quote('Gluten Free'))
@@ -148,7 +176,7 @@ def build(page):
     brands = brands_for(page['dept'])
     shown = brands[:40]
     ex = examples_for(page['dept'])
-    n = sum(1 for x in P if x['dept'] == page['dept'])
+    n = len(pool(page['dept']))
     url = f"{SITE}/{page['slug']}/"
     ld = {
       "@context": "https://schema.org",
