@@ -3,7 +3,7 @@ Usage: python3 tools/seo.py   (run after rebuild.py whenever the catalog changes
 Pages describe what the store carries (brands and product names from data/products.json).
 No health claims: nothing here says what a product does."""
 import json, os, collections, html, datetime, re
-SKIP = re.compile(r'parasit|paracide|bronch|blood sugar|thyroid|adrenal rx|diabet|cancer|arthrit|inflamm|\bpain\b|\bcold\b|\bflu\b|anxiety|depress|\bcure|detox|cleanse|cramp|immun', re.I)  # keep disease-implying names out of the sample lists
+SKIP = re.compile(r'parasit|paracide|bronch|blood sugar|thyroid|adrenal rx|diabet|cancer|arthrit|inflamm|\bpain\b|\bcold\b|\bflu\b|anxiety|depress|\bcure|detox|cleanse|cramp|immun|acne|arth|allerg|candida|prostate|menopaus|cholest|hypertens|blood pressure|migrain|ulcer|ibs\\b|eczema|psoria|gout|nerve pain|adhd|autis|uti\\b|sinus', re.I)  # keep disease-implying names out of the sample lists
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/'
 SITE = 'https://naturesnook.co'
@@ -68,20 +68,94 @@ PAGES = [
       intro="Nature's Nook carries electrolyte powders, stick packs and drink mixes in many flavors, including Redmond Re-Lyte, Trace Minerals, Zhou, Ancient Nutrition, Superieur and KAL, plus coconut waters and fruit waters in the cooler.",
       more="Flavors and sizes change, so ask our staff what is on the shelf, or search the online list by brand or flavor.",
       fda=True),
+ dict(slug='re-lyte-rexburg', mode='brand', dept=('re-lyte', ('Vitamins & Supplements',)), q='Re-Lyte', show_variants=True, short='Redmond Re-Lyte', name='Redmond Re-Lyte',
+      title="Redmond Re-Lyte Electrolyte Drink Mix in Rexburg, Idaho | Nature's Nook", fda=True),
+ dict(slug='ancient-nutrition-rexburg', mode='brand', dept='brand:Ancient Nutrition', q='Ancient Nutrition', short='Ancient Nutrition', name='Ancient Nutrition',
+      title="Ancient Nutrition in Rexburg, Idaho | Nature's Nook", fda=True),
+ dict(slug='terry-naturally-rexburg', mode='brand', dept='brand:Terry Naturally', q='Terry Naturally', short='Terry Naturally', name='Terry Naturally',
+      title="Terry Naturally Supplements in Rexburg, Idaho | Nature's Nook", fda=True),
+ dict(slug='natural-factors-rexburg', mode='brand', dept='brand:Natural Factors', q='Natural Factors', short='Natural Factors', name='Natural Factors',
+      title="Natural Factors Supplements in Rexburg, Idaho | Nature's Nook", fda=True),
+ dict(slug='trace-minerals-rexburg', mode='brand', dept='brand:Trace Minerals', q='Trace Minerals', short='Trace Minerals', name='Trace Minerals',
+      title="Trace Minerals Research Products in Rexburg, Idaho | Nature's Nook", fda=True),
+ dict(slug='creatine-rexburg', dept=('creatine', ('Vitamins & Supplements',)), q='Creatine', short='Creatine',
+      title="Creatine in Rexburg, Idaho | Nature's Nook",
+      desc="Creatine monohydrate powders, capsules and stick packs in Rexburg, Idaho: Truspan, Zhou, FitAid, Sunwarrior, NOW Sports, Solaray and more at Nature's Nook.",
+      h1='Creatine in Rexburg',
+      intro="Nature's Nook carries creatine in powder, capsule and stick-pack form from brands like Truspan, Zhou, FitAid, Sunwarrior, NOW Sports, Solaray, MTN OPS and Trace Minerals.",
+      more="Sizes and flavors change, so ask our staff what is on the shelf, or search the online list by brand.",
+      fda=True),
+ dict(slug='collagen-rexburg', dept=('collagen', ('Vitamins & Supplements','Grocery','Beauty & Personal Care')), q='Collagen', short='Collagen',
+      title="Collagen Powder & Collagen Supplements in Rexburg, Idaho | Nature's Nook",
+      desc="Collagen peptides, multi-collagen powders, creamers and capsules in Rexburg, Idaho: Ancient Nutrition, Garden of Life, Natural Factors, NeoCell, Sunwarrior and more at Nature's Nook.",
+      h1='Collagen in Rexburg',
+      intro="Nature's Nook carries collagen peptides and multi-collagen products as powders, creamers and capsules from Ancient Nutrition, Garden of Life, Natural Factors, NeoCell, Nature's Plus, Solaray, Sunwarrior and others.",
+      more="Sources and ingredients differ from one product to the next, so read the package before you buy. Ask our staff what is in stock, or search the online list.",
+      fda=True),
+ dict(slug='probiotics-rexburg', dept=('probiotic|acidophilus|lactobac|multidophilus|kefir', ('Vitamins & Supplements','Grocery')), q='Probiotic', short='Probiotics',
+      title="Probiotics in Rexburg, Idaho | Nature's Nook",
+      desc="Probiotic capsules, powders, kefir and fermented foods in Rexburg, Idaho: Garden of Life, Solaray, Nature's Way, Natural Factors, NOW Foods, Enzymedica and more at Nature's Nook.",
+      h1='Probiotics in Rexburg',
+      intro="Nature's Nook carries probiotic capsules and powders, refrigerated and shelf-stable, along with kefir starters and fermented foods. Brands include Garden of Life, Solaray, Nature's Way, Natural Factors, NOW Foods, Enzymedica and Nature's Plus.",
+      more="Some probiotics are kept in the refrigerator, so ask our staff where to find a specific one, or search the online list by brand.",
+      fda=True),
+ dict(slug='gluten-free-foods-rexburg', dept=('gluten', ('Grocery',), 'wide'), q='Gluten Free', short='Gluten-Free Foods',
+      title="Gluten-Free Foods, Flour & Baking in Rexburg, Idaho | Nature's Nook",
+      desc="Gluten-free flours, pasta, snacks and baking mixes in Rexburg, Idaho: Bob's Red Mill, Siete, Tinkyada, The Good Crisp Company, Craize and more at Nature's Nook.",
+      h1='Gluten-free foods in Rexburg',
+      intro="Nature's Nook carries gluten-free flours, baking mixes, pasta, crackers, chips and snacks from brands like Bob's Red Mill, Siete, Tinkyada, The Good Crisp Company, Craize and Chimes.",
+      more="Always read the package for ingredients and allergens before you buy. If a product you want isn't on the shelf, ask and we'll do our best to order it.",
+      fda=False),
+ dict(slug='visiting-rexburg', dept='Vitamins & Supplements', short='Visiting from out of town',
+      title="Visit Nature's Nook in Rexburg: Directions from Driggs, Victor, Jackson & Idaho Falls",
+      desc="Planning a trip to Nature's Nook in Rexburg, Idaho? Hours, directions from Driggs, Victor, Jackson and Idaho Falls, and what to ask about before you drive.",
+      h1='Visiting from out of town', intro='', more='', fda=False,
+      body="""<h1>Visiting from out of town</h1>
+<p>Nature's Nook is a local health food store at 160 E Valley River Rd #2 in Rexburg, Idaho. If you are coming from Teton Valley, Jackson or the Idaho Falls area, here is what to know before you make the trip.</p>
+<h2>Directions</h2>
+<p>Drive times are approximate and winter roads can add time, so check conditions before you leave.</p>
+<ul class="cats">
+<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Driggs%2C+ID&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">From Driggs</a> (about 50 min)</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Victor%2C+ID&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">From Victor</a> (about 1 hr)</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Jackson%2C+WY&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">From Jackson</a> (about 1.5 hr)</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Idaho+Falls%2C+ID&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">From Idaho Falls</a> (about 30 min)</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Rigby%2C+ID&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">From Rigby</a> (about 20 min)</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Ashton%2C+ID&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">From Ashton</a> (about 35 min)</li>
+</ul>
+<h2>What is worth the drive</h2>
+<p>We list thousands of products from hundreds of brands. A few lines we stock in depth:</p>
+<ul>
+<li><a href="/re-lyte-rexburg/">Redmond Re-Lyte</a> electrolyte drink mixes in dozens of flavors and sizes</li>
+<li><a href="/ancient-nutrition-rexburg/">Ancient Nutrition</a>, <a href="/terry-naturally-rexburg/">Terry Naturally</a>, <a href="/natural-factors-rexburg/">Natural Factors</a> and <a href="/trace-minerals-rexburg/">Trace Minerals</a></li>
+<li><a href="/herbs-tinctures-rexburg/">Herbs and tinctures</a>, including our own Nature's Nook label</li>
+<li><a href="/gluten-free-foods-rexburg/">Gluten-free foods</a>, baking supplies and natural groceries</li>
+<li><a href="/essential-oils-rexburg/">Essential oils</a>, <a href="/teas-rexburg/">teas</a> and <a href="/natural-beauty-personal-care-rexburg/">natural personal care</a></li>
+</ul>
+<h2>Before you go</h2>
+<p>Stock changes day to day. If you are driving a long way for one product, call <a href="tel:+12083565284">(208) 356-5284</a> and ask whether it is on the shelf, or <a href="/">search our online list</a> first. Please read each package for ingredients and allergens before you buy.</p>
+<p><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">Get directions</a><a class="btn ghost" href="tel:+12083565284">Call the store</a></p>
+""")
 ]
 
 DEPTS = {p['dept'] for p in PAGES if isinstance(p['dept'], str)}
 
+
+# brand pages list only neutral, ingredient-style product names: skip anything whose name reads like a health claim
+BRAND_SKIP = re.compile(r'relief|rescue|support|health|heart|kidney|liver|bladder|urinary|sinu|respir|vira|anxio|calm|sleep|zzz|sexual|libido|testost|performance|erect|estro|psa\b|prostate|joint|mobil|digest|gut|\beye|dry eye|cogni|memory|brain|thought|stress|cortisol|adrenal|adrenap|thyroid|pleura|silver|metx|berberine|sucontral|glucose|sugar|immun|weight|fat loss|nerve|hormon|menopaus|bone|beauty|clinical|revitaliz|vitality|lift|trauma|detox|cleanse|boost|critical|senior|\blean\b', re.I)
 
 DENY = re.compile(r'proline|burrito|ramen|biscuit|gravy|beauty|bromelain|big stick|smoothie|hydrangea', re.I)
 
 
 def pool(key):
     """products for a page: a department name, or a (regex, depts) filter"""
+    if isinstance(key, str) and key.startswith('brand:'):
+        return [x for x in P if x['brand'] == key[6:]]
     if isinstance(key, tuple):
-        rx, depts = key
+        rx, depts = key[0], key[1]
+        wide = len(key) > 2 and key[2] == 'wide'
         r = re.compile(rx, re.I)
-        return [x for x in P if x['dept'] in depts and r.search(x['name']) and not DENY.search(x['name'])]
+        return [x for x in P if x['dept'] in depts and
+                r.search(x['name'] + (' ' + x['variant'] + ' ' + x['form'] if wide else '')) and not DENY.search(x['name'])]
     return [x for x in P if x['dept'] == key]
 
 
@@ -94,15 +168,18 @@ def brands_for(dept):
     return out
 
 
-def examples_for(dept, n=24):
+def examples_for(dept, n=24, full=False):
     seen, out = set(), []
     # one product name per brand first, round-robin, so the list is varied
     by = collections.defaultdict(list)
     for x in pool(dept):
-        if not SKIP.search(x['name']):
-            by[x['brand']].append(x['name'])
+        if SKIP.search(x['name']) or (full and SKIP.search(x['variant'])):
+            continue
+        if isinstance(dept, str) and dept.startswith('brand:') and BRAND_SKIP.search(x['name']):
+            continue
+        label = x['name'] + (' \u2014 ' + x['variant'] if full and x['variant'] else '')
+        by[x['brand']].append(label)
     order = brands_for(dept)
-    i = 0
     while len(out) < n and any(by[b] for b in order):
         for b in order:
             while by[b]:
@@ -172,10 +249,23 @@ def link(page):
     return '/?' + '&'.join(qs) + '#find'
 
 
+def brand_copy(page):
+    items = [nm for b, nm in examples_for(page['dept'], 6)]
+    n = len(pool(page['dept']))
+    nm = page['name']
+    lead = ', '.join(items[:4])
+    page['h1'] = f"{nm} in Rexburg"
+    page['desc'] = f"Shop {nm} in Rexburg, Idaho at Nature's Nook, including {', '.join(items[:3])} and more. {n} {nm} products listed."
+    page['intro'] = f"Nature's Nook is a local health food store at 160 E Valley River Rd #2 in Rexburg, Idaho. We carry {n} {nm} products, including {lead} and more."
+    page['more'] = "Flavors, sizes and stock change, so call or stop in, or search the online list to see what is on the shelf. Brand names belong to their owners; Nature's Nook is an independent retailer."
+
+
 def build(page):
+    if page.get('mode') == 'brand':
+        brand_copy(page)
     brands = brands_for(page['dept'])
     shown = brands[:40]
-    ex = examples_for(page['dept'])
+    ex = examples_for(page['dept'], 60 if page.get('mode') == 'brand' else 24, full=bool(page.get('show_variants')))
     n = len(pool(page['dept']))
     url = f"{SITE}/{page['slug']}/"
     ld = {
@@ -188,7 +278,7 @@ def build(page):
          "about": {"@id": SITE + "/#store"}, "isPartOf": {"@id": SITE + "/#website"}}
       ]}
     others = ''.join(f'<li><a href="/{p["slug"]}/">{e(p["short"])}</a></li>' for p in PAGES if p is not page)
-    ex_html = ''.join(f'<li>{e(nm)} <span>({e(b)})</span></li>' for b, nm in ex)
+    ex_html = ''.join((f'<li>{e(nm)}</li>' if page.get('show_variants') else f'<li>{e(nm)} <span>({e(b)})</span></li>') for b, nm in ex)
     out = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -219,9 +309,8 @@ def build(page):
 <p>{e(page['intro'])}</p>
 <p>{e(page['more'])}</p>
 <p><a class="btn" href="{link(page)}">Search these products ({n:,} listed)</a><a class="btn ghost" href="tel:+12083565284">Call (208) 356-5284</a></p>
-<h2>Brands we carry</h2>
-<ul class="brands">{''.join(f'<li>{e(b)}</li>' for b in shown)}</ul>
-<h2>A few things on our shelves</h2>
+{'' if page.get('mode') == 'brand' else '<h2>Brands we carry</h2><ul class="brands">' + ''.join(f'<li>{e(b)}</li>' for b in shown) + '</ul>'}
+<h2>{'A look at what we carry' if page.get('mode') == 'brand' else 'A few things on our shelves'}</h2>
 <ul class="ex">{ex_html}</ul>
 <p>This is a small sample. Prices and stock change, so the price in store applies.</p>
 <div class="box visit">
@@ -236,6 +325,8 @@ def build(page):
 </body>
 </html>
 """
+    if page.get('body'):
+        out = re.sub(r'(<main id="main" tabindex="-1">\n).*?(<div class="box visit">)', lambda m: m.group(1) + page['body'] + m.group(2), out, count=1, flags=re.S)
     d = ROOT + page['slug']
     os.makedirs(d, exist_ok=True)
     open(d + '/index.html', 'w').write(out)
