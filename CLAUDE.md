@@ -15,7 +15,9 @@ Live at **naturesnook.co** via GitHub Pages (this repo's `main` branch, root fol
 - Use the package label name; price always from the shelf tag.
 - Never double-add (dedupe by UPC); every variant is its own product.
 - Everyday Savings: show the regular price crossed out (`msrp`). Member deals: only blue SaveNaturally tags.
-- Monthly coupon specials (bring in / show at the register, not SaveNaturally): run `python3 tools/specials.py YYYY-MM-DD UPC[:dollars_off] ...` (clears last month's, sets the new ones, default $2 off, runs rebuild). Standard card: gold badge, front photo (`photo_lib/UPC-front.jpg`), name, brand and size, was/now price. 4 to 8 items looks best. They show on the member coupon only, never on product cards. Then run `python3 tools/seo.py` only if the catalog itself changed.
+- Monthly coupon specials (bring in / show at the register, not SaveNaturally): run `python3 tools/specials.py YYYY-MM-DD UPC[:dollars_off] ...` (clears last month's, sets the new ones, default $2 off, runs rebuild). Standard card: gold badge, front photo (`photo_lib/UPC-front.jpg`), name, brand and size, was/now price. 4 to 8 items looks best. They show on the member coupon only, never on product cards.
+
+**Coupon layout standard (Nov 2026):** the coupon is for everyone, member or not, so no "member" wording inside it (headline, footer, print, share text). Big "Specials this month" headline on top, one line under it ("$X off each item below. Bring this in or show us at the register. No membership needed."), then the product cards (photo, name, brand and size, was/now price) in one row on desktop and two across on phones. The "More savings for members" block (SaveNaturally deals, free signup, loyalty points, brands, See all member deals) sits below the coupon box, never inside it, and does not print. The standalone `coupon/` page must match this standard. Then run `python3 tools/seo.py` only if the catalog itself changed.
 - Never add manufacturer/brand coupons. Yellow staff-pick tags go in `fav`.
 - The register (Catapult) inventory export is private and is **not** stored in this public repo.
 
