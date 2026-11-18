@@ -37,6 +37,7 @@ The site is light-only: keep `<html lang="en" data-theme="light">` and `<meta na
 
 ## Product photo standard (added November 2026)
 - Each product has two photos: **front** = the full-body product picture, and **facts** = the full-body side/back picture with the clean Supplement Facts panel (never crop the facts picture down to just the panel).
+- **Every product with photos also gets its clean Supplement Facts table in `data/facts.json`** (typed from the label, easy to read), never just the facts photo. All the photos (front, back, side panels) stay in the picture gallery. Where print is too small or smudged to read with confidence (e.g. probiotic strain codes), leave that detail out and say "printed on the label photos" rather than guess.
 - Only use the good product pictures the owner uploads for this. **Never crop pictures out of shelf/tag photos** used to add or update products; add the product data from the tag and leave the photo empty until good pictures arrive.
 - Each picture is its own product on its own: no edges of neighboring containers.
 
