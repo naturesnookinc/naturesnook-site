@@ -15,7 +15,7 @@ Live at **naturesnook.co** via GitHub Pages (this repo's `main` branch, root fol
 - Use the package label name; price always from the shelf tag.
 - Never double-add (dedupe by UPC); every variant is its own product.
 - Everyday Savings: show the regular price crossed out (`msrp`). Member deals: only blue SaveNaturally tags.
-- Store specials that are not SaveNaturally (bring in / show at the register): set `store_off` (dollars) and `store_until` (YYYY-MM-DD) on the product in `data/products.json`; they show as the extra "Also $2 off with this coupon" cards on the member coupon only (not on product cards). Remove the two fields when the special ends.
+- Monthly coupon specials (bring in / show at the register, not SaveNaturally): run `python3 tools/specials.py YYYY-MM-DD UPC[:dollars_off] ...` (clears last month's, sets the new ones, default $2 off, runs rebuild). Standard card: gold badge, front photo (`photo_lib/UPC-front.jpg`), name, brand and size, was/now price. 4 to 8 items looks best. They show on the member coupon only, never on product cards. Then run `python3 tools/seo.py` only if the catalog itself changed.
 - Never add manufacturer/brand coupons. Yellow staff-pick tags go in `fav`.
 - The register (Catapult) inventory export is private and is **not** stored in this public repo.
 

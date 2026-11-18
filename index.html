@@ -1298,16 +1298,16 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     <div class="wrap">
             <div class="sec-head">
         <div>
-          <p class="eyebrow">Cold &amp; flu season is here</p>
+          <p class="eyebrow">Specials this month</p>
           <h2>Your member coupon</h2>
         </div>
         <p class="note">Bring this in, or just show it on your phone. Membership is free, and we can sign you up at the register in about a minute.</p>
       </div>
       <div class="coupon" id="coupon">
-        <div class="cp-print-only" style="padding:1.2rem 1.6rem 0"><div style="display:flex;align-items:center;justify-content:space-between;gap:1rem"><img src="img/logo.svg" alt="Nature&#39;s Nook" style="height:60px;width:auto"><span style="font-family:var(--display);font-style:italic;font-weight:700;color:var(--pine);font-size:1.25rem">Cold &amp; flu season is here</span></div></div>
+        <div class="cp-print-only" style="padding:1.2rem 1.6rem 0"><div style="display:flex;align-items:center;justify-content:space-between;gap:1rem"><img src="img/logo.svg" alt="Nature&#39;s Nook" style="height:60px;width:auto"><span style="font-family:var(--display);font-style:italic;font-weight:700;color:var(--pine);font-size:1.25rem">Specials this month</span></div></div>
         <div class="cpn-head">
           <div>
-            <p class="cp-eyebrow">Cold &amp; flu season is here</p>
+            <p class="cp-eyebrow">Specials this month</p>
             <p class="cp-stamp">Nature's Nook member savings</p>
             <p class="cp-big">Save up to <strong id="cp-max">$6</strong></p>
             <p class="cp-sub">Come in for some of our best sellers. <strong>Bring this in</strong> (or show it on your phone) for the amount shown off each product, plus member deals on <strong id="cp-count">489</strong> vitamins, supplements and body care products.</p>
@@ -1319,10 +1319,9 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
           </div>
         </div>
         <div class="cp-shelf">
-          <img src="img/coupon-products.webp" width="1400" height="655" loading="lazy" alt="Terry Naturally Curamin and CuraMed, Natural Factors Oil of Oregano, KAL Magnesium Glycinate 350 and Solaray Mushroom Herb Complete">
-          <ul class="cp-deals" id="cp-deals"></ul>
-          <p class="cp-sp-h" id="cp-sp-h" hidden><strong>Also $2 off with this coupon</strong> <span id="cp-sp-s">No membership needed</span></p>
-          <ul class="cp-deals cp-store" id="cp-store" hidden></ul>
+          <p class="cp-sp-h" id="cp-sp-h"><strong>Specials this month</strong> <span id="cp-sp-s">Bring this in or show us at the register. No membership needed.</span></p>
+          <ul class="cp-deals cp-store" id="cp-store"></ul>
+          <ul class="cp-deals" id="cp-deals" style="display:none"></ul>
         </div>
         <p class="cp-foot"><span class="cp-print-only" style="flex-basis:100%;font-weight:700;color:var(--ink)">Bring this coupon to the register. Not a member? Membership is free, we&#39;ll sign you up on the spot.</span><span>Valid at Nature's Nook, 160 E Valley River Rd #2, Rexburg. Member price rings up at the register.</span><span id="cp-until">Through December 29, 2026</span></p>
       </div>
@@ -2048,7 +2047,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   if(pr) pr.addEventListener('click',function(){document.documentElement.classList.add('pc'); window.print(); setTimeout(function(){document.documentElement.classList.remove('pc')},500);});
   var sh=document.getElementById('cp-share');
   if(sh) sh.addEventListener('click',function(){
-    var url='https://naturesnook.co/coupon/', text="Cold and flu season is here! Nature's Nook members save up to "+document.getElementById('cp-max').textContent+" on "+deals.length+" products. Membership is free!";
+    var url='https://naturesnook.co/coupon/', text="Nature's Nook members save up to "+document.getElementById('cp-max').textContent+" on "+deals.length+" products. Membership is free!";
     if(navigator.share){navigator.share({title:"Nature's Nook member coupon",text:text,url:url}).catch(function(){});}
     else if(navigator.clipboard){navigator.clipboard.writeText(text+' '+url).then(function(){sh.textContent='Link copied!'; setTimeout(function(){sh.textContent='Send to a friend'},2000)});}
   });
@@ -2059,32 +2058,45 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
 </script>
 
 <style>
-/* Coupon: extra bring-in specials (no membership needed) */
-.cp-sp-h{margin:1.1rem 0 .1rem;font-size:.9rem;color:var(--ink)}
-.cp-sp-h span{color:var(--muted)}
-.cp-shelf .cp-store{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:.6rem}
+/* Coupon: monthly specials cards. Standard: photo, gold badge, name, brand and size, was/now price. */
+.cp-sp-h{margin:0 0 .8rem;font-size:.95rem;color:var(--ink)}
+.cp-sp-h span{display:block;color:var(--muted);font-size:.85rem;margin-top:.1rem}
+.cp-shelf .cp-store{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;margin-top:0}
 .cp-shelf .cp-store li:last-child{grid-column:auto}
-.cp-store .cp-d-price{margin-top:.2rem;display:flex;gap:.45rem;align-items:baseline;justify-content:center}
-.cp-store .cp-d-price s{font-size:.8rem;color:var(--muted)}
-.cp-store .cp-d-price b{font-size:1.05rem}
-@media (max-width:760px){.cp-shelf .cp-store{grid-template-columns:1fr 1fr}.cp-shelf .cp-store li:last-child{grid-column:auto}}
+.cp-store a{position:relative;display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center;gap:.2rem;padding:.8rem .7rem .9rem!important;border-top:4px solid var(--gold)!important;background:#fff!important}
+.cp-store .cp-ph{display:flex;align-items:center;justify-content:center;width:100%;height:132px;margin-bottom:.3rem}
+.cp-shelf .cp-store .cp-ph img{width:auto!important;height:100%!important;max-width:100%;max-height:none!important;filter:none!important;margin:0!important}
+.cp-store .cp-ph.none{background:var(--gold-soft);border-radius:4px;font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--pine)}
+.cp-shelf .cp-store .cp-d-off{background:var(--gold)!important;color:#1b1f1c!important;font-size:1.05rem!important;padding:.25rem .8rem!important;border-radius:4px!important;margin:0 0 .35rem!important;letter-spacing:.03em}
+.cp-store .cp-d-name{font-weight:700;line-height:1.25}
+.cp-store .cp-d-meta{color:var(--muted)}
+.cp-store .cp-d-price{display:flex;gap:.45rem;align-items:baseline;justify-content:center;margin-top:auto;padding-top:.4rem}
+.cp-store .cp-d-price s{font-size:.82rem;color:var(--muted)}
+.cp-store .cp-d-price b{font-size:1.2rem;color:var(--pine)}
+@media (max-width:760px){.cp-shelf .cp-store{grid-template-columns:1fr 1fr}.cp-store .cp-ph{height:108px}}
 html.pc .cp-shelf .cp-store{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 html.pc .cp-shelf .cp-store li:last-child{grid-column:auto!important}
+html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
 </style>
 <script>
+/* Monthly specials on the coupon: items with store_off / store_until in data/products.json (see CLAUDE.md) */
 (function(){
-  var raw=document.getElementById('catalog-data'),ul=document.getElementById('cp-store');if(!raw||!ul)return;
-  var items;try{items=JSON.parse(raw.textContent)}catch(e){return}
+  var raw=document.getElementById('catalog-data'),pd=document.getElementById('photo-data'),ul=document.getElementById('cp-store');if(!raw||!ul)return;
+  var items,ph={};try{items=JSON.parse(raw.textContent);ph=JSON.parse(pd.textContent)}catch(e){return}
   var today=new Date().toISOString().slice(0,10);
-  var deals=items.filter(function(i){return i[11]&&(!i[12]||i[12]>=today)});if(!deals.length)return;
+  var deals=items.filter(function(i){return i[11]&&(!i[12]||i[12]>=today)});
+  if(!deals.length){var hd=document.getElementById('cp-sp-h');if(hd)hd.hidden=true;ul.hidden=true;return}
   function money(v){return '$'+Number(v).toFixed(2)}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
   ul.innerHTML=deals.map(function(i){
-    var size=i[4].split(' \u00b7 ').pop();
-    return '<li><a href="#p'+i[6]+'"><span class="cp-d-off">'+money(i[11]).replace('.00','')+' off</span><span class="cp-d-name">'+i[2]+'</span><span class="cp-d-meta">'+[i[1],size].filter(Boolean).join(' \u00b7 ')+'</span><span class="cp-d-price"><s>'+money(i[5])+'</s><b>'+money(i[5]-i[11])+'</b></span></a></li>';
+    var size=i[4].split(' \u00b7 ').pop(), im=ph[i[6]]&&ph[i[6]][0];
+    return '<li><a href="#p'+esc(i[6])+'"><span class="cp-d-off">'+money(i[11]).replace('.00','')+' off</span>'+
+      (im?'<span class="cp-ph"><img src="'+esc(im)+'" alt="" loading="lazy"></span>':'<span class="cp-ph none" aria-hidden="true">'+esc(i[1].charAt(0))+'</span>')+
+      '<span class="cp-d-name">'+esc(i[2])+'</span><span class="cp-d-meta">'+esc([i[1],size].filter(Boolean).join(' \u00b7 '))+'</span>'+
+      '<span class="cp-d-price"><s>'+money(i[5])+'</s><b>'+money(i[5]-i[11])+'</b></span></a></li>';
   }).join('');
   var u=deals.map(function(i){return i[12]}).filter(Boolean).sort()[0];
-  if(u){var d=new Date(u+'T12:00:00');document.getElementById('cp-sp-s').textContent='No membership needed. Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric'})+'.'}
-  ul.hidden=false;document.getElementById('cp-sp-h').hidden=false;
+  if(u){var d=new Date(u+'T12:00:00');document.getElementById('cp-sp-s').textContent='Bring this in or show us at the register. No membership needed. Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric'})+'.'}
 })();
 </script>
 <script>
