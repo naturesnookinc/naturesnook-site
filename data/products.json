@@ -27436,7 +27436,9 @@
   "upc": "788332173806",
   "pos": "IMMUNO WELLNESS RX 90",
   "source": "mushroom & immune shelf photos 2026-10-16",
-  "msrp": "19.59"
+  "msrp": "19.59",
+  "store_off": "2",
+  "store_until": "2026-11-30"
  },
  {
   "name": "Immuno-Shield",
@@ -40961,7 +40963,9 @@
   "shelf_price": "19.19",
   "upc": "788332083815",
   "pos": "OREGANO OIL 60 CT",
-  "source": "oregano, olive leaf, colostrum & silver shelf photos 2026-10-16"
+  "source": "oregano, olive leaf, colostrum & silver shelf photos 2026-10-16",
+  "store_off": "2",
+  "store_until": "2026-11-30"
  },
  {
   "name": "Oregano Oil Carvacrol 70",
@@ -62881,7 +62885,9 @@
   "pos": "100 ADVANCED BIOME FLORA",
   "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)",
   "member_off": "10.00",
-  "member_until": "2026-12-29"
+  "member_until": "2026-12-29",
+  "store_off": "2",
+  "store_until": "2026-11-30"
  },
  {
   "name": "Vital Flora Ultra Daily Probiotic",
@@ -62895,7 +62901,9 @@
   "pos": "60B 60 ULTRA DAILY PROBIOTIC",
   "source": "probiotic & silver shelf photos 2026-11-09",
   "member_off": "5.00",
-  "member_until": "2026-12-29"
+  "member_until": "2026-12-29",
+  "store_off": "2",
+  "store_until": "2026-11-30"
  },
  {
   "name": "Vital Flora Women 55+ Daily Probiotic",
@@ -62921,7 +62929,9 @@
   "pos": "60B 60 WOMEN'S DAILY PRO",
   "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)",
   "member_off": "5.00",
-  "member_until": "2026-12-29"
+  "member_until": "2026-12-29",
+  "store_off": "2",
+  "store_until": "2026-11-30"
  },
  {
   "name": "Vital Lax",
@@ -62945,7 +62955,9 @@
   "shelf_price": "31.49",
   "upc": "850029173137",
   "pos": "VITAL LAX 100 CAP",
-  "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)"
+  "source": "probiotic & cleanse shelf photos 2026-11-05 (new Vital Planet)",
+  "store_off": "2",
+  "store_until": "2026-11-30"
  },
  {
   "name": "Vital Lax",
