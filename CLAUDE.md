@@ -40,7 +40,7 @@ The site is light-only: keep `<html lang="en" data-theme="light">` and `<meta na
 - Each picture is its own product on its own: no edges of neighboring containers.
 
 ## SEO (added November 2026)
-- `tools/seo.py` builds the six Rexburg department pages, `sitemap.xml` and `robots.txt`. Run it after `rebuild.py` whenever the catalog changes, then commit the generated folders.
+- `tools/seo.py` builds the Rexburg department pages (six departments plus protein-powder and electrolytes pages, which are product-filtered by regex in PAGES), `sitemap.xml` and `robots.txt`. Run it after `rebuild.py` whenever the catalog changes, then commit the generated folders.
 - `index.html` carries HealthFoodStore JSON-LD (address, phone, hours, map). If hours, phone or address change, update the JSON-LD, the hours table, and `tools/seo.py` together.
 - Never add aggregateRating/review markup unless it comes from real Google reviews.
 - Department pages describe what we carry only (brands, product names). No health claims; `seo.py` skips disease-implying product names in sample lists.
