@@ -28,7 +28,7 @@ The site is light-only: keep `<html lang="en" data-theme="light">` and `<meta na
 
 ## Policies, claims and accessibility (added November 2026)
 - Policy pages live in `returns/`, `privacy/`, `cookies/`, `terms/`, `accessibility/` (plain HTML, linked from the footer). Update the "Last updated" date when one changes.
-- The privacy and cookie pages say the site has **no forms, no analytics, no cookies and no trackers**. Before adding any of those (pickup ordering, sign-up form, analytics, embeds), update those pages first and add consent wording to the form.
+- The privacy and cookie pages say the site has **no forms, no analytics, no cookies and no trackers**. Before adding any of those (pickup ordering, sign-up form, analytics, embeds), update those pages first and add consent wording to the form. Pickup ordering is built but dormant: see `tools/pickup/README.md`; `tools/pickup/golive.py <Apps Script URL>` switches it on and updates the privacy, cookie and terms pages together.
 - Return policy: 30 days with receipt for a refund; store credit without a receipt, within 30 days.
 - No health claims in our own words: never tie a product to a disease or to replacing a medicine (search notes, section labels, banners). Label wording copied from the package is fine. Keep the FDA disclaimer in the footer and product view.
 - Reviews must be real Google reviews quoted as written, labeled as a selection.

@@ -1,0 +1,34 @@
+
+/* ===== Pickup orders (dormant until NN_PICKUP.endpoint is set by tools/pickup/golive.py) ===== */
+.pk-add{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem .9rem;margin:.9rem 0 .2rem}
+.pk-add .btn,.pk-btn{font:inherit;font-weight:700;border:0;cursor:pointer;background:var(--pine);color:#fff;padding:.7rem 1.2rem;border-radius:3px;box-shadow:0 3px 0 var(--gold)}
+.pk-add .pk-link{background:none;border:0;color:var(--pine);font:inherit;font-weight:600;text-decoration:underline;cursor:pointer;padding:.4rem 0}
+.pk-add .pk-in{font-size:.92rem;color:var(--muted)}
+.pk-fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:60;font:inherit;font-weight:700;border:0;cursor:pointer;background:var(--pine);color:#fff;padding:.85rem 1.2rem;border-radius:3px;box-shadow:0 3px 0 var(--gold),0 12px 24px -12px rgba(27,31,28,.6)}
+.pk-fab[hidden]{display:none}
+.pk-back{position:fixed;inset:0;z-index:80;background:rgba(27,31,28,.55);display:grid;place-items:center;padding:12px}
+.pk-back[hidden]{display:none}
+.pk{background:var(--surface);color:var(--ink);max-width:560px;width:100%;max-height:92vh;overflow:auto;border-radius:3px;border-top:5px solid var(--gold);padding:1.2rem 1.3rem 1.4rem;position:relative}
+.pk h2{margin:0 0 .3rem;font-size:1.5rem}
+.pk .pk-x{position:absolute;top:.4rem;right:.6rem;width:40px;height:40px;border:0;background:none;font-size:1.6rem;cursor:pointer;color:var(--ink)}
+.pk-lines{list-style:none;margin:.8rem 0;padding:0}
+.pk-lines li{display:grid;grid-template-columns:1fr auto;gap:.2rem .8rem;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.pk-lines .pk-n{font-weight:600}
+.pk-lines .pk-v{color:var(--muted);font-size:.9rem}
+.pk-qty{display:inline-flex;align-items:center;gap:.2rem;grid-column:1/-1}
+.pk-qty button{width:36px;height:36px;border:1.5px solid var(--line);background:var(--bg);font:inherit;font-size:1.1rem;cursor:pointer;border-radius:3px;color:var(--ink)}
+.pk-qty output{min-width:2ch;text-align:center;font-weight:700}
+.pk-qty .pk-rm{width:auto;padding:0 .7rem;border:0;background:none;color:var(--pine);text-decoration:underline;font-size:.92rem}
+.pk-total{display:flex;justify-content:space-between;font-weight:700;margin:.4rem 0 .2rem}
+.pk-fine{font-size:.86rem;color:var(--muted);margin:.3rem 0 1rem}
+.pk form{display:grid;gap:.8rem}
+.pk label{display:grid;gap:.25rem;font-weight:600;font-size:.92rem}
+.pk input[type=text],.pk input[type=tel],.pk textarea{font:inherit;font-size:1rem;padding:.65rem .8rem;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);width:100%;border-radius:3px}
+.pk input:focus-visible,.pk textarea:focus-visible,.pk button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.pk .pk-consent{grid-template-columns:auto 1fr;align-items:start;gap:.6rem;font-weight:400;font-size:.92rem}
+.pk .pk-consent input{width:20px;height:20px;margin-top:.2rem}
+.pk .pk-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.pk .pk-msg{min-height:1.3em;font-weight:600;color:var(--pine)}
+.pk .pk-msg.err{color:#a1281c}
+.pk .pk-submit{justify-self:start}
+.pk .pk-submit[disabled]{opacity:.6;cursor:wait}
