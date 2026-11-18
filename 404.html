@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>Page not found | Nature's Nook</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<style>
+@font-face{font-family:"Fraunces";font-weight:100 900;font-display:swap;src:url(/fonts/fraunces-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-weight:300 900;font-display:swap;src:url(/fonts/figtree-latin-wght-normal.woff2) format("woff2")}
+:root{--ink:#1b1f1c;--muted:#56635a;--pine:#1d7542;--gold:#e8a33d;--bg:#f2f6f2}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;display:grid;place-items:center;padding:1.5rem;background:var(--bg);color:var(--ink);font:1.05rem/1.6 "Figtree",system-ui,sans-serif}
+main{max-width:34rem}
+img{display:block;margin-bottom:1.2rem}
+h1{font:600 clamp(1.8rem,5vw,2.5rem)/1.1 "Fraunces",Georgia,serif;margin:0 0 .6rem;letter-spacing:-.02em}
+p{margin:0 0 1rem;color:var(--muted)}
+ul{list-style:none;padding:0;margin:1.2rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem .6rem}
+a{color:var(--pine);font-weight:600}
+li a{display:inline-block;padding:.5rem .9rem;border-bottom:3px solid var(--gold);background:#fff;text-decoration:none}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+<img src="/img/logo.png" alt="Nature's Nook Health &amp; Nutrition" width="150" height="91">
+<h1>We moved things around</h1>
+<p id="msg">That page isn't here anymore. Our website is new, so here are the places most people are looking for.</p>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/#members">Member savings</a></li>
+<li><a href="/#find">Search our shelves</a></li>
+<li><a href="/#visit">Hours &amp; directions</a></li>
+<li><a href="tel:+12083565284">Call (208) 356-5284</a></li>
+</ul>
+</main>
+<script>
+// Old website addresses (about-us, contact-us, promotions, blog, essential-oils, ...) forward to the matching part of the new site.
+(function(){
+  var p=decodeURIComponent(location.pathname).toLowerCase(), m=[
+    [/about|story|friends|who-we/,'/#story'],
+    [/contact|visit|location|hours|direction|find-us/,'/#visit'],
+    [/promo|coupon|special|member|deal|sale|feature/,'/#members'],
+    [/blog|news|post|article/,'/'],
+    [/essential|oil|diffus|aroma/,'/essential-oils-rexburg/'],
+    [/\btea|\/tea/,'/teas-rexburg/'],
+    [/herb|tincture|capsule/,'/herbs-tinctures-rexburg/'],
+    [/beauty|personal|skin|hair|hygiene/,'/natural-beauty-personal-care-rexburg/'],
+    [/supplement|vitamin|homeopath|protein|whey|weight|diet|mineral|sport/,'/vitamins-supplements-rexburg/'],
+    [/beverage|drink|soda|energy|fridge|freez|grocer|gluten|snack|pantry|bread|food|green/,'/gluten-free-natural-groceries-rexburg/']
+  ];
+  for(var i=0;i<m.length;i++){ if(m[i][0].test(p)){ location.replace(m[i][1]); return; } }
+})();
+</script>
+</body>
+</html>
