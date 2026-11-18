@@ -1298,8 +1298,8 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     <div class="wrap">
             <div class="sec-head">
         <div>
-          <p class="eyebrow">Specials this month</p>
-          <h2>Your coupon this month</h2>
+          <p class="eyebrow">Open to everyone</p>
+          <h2>Current specials</h2>
         </div>
         <p class="note">Bring this in, or just show it on your phone. Everyone saves, member or not.</p>
       </div>
@@ -1307,17 +1307,15 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
         <div class="cp-print-only" style="padding:1.2rem 1.6rem 0"><div style="display:flex;align-items:center;justify-content:space-between;gap:1rem"><img src="img/logo.svg" alt="Nature&#39;s Nook" style="height:60px;width:auto"><span style="font-family:var(--display);font-style:italic;font-weight:700;color:var(--pine);font-size:1.25rem">Specials this month</span></div></div>
         <div class="cpn-head">
           <div>
-            <p class="cp-eyebrow">Specials this month</p>
-            <p class="cp-stamp">Monthly specials for everyone</p>
-            <p class="cp-big" id="cp-big">Save up to <strong id="cp-max">$6</strong></p>
-            <p class="cp-sub">Come in for some of our best sellers. <strong>Bring this in</strong> (or show it on your phone) for the amount shown off each product. No membership needed.</p>
+            <p class="cp-big" id="cp-big">Specials this month<span id="cp-max" hidden>$6</span></p>
+            <p class="cp-sub" id="cp-sub"><strong>Bring this in</strong> or show us at the register. No membership needed.</p>
           </div>
           <div class="cpn-head-r">
             
           </div>
         </div>
         <div class="cp-shelf">
-          <p class="cp-sp-h" id="cp-sp-h"><span id="cp-sp-s">Bring this in or show us at the register. No membership needed.</span></p>
+          <p id="cp-sp-s" hidden></p>
           <ul class="cp-deals cp-store" id="cp-store"></ul>
           <ul class="cp-deals" id="cp-deals" style="display:none"></ul>
         </div>
@@ -2111,12 +2109,22 @@ html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
       '<span class="cp-d-price"><s>'+money(i[5])+'</s><b>'+money(i[5]-i[11])+'</b></span><span class="cp-go" aria-hidden="true">See this product →</span></a></li>';
   }).join('');
   var offs=deals.map(function(i){return +i[11]}),mx=Math.max.apply(null,offs),same=offs.every(function(o){return o===offs[0]});
-  var big=document.getElementById('cp-big'),old=(document.getElementById('cp-max')||{}).textContent||'';
-  if(big)big.innerHTML=(same?'Save ':'Save up to ')+'<strong>$'+(mx%1?mx.toFixed(2):mx)+'</strong><span id="cp-max" hidden>'+old+'</span>';
+  var sub=document.getElementById('cp-sub'),amt='$'+(mx%1?mx.toFixed(2):mx);
+  if(sub)sub.innerHTML=(same?amt+' off':'Up to '+amt+' off')+' each item below. <strong>Bring this in</strong> or show us at the register. No membership needed.';
   var u=deals.map(function(i){return i[12]}).filter(Boolean).sort()[0];
   if(u){var d=new Date(u+'T12:00:00');document.getElementById('cp-sp-s').textContent='Bring this in or show us at the register. No membership needed. Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric'})+'.';document.getElementById('cp-until').textContent='Through '+d.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}
 })();
 </script>
+<style>
+/* coupon: big title on top, products underneath, at every width */
+.coupon{display:block!important}
+.coupon .cpn-head{display:block!important;padding:clamp(1.4rem,3vw,2.2rem) clamp(1.2rem,3vw,2.2rem) .2rem!important;text-align:center}
+.coupon .cp-big{font-size:clamp(2.4rem,6vw,4.2rem);margin:0}
+.coupon .cp-sub{font-size:1.1rem;margin:.7rem auto 0;max-width:52rem}
+.coupon .cp-shelf{padding:1rem clamp(1rem,2.5vw,2rem) 1.6rem!important;background:none}
+.coupon .cp-store{margin-top:.4rem}
+@media(min-width:1000px){.coupon .cp-store{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))!important;gap:.6rem}.coupon .cp-store .cp-d-price b{font-size:1.5rem}.coupon .cp-store .cp-d-name{font-size:.88rem}}
+</style>
 <style>
 /* members section under the coupon */
 .mem-more{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;margin-top:2.6rem;padding-top:1.8rem;border-top:2px solid var(--gold)}
