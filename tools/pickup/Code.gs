@@ -3,9 +3,12 @@
  * Receives orders from naturesnook.co, saves each one as a row in this Google Sheet,
  * and emails the store. Staff then text the customer from the GoTo app.
  *
- * Setup is in README.md (same folder). Nothing secret goes in this file:
+ * This is a STANDALONE Apps Script project (script.google.com > New project), separate from the iPad drawing form's project,
+ * and it only ever adds rows to its own "Orders" tab. Setup is in README.md (same folder). Nothing secret goes in this file:
  * the store email lives in Script Properties (Project Settings > Script Properties).
  */
+// Paste the ID of the "NN Mailing List" Google Sheet here (the long code in its web address between /d/ and /edit).
+var SPREADSHEET_ID = 'PASTE_SHEET_ID_HERE';
 var HEADERS = ['Received', 'Order #', 'Status', 'Name', 'Phone', 'Items', 'Estimated total', 'Note', 'Text OK'];
 var MAX_LINES = 30, MAX_QTY = 10, KEEP_DAYS = 90;
 
@@ -53,7 +56,7 @@ function doPost(e) {
         'New pickup order #' + id + '\n\nName: ' + name + '\nPhone: ' + formatPhone_(phone) +
         '\nCustomer agreed to a text about this order: yes\n\n' + lines.join('\n') +
         '\n\nEstimated total: $' + total.toFixed(2) + (note ? '\nNote: ' + note : '') +
-        '\n\nOpen the sheet: ' + SpreadsheetApp.getActive().getUrl());
+        '\n\nOpen the sheet: ' + SpreadsheetApp.openById(SPREADSHEET_ID).getUrl());
     }
     return json_({ ok: true, id: id });
   } catch (err) {
@@ -73,7 +76,7 @@ function purgeOld() {
 }
 
 function sheet_() {
-  var ss = SpreadsheetApp.getActive(), sh = ss.getSheetByName('Orders') || ss.insertSheet('Orders');
+  var ss = SpreadsheetApp.openById(SPREADSHEET_ID), sh = ss.getSheetByName('Orders') || ss.insertSheet('Orders');
   if (sh.getLastRow() === 0) { sh.appendRow(HEADERS); sh.setFrozenRows(1); }
   return sh;
 }

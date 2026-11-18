@@ -10,8 +10,8 @@ Payment happens in the store. The feature is **dormant** (nothing shows on the s
 - `golive.py` - sets the endpoint and updates the privacy, cookie and terms pages in one step
 
 ## Go-live checklist (owner steps 1-4, then Claude)
-1. Create a new Google Sheet named "Pickup Orders" (in the store's Google account).
-2. In the sheet: Extensions > Apps Script. Delete the sample code, paste all of `Code.gs`, save.
+1. Use the existing "NN Mailing List" sheet (the script adds its own "Orders" tab). Do NOT paste into that sheet's own Apps Script project: it runs the iPad drawing form.
+2. Go to script.google.com > New project, name it "Pickup Orders", paste all of `Code.gs`, set `SPREADSHEET_ID` to the sheet's ID, save.
 3. Project Settings > Script Properties > add `STORE_EMAIL` = the address that should get each order.
 4. Deploy > New deployment > type "Web app": Execute as **Me**, Who has access **Anyone**. Authorize when asked.
    Copy the Web app URL (ends in `/exec`) and send it to Claude. Optional: Triggers > add `purgeOld`, time-driven, daily (deletes orders after 90 days, which the privacy page promises).
