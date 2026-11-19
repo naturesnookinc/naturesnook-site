@@ -376,7 +376,8 @@
   "upc": "15794017950",
   "pos": "100% VEGAN PROTEIN VANILLA",
   "source": "protein powder shelf photos 2026-10-20",
-  "msrp": "54.79"
+  "msrp": "54.79",
+  "notice": "Biochem is being discontinued. Once our stock is gone, this one won't be restocked"
  },
  {
   "name": "100% Vegan Protein",
@@ -389,7 +390,8 @@
   "upc": "15794017981",
   "pos": "100% VEGAN PROTEIN VANILLA, KETO FRIENDLY",
   "source": "protein powder shelf photos 2026-10-20",
-  "msrp": "26.39"
+  "msrp": "26.39",
+  "notice": "Biochem is being discontinued. Once our stock is gone, this one won't be restocked"
  },
  {
   "name": "100% Whey Protein Isolate",
@@ -401,7 +403,8 @@
   "shelf_price": "33.65",
   "upc": "15794020004",
   "pos": "100% WHEY PROTEIN ISOLATE CHOCOLATE",
-  "source": "protein powder shelf photos 2026-10-20"
+  "source": "protein powder shelf photos 2026-10-20",
+  "notice": "Biochem is being discontinued. Once our stock is gone, this one won't be restocked"
  },
  {
   "name": "100% Whey Protein Isolate",
@@ -414,7 +417,8 @@
   "upc": "15794020028",
   "pos": "100% WHEY PROTEIN ISOLATE CHOCOLATE",
   "source": "protein powder shelf photos 2026-10-20",
-  "msrp": "66.59"
+  "msrp": "66.59",
+  "notice": "Biochem is being discontinued. Once our stock is gone, this one won't be restocked"
  },
  {
   "name": "100% Whey Protein Isolate",
@@ -427,7 +431,8 @@
   "upc": "15794018407",
   "pos": "100% WHEY PROTEIN ISOLATE NATURAL FLAVOR",
   "source": "protein powder shelf photos 2026-10-20",
-  "msrp": "37.39"
+  "msrp": "37.39",
+  "notice": "Biochem is being discontinued. Once our stock is gone, this one won't be restocked"
  },
  {
   "name": "100% Whey Protein Isolate",
@@ -440,7 +445,8 @@
   "upc": "15794020769",
   "pos": "100% WHEY PROTEIN ISOLATE VANILLA, SUGAR FREE",
   "source": "protein powder shelf photos 2026-10-20",
-  "msrp": "37.39"
+  "msrp": "37.39",
+  "notice": "Biochem is being discontinued. Once our stock is gone, this one won't be restocked"
  },
  {
   "name": "18-in-1 Hemp Pure-Castile Soap",

@@ -10,7 +10,7 @@ def num(s):
 def key(x):
     return (x['name'].lower(), x['brand']!="Nature's Nook", x['brand'].lower(), num(x['variant']), x['variant'].lower(), num(x['form'].split('·')[-1]), float(x.get('shelf_price') or x['price'] or 0))
 p.sort(key=key)
-rows=[[x['dept'],x['brand'],x['name'],x['variant'],x['form'],x.get('shelf_price') or x['price'],x['upc'],x.get('msrp') or '',x.get('member_off') or '',x.get('member_until') or '',x.get('fav') or '',x.get('store_off') or '',x.get('store_until') or ''] for x in p]
+rows=[[x['dept'],x['brand'],x['name'],x['variant'],x['form'],x.get('shelf_price') or x['price'],x['upc'],x.get('msrp') or '',x.get('member_off') or '',x.get('member_until') or '',x.get('fav') or '',x.get('store_off') or '',x.get('store_until') or '',x.get('notice') or ''] for x in p]
 data=json.dumps(rows,ensure_ascii=False,separators=(',',':'))
 h=re.sub(r'(<script id="catalog-data" type="application/json">).*?(</script>)',lambda m:m.group(1)+data+m.group(2),h,count=1,flags=re.S)
 h=re.sub(r'<strong>Preview:</strong> [\d,]+ products',f'<strong>Preview:</strong> {len(rows):,} products',h)
