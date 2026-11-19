@@ -13,7 +13,7 @@ offs = sorted({float(x['store_off']) for x in S})
 amt = lambda v: '$' + (('%.2f' % v) if v % 1 else str(int(v)))
 line = (amt(offs[0]) + ' off' if len(offs) == 1 else 'Up to ' + amt(offs[-1]) + ' off') + ' each item below'
 def photo(x, pre=''):
-    f = f'photo_lib/{x["upc"]}-front.jpg'
+    f = f'photo_lib/w/{x["upc"]}-front.webp'
     return f'<img src="{pre}{f}" alt="">' if os.path.exists(ROOT + f) else f'<span class="ph">{e(x["brand"][:1])}</span>'
 def size(x): return (x.get('form') or '').split(' · ')[-1]
 def cards(pre='', link=True):

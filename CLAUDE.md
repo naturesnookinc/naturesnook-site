@@ -5,7 +5,7 @@ Live at **naturesnook.co** via GitHub Pages (this repo's `main` branch, root fol
 ## What's here
 - `index.html` – the whole site (catalog data is embedded; rebuilt by `tools/rebuild.py`)
 - `img/` – storefront and in-store photos
-- `photo_lib/` – product photos: `UPC-front.jpg`, `UPC-back.jpg`, `UPC-facts.jpg`
+- `photo_lib/` – product photos, WebP only (no JPG masters, to stay under GitHub Pages' 1 GB limit): `w/` full-size (`UPC-front.webp`, `UPC-back.webp`, `UPC-facts.webp`), `t/` small copies for cards, `s/` tiny copies for the thumbnail strip. Add photos with `python3 tools/photo_lib.py UPC kind file` (it makes all three copies); `rebuild.py` attaches them and refreshes any missing small copies
 - `data/products.json` – the product catalog (source of truth for prices, names, member deals, staff picks)
 - `data/facts.json` – clean Supplement Facts / essential-oil Label Details tables, keyed by UPC
 - `tools/` – `rebuild.py` (rebuild index.html from data + photos), `photo_lib.py` (add product photos),
@@ -15,7 +15,7 @@ Live at **naturesnook.co** via GitHub Pages (this repo's `main` branch, root fol
 - Use the package label name; price always from the shelf tag.
 - Never double-add (dedupe by UPC); every variant is its own product.
 - Everyday Savings: show the regular price crossed out (`msrp`). Member deals: only blue SaveNaturally tags.
-- Monthly coupon specials (bring in / show at the register, not SaveNaturally): run `python3 tools/specials.py YYYY-MM-DD UPC[:dollars_off] ...` (clears last month's, sets the new ones, default $2 off, runs rebuild). Standard card: gold badge, front photo (`photo_lib/UPC-front.jpg`), name, brand and size, was/now price. 4 to 8 items looks best. They show on the member coupon only, never on product cards.
+- Monthly coupon specials (bring in / show at the register, not SaveNaturally): run `python3 tools/specials.py YYYY-MM-DD UPC[:dollars_off] ...` (clears last month's, sets the new ones, default $2 off, runs rebuild). Standard card: gold badge, front photo (`photo_lib/w/UPC-front.webp`, already on the site, so coupons never need new pictures), name, brand and size, was/now price. 4 to 8 items looks best. They show on the member coupon only, never on product cards.
 
 **Coupon layout standard (Nov 2026):** the coupon is for everyone, member or not, so no "member" wording inside it (headline, footer, print, share text). Big "Specials this month" headline on top, one line under it ("$X off each item below. Bring this in or show us at the register. No membership needed."), then the product cards (photo, name, brand and size, was/now price) in one row on desktop and two across on phones. The "More savings for members" block (SaveNaturally deals, free signup, loyalty points, brands, See all member deals) sits below the coupon box, never inside it, and does not print. The standalone `coupon/` page must match this standard.
 

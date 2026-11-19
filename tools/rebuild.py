@@ -30,24 +30,23 @@ import os
 h=open(ROOT+'index.html').read()
 m=re.search(r'(<script id="photo-data" type="application/json">)(.*?)(</script>)',h,re.S)
 ph=json.loads(m.group(2)); ph.setdefault('_facts',{})
-lib=set(os.listdir(ROOT+'photo_lib')) if os.path.isdir(ROOT+'photo_lib') else set()
+lib=set(os.listdir(ROOT+'photo_lib/w')) if os.path.isdir(ROOT+'photo_lib/w') else set()
 try:
     import sys as _s; _s.path.insert(0,ROOT+'tools'); import recenter as _rc
     for _f in lib:
-        if _f.endswith(('-front.jpg','-facts.jpg','-back.jpg')): _rc.recenter(ROOT+'photo_lib/'+_f)
+        if _f.endswith(('-front.webp','-facts.webp','-back.webp')): _rc.recenter(ROOT+'photo_lib/w/'+_f)
 except Exception as e: print('recenter skipped',e)
 try:
-    import webp as _wp; print('webp copies made', _wp.build())
+    import webp as _wp; print('small photo copies made', _wp.build())
 except Exception as e: print('webp skipped', e)
-def _fast(u,k,d):  # fast WebP copy if it exists, else the JPEG master
-    return f'photo_lib/{d}/{u}-{k}.webp' if os.path.exists(ROOT+f'photo_lib/{d}/{u}-{k}.webp') else f'photo_lib/{u}-{k}.jpg'
+def _fast(u,k,d): return f'photo_lib/{d}/{u}-{k}.webp'
 onsite={x['upc'] for x in p}; n=0
 ph['_thumbs']={}; ph['_strip']={}
 for u in onsite:
-    if f'{u}-front.jpg' in lib:
-        ks=[k for k in ('front','back') if f'{u}-{k}.jpg' in lib]
+    if f'{u}-front.webp' in lib:
+        ks=[k for k in ('front','back') if f'{u}-{k}.webp' in lib]
         ph[u]=[_fast(u,k,'w') for k in ks]; ph['_thumbs'][u]=[_fast(u,k,'t') for k in ks]; ph['_strip'][u]=[_fast(u,k,'s') for k in ks]
-        if f'{u}-facts.jpg' in lib: ph['_facts'][u]=_fast(u,'facts','w'); ph['_thumbs'][u].append(_fast(u,'facts','t')); ph['_strip'][u].append(_fast(u,'facts','s'))
+        if f'{u}-facts.webp' in lib: ph['_facts'][u]=_fast(u,'facts','w'); ph['_thumbs'][u].append(_fast(u,'facts','t')); ph['_strip'][u].append(_fast(u,'facts','s'))
         n+=1
 h=h[:m.start(2)]+json.dumps(ph,separators=(',',':'))+h[m.end(2):]
 open(ROOT+'index.html','w').write(h)

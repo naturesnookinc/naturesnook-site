@@ -1,5 +1,5 @@
 """Center product photos: trim uneven white space so the item sits in the middle.
-Usage: python3 tools/recenter.py [files...]   (default: every photo_lib front/facts/back image)"""
+Usage: python3 tools/recenter.py [files...]   (default: every photo_lib/w front/facts/back image)"""
 import os, sys, numpy as np
 from PIL import Image
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))+'/'
@@ -12,8 +12,8 @@ def recenter(p, tol=0.04):
     c=im.crop((cols[0],rows[0],cols[-1]+1,rows[-1]+1))
     pad=max(8,int(max(c.size)*0.03))
     out=Image.new('RGB',(c.size[0]+2*pad,c.size[1]+2*pad),'white'); out.paste(c,(pad,pad))
-    out.save(p,quality=82,optimize=True); return True
+    out.save(p,'WEBP',quality=78,method=6); return True
 if __name__=='__main__':
-    L=ROOT+'photo_lib/'
-    files=sys.argv[1:] or [L+f for f in sorted(os.listdir(L)) if f.endswith(('-front.jpg','-facts.jpg','-back.jpg'))]
+    L=ROOT+'photo_lib/w/'
+    files=sys.argv[1:] or [L+f for f in sorted(os.listdir(L)) if f.endswith(('-front.webp','-facts.webp','-back.webp'))]
     print('recentered',sum(recenter(f) for f in files))
