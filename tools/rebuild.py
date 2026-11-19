@@ -42,12 +42,12 @@ except Exception as e: print('webp skipped', e)
 def _fast(u,k,d):  # fast WebP copy if it exists, else the JPEG master
     return f'photo_lib/{d}/{u}-{k}.webp' if os.path.exists(ROOT+f'photo_lib/{d}/{u}-{k}.webp') else f'photo_lib/{u}-{k}.jpg'
 onsite={x['upc'] for x in p}; n=0
-ph['_thumbs']={}
+ph['_thumbs']={}; ph['_strip']={}
 for u in onsite:
     if f'{u}-front.jpg' in lib:
         ks=[k for k in ('front','back') if f'{u}-{k}.jpg' in lib]
-        ph[u]=[_fast(u,k,'w') for k in ks]; ph['_thumbs'][u]=[_fast(u,k,'t') for k in ks]
-        if f'{u}-facts.jpg' in lib: ph['_facts'][u]=_fast(u,'facts','w'); ph['_thumbs'][u].append(_fast(u,'facts','t'))
+        ph[u]=[_fast(u,k,'w') for k in ks]; ph['_thumbs'][u]=[_fast(u,k,'t') for k in ks]; ph['_strip'][u]=[_fast(u,k,'s') for k in ks]
+        if f'{u}-facts.jpg' in lib: ph['_facts'][u]=_fast(u,'facts','w'); ph['_thumbs'][u].append(_fast(u,'facts','t')); ph['_strip'][u].append(_fast(u,'facts','s'))
         n+=1
 h=h[:m.start(2)]+json.dumps(ph,separators=(',',':'))+h[m.end(2):]
 open(ROOT+'index.html','w').write(h)
