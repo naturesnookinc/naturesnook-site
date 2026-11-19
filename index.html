@@ -2109,7 +2109,7 @@ html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
   function money(v){return '$'+Number(v).toFixed(2)}
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
   ul.innerHTML=deals.map(function(i){
-    var size=i[4].split(' \u00b7 ').pop(), im=ph[i[6]]&&ph[i[6]][0]; if(im&&ph._thumbs&&ph._thumbs[i[6]]&&ph._thumbs[i[6]][0]) im=ph._thumbs[i[6]][0];
+    var size=i[4].split(' \u00b7 ').pop(), im=ph[i[6]]&&ph[i[6]][0];
     return '<li><a href="#p'+esc(i[6])+'"><span class="cp-d-off">'+money(i[11]).replace('.00','')+' off</span>'+
       (im?'<span class="cp-ph"><img src="'+esc(im)+'" alt="" loading="lazy"></span>':'<span class="cp-ph none" aria-hidden="true">'+esc(i[1].charAt(0))+'</span>')+
       '<span class="cp-d-name">'+esc(i[2])+'</span><span class="cp-d-meta">'+esc([i[1],size].filter(Boolean).join(' \u00b7 '))+'</span>'+
