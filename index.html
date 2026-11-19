@@ -118,7 +118,7 @@ body.spotlight main>*:not(.is-spot),body.spotlight footer.site-foot{filter:blur(
 @media (prefers-reduced-motion: reduce){main>*,footer.site-foot{transition:none}}
 /* storefront photo: desktop = left panel only; mobile = full-screen photo that the words scroll up over */
 .hero-photo{display:none}
-.hero.has-photo .hero-copy{color:#f3f7f4;background:linear-gradient(180deg,rgba(12,20,15,0) 0%,rgba(12,20,15,.05) 22%,rgba(12,20,15,.72) 48%,rgba(12,20,15,.9) 100%),#1b2a21 url("img/storefront.jpg") center 8%/cover no-repeat;border-radius:20px;padding:clamp(11rem,20vw,15rem) clamp(1.5rem,3.2vw,2.6rem) clamp(1.5rem,3.2vw,2.6rem);box-shadow:0 18px 40px rgba(0,0,0,.18);align-self:stretch;display:flex;flex-direction:column;justify-content:flex-end}
+.hero.has-photo .hero-copy{color:#f3f7f4;background:linear-gradient(180deg,rgba(12,20,15,0) 0%,rgba(12,20,15,.05) 22%,rgba(12,20,15,.72) 48%,rgba(12,20,15,.9) 100%),#1b2a21 url("img/storefront.jpg") center 8%/cover no-repeat;background:linear-gradient(180deg,rgba(12,20,15,0) 0%,rgba(12,20,15,.05) 22%,rgba(12,20,15,.72) 48%,rgba(12,20,15,.9) 100%),#1b2a21 image-set(url("img/storefront.webp") type("image/webp"),url("img/storefront.jpg") type("image/jpeg")) center 8%/cover no-repeat;border-radius:20px;padding:clamp(11rem,20vw,15rem) clamp(1.5rem,3.2vw,2.6rem) clamp(1.5rem,3.2vw,2.6rem);box-shadow:0 18px 40px rgba(0,0,0,.18);align-self:stretch;display:flex;flex-direction:column;justify-content:flex-end}
 .hero.has-photo .hero-copy h1{font-size:clamp(2.2rem,4.6vw,3.6rem)}
 .hero.has-photo .hero-copy .eyebrow,.hero.has-photo .hero-copy h1,.hero.has-photo .hero-copy .lede{color:#f3f7f4;text-shadow:0 1px 12px rgba(0,0,0,.35)}
 .hero.has-photo .hero-copy h1 em{color:#a8d8b2}
@@ -547,6 +547,7 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .sf-head{display:flex;justify-content:space-between;font-weight:800;padding:.2rem 0;border-bottom:4px solid var(--ink)}
 .sf-row{display:grid;grid-template-columns:minmax(0,1fr) auto 2.6rem;gap:.6rem;padding:.3rem 0;border-bottom:1px solid var(--ink);font-variant-numeric:tabular-nums}
 .sf-row.sf-thick{border-bottom-width:6px}
+picture{display:contents}
 .pd-notice{margin:14px 0 4px;font-weight:600;font-size:.95rem;line-height:1.45;color:#7a4a05}
 .pd-notice[hidden]{display:none}
 
@@ -1271,7 +1272,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
 
 <main id="top" tabindex="-1">
   <div class="hero has-photo">
-    <div class="hero-photo"><img src="img/storefront.jpg" alt="The Nature's Nook storefront on Valley River Road in Rexburg" width="900" height="1200" fetchpriority="high" decoding="async"><span class="scroll-hint" aria-hidden="true">Scroll ↓</span></div>
+    <div class="hero-photo"><picture><source type="image/webp" srcset="img/storefront.webp"><img src="img/storefront.jpg" alt="The Nature's Nook storefront on Valley River Road in Rexburg" width="900" height="1200" fetchpriority="high" decoding="async"></picture><span class="scroll-hint" aria-hidden="true">Scroll ↓</span></div>
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Rexburg, Idaho</p>
@@ -1457,11 +1458,11 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     <div class="wrap">
       <div class="inside-gallery" id="inside-gallery" aria-label="Photos inside the store">
       <figure class="inside-shot">
-        <img src="img/inside.jpg" srcset="img/inside-900.jpg 900w, img/inside.jpg 1448w" sizes="(max-width:760px) 100vw, 1200px" alt="Inside Nature's Nook: bright aisles of vitamins, herbs and supplements, with the checkout counter on the left" width="1448" height="1086" loading="lazy">
+        <picture><source type="image/webp" srcset="img/inside-900.webp 900w, img/inside.webp 1448w" sizes="(max-width:760px) 100vw, 1200px"><img src="img/inside.jpg" srcset="img/inside-900.jpg 900w, img/inside.jpg 1448w" sizes="(max-width:760px) 100vw, 1200px" alt="Inside Nature's Nook: bright aisles of vitamins, herbs and supplements, with the checkout counter on the left" width="1448" height="1086" loading="lazy" decoding="async"></picture>
         <figcaption><span class="eyebrow">Step inside</span><strong>Aisles of vitamins, herbs and good food, and people who know them.</strong><span>160 E Valley River Rd, Rexburg</span></figcaption>
       </figure>
       <figure class="inside-shot inside-shot-2">
-        <img src="img/inside2.jpg" srcset="img/inside2-900.jpg 900w, img/inside2.jpg 1448w" sizes="(max-width:760px) 100vw, 1200px" alt="The Nature's Nook checkout counter with aisles of supplements and the drink coolers behind it" width="1448" height="1086" loading="lazy">
+        <picture><source type="image/webp" srcset="img/inside2-900.webp 900w, img/inside2.webp 1448w" sizes="(max-width:760px) 100vw, 1200px"><img src="img/inside2.jpg" srcset="img/inside2-900.jpg 900w, img/inside2.jpg 1448w" sizes="(max-width:760px) 100vw, 1200px" alt="The Nature's Nook checkout counter with aisles of supplements and the drink coolers behind it" width="1448" height="1086" loading="lazy" decoding="async"></picture>
         <figcaption><span class="eyebrow">Front counter</span><strong>Questions welcome at the register.</strong></figcaption>
       </figure>
       </div>
@@ -1788,7 +1789,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     list.innerHTML=slice.length?slice.map(function(i){
       var own=i[1]==="Nature's Nook"&&i[0]!=="Bottles & Supplies";
       var size=i[4].split(' · ')[1]||'';
-      var pic=(own||window.NN_FLAT_CARDS)?null:PHOTOS[i[6]]; if(Array.isArray(pic)) pic=pic[0];
+      var pic=(own||window.NN_FLAT_CARDS)?null:PHOTOS[i[6]]; if(Array.isArray(pic)) pic=pic[0]; if(pic){var _t=(PHOTOS._thumbs||{})[i[6]]; if(_t&&_t[0]) pic=_t[0];}
       var tile=pic?'<div class="ph ph-photo'+((PHOTOS._cutout||[]).indexOf(i[6])>-1?' ph-cutout':'')+'"><img src="'+pic+'" alt="'+esc(i[1]+' '+i[2])+'" loading="lazy"></div>':own?'<div class="ph lbl-tile" aria-hidden="true"><span class="lt-logo"></span><span class="lt-name">'+esc(i[2])+'</span></div>':'<div class="ph gen-tile b-'+brandKey(i[1])+'" aria-hidden="true"><span class="gt-band"></span><span class="gt-brand">'+esc(i[1])+'</span></div>';
       return '<li class="item" tabindex="0" role="button" data-upc="'+esc(i[6])+'" aria-label="'+esc(i[1]+' '+i[2]+(i[3]?', '+i[3]:''))+', view details">'+(i[10]?tile.replace(/<\/div>$/,favTag(i)+'</div>'):tile)+'<div class="info">'+(i[10]?'<span class="fav-line">'+esc(favInfo(i).label)+'</span>':'')+'<span class="brand-name">'+esc(i[1])+'</span><h3>'+esc(i[2])+'</h3><span class="size">'+esc([i[3],size].filter(Boolean).join(' · '))+'</span>'+(WHY[i[6]]?'<span class="why">'+esc(WHY[i[6]])+'</span>':'')+priceHTML(i)+'</div></li>';
     }).join('').replace(/^/,topicNote?topicNote:alt?(alt.fix?'<li class="alt-note">No results for <strong>'+esc(state.q.trim())+'</strong>. '+alt.note+' instead.</li>':'<li class="alt-note"><span class="an-lead">No exact match for <strong>'+esc(state.q.trim())+'</strong>.</span> '+(alt.html?alt.note:esc(alt.note))+' Not quite right? Call us at (208) 356-5284 and we\u2019ll help you find it or order it.</li>'):''):'<li class="empty">'+(state.q.trim()?'<strong>'+esc(state.q.trim())+'</strong> isn\'t in our online list yet. We\'re still adding sections, and we may carry it in store or be able to order it. Call us at (208) 356-5284.':'Nothing here yet. We\'re still adding sections to our online list. Call us at (208) 356-5284.')+'</li>';
@@ -1856,7 +1857,8 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
       else { placeholder(i,main); main.classList.remove('can-zoom'); window.nnPd=null; }
       th.querySelectorAll('button').forEach(function(b,j){b.setAttribute('aria-current',j===k?'true':'false')});
     }
-    th.innerHTML=views.length>1?views.map(function(v,k){return '<button type="button" aria-label="Show '+v.label.toLowerCase()+' photo"><img src="'+v.src+'" alt=""></button>'}).join(''):'';
+    var TH=(P._thumbs||{})[u]||[];
+    th.innerHTML=views.length>1?views.map(function(v,k){return '<button type="button" aria-label="Show '+v.label.toLowerCase()+' photo"><img src="'+(TH[k]||v.src)+'" alt="" loading="lazy" decoding="async"></button>'}).join(''):'';
     th.querySelectorAll('button').forEach(function(b,k){b.addEventListener('click',function(){setMain(k)})});
     setMain(0);
     var panel=document.getElementById('pd-panel');
@@ -2107,7 +2109,7 @@ html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
   function money(v){return '$'+Number(v).toFixed(2)}
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
   ul.innerHTML=deals.map(function(i){
-    var size=i[4].split(' \u00b7 ').pop(), im=ph[i[6]]&&ph[i[6]][0];
+    var size=i[4].split(' \u00b7 ').pop(), im=ph[i[6]]&&ph[i[6]][0]; if(im&&ph._thumbs&&ph._thumbs[i[6]]&&ph._thumbs[i[6]][0]) im=ph._thumbs[i[6]][0];
     return '<li><a href="#p'+esc(i[6])+'"><span class="cp-d-off">'+money(i[11]).replace('.00','')+' off</span>'+
       (im?'<span class="cp-ph"><img src="'+esc(im)+'" alt="" loading="lazy"></span>':'<span class="cp-ph none" aria-hidden="true">'+esc(i[1].charAt(0))+'</span>')+
       '<span class="cp-d-name">'+esc(i[2])+'</span><span class="cp-d-meta">'+esc([i[1],size].filter(Boolean).join(' \u00b7 '))+'</span>'+
