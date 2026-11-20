@@ -17392,5 +17392,253 @@
   "foot": "**Daily Value (DV) not established.",
   "other": "hydroxypropyl methylcellulose (vegetable cellulose capsules), microcrystalline cellulose, rice bran extract, silica.",
   "notes": "Take 1 capsule daily. For optimal results, take on an empty stomach. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703440138": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Capsule",
+  "servings": "30",
+  "rows": [
+   [
+    "Total Carbohydrate",
+    "0.5 g",
+    "< 1%†",
+    0
+   ],
+   [
+    "Vitamin B6 (from pyridoxal-5-phosphate)",
+    "10 mg",
+    "588%",
+    0
+   ],
+   [
+    "Zinc (from Albion® zinc bisglycinate chelate)",
+    "15 mg",
+    "136%",
+    1
+   ],
+   [
+    "Ashwagandha (<i>Withania somnifera</i>) Leaf and Root Extract (EP35™) standardized to ≥ 35% total withanolides (≥ 87.5 mg)",
+    "250 mg",
+    "**",
+    0
+   ],
+   [
+    "BR-DIM® (a proprietary, enhanced bioavailability complex containing starch, a minimum 25% diindolylmethane [15 mg], vitamin E, phosphatidylcholine, silica)",
+    "60 mg",
+    "**",
+    0
+   ],
+   [
+    "DHEA (dehydroepiandrosterone) (micronized)",
+    "15 mg",
+    "**",
+    0
+   ],
+   [
+    "Boron (from calcium fructoborate)",
+    "3 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "hydroxypropyl methylcellulose (vegetable cellulose capsule), cellulose powder, silica, vegetable source magnesium stearate, citric acid.",
+  "notes": "Male adults, take 1 capsule daily. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703342029": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Capsules",
+  "servings": "60",
+  "rows": [
+   [
+    "Thiamin (B1) (from thiamin HCl)",
+    "25 mg",
+    "2,083%",
+    0
+   ],
+   [
+    "Riboflavin (vitamin B2)",
+    "25 mg",
+    "1,923%",
+    0
+   ],
+   [
+    "Niacin (as niacinamide)",
+    "10 mg",
+    "63%",
+    0
+   ],
+   [
+    "Vitamin B6 (as pyridoxal-5-phosphate)",
+    "30 mg",
+    "1,765%",
+    0
+   ],
+   [
+    "Folate (as (6S)-5-methyltetrahydrofolic acid, glucosamine salt)",
+    "425 mcg DFE (250 mcg)",
+    "106%",
+    0
+   ],
+   [
+    "Vitamin B12 (as methylcobalamin)",
+    "500 mcg",
+    "20,833%",
+    0
+   ],
+   [
+    "Biotin (as d-biotin)",
+    "1,000 mcg",
+    "3,333%",
+    0
+   ],
+   [
+    "Pantothenic Acid (from d-calcium pantothenate)",
+    "200 mg",
+    "4,000%",
+    0
+   ],
+   [
+    "Zinc (from Albion® zinc bisglycinate chelate)",
+    "10 mg",
+    "91%",
+    0
+   ],
+   [
+    "Chromium (from Albion® chromium nicotinate glycinate chelate)",
+    "200 mcg",
+    "571%",
+    1
+   ],
+   [
+    "Alpha Lipoic Acid",
+    "300 mg",
+    "**",
+    0
+   ],
+   [
+    "Boswellia (<i>Boswellia serrata</i>) Gum Resin Extract (BOS-10®) standardized to contain ≥ 70% total organic and boswellic acids with AKBA ≥ 10%",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Benfotiamine",
+    "50 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. ¹US Patent No. 7,947,662",
+  "other": "gum acacia, hydroxypropyl methylcellulose (vegetable cellulose capsules), mannitol, silica, vegetable source magnesium stearate, microcrystalline cellulose.",
+  "notes": "Take 2 capsules twice daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703342067": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Thiamin (B1) (from thiamin HCl)",
+    "25 mg",
+    "2,083%",
+    0
+   ],
+   [
+    "Riboflavin (vitamin B2)",
+    "25 mg",
+    "1,923%",
+    0
+   ],
+   [
+    "Niacin (as niacinamide)",
+    "10 mg",
+    "63%",
+    0
+   ],
+   [
+    "Vitamin B6 (as pyridoxal-5-phosphate)",
+    "30 mg",
+    "1,765%",
+    0
+   ],
+   [
+    "Folate (as (6S)-5-methyltetrahydrofolic acid, glucosamine salt)",
+    "425 mcg DFE (250 mcg)",
+    "106%",
+    0
+   ],
+   [
+    "Vitamin B12 (as methylcobalamin)",
+    "500 mcg",
+    "20,833%",
+    0
+   ],
+   [
+    "Biotin (as d-biotin)",
+    "1,000 mcg",
+    "3,333%",
+    0
+   ],
+   [
+    "Pantothenic Acid (from d-calcium pantothenate)",
+    "200 mg",
+    "4,000%",
+    0
+   ],
+   [
+    "Zinc (from Albion® zinc bisglycinate chelate)",
+    "10 mg",
+    "91%",
+    0
+   ],
+   [
+    "Chromium (from Albion® chromium nicotinate glycinate chelate)",
+    "200 mcg",
+    "571%",
+    1
+   ],
+   [
+    "Alpha Lipoic Acid",
+    "300 mg",
+    "**",
+    0
+   ],
+   [
+    "Boswellia (<i>Boswellia serrata</i>) Gum Resin Extract (BOS-10®) standardized to contain ≥ 70% total organic and boswellic acids with AKBA ≥ 10%",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Benfotiamine",
+    "50 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. ¹US Patent No. 7,947,662",
+  "other": "gum acacia, hydroxypropyl methylcellulose (vegetable cellulose capsules), mannitol, silica, vegetable source magnesium stearate, microcrystalline cellulose.",
+  "notes": "Take 2 capsules twice daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703336066": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Capsule",
+  "servings": "60",
+  "rows": [
+   [
+    "French Grape (<i>Vitis vinifera</i>) Seed Extract (VX1®) standardized to contain ≥ 99% polyphenols and ≥ 80% OPCs",
+    "150 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "cellulose powder, hydroxypropyl methylcellulose (vegetable cellulose capsules), silica, vegetable source magnesium stearate.",
+  "notes": "Take 1 capsule daily, may take up to 4 times a day for enhanced benefits. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, and artificial preservatives. VX1® is a product of France."
  }
 }
