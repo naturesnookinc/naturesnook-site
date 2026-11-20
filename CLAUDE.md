@@ -8,6 +8,7 @@ Live at **naturesnook.co** via GitHub Pages (this repo's `main` branch, root fol
 - `photo_lib/` – product photos, WebP only (no JPG masters, to stay under GitHub Pages' 1 GB limit): `w/` full-size (`UPC-front.webp`, `UPC-back.webp`, `UPC-facts.webp`), `t/` small copies for cards, `s/` tiny copies for the thumbnail strip. Add photos with `python3 tools/photo_lib.py UPC kind file` (it makes all three copies); `rebuild.py` attaches them and refreshes any missing small copies
 - `data/products.json` – the product catalog (source of truth for prices, names, member deals, staff picks)
 - `data/thumb_focus.json` – optional per-UPC card-thumbnail position for tall box pictures whose name sits high up (`{UPC: 0-1}`). Listed products get a wide 16:9 card crop starting that fraction down the picture, so the product name and subtitle show on the search card; everything else keeps the bottle default (square at .55). Delete the product's `t/UPC-front.webp` and run `rebuild.py` after changing it
+- `data/photo_ver.json` – `{UPC: n}`; when a product's picture is REPLACED (same file name), set or bump its number so browsers fetch the new picture instead of the cached old one (adds `?v=n` to that product's photo links)
 - `data/facts.json` – clean Supplement Facts / essential-oil Label Details tables, keyed by UPC
 - `tools/` – `rebuild.py` (rebuild index.html from data + photos), `photo_lib.py` (add product photos),
   `apply.py` (apply a batch of shelf-tag rows), `look.py` (look a UPC/name up on the site and in the register export)

@@ -39,7 +39,9 @@ except Exception as e: print('recenter skipped',e)
 try:
     import webp as _wp; print('small photo copies made', _wp.build())
 except Exception as e: print('webp skipped', e)
-def _fast(u,k,d): return f'photo_lib/{d}/{u}-{k}.webp'
+try: _ver=json.load(open(ROOT+'data/photo_ver.json'))
+except Exception: _ver={}
+def _fast(u,k,d): return f'photo_lib/{d}/{u}-{k}.webp'+(f'?v={_ver[u]}' if u in _ver else '')  # data/photo_ver.json {UPC: n}: bump n after REPLACING a picture so browsers fetch the new one
 onsite={x['upc'] for x in p}; n=0
 ph['_thumbs']={}; ph['_strip']={}
 for u in onsite:
