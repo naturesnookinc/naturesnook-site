@@ -18169,5 +18169,132 @@
   "foot": "**Daily Value (DV) not established.",
   "other": "rice bran extract, hydroxypropyl methylcellulose (vegetable cellulose capsules), maltodextrin, silica.",
   "notes": "Take 1 capsule daily. For optimal support, may take 2 capsules daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703134167": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Total Carbohydrate",
+    "< 1 g",
+    "< 1%†",
+    1
+   ],
+   [
+    "Iodine (from potassium iodide 14,644 mcg, sodium iodide 14,644 mcg, molecular iodine [from kelp] 712 mcg)",
+    "30,000 mcg (30 mg)",
+    "20,000%",
+    1
+   ],
+   [
+    "Selenium (as selenium yeast) (<i>Saccharomyces cerevisiae</i>)",
+    "300 mcg",
+    "545%",
+    1
+   ],
+   [
+    "L-tyrosine",
+    "400 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. †Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "microcrystalline cellulose, hydroxypropyl methylcellulose (vegetable cellulose capsules), vegetable source magnesium stearate, silica.",
+  "notes": "Take 1-2 capsules daily in the morning on an empty stomach. For long-term use, consult a healthcare practitioner. Do not use if trying to conceive, pregnant, or nursing. No sugar, salt, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703134129": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Capsules",
+  "servings": "60",
+  "rows": [
+   [
+    "Total Carbohydrate",
+    "< 1 g",
+    "< 1%†",
+    1
+   ],
+   [
+    "Iodine (from potassium iodide 14,644 mcg, sodium iodide 14,644 mcg, molecular iodine [from kelp] 712 mcg)",
+    "30,000 mcg (30 mg)",
+    "20,000%",
+    1
+   ],
+   [
+    "Selenium (as selenium yeast) (<i>Saccharomyces cerevisiae</i>)",
+    "300 mcg",
+    "545%",
+    1
+   ],
+   [
+    "L-tyrosine",
+    "400 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. †Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "microcrystalline cellulose, hydroxypropyl methylcellulose (vegetable cellulose capsules), vegetable source magnesium stearate, silica.",
+  "notes": "Take 1-2 capsules daily in the morning on an empty stomach. For long-term use, consult a healthcare practitioner. Do not use if trying to conceive, pregnant, or nursing. No sugar, salt, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703255022": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Capsules",
+  "servings": "60",
+  "rows": [
+   [
+    "Iodine (from potassium iodide 14,644 mcg, sodium iodide 14,644 mcg, molecular iodine [from kelp] 712 mcg)",
+    "30,000 mcg (30 mg)",
+    "20,000%",
+    1
+   ],
+   [
+    "L-tyrosine",
+    "400 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "microcrystalline cellulose, hydroxypropyl methylcellulose (vegetable cellulose capsules), silica.",
+  "notes": "Take 1-2 capsules daily in the morning on an empty stomach. For long-term use, consult a healthcare practitioner. Do not use if trying to conceive, pregnant, or nursing. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703356064": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Capsule",
+  "servings": "60",
+  "rows": [
+   [
+    "Berberine [from Phellodendron (<i>Phellodendron amurense</i>) Bark Extract]",
+    "250 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "gamma cyclodextrin, hydroxypropyl methylcellulose (vegetable cellulose capsules), microcrystalline cellulose, starch, vegetable source magnesium stearate, silica.",
+  "notes": "Take 1 capsule daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+ },
+ "367703117900": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Capsule",
+  "servings": "90",
+  "rows": [
+   [
+    "Iodine (from potassium iodide 2,935 mcg, sodium iodide 2,935 mcg, molecular iodine [from kelp] 380 mcg)",
+    "6,250 mcg (6.25 mg)",
+    "4,167%†",
+    0
+   ]
+  ],
+  "foot": "†Daily Value (DV).",
+  "other": "microcrystalline cellulose, hydroxypropyl methylcellulose (vegetable cellulose capsules), silica.",
+  "notes": "Take 1 capsule daily with food. For long-term use, consult a healthcare practitioner. Do not use if trying to conceive, pregnant, or nursing. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
  }
 }
