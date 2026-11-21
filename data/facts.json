@@ -18602,5 +18602,102 @@
   "foot": "** Daily Value not established.",
   "other": "Vegetarian capsule (hypromellose, purified water), microcrystalline cellulose, stearic acid, magnesium stearate (vegetable grade), silicon dioxide.",
   "notes": ""
+ },
+ "68958016788": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Zinc (citrate)",
+    "15 mg",
+    "136%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, dicalcium phosphate, croscarmellose sodium, magnesium stearate (vegetable grade).",
+  "notes": ""
+ },
+ "68958013855": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Zinc (citrate)",
+    "15 mg",
+    "136%",
+    0
+   ],
+   [
+    "Copper (citrate)",
+    "1 mg",
+    "111%",
+    1
+   ],
+   [
+    "Quercetin (<i>Sophora japonica</i>) (buds)",
+    "500 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Vegetarian capsule (carbohydrate gum (cellulose), purified water), microcrystalline cellulose, stearic acid, magnesium stearate (vegetable grade), silicon dioxide.",
+  "notes": ""
+ },
+ "68958016757": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Selenium (<i>Saccharomyces cerevisiae</i>) (yeast)",
+    "200 mcg",
+    "364%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, gelatin capsule (gelatin, purified water), magnesium stearate (vegetable grade).",
+  "notes": "SelenoExcell® is a registered trademark of Cypress Systems, Inc."
+ },
+ "68958016931": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Zinc (as zinc bisglycinate)",
+    "50 mg",
+    "455%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Rice flour, vegetarian capsule (carbohydrate gum (cellulose), purified water), magnesium stearate (vegetable grade), silica, stearic acid.",
+  "notes": ""
+ },
+ "68958016832": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Zinc (chelate)",
+    "25 mg",
+    "227%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, magnesium stearate (vegetable grade).",
+  "notes": ""
  }
 }
