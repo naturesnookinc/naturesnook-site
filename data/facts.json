@@ -19841,5 +19841,115 @@
   "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
   "other": "hydroxypropyl methylcellulose (vegetable cellulose capsules), silica, vegetable source magnesium stearate, cellulose powder.",
   "notes": "Recommendations: 2 capsules daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703322434": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Capsule",
+  "servings": "30",
+  "rows": [
+   [
+    "Total Carbohydrate",
+    "<1 g",
+    "<1%†",
+    0
+   ],
+   [
+    "Proprietary Complex",
+    "250 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Curcumin (<i>Curcuma longa</i>) Rhizome Extract (BCM-95/Curcugreen) enhanced with turmeric essential oil and standardized for curcuminoid complex (curcumin, demethoxycurcumin and bisdemethoxycurcumin), French Grape (<i>Vitis vinifera</i>) Seed Extract (VX1) standardized to contain ≥ 99% polyphenols and ≥ 80% OPCs",
+    "",
+    "",
+    0
+   ],
+   [
+    "BR-DIM",
+    "120 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;(a proprietary, enhanced bioavailability complex containing starch, a minimum 25% diindolylmethane [30 mg], Vitamin E, phosphatidylcholine, silica)",
+    "",
+    "",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "cellulose powder, hydroxypropyl methylcellulose (vegetable cellulose capsules), silica, vegetable source magnesium stearate.",
+  "notes": "Recommendations: 1 capsule daily with food. May increase to 1 capsule twice daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703202736": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Softgel",
+  "servings": "30",
+  "rows": [
+   [
+    "Proprietary Complex",
+    "600 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;D-limonene from Orange (<i>Citrus sinensis</i>) Peel Oil, Sea Buckthorn (<i>Hippophae rhamnoides</i>) Berry Oil via supercritical CO<sub>2</sub> extraction",
+    "",
+    "",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "gelatin, glycerin, purified water, rosemary extract.",
+  "notes": "No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703013851": {
+  "kind": "oil",
+  "fields": [
+   [
+    "Size",
+    "1.76 oz (50 g)"
+   ],
+   [
+    "Directions",
+    "Apply liberally several times daily, or as often as desired. Safe for adults and children 4 and up."
+   ],
+   [
+    "Ingredients",
+    "Purified Water, Glyceryl Stearate, Comfrey (<i>Symphytum x uplandicum</i> NYMAN) Extract containing Choline, Rosmarinic Acid and Allantoin, PEG-20 Glyceryl Stearate, Isopropyl Myristate, Propylene Glycol, Octyldodecanol, Glycol Salicylate, Dimethicone, Sorbic Acid, Rosemary (<i>Rosmarinus officinalis</i>) Oil, Tocopheryl Acetate, Citric Acid."
+   ],
+   [
+    "Storage",
+    "Store at room temperature (68-77°F)."
+   ]
+  ],
+  "caution": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
+  "by": "Manufactured by Harras Pharma, Munich, Germany. Exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com. Product of Germany."
+ },
+ "367703013813": {
+  "kind": "oil",
+  "fields": [
+   [
+    "Size",
+    "3.53 oz (100 g)"
+   ],
+   [
+    "Directions",
+    "Apply liberally several times daily, or as often as desired. Safe for adults and children 4 and up."
+   ],
+   [
+    "Ingredients",
+    "Purified Water, Glyceryl Stearate, Comfrey (<i>Symphytum x uplandicum</i> NYMAN) Extract containing Choline, Rosmarinic Acid and Allantoin, PEG-20 Glyceryl Stearate, Isopropyl Myristate, Propylene Glycol, Octyldodecanol, Glycol Salicylate, Dimethicone, Sorbic Acid, Rosemary (<i>Rosmarinus officinalis</i>) Oil, Tocopheryl Acetate, Citric Acid."
+   ],
+   [
+    "Storage",
+    "Store at room temperature (68-77°F)."
+   ]
+  ],
+  "caution": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
+  "by": "Manufactured by Harras Pharma, Munich, Germany. Exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com. Product of Germany."
  }
 }
