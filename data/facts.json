@@ -17299,19 +17299,19 @@
  "367703242961": {
   "title": "Supplement Facts",
   "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
-  "serving": "1 Capsule",
+  "serving": "1 Capsule (Veg)",
   "servings": "60",
   "rows": [
    [
-    "Concentrated Bee Propolis Extract (EP300™)",
+    "Concentrated Bee Propolis Extract (EP300)",
     "200 mg",
     "**",
-    0
+    1
    ]
   ],
   "foot": "**Daily Value (DV) not established.",
   "other": "gum acacia, hydroxypropyl methylcellulose (vegetable cellulose capsules), cellulose powder, sucrose, silica, vegetable source magnesium stearate.",
-  "notes": "Adults and children (4 years old and up): 1 capsule daily. May increase to 1 capsule twice daily for additional support. Capsule may be opened to mix into food and beverages. If pregnant or nursing, consult a healthcare practitioner before use. No salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+  "notes": "Recommendations: Adults and Children (4 years old and up): 1 capsule daily. May increase to 1 capsule twice daily for additional support. Capsule may be opened to mix into food and beverages. If pregnant or nursing, consult a healthcare practitioner before use. No salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
  },
  "367703182991": {
   "title": "Supplement Facts",
@@ -19391,5 +19391,127 @@
   "foot": "**Daily Value (DV) not established.",
   "other": "tricalcium phosphate, magnesium hydroxide, silicon dioxide, sunflower oil, vegetable source magnesium stearate, coating (hydroxypropyl methylcellulose, vegetable source stearic acid, microcrystalline cellulose), mineral sea water extract, maltodextrin, arabic gum.",
   "notes": "Recommendations: 1-2 tablets twice daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients. Product of France."
+ },
+ "367703275099": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Chewable Tablet",
+  "servings": "90",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5,000 IU)",
+    "625%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "xylitol, sorbitol, cellulose powder, maltodextrin, starch, vegetable source stearic acid, silica, flavor, ascorbyl palmitate, sucrose, beet juice, dextrose, citric acid.",
+  "notes": "Mixed Berry flavor. No salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703200893": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Capsules",
+  "servings": "45",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Protein",
+    "1 g",
+    "2%†",
+    0
+   ],
+   [
+    "Folate (from (6S)-5-methyltetrahydrofolic acid, glucosamine salt)",
+    "340 mcg DFE (200 mcg)",
+    "85%",
+    0
+   ],
+   [
+    "Vitamin B12 (as methylcobalamin)",
+    "1,000 mcg",
+    "41,667%",
+    0
+   ],
+   [
+    "Iron (from Ferrochel ferrous bisglycinate chelate)",
+    "5 mg",
+    "28%",
+    1
+   ],
+   [
+    "Liver Fractions (from liver concentrate, containing natural heme iron)",
+    "1,300 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. US Patent No. 7,947,662. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "gelatin capsules, silica, cellulose powder, vegetable source magnesium stearate, citric acid, maltodextrin.",
+  "notes": "No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703122133": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Chewable Tablet",
+  "servings": "30",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Total Carbohydrate",
+    "2 g",
+    "<1%†",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Total Sugars",
+    "0 g",
+    "",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;&nbsp;&nbsp;Sugar Alcohol (xylitol)",
+    "2 g",
+    "",
+    0
+   ],
+   [
+    "Korean Red Ginseng (<i>Panax ginseng</i>) Root Powder (HRG80) containing rare, noble ginsenosides",
+    "100 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "xylitol, gamma cyclodextrin, vegetable source stearic acid, vegetable source magnesium stearate, silica.",
+  "notes": "Recommendations: Chew 1 tablet daily. Results improve with continued use. If pregnant or nursing, consult a healthcare practitioner before use. Contains xylitol, keep away from pets. No sugar or artificial sweeteners. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703296032": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Capsule (Veg)",
+  "servings": "30",
+  "rows": [
+   [
+    "Korean Red Ginseng (<i>Panax ginseng</i>) Root Powder (HRG80) containing rare, noble ginsenosides",
+    "200 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "cellulose powder, hydroxypropyl methylcellulose (vegetable cellulose capsules), silica, vegetable source magnesium stearate.",
+  "notes": "Recommendations: Take 1 capsule daily. May increase to 1 capsule twice daily. Results improve with continued use. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
  }
 }
