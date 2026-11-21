@@ -18832,5 +18832,564 @@
   "foot": "",
   "other": "hydroxypropyl methylcellulose (vegetable cellulose capsules), rice bran extract, citric acid, vegetable source stearic acid, silica.",
   "notes": "Recommendations: 1 capsule daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients. Albion is a registered trademark of Balchem Corporation or its subsidiaries."
+ },
+ "367703472269": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Softgels",
+  "servings": "30",
+  "rows": [
+   [
+    "Calories",
+    "10",
+    "",
+    0
+   ],
+   [
+    "Total Fat",
+    "1 g",
+    "1%†",
+    0
+   ],
+   [
+    "Protein",
+    "<1 g",
+    "1%†",
+    0
+   ],
+   [
+    "Vitamin A (as retinyl palmitate)",
+    "1,200 mcg (4,000 IU)",
+    "133%",
+    0
+   ],
+   [
+    "Vitamin E (as d-alpha and mixed tocopherols)",
+    "30 mg (45 IU)",
+    "200%",
+    0
+   ],
+   [
+    "Riboflavin (Vitamin B2)",
+    "4 mg",
+    "308%",
+    0
+   ],
+   [
+    "Vitamin B6 (from pyridoxal-5-phosphate)",
+    "20 mg",
+    "1,176%",
+    0
+   ],
+   [
+    "Folate (from calcium-L-5-methyltetrahydrofolate)",
+    "680 mcg DFE (400 mcg folic acid)",
+    "170%",
+    0
+   ],
+   [
+    "Biotin (as d-biotin)",
+    "5,000 mcg",
+    "16,667%",
+    0
+   ],
+   [
+    "Pantothenic Acid (from d-calcium pantothenate)",
+    "20 mg",
+    "400%",
+    0
+   ],
+   [
+    "Zinc (from zinc gluconate)",
+    "10 mg",
+    "91%",
+    1
+   ],
+   [
+    "Millet (<i>Panicum miliaceum</i>) Seed Oil (CO<sub>2</sub> Extraction) standardized to contain ≥ 4 mg of miliacin",
+    "400 mg",
+    "**",
+    0
+   ],
+   [
+    "Horsetail (<i>Equisetum arvense</i>) Aerial Extract standardized to deliver ≥ 7 mg of silica",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Cysteine",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Methionine",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Maqui (<i>Aristotelia chilensis</i>) Berry Extract standardized to ≥ 40% total phenols and ≥ 25% delphinidins",
+    "60 mg",
+    "**",
+    0
+   ],
+   [
+    "Aronia (<i>Aronia melanocarpa</i>) Berry Extract (AB40) standardized to ≥ 40% total polyphenols",
+    "50 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "extra virgin olive oil, gelatin, glycerin, maltodextrin, beeswax, sunflower lecithin, purified water, sunflower oil, iron oxide, rosemary extract. <b>Contains Soy</b> (less than 5 parts per million).",
+  "notes": "Recommendations: 2 softgels daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, dairy products, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703412036": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Scoop (7.2 grams)",
+  "servings": "30",
+  "rows": [
+   [
+    "Calories",
+    "25",
+    "",
+    0
+   ],
+   [
+    "Total Carbohydrate",
+    "3 g",
+    "1%†",
+    0
+   ],
+   [
+    "Dietary Fiber",
+    "0.5 g",
+    "2%†",
+    0
+   ],
+   [
+    "Protein",
+    "3 g",
+    "6%†",
+    0
+   ],
+   [
+    "Vitamin A (as retinyl palmitate)",
+    "1,500 mcg (5,000 IU)",
+    "167%",
+    0
+   ],
+   [
+    "Vitamin C (from calcium ascorbate)",
+    "250 mg",
+    "278%",
+    0
+   ],
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "25 mcg (1,000 IU)",
+    "125%",
+    0
+   ],
+   [
+    "Vitamin E (as d-alpha and mixed tocopherols)",
+    "50 mg (75 IU)",
+    "333%",
+    0
+   ],
+   [
+    "Thiamin (Vitamin B1) (from thiamin HCl)",
+    "50 mg",
+    "4,167%",
+    0
+   ],
+   [
+    "Riboflavin (Vitamin B2)",
+    "75 mg",
+    "5,769%",
+    0
+   ],
+   [
+    "Niacin (Vitamin B3) (as niacin and from niacinamide)",
+    "50 mg",
+    "313%",
+    0
+   ],
+   [
+    "Vitamin B6 (from pyridoxal-5-phosphate)",
+    "25 mg",
+    "1,471%",
+    0
+   ],
+   [
+    "Folate (from calcium-L-5-methyltetrahydrofolate)",
+    "340 mcg DFE",
+    "85%",
+    0
+   ],
+   [
+    "Vitamin B12 (as methylcobalamin)",
+    "500 mcg",
+    "20,833%",
+    0
+   ],
+   [
+    "Biotin (as d-biotin)",
+    "200 mcg",
+    "667%",
+    0
+   ],
+   [
+    "Pantothenic acid (from d-calcium pantothenate)",
+    "100 mg",
+    "2,000%",
+    0
+   ],
+   [
+    "Choline (from choline bitartrate)",
+    "100 mg",
+    "18%",
+    0
+   ],
+   [
+    "Calcium (from dicalcium phosphate, calcium fructoborate, d-calcium pantothenate, and calcium ascorbate)",
+    "75 mg",
+    "6%",
+    0
+   ],
+   [
+    "Iodine (from potassium iodide)",
+    "200 mcg",
+    "133%",
+    0
+   ],
+   [
+    "Magnesium (TRAACS magnesium bisglycinate chelate buffered [magnesium bisglycinate chelate and magnesium oxide])",
+    "200 mg",
+    "48%",
+    0
+   ],
+   [
+    "Zinc (from TRAACS zinc bisglycinate chelate)",
+    "15 mg",
+    "136%",
+    0
+   ],
+   [
+    "Selenium (from selenium yeast) (<i>Saccharomyces cerevisiae</i>)",
+    "55 mcg",
+    "100%",
+    0
+   ],
+   [
+    "Copper (from TRAACS copper glycinate chelate)",
+    "0.5 mg",
+    "56%",
+    0
+   ],
+   [
+    "Manganese (from TRAACS manganese bisglycinate chelate)",
+    "2 mg",
+    "87%",
+    0
+   ],
+   [
+    "Chromium (from TRAACS chromium nicotinate glycinate chelate)",
+    "200 mcg",
+    "571%",
+    0
+   ],
+   [
+    "Molybdenum (from TRAACS molybdenum glycinate chelate)",
+    "125 mcg",
+    "278%",
+    1
+   ],
+   [
+    "L-Taurine",
+    "500 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Glycine",
+    "390 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Tyrosine",
+    "377 mg",
+    "**",
+    0
+   ],
+   [
+    "Betaine Anhydrous",
+    "350 mg",
+    "**",
+    0
+   ],
+   [
+    "N-Acetyl-L-Cysteine",
+    "250 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Serine",
+    "240 mg",
+    "**",
+    0
+   ],
+   [
+    "Boron (from calcium fructoborate)",
+    "2 mg",
+    "**",
+    0
+   ],
+   [
+    "Vitamin K2 (as menaquinone-7 [MK-7 as MenaQ7])",
+    "100 mcg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "notes": "Mixed Berry Punch flavor. Recommendations: 1 scoop daily. Mix with 8-16 oz. of water, your favorite beverage, smoothie, or yogurt. Best if consumed within 30 minutes of preparation. If pregnant or nursing, consult a healthcare practitioner before use. Other ingredients are printed on the label photos."
+ },
+ "367703462123": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Stick Pack (7.2 grams)",
+  "servings": "12",
+  "rows": [
+   [
+    "Calories",
+    "25",
+    "",
+    0
+   ],
+   [
+    "Total Carbohydrate",
+    "3 g",
+    "1%†",
+    0
+   ],
+   [
+    "Dietary Fiber",
+    "0.5 g",
+    "2%†",
+    0
+   ],
+   [
+    "Vitamin A (as retinyl palmitate)",
+    "1,500 mcg (5,000 IU)",
+    "167%",
+    0
+   ],
+   [
+    "Vitamin C (from calcium ascorbate)",
+    "250 mg",
+    "278%",
+    0
+   ],
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "25 mcg (1,000 IU)",
+    "125%",
+    0
+   ],
+   [
+    "Vitamin E (as d-alpha and mixed tocopherols)",
+    "25 mg (75 IU)",
+    "333%",
+    0
+   ],
+   [
+    "Thiamin (Vitamin B1) (from thiamin HCl)",
+    "50 mg",
+    "4,167%",
+    0
+   ],
+   [
+    "Riboflavin (Vitamin B2)",
+    "75 mg",
+    "5,768%",
+    0
+   ],
+   [
+    "Niacin (Vitamin B3) (as niacin and from niacinamide)",
+    "50 mg",
+    "313%",
+    0
+   ],
+   [
+    "Vitamin B6 (from pyridoxal-5-phosphate)",
+    "25 mg",
+    "1,471%",
+    0
+   ],
+   [
+    "Folate (from calcium-L-5-methyltetrahydrofolate)",
+    "340 mcg DFE (200 mcg folic acid)",
+    "85%",
+    0
+   ],
+   [
+    "Vitamin B12 (as methylcobalamin)",
+    "500 mcg",
+    "20,833%",
+    0
+   ],
+   [
+    "Biotin (as d-biotin)",
+    "200 mcg",
+    "667%",
+    0
+   ],
+   [
+    "Pantothenic acid (from d-calcium pantothenate)",
+    "100 mg",
+    "2,000%",
+    0
+   ],
+   [
+    "Choline (from choline bitartrate)",
+    "100 mg",
+    "18%",
+    0
+   ],
+   [
+    "Calcium (from dicalcium phosphate, calcium fructoborate, d-calcium pantothenate, and calcium ascorbate)",
+    "75 mg",
+    "6%",
+    0
+   ],
+   [
+    "Iodine (from potassium iodide)",
+    "200 mcg",
+    "133%",
+    0
+   ],
+   [
+    "Magnesium (from Albion magnesium bisglycinate chelate; buffered-magnesium bisglycinate chelate, magnesium oxide)",
+    "200 mg",
+    "48%",
+    0
+   ],
+   [
+    "Zinc (from Albion zinc bisglycinate chelate)",
+    "15 mg",
+    "136%",
+    0
+   ],
+   [
+    "Selenium (from selenium yeast) (<i>Saccharomyces cerevisiae</i>)",
+    "55 mcg",
+    "100%",
+    0
+   ],
+   [
+    "Copper (from Albion copper bisglycinate chelate)",
+    "0.5 mg",
+    "56%",
+    0
+   ],
+   [
+    "Manganese (from Albion manganese bisglycinate chelate)",
+    "2 mg",
+    "87%",
+    0
+   ],
+   [
+    "Chromium (from Albion chromium nicotinate glycinate chelate)",
+    "200 mcg",
+    "571%",
+    0
+   ],
+   [
+    "Molybdenum (from Albion molybdenum glycinate chelate)",
+    "125 mcg",
+    "278%",
+    1
+   ],
+   [
+    "L-Taurine",
+    "500 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Glycine",
+    "390 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Tyrosine",
+    "377 mg",
+    "**",
+    0
+   ],
+   [
+    "Betaine Anhydrous",
+    "350 mg",
+    "**",
+    0
+   ],
+   [
+    "N-Acetyl-L-Cysteine",
+    "250 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Serine",
+    "240 mg",
+    "**",
+    0
+   ],
+   [
+    "Boron (from calcium fructoborate)",
+    "2 mg",
+    "**",
+    0
+   ],
+   [
+    "Vitamin K2 (as menaquinone-7 [MK-7 as MenaQ7])",
+    "100 mcg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "citric acid, malic acid, maltodextrin, stevia leaf, red beet juice concentrate, rice starch, microcrystalline cellulose, food starch-modified, berry flavor.",
+  "notes": "Mixed Berry Punch flavor. Recommendations: 1 stick pack daily. Mix with 8-16 oz. of water, your favorite beverage, smoothie, or yogurt. Best if consumed within 30 minutes of preparation. If pregnant, nursing, or taking oral anticoagulants, consult a healthcare practitioner before use. No sugar, salt, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients. Albion is a registered trademark of Balchem Corporation or its subsidiaries. MenaQ7 is a registered trademark of Lesaffre et Compagnie, France."
+ },
+ "367703215064": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Tablets",
+  "servings": "30",
+  "rows": [
+   [
+    "Vitamin D3 (cholecalciferol)",
+    "5 mcg (200 IU)",
+    "25%",
+    0
+   ],
+   [
+    "Horsetail (<i>Equisetum arvense</i>) Aerial Extract standardized to <b>20 mg of silica</b>, with naturally occurring flavonoids",
+    "800 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "tricalcium phosphate, magnesium hydroxide, silicon dioxide, sunflower oil, vegetable source magnesium stearate, coating (hydroxypropyl methylcellulose, vegetable source stearic acid, microcrystalline cellulose), mineral sea water extract, maltodextrin, arabic gum.",
+  "notes": "Recommendations: 1-2 tablets twice daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients. Product of France."
  }
 }
