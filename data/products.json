@@ -1483,6 +1483,18 @@
   "source": "Vitamin E/K & calcium aisle photos 2026-10-15"
  },
  {
+  "name": "Advanced Testosterone Support",
+  "variant": "With Testofen fenugreek, Sensoril ashwagandha & maca",
+  "form": "Dietary supplement \u00b7 60 tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "42.46",
+  "shelf_price": "42.46",
+  "upc": "68958035154",
+  "pos": "ADVANCED TESTOSTERONE SUPPORT",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20"
+ },
+ {
   "name": "Aesculus hippocastanum",
   "variant": "30C",
   "form": "Homeopathic pellets \u00b7 80 pellets",
@@ -5557,6 +5569,18 @@
   "pos": "BEEF ORGANS",
   "source": "Mineral & iron aisle photos 2026-10-15",
   "msrp": "43.99"
+ },
+ {
+  "name": "Beef Pasta Marinara",
+  "variant": "Freeze-dried meal, 49g protein, just add water",
+  "form": "6.34 oz pouch",
+  "brand": "Peak Refuel",
+  "dept": "Grocery",
+  "price": "14.99",
+  "shelf_price": "14.99",
+  "upc": "813546022029",
+  "pos": "BEEF PASTA MARINARA FREEZE DRIED",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20"
  },
  {
   "name": "Beeswax Bar",
@@ -12233,6 +12257,18 @@
   "source": "Peak Refuel & Real Salt shelf photos 2026-10-21"
  },
  {
+  "name": "Chicken Coconut Curry",
+  "variant": "Freeze-dried meal, 44g protein, just add water",
+  "form": "5.36 oz pouch",
+  "brand": "Peak Refuel",
+  "dept": "Grocery",
+  "price": "14.99",
+  "shelf_price": "14.99",
+  "upc": "813546024139",
+  "pos": "CHICKEN COCONUT CURRY FREEZE DRIED",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20"
+ },
+ {
   "name": "Chicken Fajita Seasoning",
   "variant": "Gluten free",
   "form": "Seasoning mix \u00b7 1 oz (28 g)",
@@ -17239,6 +17275,18 @@
   "source": "mushroom & immune shelf photos 2026-10-16",
   "member_off": "2.00",
   "member_until": "2026-12-29"
+ },
+ {
+  "name": "Deep Renewal Eye Cream",
+  "variant": "Silky eye cream for hydrated, smooth, radiant eye contour",
+  "form": "0.5 fl oz (15 ml)",
+  "brand": "Koope",
+  "dept": "Beauty & Personal Care",
+  "price": "15.29",
+  "shelf_price": "15.29",
+  "upc": "850072314068",
+  "pos": "DEEP RENEWAL EYE CREAM",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20"
  },
  {
   "name": "Deep Sleep",
@@ -31634,6 +31682,19 @@
  {
   "name": "Liposomal Vitamin C",
   "variant": "Optimized absorption, 1000 mg",
+  "form": "Dietary supplement \u00b7 60 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.96",
+  "shelf_price": "16.96",
+  "upc": "68958013237",
+  "pos": "LIPOSOMAL VITAMIN C 60 SOFTGEL",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20",
+  "msrp": "19.95"
+ },
+ {
+  "name": "Liposomal Vitamin C",
+  "variant": "Optimized absorption, 1000 mg",
   "form": "Dietary supplement \u00b7 120 softgels",
   "brand": "Natural Factors",
   "dept": "Vitamins & Supplements",
@@ -33465,6 +33526,19 @@
  },
  {
   "name": "Magnesium Glycinate",
+  "variant": "Buffered chelated, 400 mg per 2 capsules",
+  "form": "Dietary supplement \u00b7 240 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "30.56",
+  "shelf_price": "30.56",
+  "upc": "68958016795",
+  "pos": "MAGNESIUM GLYCINATE BUFFERED CHELATED 240 VCAP",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20",
+  "msrp": "35.95"
+ },
+ {
+  "name": "Magnesium Glycinate",
   "variant": "200 mg",
   "form": "Dietary supplement \u00b7 90 capsules",
   "brand": "Sigform",
@@ -35178,6 +35252,18 @@
   "upc": "714938000222",
   "pos": "MENOPAUSE",
   "source": "Women's health aisle photos 2026-10-15"
+ },
+ {
+  "name": "Menopause + Thinning Hair",
+  "variant": "WomenSense",
+  "form": "Dietary supplement \u00b7 60 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "47.56",
+  "shelf_price": "47.56",
+  "upc": "68958049458",
+  "pos": "MENOPAUSE + THINNING HAIR",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20"
  },
  {
   "name": "Menopause Relief Plus",
@@ -59672,6 +59758,18 @@
   "source": "hair, skin & nails and skin care shelf photos 2026-10-16"
  },
  {
+  "name": "Three Bean Chili Mac",
+  "variant": "Freeze-dried meal, 30g protein, just add water",
+  "form": "4.79 oz pouch",
+  "brand": "Peak Refuel",
+  "dept": "Grocery",
+  "price": "13.99",
+  "shelf_price": "13.99",
+  "upc": "813546022586",
+  "pos": "THREE BEAN CHILI MAC FREEZE DRIED",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20"
+ },
+ {
   "name": "Throat Cleanse",
   "variant": "Sore throat relief spray with vitamin D3",
   "form": "0.95 fl oz",
@@ -60298,6 +60396,18 @@
   "pos": "TOPPERFECTO FIRE ROASTED STREET CORN, FOR SALADS, BOWLS & MORE",
   "source": "Wild Planet, Fillos, ready meals shelf photos 2026-10-21",
   "msrp": "3.35"
+ },
+ {
+  "name": "Total Body Collagen",
+  "variant": "Verisol bioactive peptides, 2,500 mg per 3 tablets",
+  "form": "Dietary supplement \u00b7 90 tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.96",
+  "shelf_price": "16.96",
+  "upc": "68958026244",
+  "pos": "TOTAL BODY COLLAGEN PEPTIDES",
+  "source": "Natural Factors, Koope & Peak Refuel shelf photos 2026-11-20"
  },
  {
   "name": "Total Body Collagen Bioactive Peptides",
