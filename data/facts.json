@@ -16916,8 +16916,8 @@
    [
     "Total Fat",
     "0.5 g",
-    "< 1%†",
-    1
+    "<1%†",
+    0
    ],
    [
     "Proprietary Blend",
@@ -16926,15 +16926,15 @@
     0
    ],
    [
-    "&nbsp;&nbsp;Containing Sea Buckthorn (<i>Hippophae rhamnoides</i>) Berry Pulp and Seed Oil (SB-150™) via CO₂ extraction providing 150 mg of omega-7",
+    "&nbsp;&nbsp;Containing Sea Buckthorn (<i>Hippophae rhamnoides</i>) Berry Pulp and Seed Oil (SB-150) via CO<sub>2</sub> extraction providing 150 mg of omega-7",
     "",
     "",
-    0
+    1
    ]
   ],
   "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
   "other": "gelatin, glycerin, purified water, rosemary leaf extract.",
-  "notes": "Take 1 softgel daily. For advanced support, may take 1 softgel up to four times daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives."
+  "notes": "Recommendations: 1 softgel daily. For advanced support, may take 1 softgel up to four times daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
  },
  "367703371067": {
   "title": "Supplement Facts",
@@ -19713,5 +19713,133 @@
   "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
   "other": "microcrystalline cellulose, maltodextrin, croscarmellose sodium, silica, vegetable source stearic acid, vegetable source magnesium stearate, ethylcellulose.",
   "notes": "Recommendations: 1-2 tablets up to three times daily before each meal to support optimal digestion. 1-2 tablets up to three times daily between meals to relieve occasional muscle pain and inflammation due to exercise or overuse. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703243067": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Softgel",
+  "servings": "60",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Total Fat",
+    "0.5 g",
+    "<1%†",
+    0
+   ],
+   [
+    "Proprietary Blend",
+    "500 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Containing Sea Buckthorn (<i>Hippophae rhamnoides</i>) Berry Pulp and Seed Oil (SB-150) via CO<sub>2</sub> extraction providing 150 mg of omega-7",
+    "",
+    "",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "gelatin, glycerin, purified water, rosemary leaf extract.",
+  "notes": "Recommendations: 1 softgel daily. For advanced support, may take 1 softgel up to four times daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703271138": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Softgels",
+  "servings": "15",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Proprietary Formula",
+    "450 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Mandarin (<i>Citrus reticulata</i>) Zest Oil, Lavender (<i>Lavandula angustifolia</i>) Aerial Oil, Ravintsara (<i>Cinnamomum camphora</i>) Leaf Oil",
+    "",
+    "",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "gelatin, glycerin, extra virgin olive oil, purified water, chlorophyll.",
+  "notes": "Recommendations: 1 to 2 softgels about an hour before bedtime. If pregnant or nursing, consult a health care practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703185466": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "1 Capsule",
+  "servings": "60",
+  "rows": [
+   [
+    "Curcumin (<i>Curcuma longa</i>) Rhizome Extract (BCM-95/Curcugreen) enhanced with turmeric essential oil and standardized for curcuminoid complex (curcumin, demethoxycurcumin and bisdemethoxycurcumin), supplying 215 mg of curcuminoids",
+    "250 mg",
+    "**",
+    0
+   ],
+   [
+    "Saffron (<i>Crocus sativus</i>) Stigma Extract (EP15)",
+    "15 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established.",
+  "other": "hydroxypropyl methylcellulose (vegetable cellulose capsules), maltodextrin, vegetable source magnesium stearate, silica.",
+  "notes": "Recommendations: 1 capsule twice daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, corn, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "367703471064": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by a cGMP compliant facility exclusively for: EuroPharma, Inc., Green Bay, WI 54311. (866) 807-2731, EuroPharmaUSA.com",
+  "serving": "2 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    0
+   ],
+   [
+    "Total Carbohydrate",
+    "2 g",
+    "<1%†",
+    0
+   ],
+   [
+    "Vitamin C (as ascorbic acid)",
+    "500 mg",
+    "556%",
+    1
+   ],
+   [
+    "Cranberry (<i>Vaccinium macrocarpon</i>) Fruit Powder standardized to ≥ 6% quinic acid",
+    "500 mg",
+    "**",
+    0
+   ],
+   [
+    "D-Mannose",
+    "500 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
+  "other": "hydroxypropyl methylcellulose (vegetable cellulose capsules), silica, vegetable source magnesium stearate, cellulose powder.",
+  "notes": "Recommendations: 2 capsules daily. If pregnant or nursing, consult a healthcare practitioner before use. No sugar, salt, yeast, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
  }
 }
