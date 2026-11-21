@@ -18522,5 +18522,85 @@
   "foot": "** Daily Value not established.",
   "other": "Gelatin capsule (gelatin, purified water), rice powder, silica, magnesium stearate (vegetable grade).",
   "notes": ""
+ },
+ "68958013817": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin C (as calcium ascorbate)",
+    "50 mg",
+    "56%",
+    1
+   ],
+   [
+    "EMIQ® (enzymatically modified isoquercitrin) (providing 50 mg highly absorbable quercetin)",
+    "167 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Microcrystalline cellulose, vegetarian capsule (hypromellose, purified water), magnesium stearate (vegetable grade).",
+  "notes": "EMIQ® is a registered trademark of San-Ei Gen F.F.I. Inc."
+ },
+ "68958016603": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Calcium (dicalcium phosphate)",
+    "36 mg",
+    "3%",
+    0
+   ],
+   [
+    "Potassium (citrate)",
+    "99 mg",
+    "2%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, croscarmellose sodium, magnesium stearate (vegetable grade).",
+  "notes": ""
+ },
+ "68958016924": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Zinc (as zinc bisglycinate)",
+    "25 mg",
+    "227%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Rice flour, vegetarian capsule (carbohydrate gum (cellulose), purified water), magnesium stearate (vegetable grade), silica, stearic acid.",
+  "notes": ""
+ },
+ "68958013909": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Quercetin",
+    "500 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Vegetarian capsule (hypromellose, purified water), microcrystalline cellulose, stearic acid, magnesium stearate (vegetable grade), silicon dioxide.",
+  "notes": ""
  }
 }
