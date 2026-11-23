@@ -33148,19 +33148,6 @@
  },
  {
   "name": "Magnesium Bisglycinate Powder",
-  "variant": "Pure glycinate, 200 mg",
-  "form": "Dietary supplement \u00b7 4.23 oz (120 g)",
-  "brand": "Natural Factors",
-  "dept": "Vitamins & Supplements",
-  "price": "16.96",
-  "shelf_price": "16.96",
-  "upc": "68958016429",
-  "pos": "MAGNESIUM BISGLYCINATE 200 MG",
-  "source": "Magnesium aisle photos 2026-10-15",
-  "msrp": "19.95"
- },
- {
-  "name": "Magnesium Bisglycinate Powder",
   "variant": "Nervous system support",
   "form": "Dietary supplement \u00b7 8 oz (227 g)",
   "brand": "NOW Foods",
@@ -33821,6 +33808,19 @@
   "msrp": "24.69",
   "member_off": "2.00",
   "member_until": "2026-12-29"
+ },
+ {
+  "name": "Magnesium Pure Glycinate",
+  "variant": "Powder, 200 mg per scoop",
+  "form": "Dietary supplement \u00b7 4.23 oz (120 g)",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.96",
+  "shelf_price": "16.96",
+  "upc": "68958016429",
+  "pos": "MAGNESIUM BISGLYCINATE 200 MG",
+  "source": "Magnesium aisle photos 2026-10-15",
+  "msrp": "19.95"
  },
  {
   "name": "Magnesium Taurate+",
