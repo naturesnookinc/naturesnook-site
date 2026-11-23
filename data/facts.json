@@ -20667,5 +20667,156 @@
   "foot": "** Daily Value not established.",
   "other": "Hypromellose, microcrystalline cellulose, hydroxypropyl cellulose, stearic acid, dicalcium phosphate, coating (hypromellose, glycerin), magnesium stearate (vegetable grade), silica.",
   "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958010625": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "360",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5,000 IU)",
+    "625%",
+    1
+   ],
+   [
+    "Organic Flaxseed Oil",
+    "200 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Softgel (gelatin, glycerin, purified water).",
+  "notes": ""
+ },
+ "68958010649": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "120",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "250 mcg (10,000 IU)",
+    "1,250%",
+    1
+   ],
+   [
+    "Organic Flaxseed Oil",
+    "197.5 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Softgel (gelatin, glycerin, purified water), color (beta-carotene).",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958012889": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "60",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5,000 IU)",
+    "625%",
+    1
+   ],
+   [
+    "Vitamin K2 (as menaquinone, MK-7) (natto bean)",
+    "200 mcg",
+    "167%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Flaxseed oil, softgel (gelatin, glycerin, purified water).",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958012902": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "200",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5,000 IU)",
+    "625%",
+    1
+   ],
+   [
+    "Vitamin K2 (as menaquinone, MK-7) (natto bean)",
+    "200 mcg",
+    "167%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Flaxseed oil, softgel (gelatin, glycerin, purified water).",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "858514001002": {
+  "title": "Supplement Facts",
+  "by": "Distributed by: LivOn Laboratories, 2654 W. Horizon Ridge Pkwy, Suite B5-108, Henderson, NV 89052. Phone: 1-866-790-2107. www.LivOnLabs.com",
+  "serving": "1 Packet (5.7 mL)",
+  "servings": "30",
+  "rows": [
+   [
+    "Calories",
+    "15",
+    "",
+    0
+   ],
+   [
+    "Total Fat",
+    "1 g",
+    "1%*",
+    0
+   ],
+   [
+    "Total Carbohydrate",
+    "1 g",
+    "<1%*",
+    0
+   ],
+   [
+    "Vitamin C (as sodium ascorbate)",
+    "1,000 mg",
+    "1,111%",
+    1
+   ],
+   [
+    "Choline (from phosphatidylcholine)",
+    "60 mg",
+    "11%",
+    0
+   ],
+   [
+    "Sodium (as sodium ascorbate)",
+    "160 mg",
+    "7%",
+    0
+   ],
+   [
+    "Essential Phospholipids (from soy lecithin)",
+    "1,000 mg",
+    "†",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Total Phosphatidylcholine (PC)",
+    "500 mg",
+    "†",
+    0
+   ]
+  ],
+  "foot": "* Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established.",
+  "other": "Purified water, ethanol (0.684 g), citric acid.",
+  "notes": "Contains phospholipids derived from soy lecithin. Store at room temperature. Do not freeze or place the product in direct sunlight for extended periods of time. Note: Packets may expand as latent air from the filling process tends to expand over time. This does not affect the quality of the product. Product formulation contains no starch, no yeast, no hexane, no artificial colors or flavors. *Not a low calorie supplement. Keep out of reach of children. Consult a healthcare practitioner before using this product if you are pregnant or breastfeeding, have a medical condition, or are taking any medication."
  }
 }
