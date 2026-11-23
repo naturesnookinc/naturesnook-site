@@ -8249,18 +8249,6 @@
   "source": "brain & memory shelf photo 2026-10-15"
  },
  {
-  "name": "BrainJuice Active",
-  "variant": "Focus now, pomegranate a\u00e7a\u00ed",
-  "form": "2.5 fl oz shot",
-  "brand": "BrainJuice",
-  "dept": "Vitamins & Supplements",
-  "price": "4.12",
-  "shelf_price": "4.12",
-  "upc": "852854007281",
-  "pos": "BRAINJUICE ACTIVE",
-  "source": "energy & bee products shelf photos 2026-10-16"
- },
- {
   "name": "BrainJuice Decaf Classic",
   "variant": "Focus now",
   "form": "2.5 fl oz shot",
@@ -8270,18 +8258,6 @@
   "shelf_price": "4.67",
   "upc": "852854007632",
   "pos": "BRAINJUICE DECAF CLASSIC",
-  "source": "energy & bee products shelf photos 2026-10-16"
- },
- {
-  "name": "BrainJuice Original",
-  "variant": "Focus now, peach mango",
-  "form": "2.5 fl oz shot",
-  "brand": "BrainJuice",
-  "dept": "Vitamins & Supplements",
-  "price": "4.12",
-  "shelf_price": "4.12",
-  "upc": "852854007007",
-  "pos": "BRAINJUICE ORIGINAL",
   "source": "energy & bee products shelf photos 2026-10-16"
  },
  {
@@ -10242,21 +10218,6 @@
   "pos": "CAMU-CAMU MEGA C 500 MG CAPSUL",
   "source": "B-complex & vitamin C aisle photos 2026-10-15",
   "msrp": "33.00"
- },
- {
-  "name": "Candi Smart",
-  "variant": "Targeted women's care, yeast balancing, 15-day program",
-  "form": "60 vegetarian capsules + 1 fl oz tincture",
-  "brand": "ReNew Life",
-  "dept": "Vitamins & Supplements",
-  "price": "37.99",
-  "shelf_price": "37.99",
-  "upc": "631257355553",
-  "pos": "CANDI SMART",
-  "source": "digestive & cleanse shelf photos 2026-10-15",
-  "msrp": "44.35",
-  "member_off": "4.00",
-  "member_until": "2026-12-29"
  },
  {
   "name": "Candida Support",
