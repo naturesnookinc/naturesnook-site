@@ -19992,5 +19992,52 @@
   "foot": "**Daily Value (DV) not established. † Percent Daily Values (DV) are based on a 2,000 calorie diet.",
   "other": "xylitol, gamma cyclodextrin, orange flavor, silica, vegetable source magnesium stearate.",
   "notes": "Orange flavor. Recommendations: 1 chewable tablet daily. If pregnant or nursing, consult a healthcare practitioner before use. Contains xylitol, keep away from pets. No sugar or artificial sweeteners. No sugar, salt, wheat, gluten, soy, dairy products, artificial coloring, artificial flavoring, or artificial preservatives. Terry Naturally brand products contain natural and other premium ingredients."
+ },
+ "68958013978": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "10",
+    "",
+    0
+   ],
+   [
+    "Total Fat",
+    "0.5 g",
+    "<1%*",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Saturated Fat",
+    "0.5 g",
+    "3%*",
+    0
+   ],
+   [
+    "Chrysin",
+    "500 mg",
+    "**",
+    1
+   ],
+   [
+    "Quercetin (as dihydrate)",
+    "120 mg",
+    "**",
+    0
+   ],
+   [
+    "Rutin",
+    "115 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "* Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established.",
+  "other": "Softgel (gelatin, water, glycerin, carob powder), medium chain triglycerides, sunflower lecithin, xylitol, MSM, peppermint oil, stevia leaf extract.",
+  "notes": "Isura® is a registered trademark of ISURA."
  }
 }

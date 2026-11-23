@@ -6724,18 +6724,6 @@
   "source": "allergy, cold & respiratory shelf photos 2026-10-16"
  },
  {
-  "name": "bioAllers Tree Pollen",
-  "variant": "Treats cedar fever, homeopathic liquid drops",
-  "form": "1 fl oz",
-  "brand": "Natural Care",
-  "dept": "Homeopathic",
-  "price": "13.59",
-  "shelf_price": "13.59",
-  "upc": "371400707012",
-  "pos": "BIOALLERS TREE POLLEN",
-  "source": "allergy, cold & respiratory shelf photos 2026-10-16"
- },
- {
   "name": "BioCoenzymated 5-MTHF",
   "variant": "1,000 mcg plus methylcobalamin",
   "form": "Dietary supplement \u00b7 60 quick-dissolve tablets",
@@ -9336,19 +9324,6 @@
   "pos": "CAL-MAG STRESS 100 TABS",
   "source": "Vitamin E/K & calcium aisle photos 2026-10-15",
   "msrp": "19.99"
- },
- {
-  "name": "Cal-Mag Asporotates",
-  "variant": "2:1 ratio, advanced chelate complex",
-  "form": "Dietary supplement \u00b7 120 capsules",
-  "brand": "Solaray",
-  "dept": "Vitamins & Supplements",
-  "price": "15.12",
-  "shelf_price": "15.12",
-  "upc": "76280045215",
-  "pos": "CALCIUM & MAGNESIUM ASPOROTATE",
-  "source": "Cal-Mag & magnesium aisle photos 2026-10-15",
-  "msrp": "17.79"
  },
  {
   "name": "Cal-Mag Caps",
@@ -12817,6 +12792,19 @@
   "upc": "76280418873",
   "pos": "CHROMIUM PICOLINATE",
   "source": "Mineral & iron aisle photos 2026-10-15"
+ },
+ {
+  "name": "Chrysin plus Quercetin & Rutin",
+  "variant": "LipoMicel Matrix",
+  "form": "60 liquid softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "37.36",
+  "shelf_price": "37.36",
+  "upc": "68958013978",
+  "pos": "CHRYSIN LIPOMICEL MATRIX",
+  "source": "shelf tag photo 2026-11-23",
+  "msrp": "43.95"
  },
  {
   "name": "Cider Vinegar Diet Formula",
@@ -26163,32 +26151,6 @@
   "upc": "84783893189",
   "pos": "HERBAL TOOTH & GUM POWDER ORIGINAL FORMULA",
   "source": "oral care shelf photos 2026-10-16"
- },
- {
-  "name": "Herbals Heart Health",
-  "variant": "Healthy cholesterol, circulatory & blood pressure",
-  "form": "Dietary supplement \u00b7 30 vegan capsules",
-  "brand": "Garden of Life",
-  "dept": "Vitamins & Supplements",
-  "price": "33.99",
-  "shelf_price": "33.99",
-  "upc": "658010133920",
-  "pos": "GOL HERBALS HEART HEALTH 30CT CAPSULES",
-  "source": "Adrenal, thyroid, liver & heart aisle photos 2026-10-15",
-  "msrp": "39.99"
- },
- {
-  "name": "Herbals Menopause + Hair Growth",
-  "variant": "Complete menopause support",
-  "form": "30 vegan softgels",
-  "brand": "Garden of Life",
-  "dept": "Vitamins & Supplements",
-  "price": "53.55",
-  "shelf_price": "53.55",
-  "upc": "658010133937",
-  "pos": "HERBALS MENOPAUSE + HAIR GROWTH",
-  "source": "hair, skin & nails and skin care shelf photos 2026-10-16",
-  "msrp": "62.99"
  },
  {
   "name": "Herbs & Prunes",
@@ -40180,19 +40142,6 @@
   "member_until": "2026-12-29"
  },
  {
-  "name": "Ojibwa Herbal Extract",
-  "variant": "450 mg, 4:1 extract",
-  "form": "Herbal supplement \u00b7 180 veggie caps",
-  "brand": "NOW Foods",
-  "dept": "Vitamins & Supplements",
-  "price": "27.19",
-  "shelf_price": "27.19",
-  "upc": "733739046741",
-  "pos": "OJIBWA HERBAL EXTRACT 450MG",
-  "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
-  "msrp": "33.99"
- },
- {
   "name": "Ojibwa Tea Concentrate",
   "variant": "6x the strength of brewed tea",
   "form": "Herbal concentrate \u00b7 16 fl oz (473 ml)",
@@ -48839,19 +48788,6 @@
   "source": "energy & bee products shelf photos 2026-10-16"
  },
  {
-  "name": "Pros-T",
-  "variant": "Prostate support",
-  "form": "Dietary supplement \u00b7 60 softgels",
-  "brand": "LifeSeasons",
-  "dept": "Vitamins & Supplements",
-  "price": "41.65",
-  "shelf_price": "41.65",
-  "upc": "853760002117",
-  "pos": "LIFESEASONS PROS-T GLANDULAR SUPPORT",
-  "source": "Men's health aisle photos 2026-10-15",
-  "msrp": "48.99"
- },
- {
   "name": "ProSorb CoQ-10 Phytosome",
   "variant": "9x absorption",
   "form": "Dietary supplement \u00b7 30 veggie caps",
@@ -55432,18 +55368,6 @@
  },
  {
   "name": "Smooth Move",
-  "variant": "Herbal laxative, senna extract",
-  "form": "50 capsules",
-  "brand": "Traditional Medicinals",
-  "dept": "Vitamins & Supplements",
-  "price": "19.99",
-  "shelf_price": "19.99",
-  "upc": "32917002969",
-  "pos": "SMOOTH MOVE 50 CP",
-  "source": "digestive & cleanse shelf photos 2026-10-15"
- },
- {
-  "name": "Smooth Move",
   "variant": "Original with senna, organic",
   "form": "Tea \u00b7 16 tea bags",
   "brand": "Traditional Medicinals",
@@ -57439,19 +57363,6 @@
   "msrp": "39.99"
  },
  {
-  "name": "SubCulture Probiotic for Bloat",
-  "variant": "50 billion CFU, 11 strains",
-  "form": "30 delayed-release capsules",
-  "brand": "Enzymedica",
-  "dept": "Vitamins & Supplements",
-  "price": "38.25",
-  "shelf_price": "38.25",
-  "upc": "670480101506",
-  "pos": "SUBCULTURE PROBIOTIC BLOAT",
-  "source": "probiotic & digestive enzyme shelf photos 2026-10-15",
-  "msrp": "44.99"
- },
- {
   "name": "SubCulture Probiotic for Daily Gut Health",
   "variant": "30 billion CFU, 7 strains",
   "form": "30 delayed-release capsules",
@@ -57463,19 +57374,6 @@
   "pos": "PROBIOTIC DAILY GUT HEALTH",
   "source": "probiotic & digestive enzyme shelf photos 2026-10-15",
   "msrp": "29.99"
- },
- {
-  "name": "SubCulture Probiotic for Mood",
-  "variant": "50 billion CFU, 8 strains",
-  "form": "30 delayed-release capsules",
-  "brand": "Enzymedica",
-  "dept": "Vitamins & Supplements",
-  "price": "38.25",
-  "shelf_price": "38.25",
-  "upc": "670480101490",
-  "pos": "SUBCULTURE PROBIOTIC MOOD",
-  "source": "probiotic & digestive enzyme shelf photos 2026-10-15",
-  "msrp": "44.99"
  },
  {
   "name": "SubCulture Probiotic for Women",
@@ -67104,19 +67002,6 @@
   "source": "bulk herbs R-Y shelf photos 2026-10-16"
  },
  {
-  "name": "Yellow Dock Root",
-  "variant": "1,000 mg per serving, digestive support",
-  "form": "100 vegan capsules",
-  "brand": "Nature's Way",
-  "dept": "Vitamins & Supplements",
-  "price": "10.19",
-  "shelf_price": "10.19",
-  "upc": "33674181003",
-  "pos": "YELLOW DOCK ROOT",
-  "source": "single herbs & Dr. Christopher shelf photos 2026-10-16",
-  "msrp": "11.99"
- },
- {
   "name": "Yerba Mat\u00e9",
   "variant": "Standardized extract, 600 mg",
   "form": "180 tablets",
@@ -67239,18 +67124,6 @@
   "upc": "767963082718",
   "pos": "YOUNG HYSON GREEN TEA 1 LB",
   "source": "bulk herbs H-M shelf photos 2026-10-16"
- },
- {
-  "name": "Yucca",
-  "variant": "True Herbs, 520 mg",
-  "form": "100 veg capsules",
-  "brand": "Solaray",
-  "dept": "Vitamins & Supplements",
-  "price": "11.29",
-  "shelf_price": "11.29",
-  "upc": "76280017106",
-  "pos": "YUCCA",
-  "source": "single herbs & Dr. Christopher shelf photos 2026-10-16"
  },
  {
   "name": "Zeolite",
