@@ -22764,5 +22764,132 @@
   "foot": "",
   "other": "Gelatin capsule (gelatin, purified water), magnesium stearate (vegetable source), rice powder, silica. Contains no: soy, gluten, a food, pollock, haddock, hake, cusk, redfish, sole, flounder.",
   "notes": "** Daily Value not established."
+ },
+ "68958010182": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Astaxanthin<br>&nbsp;&nbsp;from <i>Haematococcus pluvialis</i> Extract (whole)",
+    "12 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, water), flax oil.",
+  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA."
+ },
+ "68958207223": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Coenzyme Q10 (ubiquinone)",
+    "200 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Rice bran oil, softgel (gelatin, glycerin, purified water, carob), natural vitamin E.",
+  "notes": "** Daily Value not established."
+ },
+ "68958207261": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "CoQ10 Ubiquinol Form (as Kaneka Q+)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "Organic Flaxseed Oil (<i>Linum usitatissimum</i>) (seed)",
+    "295 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water, carob), yellow beeswax, sunflower lecithin (non-GMO), vitamin E (non-GMO sunflower oil).",
+  "notes": "** Daily Value not established. Q+, Kaneka Ubiquinol and the quality seal are registered or pending trademarks of Kaneka Corp."
+ },
+ "68958207292": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "CoQ10 Ubiquinol Form (as Kaneka Q+)",
+    "200 mg",
+    "**",
+    1
+   ],
+   [
+    "Organic Flaxseed Oil (<i>Linum usitatissimum</i>) (seed)",
+    "340 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water, carob), yellow beeswax, sunflower lecithin (non-GMO), vitamin E (non-GMO sunflower oil).",
+  "notes": "** Daily Value not established. Q+, Kaneka Ubiquinol and the quality seal are registered or pending trademarks of Kaneka Corp."
+ },
+ "68958026176": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    1
+   ],
+   [
+    "Total Fat",
+    "0.5 g",
+    "<1%‡",
+    0
+   ],
+   [
+    "Vitamin E (natural form d-alpha tocopherol) (Naturall-e™)<br>&nbsp;&nbsp;(from non-GMO sunflower seed oil)",
+    "3.35 mg",
+    "22%",
+    0
+   ],
+   [
+    "Coenzyme Q10 (microorganism)",
+    "200 mg",
+    "**",
+    1
+   ],
+   [
+    "BioPQQ® (Pyrroloquinoline Quinone Disodium Salt)",
+    "20 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Pyrroloquinoline quinone",
+    "17.65 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Organic flaxseed oil, softgel (gelatin, glycerin, purified water, carob), yellow beeswax, natural orange flavor (from citrus).",
+  "notes": "‡ Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established. Isura® is a trademark of ISURA. BioPQQ® is a registered trademark of Mitsubishi (Japan). Naturall-e™ owned by Matrix Fine Sciences."
  }
 }
