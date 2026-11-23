@@ -33147,19 +33147,6 @@
   "member_until": "2026-12-29"
  },
  {
-  "name": "Magnesium Bisglycinate",
-  "variant": "Buffered chelated, 400 mg per 2 caps",
-  "form": "Dietary supplement \u00b7 120 veggie caps",
-  "brand": "Natural Factors",
-  "dept": "Vitamins & Supplements",
-  "price": "16.96",
-  "shelf_price": "16.96",
-  "upc": "68958016412",
-  "pos": "MAGNESIUM BISGLYCINATE 200 MG",
-  "source": "Magnesium aisle photos 2026-10-15",
-  "msrp": "19.95"
- },
- {
   "name": "Magnesium Bisglycinate Powder",
   "variant": "Pure glycinate, 200 mg",
   "form": "Dietary supplement \u00b7 4.23 oz (120 g)",
@@ -33432,6 +33419,19 @@
   "pos": "MAGNESIUM GLYCINATE",
   "source": "LifeSeasons endcap photos 2026-10-14",
   "msrp": "16.99"
+ },
+ {
+  "name": "Magnesium Glycinate",
+  "variant": "Buffered chelated, 400 mg per 2 capsules",
+  "form": "Dietary supplement \u00b7 120 veggie caps",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.96",
+  "shelf_price": "16.96",
+  "upc": "68958016412",
+  "pos": "MAGNESIUM BISGLYCINATE 200 MG",
+  "source": "Magnesium aisle photos 2026-10-15",
+  "msrp": "19.95"
  },
  {
   "name": "Magnesium Glycinate",

@@ -20927,5 +20927,114 @@
   "foot": "** Daily Value not established.",
   "other": "Softgel (gelatin, glycerin, purified water).",
   "notes": ""
+ },
+ "68958035307": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Magnesium (elemental)<br>&nbsp;&nbsp;(from 880 mg of buffered magnesium glycinate [as glycinate, oxide])",
+    "200 mg",
+    "48%",
+    1
+   ],
+   [
+    "Gamma-aminobutyric acid (GABA)<br>&nbsp;&nbsp;(from 125 mg PharmaGABA®)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "L-Theanine",
+    "50 mg",
+    "**",
+    0
+   ],
+   [
+    "Melatonin",
+    "2.5 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Rice flour, vegetarian capsule (hypromellose, purified water), magnesium stearate (vegetable grade), silica. Non-GMO.",
+  "notes": "** Daily Value not established. PharmaGABA® is a registered trademark of Pharma Foods International Co., Ltd. (Japan)."
+ },
+ "68958016696": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "3 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Magnesium<br>&nbsp;&nbsp;(from 2000 mg Magtein® Magnesium L-Threonate)",
+    "144 mg",
+    "34%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (hypromellose, purified water), rice flour, magnesium stearate (vegetable grade), silica.",
+  "notes": "Magtein® is a trademark of Magceutics®, Inc. and is distributed exclusively by AIDP, Inc. Magtein® is protected under US patents 8,178,118; 8,142,803; 8,163,301; and other pending patents, and is protected worldwide."
+ },
+ "68958016412": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Capsules",
+  "servings": "60",
+  "rows": [
+   [
+    "Magnesium (elemental)<br>&nbsp;&nbsp;(from 1,600 mg of buffered magnesium glycinate [as glycinate, oxide])",
+    "400 mg",
+    "95%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (hypromellose, purified water), microcrystalline cellulose, magnesium stearate (vegetable grade), silica.",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958016528": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "3 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Magnesium (elemental)<br>&nbsp;&nbsp;(from 2687 mg of Magnesium Citrate)",
+    "450 mg",
+    "107%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Gelatin capsule (gelatin, purified water), magnesium stearate (vegetable grade), microcrystalline cellulose.",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958016740": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Capsules",
+  "servings": "45",
+  "rows": [
+   [
+    "Magnesium (elemental)<br>&nbsp;&nbsp;(from 880 mg of buffered magnesium glycinate [as glycinate, oxide])",
+    "200 mg",
+    "48%",
+    1
+   ],
+   [
+    "L-Theanine",
+    "250 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (hypromellose, purified water), rice flour, vegetable grade magnesium stearate, silica, stearic acid.",
+  "notes": "* Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established. Isura® is a registered trademark of ISURA."
  }
 }
