@@ -20818,5 +20818,114 @@
   "foot": "* Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established.",
   "other": "Purified water, ethanol (0.684 g), citric acid.",
   "notes": "Contains phospholipids derived from soy lecithin. Store at room temperature. Do not freeze or place the product in direct sunlight for extended periods of time. Note: Packets may expand as latent air from the filling process tends to expand over time. This does not affect the quality of the product. Product formulation contains no starch, no yeast, no hexane, no artificial colors or flavors. *Not a low calorie supplement. Keep out of reach of children. Consult a healthcare practitioner before using this product if you are pregnant or breastfeeding, have a medical condition, or are taking any medication."
+ },
+ "68958012926": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "60",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "25 mcg (1000 IU)",
+    "125%",
+    1
+   ],
+   [
+    "Vitamin K2 (as menaquinone, MK-7) (natto bean)",
+    "120 mcg",
+    "100%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water, caramel color), medium chain triglycerides (from RSPO-certified palm oil and coconut oil), yellow beeswax, sunflower lecithin.",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958012940": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Capsule",
+  "servings": "60",
+  "rows": [
+   [
+    "Vitamin K2 (menaquinone-7) (MK-7) (natto bean)",
+    "120 mcg",
+    "100%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (carbohydrate gum [cellulose], purified water), microcrystalline cellulose, magnesium stearate (vegetable grade), silica.",
+  "notes": "Contains soy. Isura® is a registered trademark of ISURA."
+ },
+ "68958012896": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "120",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5,000 IU)",
+    "625%",
+    1
+   ],
+   [
+    "Vitamin K2 (as menaquinone, MK-7) (natto bean)",
+    "200 mcg",
+    "167%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Flaxseed oil, softgel (gelatin, glycerin, purified water).",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958010618": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "240",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5,000 IU)",
+    "625%",
+    1
+   ],
+   [
+    "Organic Flaxseed Oil",
+    "200 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Softgel (gelatin, glycerin, purified water).",
+  "notes": ""
+ },
+ "68958010564": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "120",
+  "rows": [
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "125 mcg (5,000 IU)",
+    "625%",
+    1
+   ],
+   [
+    "Organic Flaxseed Oil",
+    "200 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Softgel (gelatin, glycerin, purified water).",
+  "notes": ""
  }
 }
