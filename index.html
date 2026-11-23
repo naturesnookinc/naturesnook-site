@@ -656,6 +656,26 @@ picture{display:contents}
 .learn-note{color:var(--muted);font-size:.9rem}
 .learn-tags{display:flex;flex-wrap:wrap;gap:.45rem;margin:0;padding:0;list-style:none}
 @media (max-width:760px){.learn-in{grid-template-columns:1fr}}
+.wc{padding-block:clamp(2.2rem,5vw,3.4rem);border-top:1px solid var(--line)}
+.wc-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(1.4rem,4vw,3rem);align-items:start}
+.wc-copy p{color:var(--muted);max-width:34ch}
+.wc-call{display:inline-block;margin-top:.4rem;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--honey);padding-bottom:.1rem}
+.wc-call:hover{color:var(--pine)}
+.wc-list{margin:0;padding:0;list-style:none}
+.wc-list li{padding:1.1rem 0;border-top:1px solid var(--line)}
+.wc-list li:first-child{border-top:0;padding-top:0}
+.wc-list h3{font-size:1.3rem;margin:0 0 .3rem}
+.wc-list p{margin:0;color:var(--muted);max-width:52ch}
+.wc-list .wc-meta{display:block;color:var(--muted)}
+.wc-copy .wc-h-sc{font-family:"Fraunces",serif;font-style:italic;font-weight:500;color:#9a2433;margin:0;line-height:1}
+.wc-mark{display:block}
+.wc{position:relative;overflow:hidden}
+.wc>.wrap{position:relative;z-index:1}
+.wc::after{content:"";position:absolute;right:-120px;top:50%;width:360px;height:300px;transform:translateY(-50%);opacity:.12;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84 68'%3E%3Cg fill='none' stroke='%239a2433' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M38 62C10 46 4 26 18 17c8-5 17-1 20 8 3-9 12-13 20-8 14 9 8 29-20 45z'/%3E%3C/g%3E%3Cg fill='%232f7a3e'%3E%3Cpath d='M52 14c6-9 18-11 26-6-3 9-14 14-26 6z'/%3E%3Cpath d='M58 28c8-3 17 1 21 8-8 5-18 3-21-8z'/%3E%3C/g%3E%3C/svg%3E") no-repeat center/contain;pointer-events:none}
+.wc-rule{display:block;width:56px;height:3px;background:#9a2433;margin:.7rem 0 .9rem}
+.wc-list .wc-meta{color:#9a2433;font-weight:600}
+@media (max-width:760px){.wc-in{grid-template-columns:1fr}.wc-copy p{max-width:none}}
+@media (max-width:760px){.wc{padding-bottom:4.2rem}.wc::after{width:170px;height:140px;right:-28px;top:auto;bottom:-30px;transform:none;opacity:.1}}
 
 .b-grandma-s-herbs{--b1:#6b3a1f;--b2:#e0a050}
 :root[data-theme="never-dark"] .b-grandma-s-herbs{--b1:#e6b98a}
@@ -1256,6 +1276,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
         <li><a href="#our-line">Our Line</a></li>
         <li><a href="#find">Search products</a></li>
         <li><a href="#story">Our Story</a></li>
+        <li><a href="#wellness">Wellness Center</a></li>
         <li><a href="#visit">Visit</a></li>
       </ul>
     </nav>
@@ -1501,6 +1522,23 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
       <div class="learn-list"><ul class="tags learn-tags"><li><button type="button" class="tag-link" data-q="curamin">Curamin</button></li><li><button type="button" class="tag-link" data-q="curamed">CuraMed</button></li><li><button type="button" class="tag-link" data-q="anxiocalm">AnxioCalm</button></li><li><button type="button" class="tag-link" data-q="anxiocalm kids">AnxioCalm Kids</button></li><li><button type="button" class="tag-link" data-q="ashwagandha">Ashwagandha EP35</button></li><li><button type="button" class="tag-link" data-q="healthy feet">Healthy Feet &amp; Nerves</button></li><li><button type="button" class="tag-link" data-q="andrographis">Andrographis EP80</button></li><li><button type="button" class="tag-link" data-q="bronchial">Bronchial Clear</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="propolis">Propolis Extract EP300</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="clinical opc">Clinical OPC</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="resveratrol">Resveratrol Complex</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy cholesterol">Healthy Cholesterol</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="healthy liver">Healthy Liver</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sucontral">Sucontral D</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="berberine">Berberine MetX</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="sagapro">SagaPro</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="menopause">Menopause Relief Plus</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="tri-iodine">Tri-Iodine</button></li><li class="ttn-more"><button type="button" class="tag-link" data-q="melatonin ep120">Melatonin EP120</button></li></ul><button type="button" class="ttn-toggle" id="ttn-toggle" aria-expanded="false">Show 11 more products</button></div>
     </div>
   </section>
+<section id="wellness" class="wc" aria-label="Mary's Health and Wellness Center">
+    <div class="wrap wc-in">
+      <div class="wc-copy">
+        <p class="wc-h-sc" style="font-size:1.6rem;margin-bottom:.2rem">Mary's</p>
+        <h2 id="wc-h">Health &amp; Wellness Center</h2>
+        <span class="wc-rule"></span>
+        <p>Foot baths and red light therapy, right here in the store. Call to ask about a time.</p>
+        <a class="wc-call" href="tel:+12083565284">Call (208) 356-5284</a>
+      </div>
+      <ul class="wc-list">
+        <li><h3>Foot baths</h3><span class="wc-meta">40 minutes, $25</span></li>
+        <li><h3>Red light therapy</h3><span class="wc-meta">40 minutes, $25</span></li>
+        <li><h3>Both at the same time</h3><span class="wc-meta">40 minutes, $35 (foot bath $25 plus red light therapy $10)</span></li>
+      </ul>
+    </div>
+  </section>
+
 <section id="visit" class="visit">
     <div class="wrap visit-grid">
       <div>
@@ -2250,7 +2288,7 @@ html.pc .cp-shelf .cp-store .cp-ph{height:1.05in}
   }
   // scroll reveals
   if(!('IntersectionObserver' in window)) return;
-  var sel='#members .wrap>*,#our-line .wrap>*,#products .sec-head,#products .dept,#story .wrap>*,#story .timeline>*,#reviews .sec-head,#reviews blockquote,#learn .wrap>*,#visit .visit-grid>*,.foot-depts';
+  var sel='#members .wrap>*,#our-line .wrap>*,#products .sec-head,#products .dept,#story .wrap>*,#story .timeline>*,#reviews .sec-head,#reviews blockquote,#learn .wrap>*,#wellness .wrap>*,#visit .visit-grid>*,.foot-depts';
   var els=[].slice.call(d.querySelectorAll(sel));
   if(!els.length) return;
   de.classList.add('nn-js');
