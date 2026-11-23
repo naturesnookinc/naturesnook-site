@@ -53026,19 +53026,6 @@
  {
   "name": "RxOmega-3",
   "variant": "600 mg, enteripure",
-  "form": "Dietary supplement \u00b7 60 softgels",
-  "brand": "Natural Factors",
-  "dept": "Vitamins & Supplements",
-  "price": "22.06",
-  "shelf_price": "22.06",
-  "upc": "68958035482",
-  "pos": "RXOMEGA-3 600 MG ESG",
-  "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
-  "msrp": "25.95"
- },
- {
-  "name": "RxOmega-3",
-  "variant": "600 mg, enteripure",
   "form": "Dietary supplement \u00b7 240 softgels",
   "brand": "Natural Factors",
   "dept": "Vitamins & Supplements",
@@ -53048,6 +53035,19 @@
   "pos": "RXOMEGA-3 600 MG ESG",
   "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
   "msrp": "63.95"
+ },
+ {
+  "name": "RxOmega-3",
+  "variant": "1260 mg omega-3",
+  "form": "Dietary supplement \u00b7 60 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "22.06",
+  "shelf_price": "22.06",
+  "upc": "68958035482",
+  "pos": "RXOMEGA-3 600 MG ESG",
+  "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
+  "msrp": "25.95"
  },
  {
   "name": "RxOmega-3",
@@ -53077,7 +53077,7 @@
  },
  {
   "name": "RxOmega-3 Mini-Gels",
-  "variant": "EPA 350 / DHA 140 mg, enteripure",
+  "variant": "1060 mg omega-3, EPA 712 / DHA 288 / DPA 42 mg",
   "form": "Dietary supplement \u00b7 60 softgels",
   "brand": "Natural Factors",
   "dept": "Vitamins & Supplements",
