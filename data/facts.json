@@ -22553,5 +22553,216 @@
   "foot": "",
   "other": "Microcrystalline cellulose, vegetarian capsule (carbohydrate gum [cellulose], purified water), magnesium stearate (vegetable grade), silica.",
   "notes": "** Daily Value not established."
+ },
+ "68958020716": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Coenzyme Q10 (ubiquinone)",
+    "100 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Rice bran oil, softgel (gelatin, glycerin, purified water, carob), natural vitamin E.",
+  "notes": "** Daily Value not established."
+ },
+ "68958911113": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Coenzyme Q10 (ubiquinone)",
+    "100 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Rice bran oil, softgel (gelatin, glycerin, purified water, carob), natural vitamin E.",
+  "notes": "** Daily Value not established."
+ },
+ "68958010175": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Astaxanthin<br>&nbsp;&nbsp;from <i>Haematococcus pluvialis</i> Extract (whole)",
+    "6 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, water), flax oil.",
+  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA."
+ },
+ "68958020914": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Vegetarian Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Pycnogenol® (French Maritime Pine Bark Extract)<br>&nbsp;&nbsp;(<i>Pinus pinaster</i>) (bark) (65–75% Procyanidins)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "Procyanidins",
+    "65 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (carbohydrate gum [cellulose], purified water), magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established. Pycnogenol® is a registered trademark of Horphag Research Management SA. Use of the product is protected by one or more of U.S. patents and other international patents."
+ },
+ "68958035345": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "2 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Vitamin C (ascorbic acid)",
+    "120 mg",
+    "133%",
+    1
+   ],
+   [
+    "Vitamin E (d-alpha tocopheryl acetate)",
+    "40.2 mg",
+    "268%",
+    0
+   ],
+   [
+    "Thiamin (hydrochloride)",
+    "2.4 mg",
+    "200%",
+    0
+   ],
+   [
+    "Riboflavin (vitamin B2)",
+    "2.4 mg",
+    "185%",
+    0
+   ],
+   [
+    "Vitamin B6 (pyridoxine hydrochloride)",
+    "3 mg",
+    "176%",
+    0
+   ],
+   [
+    "Folate",
+    "680 mcg DFE<br>(400 mcg folic acid)",
+    "170%",
+    0
+   ],
+   [
+    "Vitamin B12 (methylcobalamin)",
+    "100 mcg",
+    "4,167%",
+    0
+   ],
+   [
+    "Zinc (monomethionine)",
+    "16 mg",
+    "145%",
+    0
+   ],
+   [
+    "Copper (gluconate)",
+    "100 mcg",
+    "11%",
+    0
+   ],
+   [
+    "Selenium (L-selenomethionine)",
+    "1 mg",
+    "111%",
+    0
+   ],
+   [
+    "Eyebright (<i>Euphrasia officinalis</i>) (aerial)",
+    "200 mg",
+    "**",
+    1
+   ],
+   [
+    "Bilberry (<i>Vaccinium myrtillus</i>) (fruit) (25% anthocyanins)",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "Alpha-lipoic acid (25%)",
+    "5 mg",
+    "**",
+    0
+   ],
+   [
+    "Grape seed extract (<i>Vitis vinifera</i>)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Green tea (60% polyphenols)",
+    "95 mg",
+    "**",
+    0
+   ],
+   [
+    "Quercetin (<i>Sophora japonica</i>) (flower)",
+    "50 mg",
+    "**",
+    0
+   ],
+   [
+    "Rutin (<i>Sophora japonica</i>)",
+    "40 mg",
+    "**",
+    0
+   ],
+   [
+    "Lutein (<i>Tagetes erecta</i>) (marigold flower)",
+    "10 mg",
+    "**",
+    0
+   ],
+   [
+    "Zeaxanthin (<i>Tagetes erecta</i>) (marigold flower)",
+    "15 mg",
+    "**",
+    0
+   ],
+   [
+    "Lycopene (<i>Lycopersicon esculentum</i>) (tomato fruit)",
+    "2.6 mg",
+    "**",
+    0
+   ],
+   [
+    "Astaxanthin (<i>Haematococcus pluvialis</i>)",
+    "2 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Gelatin capsule (gelatin, purified water), magnesium stearate (vegetable source), rice powder, silica. Contains no: soy, gluten, a food, pollock, haddock, hake, cusk, redfish, sole, flounder.",
+  "notes": "** Daily Value not established."
  }
 }
