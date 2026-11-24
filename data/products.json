@@ -6108,6 +6108,18 @@
   "msrp": "28.99"
  },
  {
+  "name": "BetaCareAll",
+  "variant": "Mixed carotenoid complex, natural source, 15,000 mcg",
+  "form": "Dietary supplement \u00b7 90 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "23.76",
+  "shelf_price": "23.76",
+  "upc": "68958010144",
+  "pos": "BETACAREALL 90 SG",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
   "name": "Betaine HCl",
   "variant": "648 mg",
   "form": "250 capsules",
@@ -6441,6 +6453,42 @@
   "upc": "840359424108",
   "pos": "BIG STICK JALAPE\u00d1O PEPPER JACK, 20 G PROTEIN, BEEF & PORK",
   "source": "ginger candy, meat snacks, seeds & nuts shelf photos 2026-10-20"
+ },
+ {
+  "name": "BigFriends Chewable Magnesium Citrate",
+  "variant": "50 mg, natural bubble gum flavor",
+  "form": "Dietary supplement \u00b7 60 chewable tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "8.46",
+  "shelf_price": "8.46",
+  "upc": "68958016481",
+  "pos": "BIGFRIENDS MAGNESIUM CITRATE 50",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
+  "name": "BigFriends Chewable Vitamin C",
+  "variant": "250 mg, tangy orange",
+  "form": "Dietary supplement \u00b7 90 chewable tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "13.56",
+  "shelf_price": "13.56",
+  "upc": "68958013954",
+  "pos": "BIGFRIENDS VITAMIN C 90 TAB",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
+  "name": "BigFriends Chewable Vitamin D3",
+  "variant": "10 mcg, berry bunch",
+  "form": "Dietary supplement \u00b7 250 chewable tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "13.56",
+  "shelf_price": "13.56",
+  "upc": "68958015460",
+  "pos": "BIGFRIENDS VITAMIN D3 10 MCG 40",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Bilberry",
@@ -12130,6 +12178,18 @@
   "source": "amino acid section shelf photos 2026-10-20"
  },
  {
+  "name": "Chewable Ginger",
+  "variant": "500 mg",
+  "form": "Dietary supplement \u00b7 90 chewable tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.11",
+  "shelf_price": "16.11",
+  "upc": "68958045061",
+  "pos": "GINGER CHEWABLE 500 90 TAB",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
   "name": "Chewable Papaya Enzymes",
   "variant": "With mint & chlorophyll",
   "form": "180 lozenges",
@@ -14702,6 +14762,18 @@
   "upc": "767963105554",
   "pos": "COMFREY ROOT POWDER 4 OZ",
   "source": "bulk herbs C shelf photos 2026-10-16"
+ },
+ {
+  "name": "Complete B",
+  "variant": "100 mg, time release",
+  "form": "Dietary supplement \u00b7 90 tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "22.91",
+  "shelf_price": "22.91",
+  "upc": "68958011417",
+  "pos": "COMPLETE B TIME REALEASED",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Complete Omega",
@@ -21467,6 +21539,18 @@
   "msrp": "19.99"
  },
  {
+  "name": "Flaxseed Oil",
+  "variant": "Made with organic flax, cold-pressed, 530 mg ALA, 1000 mg",
+  "form": "Dietary supplement \u00b7 90 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "12.71",
+  "shelf_price": "12.71",
+  "upc": "68958022109",
+  "pos": "FLAXSEED OIL ORGANIC 90 SG",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
   "name": "Floor Cleaner",
   "variant": "Australian mandarin & peppermint essential oils",
   "form": "16.9 fl oz",
@@ -21657,6 +21741,18 @@
   "pos": "FOCUS-R CONCENTRATION SUPPORT",
   "source": "LifeSeasons endcap photos 2026-10-14",
   "msrp": "42.99"
+ },
+ {
+  "name": "Folic Acid",
+  "variant": "1,000 mcg",
+  "form": "Dietary supplement \u00b7 90 tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "7.61",
+  "shelf_price": "7.61",
+  "upc": "68958012704",
+  "pos": "FOLIC ACID 1000 MCG",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Folic Acid",
@@ -26273,6 +26369,18 @@
   "pos": "HIGH POTENCY L-THEANINE 250 MG, PROMOTES RELAXATION",
   "source": "amino acid section shelf photos 2026-10-20",
   "msrp": "33.95"
+ },
+ {
+  "name": "High Potency Multi Enzyme",
+  "variant": "Vegetarian formula",
+  "form": "Dietary supplement \u00b7 60 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "24.61",
+  "shelf_price": "24.61",
+  "upc": "68958017457",
+  "pos": "MULTI ENZYME HIGH POTENCY VEG",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Higher Thoughts",
@@ -32834,6 +32942,18 @@
   "source": "bulk herbs H-M shelf photos 2026-10-16"
  },
  {
+  "name": "MacaRich Super Strength Maca Concentrate",
+  "variant": "Gelatinized 4:1, 500 mg, with Korean ginseng",
+  "form": "Dietary supplement \u00b7 90 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "19.51",
+  "shelf_price": "19.51",
+  "upc": "68958045375",
+  "pos": "MACA CONCENTRATE SUPER STRENGTH",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
   "name": "MacroBar",
   "variant": "Everlasting Joy: Coconut + Almond Butter + Chocolate Chips",
   "form": "2.3 oz",
@@ -36115,6 +36235,18 @@
   "source": "tea aisle photos 2026-10-15"
  },
  {
+  "name": "Mixed Vitamin E",
+  "variant": "268 mg (400 IU)",
+  "form": "Dietary supplement \u00b7 180 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "37.36",
+  "shelf_price": "37.36",
+  "upc": "68958014227",
+  "pos": "VITAMIN E 268MG 400 IU D-ALPH",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
   "name": "MK-7",
   "variant": "Vitamin K2, 90 mcg",
   "form": "Dietary supplement \u00b7 60 softgels",
@@ -39348,6 +39480,18 @@
  },
  {
   "name": "Niacin",
+  "variant": "100 mg",
+  "form": "Dietary supplement \u00b7 90 tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "9.31",
+  "shelf_price": "9.31",
+  "upc": "68958012209",
+  "pos": "NIACIN 100 MG 90 TAB",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
+  "name": "Niacin",
   "variant": "500 mg",
   "form": "Dietary supplement \u00b7 100 veggie caps",
   "brand": "NOW Foods",
@@ -39522,6 +39666,18 @@
   "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
   "member_off": "3.00",
   "member_until": "2026-12-29"
+ },
+ {
+  "name": "No Flush Niacin",
+  "variant": "500 mg, inositol hexaniacinate",
+  "form": "Dietary supplement \u00b7 90 capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "19.51",
+  "shelf_price": "19.51",
+  "upc": "68958012230",
+  "pos": "NIACIN NO FLUSH 500MG",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "No Mo Pain",
@@ -45256,6 +45412,18 @@
   "msrp": "4.79"
  },
  {
+  "name": "Panax Ginseng",
+  "variant": "10% ginsenosides Rg1 & Rb1",
+  "form": "Dietary supplement \u00b7 60 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "11.86",
+  "shelf_price": "11.86",
+  "upc": "68958041735",
+  "pos": "PANAX GINSENG 60 SG",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
   "name": "Pancake & Baking Mix",
   "variant": "Gluten free",
   "form": "4 lb",
@@ -45478,6 +45646,30 @@
   "upc": "76630503044",
   "pos": "PAPAYA+CHLOROPHYLL CHEW",
   "source": "enzyme, fiber & psyllium shelf photos 2026-10-15"
+ },
+ {
+  "name": "Papaya Enzymes",
+  "variant": "With amylase & bromelain",
+  "form": "Dietary supplement \u00b7 60 chewable tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "6.76",
+  "shelf_price": "6.76",
+  "upc": "68958017488",
+  "pos": "PAPAYA ENZYME CHEWABLE 60 TAB",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
+  "name": "Papaya Enzymes",
+  "variant": "With amylase & bromelain",
+  "form": "Dietary supplement \u00b7 120 chewable tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "10.16",
+  "shelf_price": "10.16",
+  "upc": "68958017495",
+  "pos": "PAPAYA ENZYME CHEWABLE",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Papaya Gold",
@@ -53375,6 +53567,18 @@
   "pos": "BLACK ELDERBERRY 60",
   "source": "quercetin, elderberry, manuka & throat shelf photos 2026-10-16",
   "msrp": "13.95"
+ },
+ {
+  "name": "Sambucus Black Elderberry",
+  "variant": "Standardized extract, 100 mg, fast-acting",
+  "form": "Dietary supplement \u00b7 120 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "20.36",
+  "shelf_price": "20.36",
+  "upc": "68958047072",
+  "pos": "BLACK ELDERBERRY SAMBUCUS",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Sambucus Cough Relief+ Immune Gummies",
@@ -61835,6 +62039,18 @@
   "source": "Women's health aisle photos 2026-10-15"
  },
  {
+  "name": "Ultra Prim",
+  "variant": "Evening primrose oil, 500 mg",
+  "form": "Dietary supplement \u00b7 180 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "21.21",
+  "shelf_price": "21.21",
+  "upc": "68958023564",
+  "pos": "ULTRA PRIM EVENING PRIMROSE",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
   "name": "Ultra Skinny Mini",
   "variant": "Caffeine free",
   "form": "Dietary supplement \u00b7 90 tablets",
@@ -62218,6 +62434,18 @@
   "pos": "URINARI-X 180VAP",
   "source": "LifeSeasons endcap photos 2026-10-14",
   "msrp": "69.99"
+ },
+ {
+  "name": "Urinary Flow Formula",
+  "variant": "",
+  "form": "Dietary supplement \u00b7 90 capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "13.66",
+  "shelf_price": "13.66",
+  "upc": "68958046303",
+  "pos": "URINARY FLOW FORMULA",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Urinary Tract Intensive Support",
@@ -64975,6 +65203,18 @@
   "pos": "WELL BETX BERBERINE",
   "source": "metabolic support shelf photos 2026-10-15",
   "msrp": "49.95"
+ },
+ {
+  "name": "WellBetX Mulberry Extract",
+  "variant": "100 mg",
+  "form": "Dietary supplement \u00b7 90 capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "12.71",
+  "shelf_price": "12.71",
+  "upc": "68958035840",
+  "pos": "MULBERRY EXTRACT WELLBETX",
+  "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
   "name": "Wellness Elderberry Liquid",
