@@ -22891,5 +22891,102 @@
   "foot": "",
   "other": "Organic flaxseed oil, softgel (gelatin, glycerin, purified water, carob), yellow beeswax, natural orange flavor (from citrus).",
   "notes": "‡ Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established. Isura® is a trademark of ISURA. BioPQQ® is a registered trademark of Mitsubishi (Japan). Naturall-e™ owned by Matrix Fine Sciences."
+ },
+ "68958010359": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "LuteinRich® Lutein (<i>Tagetes erecta</i>)<br>&nbsp;&nbsp;(from marigold flower extract)",
+    "40 mg",
+    "**",
+    1
+   ],
+   [
+    "Zeaxanthin (<i>Tagetes erecta</i>)<br>&nbsp;&nbsp;(from marigold flower extract)",
+    "7 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, purified water, glycerin, annatto), safflower oil, flaxseed oil, yellow beeswax, non-GMO sunflower lecithin.",
+  "notes": "** Daily Value not established. LuteinRich® is a registered trademark of InnoBiologic Inc. Isura® is a registered trademark of ISURA."
+ },
+ "68958207278": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "CoQ10 Ubiquinol Form (as Kaneka Q+)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "Organic Flaxseed Oil (<i>Linum usitatissimum</i>) (seed)",
+    "295 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water, carob), yellow beeswax, sunflower lecithin (non-GMO), vitamin E (non-GMO sunflower oil).",
+  "notes": "** Daily Value not established. Q+, Kaneka Ubiquinol and the quality seal are registered or pending trademarks of Kaneka Corp."
+ },
+ "68958020723": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Coenzyme Q10 (ubiquinone)",
+    "100 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Rice bran oil, softgel (gelatin, glycerin, purified water, carob), natural vitamin E.",
+  "notes": "** Daily Value not established."
+ },
+ "68958019048": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "NMN (β-nicotinamide mononucleotide)",
+    "300 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (hypromellose, purified water), magnesium stearate (vegetable grade), stearic acid, silica.",
+  "notes": "** Daily Value not established. Natre® is a registered trademark of ISURA."
+ },
+ "68958019260": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "NMN (β-nicotinamide mononucleotide)",
+    "500 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (hypromellose, purified water), rice flour, magnesium stearate (vegetable grade), stearic acid, silica.",
+  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA."
  }
 }
