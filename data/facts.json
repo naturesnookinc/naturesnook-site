@@ -24947,5 +24947,497 @@
   "foot": "",
   "other": "Softgel (gelatin, glycerin, purified water), soybean oil.",
   "notes": "** Daily Value not established. Isura™ is a trademark of ISURA."
+ },
+ "68958046303": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Uva Ursi Extract (<i>Arctostaphylos uva-ursi</i>) (leaf)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Arbutin (10%)",
+    "10 mg",
+    "**",
+    0
+   ],
+   [
+    "Parsley (<i>Petroselinum crispum</i>) (root)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Dandelion Extract 4:1 (<i>Taraxacum officinale</i>) (leaf)",
+    "50 mg",
+    "**",
+    0
+   ],
+   [
+    "Juniper Extract (<i>Juniperus communis</i>) (berry)",
+    "25 mg",
+    "**",
+    0
+   ],
+   [
+    "Cranberry Concentrate 18:1 (<i>Vaccinium macrocarpon</i>) (fruit)",
+    "25 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Gelatin capsule (gelatin, purified water), rice powder.",
+  "notes": "** Daily Value not established."
+ },
+ "68958012230": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Niacin (inositol hexaniacinate)",
+    "500 mg",
+    "3,125%",
+    1
+   ],
+   [
+    "Inositol (inositol hexaniacinate)",
+    "120 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, gelatin capsule (gelatin, purified water), magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established. Natural® is a trademark of ISURA."
+ },
+ "68958045375": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "MacaRich® (<i>Lepidium meyenii</i>)<br>&nbsp;&nbsp;Concentrate 4:1 (root) (Gelatinized)",
+    "500 mg",
+    "**",
+    1
+   ],
+   [
+    "Red Korean Ginseng<br>&nbsp;&nbsp;(<i>Panax ginseng</i> C.A. Meyer) Powder (root)",
+    "200 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (carbohydrate gum [cellulose], purified water), silica, magnesium stearate (vegetable grade), microcrystalline cellulose.",
+  "notes": "** Daily Value not established. MacaRich® is a registered trademark of InovoBiologic Inc. Isura™ is a trademark of ISURA."
+ },
+ "68958049779": {
+  "title": "Supplement Facts",
+  "by": "Product of Canada. Manufactured by Natural Factors Canada. Distributed by NATURAL FACTORS, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Vegetarian Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Pumpkin Seed Extract (<i>Cucurbita pepo</i>)",
+    "262 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (carbohydrate gum [cellulose], purified water), microcrystalline cellulose, magnesium stearate (vegetable grade), silica.",
+  "notes": "** Daily Value not established."
+ },
+ "68958011417": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Thiamin (hydrochloride)",
+    "100 mg",
+    "8,333%",
+    1
+   ],
+   [
+    "Riboflavin (vitamin B2)",
+    "100 mg",
+    "7,692%",
+    0
+   ],
+   [
+    "Niacin (niacinamide)",
+    "100 mg",
+    "625%",
+    0
+   ],
+   [
+    "Vitamin B6 (pyridoxine hydrochloride)",
+    "100 mg",
+    "5,882%",
+    0
+   ],
+   [
+    "Folate",
+    "680 mcg DFE<br>(400 mcg folic acid)",
+    "170%",
+    0
+   ],
+   [
+    "Vitamin B12 (cyanocobalamin)",
+    "100 mcg",
+    "4,167%",
+    0
+   ],
+   [
+    "Biotin (vitamin B7)",
+    "300 mcg",
+    "1,000%",
+    0
+   ],
+   [
+    "Pantothenic Acid (calcium pantothenate)",
+    "100 mg",
+    "2,000%",
+    0
+   ],
+   [
+    "Choline (bitartrate)",
+    "84 mg",
+    "15%",
+    0
+   ],
+   [
+    "Calcium (dicalcium phosphate, calcium pantothenate)",
+    "80 mg",
+    "6%",
+    1
+   ],
+   [
+    "Inositol",
+    "100 mg",
+    "*",
+    0
+   ],
+   [
+    "Para-Aminobenzoic Acid",
+    "100 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, coating (cellulose gum, carbohydrate gum [cellulose], glycerin), stearic acid, magnesium stearate (vegetable grade).",
+  "notes": "* Daily Value not established."
+ },
+ "68958013954": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    1
+   ],
+   [
+    "Total Carbohydrate",
+    "1 g",
+    "<1%†",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Xylitol",
+    "1 g",
+    "",
+    0
+   ],
+   [
+    "Vitamin C (ascorbic acid & sodium ascorbate)",
+    "250 mg",
+    "278%",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;% Daily Value for children under 4 years of age",
+    "",
+    "1,667%",
+    0
+   ],
+   [
+    "Sodium (sodium ascorbate)",
+    "15 mg",
+    "<1%",
+    0
+   ],
+   [
+    "Citrus Bioflavonoids Extract",
+    "2 mg",
+    "*",
+    1
+   ],
+   [
+    "Hesperidin Extract 4:1<br>&nbsp;&nbsp;from a 4 mg of orange (<i>Citrus sinensis</i>) (fruit rind)",
+    "1 mg",
+    "*",
+    0
+   ],
+   [
+    "Rutin (<i>Sophora japonica</i>) (fruit)",
+    "1 mg",
+    "*",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Natural sourced flavors (orange, peach, tangerine), natural sourced orange color (annatto, turmeric, paprika extract), magnesium stearate (vegetable grade), orange peel, citric acid, silicon dioxide.",
+  "notes": "% Daily Value is for adults and children 4 or more years of age (based on a 2,000 calorie diet†); for children under 4 years of age (1,000 calorie diet) the label gives Total Carbohydrate <1%, Vitamin C 1,667% and Sodium 1%. * Daily Value not established. Not a significant source of sugar or added sugars. The citrus bioflavonoid species are printed on the label photos."
+ },
+ "68958014227": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin E (d-alpha tocopherol)",
+    "268 mg",
+    "1,787%",
+    1
+   ],
+   [
+    "Mixed tocopherols (gamma, delta, beta)",
+    "10 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water), soybean oil.",
+  "notes": "** Daily Value not established. Isura™ is a trademark of ISURA."
+ },
+ "68958022109": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by NATURAL FACTORS, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "10",
+    "",
+    1
+   ],
+   [
+    "Total Fat",
+    "1 g",
+    "1%‡",
+    0
+   ],
+   [
+    "Polyunsaturated Fat",
+    "1 g",
+    "**",
+    0
+   ],
+   [
+    "Certified Organic Flaxseed Oil (from <i>Linum usitatissimum</i>)",
+    "1000 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Omega-3 Fatty Acids (Alpha-Linolenic Acid) (ALA)",
+    "530 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Omega-6 Fatty Acids (Linoleic Acid) (LA)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Omega-9 Fatty Acids (Oleic Acid) (OA)",
+    "140 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water, carob), organic flaxseed particulate, natural vitamin E (non-GMO sunflower oil).",
+  "notes": "‡ Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established. Certified Organic by Pro-Cert."
+ },
+ "68958022116": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by NATURAL FACTORS, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "10",
+    "",
+    1
+   ],
+   [
+    "Total Fat",
+    "1 g",
+    "1%‡",
+    0
+   ],
+   [
+    "Polyunsaturated Fat",
+    "1 g",
+    "**",
+    0
+   ],
+   [
+    "Certified Organic Flaxseed Oil (from <i>Linum usitatissimum</i>)",
+    "1000 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Omega-3 Fatty Acids (Alpha-Linolenic Acid) (ALA)",
+    "530 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Omega-6 Fatty Acids (Linoleic Acid) (LA)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Omega-9 Fatty Acids (Oleic Acid) (OA)",
+    "140 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water, carob), organic flaxseed particulate, natural vitamin E (non-GMO sunflower oil).",
+  "notes": "‡ Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established. Certified Organic by Pro-Cert."
+ },
+ "68958015460": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Total Carbohydrate",
+    "<1 g",
+    "<1%",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Xylitol",
+    "<1 g",
+    "",
+    0
+   ],
+   [
+    "Vitamin D3 (cholecalciferol) (lanolin)",
+    "10 mcg (400 IU)",
+    "50%",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;% Daily Value for children 3 years of age",
+    "",
+    "67%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Natural strawberry flavor, magnesium stearate (vegetable grade), natural color source (red carrot).",
+  "notes": "% Daily Value is for adults and children 4 or more years of age (based on a 2,000 calorie diet); the last line gives the % Daily Value for children 3 years of age (based on a 1,000 calorie diet). Not a significant source of sugars. BigFriends® is a trademark of ISURA."
+ },
+ "68958047072": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "ElderCraft® European Black Elderberry Extract<br>&nbsp;&nbsp;64:1 (<i>Sambucus nigra</i>) (fruit)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "Anthocyanidins (14%)",
+    "14 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel capsule (gelatin, glycerin, purified water), sunflower oil, yellow beeswax, sunflower lecithin.",
+  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA. ElderCraft® is a registered trademark, exclusively licensed to IPROMA AGS94."
+ },
+ "68958023564": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    1
+   ],
+   [
+    "Total Fat",
+    "0.5 g",
+    "1%‡",
+    0
+   ],
+   [
+    "Ultra Prim™ Evening Primrose Oil",
+    "500 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Omega-6 Fatty Acids",
+    "375 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Cis-Linoleic Acid (LA)",
+    "325 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Gamma Linolenic Acid (GLA)",
+    "50 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water), natural non-GMO vitamin E.",
+  "notes": "‡ Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established."
  }
 }
