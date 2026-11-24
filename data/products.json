@@ -1231,6 +1231,18 @@
   "source": "bulk herbs C shelf photos 2026-10-16"
  },
  {
+  "name": "Activated Coconut Charcoal",
+  "variant": "VitaLiquids, unflavored, 280 mg per serving",
+  "form": "Dietary supplement \u00b7 8 fl oz (237 ml)",
+  "brand": "Dynamic Health",
+  "dept": "Vitamins & Supplements",
+  "price": "10.69",
+  "shelf_price": "10.69",
+  "upc": "53232484506",
+  "pos": "ACTIVATED COCONUT CHARCOAL",
+  "source": "shelf tags 2026-11-24 (batch 4)"
+ },
+ {
   "name": "Active Creatine",
   "variant": "Lemonade",
   "form": "350 g",
@@ -2618,6 +2630,30 @@
   "pos": "ALPHA LIPOIC ACID 600MG 120 VC",
   "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
   "msrp": "53.99"
+ },
+ {
+  "name": "Alpha-Lipoic Acid",
+  "variant": "100 mg",
+  "form": "Dietary supplement \u00b7 60 capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "10.99",
+  "shelf_price": "10.99",
+  "upc": "68958020952",
+  "pos": "ALPHA-LIPOIC ACID 100 mg",
+  "source": "shelf tags 2026-11-24 (batch 4)"
+ },
+ {
+  "name": "Alpha-Lipoic Acid",
+  "variant": "100 mg",
+  "form": "Dietary supplement \u00b7 120 capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "17.81",
+  "shelf_price": "17.81",
+  "upc": "68958020969",
+  "pos": "ALPHA-LIPOIC ACID 100 mg",
+  "source": "shelf tags 2026-11-24 (batch 4)"
  },
  {
   "name": "Alpha-Lipoic Acid",
@@ -6537,6 +6573,18 @@
   "upc": "788332154003",
   "pos": "BILBERRY POWDER CAPSULES STANDARDIZED 150 CC",
   "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15"
+ },
+ {
+  "name": "Bilberry",
+  "variant": "25% anthocyanidins, 40 mg (HerbalFactors)",
+  "form": "Dietary supplement \u00b7 60 capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.11",
+  "shelf_price": "16.11",
+  "upc": "68958041605",
+  "pos": "BILBERRY 40 MG",
+  "source": "shelf tags 2026-11-24 (batch 4)"
  },
  {
   "name": "Bilberry",
@@ -28124,6 +28172,18 @@
   "msrp": "8.99"
  },
  {
+  "name": "Iron Chelate",
+  "variant": "25 mg",
+  "form": "Dietary supplement \u00b7 90 tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "10.16",
+  "shelf_price": "10.16",
+  "upc": "68958016405",
+  "pos": "IRON CHELATE 25 MG",
+  "source": "shelf tags 2026-11-24 (batch 4)"
+ },
+ {
   "name": "Iron Complex",
   "variant": "Essential mineral",
   "form": "Dietary supplement \u00b7 100 tablets",
@@ -29816,6 +29876,18 @@
  },
  {
   "name": "L-Carnitine",
+  "variant": "500 mg, free form amino acid",
+  "form": "Dietary supplement \u00b7 60 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "21.21",
+  "shelf_price": "21.21",
+  "upc": "68958028019",
+  "pos": "L-CARNITINE 500 MG 60 VCAP",
+  "source": "shelf tags 2026-11-24 (batch 4)"
+ },
+ {
+  "name": "L-Carnitine",
   "variant": "500 mg, purest form",
   "form": "180 veg caps",
   "brand": "NOW Foods",
@@ -30284,6 +30356,18 @@
   "upc": "21078019848",
   "pos": "L-TRYPTOPHAN 500 MG",
   "source": "amino acid section shelf photos 2026-10-20"
+ },
+ {
+  "name": "L-Tyrosine",
+  "variant": "500 mg, free form amino acid",
+  "form": "Dietary supplement \u00b7 60 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "8.46",
+  "shelf_price": "8.46",
+  "upc": "68958028033",
+  "pos": "L-TYROSINE 500 MG 60 VCAP",
+  "source": "shelf tags 2026-11-24 (batch 4)"
  },
  {
   "name": "L-Tyrosine",
@@ -32667,6 +32751,18 @@
   "upc": "790011120254",
   "pos": "JARROW LUTEIN",
   "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15"
+ },
+ {
+  "name": "Lutein",
+  "variant": "20 mg, with 3.5 mg zeaxanthin",
+  "form": "Dietary supplement \u00b7 60 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.11",
+  "shelf_price": "16.11",
+  "upc": "68958010328",
+  "pos": "LUTEIN 20 MG",
+  "source": "shelf tags 2026-11-24 (batch 4)"
  },
  {
   "name": "Lutein",
@@ -35770,6 +35866,18 @@
   "upc": "306960487135",
   "pos": "MEZEREUM 30C MD",
   "source": "homeopathic aisle photos 2026-10-14"
+ },
+ {
+  "name": "Micronized L-Glutamine",
+  "variant": "1000 mg, free form amino acid",
+  "form": "Dietary supplement \u00b7 90 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.96",
+  "shelf_price": "16.96",
+  "upc": "68958028101",
+  "pos": "L-GLUTAMINE MICRONIZED",
+  "source": "shelf tags 2026-11-24 (batch 4)"
  },
  {
   "name": "Micronized L-Glutamine",
@@ -57504,6 +57612,18 @@
   "pos": "STRESS-RELAX ASHWAGANDHA",
   "source": "single herbs A-D shelf photos 2026-10-16",
   "msrp": "17.95"
+ },
+ {
+  "name": "Stress-Relax Ashwagandha",
+  "variant": "600 mg, support for stress, sleep & energy",
+  "form": "60 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "28.86",
+  "shelf_price": "28.86",
+  "upc": "68958028729",
+  "pos": "ASHWAGANDHA STRESS-RELAX 600MG",
+  "source": "shelf tags 2026-11-24 (batch 4)"
  },
  {
   "name": "Stress-Relax Mind Retreat",
