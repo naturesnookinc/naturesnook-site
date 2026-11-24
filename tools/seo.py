@@ -99,6 +99,34 @@ PAGES = [
       intro="Nature's Nook carries probiotic capsules and powders, refrigerated and shelf-stable, along with kefir starters and fermented foods. Brands include Garden of Life, Solaray, Nature's Way, Natural Factors, NOW Foods, Enzymedica and Nature's Plus.",
       more="Some probiotics are kept in the refrigerator, so ask our staff where to find a specific one, or search the online list by brand.",
       fda=True),
+ dict(slug='kids-products-rexburg', dept=('KIDS', None), href='/?dept=Kids#find', short='Kids & Baby Products',
+      title="Kids & Baby Products in Rexburg, Idaho | Nature's Nook",
+      desc="Children's vitamins, chewables and gummies, kids probiotics, kids toothpaste, herbs for kids and baby care in Rexburg, Idaho at Nature's Nook.",
+      h1="Kids & baby products in Rexburg",
+      intro="Nature's Nook carries a shelf of products made for children: chewable and gummy vitamins, kids probiotics, children's herbal formulas, kids toothpaste and toothbrushes, and baby care. Brands include Garden of Life, Nature's Way, Nature's Plus, Solaray, Nordic Naturals, Natural Factors, Spry, Burt's Bees and our own Nature's Nook kids' line.",
+      more="Always read the package for age ranges, ingredients and allergens, and talk with your child's health care provider about what is right for them. Ask our staff what is on the shelf today, or open the Kids department in the online list.",
+      fda=True),
+ dict(slug='kids-vitamins-rexburg', dept=('KIDS', ('Vitamins & Supplements',)), href='/?q=Kids%20vitamins#find', short="Kids' Vitamins & Chewables",
+      title="Kids' Vitamins, Gummies & Chewables in Rexburg, Idaho | Nature's Nook",
+      desc="Children's multivitamins, gummies, chewables and kids probiotics in Rexburg, Idaho: Garden of Life, Nature's Way, Nature's Plus, Solaray, Nordic Naturals, SmartyPants and more at Nature's Nook.",
+      h1="Kids' vitamins, gummies & chewables in Rexburg",
+      intro="Nature's Nook carries children's multivitamins as gummies, chewables and liquids, plus kids probiotics, kids electrolyte mixes and kids omega products. Brands include Garden of Life, Nature's Way, Nature's Plus (Animal Parade), Solaray, KAL, Nordic Naturals, SmartyPants, Natural Factors and Source Naturals.",
+      more="Read the package for the recommended age, serving and ingredients, and talk with your child's health care provider before starting a supplement. Ask our staff what is in stock, or search the online list.",
+      fda=True),
+ dict(slug='kids-herbs-homeopathics-rexburg', dept=('KIDS', ('Herbs & Tinctures', 'Homeopathic')), href='/?dept=Kids#find', short="Herbs & Homeopathics for Kids",
+      title="Herbs for Kids & Children's Homeopathics in Rexburg, Idaho | Nature's Nook",
+      desc="Alcohol-free children's herbal liquids and kids homeopathics in Rexburg, Idaho: Nature's Nook Kid's line, Herbs for Kids, Dr. Christopher's Kid-e formulas and Boiron at Nature's Nook.",
+      h1="Herbs & homeopathics for kids in Rexburg",
+      intro="Nature's Nook carries children's herbal liquids and kids homeopathics, many of them alcohol free and berry flavored. Lines include our own Nature's Nook Kid's formulas, Herbs for Kids, Dr. Christopher's Kid-e formulas, Boiron and Progena.",
+      more="Check the package for age and directions, and talk with your child's health care provider about what is right for them. Ask our staff what is on the shelf, or search the online list.",
+      fda=True),
+ dict(slug='kids-toothpaste-baby-care-rexburg', dept=('KIDS', ('Beauty & Personal Care',)), href='/?q=Kids%20tooth#find', short="Kids' Toothpaste & Baby Care",
+      title="Kids' Toothpaste, Toothbrushes & Baby Care in Rexburg, Idaho | Nature's Nook",
+      desc="Kids toothpaste and tooth gel, kids toothbrushes, baby lotion, baby bubble bath and gentle baby soap in Rexburg, Idaho: Spry, Desert Essence, XyliWhite, Radius, Burt's Bees and more.",
+      h1="Kids' toothpaste & baby care in Rexburg",
+      intro="Nature's Nook carries kids toothpaste and tooth gels, kids mouthwash, children's and baby toothbrushes, and gentle baby care such as lotion, bubble bath and unscented castile soap. Brands include Spry, Desert Essence, NOW Solutions XyliWhite, Radius, SoFresh, Burt's Bees and Dr. Bronner's.",
+      more="Check each package for age guidance and ingredients. Ask our staff what is on the shelf, or search the online list.",
+      fda=False),
  dict(slug='gluten-free-foods-rexburg', dept=('gluten', ('Grocery',), 'wide'), q='Gluten Free', short='Gluten-Free Foods',
       title="Gluten-Free Foods, Flour & Baking in Rexburg, Idaho | Nature's Nook",
       desc="Gluten-free flours, pasta, snacks and baking mixes in Rexburg, Idaho: Bob's Red Mill, Siete, Tinkyada, The Good Crisp Company, Craize and more at Nature's Nook.",
@@ -128,6 +156,7 @@ PAGES = [
 <li><a href="/re-lyte-rexburg/">Redmond Re-Lyte</a> electrolyte drink mixes in dozens of flavors and sizes</li>
 <li><a href="/ancient-nutrition-rexburg/">Ancient Nutrition</a>, <a href="/terry-naturally-rexburg/">Terry Naturally</a>, <a href="/natural-factors-rexburg/">Natural Factors</a> and <a href="/trace-minerals-rexburg/">Trace Minerals</a></li>
 <li><a href="/herbs-tinctures-rexburg/">Herbs and tinctures</a>, including our own Nature's Nook label</li>
+<li><a href="/kids-products-rexburg/">Kids and baby products</a>: children's vitamins, kids probiotics, kids toothpaste and baby care</li>
 <li><a href="/gluten-free-foods-rexburg/">Gluten-free foods</a>, baking supplies and natural groceries</li>
 <li><a href="/essential-oils-rexburg/">Essential oils</a>, <a href="/teas-rexburg/">teas</a> and <a href="/natural-beauty-personal-care-rexburg/">natural personal care</a></li>
 </ul>
@@ -146,10 +175,22 @@ BRAND_SKIP = re.compile(r'relief|rescue|support|health|heart|kidney|liver|bladde
 DENY = re.compile(r'proline|burrito|ramen|biscuit|gravy|beauty|bromelain|big stick|smoothie|hydrangea', re.I)
 
 
+# Kids products: same rule as the Kids chip on the site (index.html KIDRX / KIDEX); keep the two in step
+KIDRX = re.compile(r"(^|[^a-z0-9])(kids?|kidz|childrens?|child|toddlers?|babies|baby|infants?|bigfriends|big friends|teens?|junior|pediatric)([^a-z0-9]|$)|kid-e|animal parade|calmkids|camilia|teething|diaper")
+KIDEX = re.compile(r"prenatal|postnatal|mom & baby|pickle|kidney|baby (spinach|bella|corn|greens|food)|mama")
+# keep the kids sample lists to plain product names (no condition or symptom wording)
+KIDSKIP = re.compile(r'orega|sooth|hydrosol|anxi|cough|syrup|silver|calm|focus|stress|sleep|bronch|allerg|colic|\bear\b|potty|immun|attention|mellow|pain|oral|cold|sneez|congest|digest|regular|learning|behavior|brain|eye|wellness|biotic|echinacea|teething|nasal|mucus|relief|support',re.I)
+def is_kid(x):
+    t = ' '.join([x['brand'], x['name'], x['variant'], x['form'], x['dept'], x['upc']]).lower().replace("'", '').replace('\u2019', '')
+    return bool(KIDRX.search(t)) and not KIDEX.search(t)
+
+
 def pool(key):
     """products for a page: a department name, or a (regex, depts) filter"""
     if isinstance(key, str) and key.startswith('brand:'):
         return [x for x in P if x['brand'] == key[6:]]
+    if isinstance(key, tuple) and key[0] == 'KIDS':
+        return [x for x in P if (key[1] is None or x['dept'] in key[1]) and is_kid(x)]
     if isinstance(key, tuple):
         rx, depts = key[0], key[1]
         wide = len(key) > 2 and key[2] == 'wide'
@@ -174,6 +215,8 @@ def examples_for(dept, n=24, full=False):
     by = collections.defaultdict(list)
     for x in pool(dept):
         if SKIP.search(x['name']) or (full and SKIP.search(x['variant'])):
+            continue
+        if isinstance(dept, tuple) and dept[0] == 'KIDS' and KIDSKIP.search(x['name'] + ' ' + x['variant']):
             continue
         if isinstance(dept, str) and dept.startswith('brand:') and BRAND_SKIP.search(x['name']):
             continue
@@ -239,6 +282,8 @@ FDA = '<p class="fda">Statements about dietary supplements on this site have not
 
 def link(page):
     from urllib.parse import quote
+    if page.get('href'):
+        return page['href']
     qs = []
     if page.get('q'):
         qs.append('q=' + quote(page['q']))
