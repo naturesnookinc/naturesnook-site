@@ -127,6 +127,17 @@ PAGES = [
       intro="Nature's Nook carries kids toothpaste and tooth gels, kids mouthwash, children's and baby toothbrushes, and gentle baby care such as lotion, bubble bath and unscented castile soap. Brands include Spry, Desert Essence, NOW Solutions XyliWhite, Radius, SoFresh, Burt's Bees and Dr. Bronner's.",
       more="Check each package for age guidance and ingredients. Ask our staff what is on the shelf, or search the online list.",
       fda=False),
+ dict(slug='homeopathic-remedies-rexburg', dept='Homeopathic', q='', short='Homeopathic Products',
+      title="Homeopathic Products in Rexburg, Idaho | Nature's Nook",
+      desc="Homeopathic products in Rexburg, Idaho: Boiron, Hyland's, Bach flower remedies, Boericke & Tafel, MediNatura, Progena and more at Nature's Nook.",
+      h1='Homeopathic products in Rexburg',
+      intro="Nature's Nook carries a large shelf of homeopathic products, including Boiron single remedies and Boiron combination products, Hyland's, Bach flower remedies, Boericke & Tafel, MediNatura, Progena, Olloïs and Nature's Way.",
+      more="Read each package for directions, ingredients and age guidance. Ask our staff what is on the shelf, or search the online list by brand or product name.",
+      fda=True),
+ dict(slug='boiron-rexburg', mode='brand', dept='brand:Boiron', q='Boiron', short='Boiron', name='Boiron',
+      title="Boiron Homeopathic Products in Rexburg, Idaho | Nature's Nook", fda=True),
+ dict(slug='hylands-rexburg', mode='brand', dept="brand:Hyland's", q="Hyland's", short="Hyland's", name="Hyland's",
+      title="Hyland's Homeopathic Products in Rexburg, Idaho | Nature's Nook", fda=True),
  dict(slug='gluten-free-foods-rexburg', dept=('gluten', ('Grocery',), 'wide'), q='Gluten Free', short='Gluten-Free Foods',
       title="Gluten-Free Foods, Flour & Baking in Rexburg, Idaho | Nature's Nook",
       desc="Gluten-free flours, pasta, snacks and baking mixes in Rexburg, Idaho: Bob's Red Mill, Siete, Tinkyada, The Good Crisp Company, Craize and more at Nature's Nook.",
@@ -180,6 +191,7 @@ KIDRX = re.compile(r"(^|[^a-z0-9])(kids?|kidz|childrens?|child|toddlers?|babies|
 KIDEX = re.compile(r"prenatal|postnatal|mom & baby|pickle|kidney|baby (spinach|bella|corn|greens|food)|mama")
 # keep the kids sample lists to plain product names (no condition or symptom wording)
 KIDSKIP = re.compile(r'orega|sooth|hydrosol|anxi|cough|syrup|silver|calm|focus|stress|sleep|bronch|allerg|colic|\bear\b|potty|immun|attention|mellow|pain|oral|cold|sneez|congest|digest|regular|learning|behavior|brain|eye|wellness|biotic|echinacea|teething|nasal|mucus|relief|support',re.I)
+HOMSKIP = re.compile(r'chestal|coldcalm|sinus|oscillo|sleepcalm|stodal|cough|quietude|camilia|calm|symptom|sore|throat|breathe|aller|dander|legs|restful|bioplasma|cold|flu\b|pain|nasal|migrain|vertigo|diarrh|constip|hemorr|sleep|stress|anxi|relief|rescue|teeth|ear\b|cramp|nausea|motion|bladder|hair|nerve|attend|guard|bioallers',re.I)
 def is_kid(x):
     t = ' '.join([x['brand'], x['name'], x['variant'], x['form'], x['dept'], x['upc']]).lower().replace("'", '').replace('\u2019', '')
     return bool(KIDRX.search(t)) and not KIDEX.search(t)
@@ -215,6 +227,8 @@ def examples_for(dept, n=24, full=False):
     by = collections.defaultdict(list)
     for x in pool(dept):
         if SKIP.search(x['name']) or (full and SKIP.search(x['variant'])):
+            continue
+        if isinstance(dept, str) and (dept == 'Homeopathic' or dept in ('brand:Boiron', "brand:Hyland's")) and HOMSKIP.search(x['name']):
             continue
         if isinstance(dept, tuple) and dept[0] == 'KIDS' and KIDSKIP.search(x['name'] + ' ' + x['variant']):
             continue
