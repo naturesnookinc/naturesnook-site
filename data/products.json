@@ -6159,6 +6159,30 @@
   "msrp": "24.69"
  },
  {
+  "name": "Betaine Hydrochloride",
+  "variant": "500 mg, with fenugreek",
+  "form": "Dietary supplement \u00b7 90 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "12.71",
+  "shelf_price": "12.71",
+  "upc": "68958017204",
+  "pos": "BETAINE HYDROCHLORIDE 500MG",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
+ },
+ {
+  "name": "Betaine Hydrochloride",
+  "variant": "500 mg, with fenugreek",
+  "form": "Dietary supplement \u00b7 180 vegetarian capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "20.36",
+  "shelf_price": "20.36",
+  "upc": "68958017211",
+  "pos": "BETAINE HYDROCHLORIDE 500MG",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
+ },
+ {
   "name": "Better Stevia",
   "variant": "Cinnamon vanilla",
   "form": "Liquid sweetener \u00b7 2 fl oz (59 ml)",
@@ -6489,6 +6513,18 @@
   "upc": "68958015460",
   "pos": "BIGFRIENDS VITAMIN D3 10 MCG 40",
   "source": "Natural Factors shelf tag photos 2026-11-24"
+ },
+ {
+  "name": "BigFriends Kid Yummy Multi-Vitamin & Minerals",
+  "variant": "With whole food concentrates, jungle berry",
+  "form": "Dietary supplement \u00b7 60 chewable tablets",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "16.96",
+  "shelf_price": "16.96",
+  "upc": "68958015491",
+  "pos": "BIGFRIENDS MULTI-VITAMIN & MINER",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
  },
  {
   "name": "Bilberry",
@@ -21551,6 +21587,18 @@
   "source": "Natural Factors shelf tag photos 2026-11-24"
  },
  {
+  "name": "Flaxseed Oil",
+  "variant": "Made with organic flax, cold-pressed, 530 mg ALA, 1000 mg",
+  "form": "Dietary supplement \u00b7 180 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "22.06",
+  "shelf_price": "22.06",
+  "upc": "68958022116",
+  "pos": "FLAX OIL ORGANIC",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
+ },
+ {
   "name": "Floor Cleaner",
   "variant": "Australian mandarin & peppermint essential oils",
   "form": "16.9 fl oz",
@@ -36237,6 +36285,18 @@
  {
   "name": "Mixed Vitamin E",
   "variant": "268 mg (400 IU)",
+  "form": "Dietary supplement \u00b7 90 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "18.66",
+  "shelf_price": "18.66",
+  "upc": "68958014210",
+  "pos": "MIXED VITAMIN E 268 MG 400 IU",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
+ },
+ {
+  "name": "Mixed Vitamin E",
+  "variant": "268 mg (400 IU)",
   "form": "Dietary supplement \u00b7 180 softgels",
   "brand": "Natural Factors",
   "dept": "Vitamins & Supplements",
@@ -46392,6 +46452,18 @@
   "msrp": "8.19"
  },
  {
+  "name": "Peppermint + Oregano Oil Complex",
+  "variant": "Enteric coated",
+  "form": "Dietary supplement \u00b7 60 softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "15.26",
+  "shelf_price": "15.26",
+  "upc": "68958035161",
+  "pos": "PEPPERMINT & OREGANO OIL 60 SG",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
+ },
+ {
   "name": "Peppermint Gels",
   "variant": "Intestinal comfort, with ginger & fennel oils, enteric coated",
   "form": "90 softgels",
@@ -53266,6 +53338,18 @@
   "pos": "RXOMEGA-3 + D3 150 SG",
   "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
   "msrp": "70.95"
+ },
+ {
+  "name": "RxOmega-3 Algae",
+  "variant": "770 mg omega-3 per 2 softgels, plant-based EPA & DHA",
+  "form": "Dietary supplement \u00b7 60 vegetarian softgels",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "28.86",
+  "shelf_price": "28.86",
+  "upc": "68958035185",
+  "pos": "RXOMEGA-3 ALGAE",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
  },
  {
   "name": "RxOmega-3 Mini-Gels",
@@ -66229,6 +66313,18 @@
   "pos": "ADRENASENSE",
   "source": "Adrenal, thyroid, liver & heart aisle photos 2026-10-15",
   "msrp": "34.95"
+ },
+ {
+  "name": "WomenSense BladderSense",
+  "variant": "Urinary formula",
+  "form": "Dietary supplement \u00b7 90 capsules",
+  "brand": "Natural Factors",
+  "dept": "Vitamins & Supplements",
+  "price": "20.36",
+  "shelf_price": "20.36",
+  "upc": "68958049779",
+  "pos": "BLADDERSENSE URINARY",
+  "source": "Natural Factors shelf tag photos 2026-11-24 (batch 2)"
  },
  {
   "name": "WomenSense ThyroSense",
