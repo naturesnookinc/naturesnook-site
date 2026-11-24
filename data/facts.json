@@ -23122,5 +23122,198 @@
   "foot": "",
   "other": "Softgel (gelatin, glycerin, purified water). Contains fish (cod).",
   "notes": "† Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established."
+ },
+ "68958049410": {
+  "title": "Supplement Facts",
+  "by": "Product of Canada. Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Vegetarian Capsules",
+  "servings": "30",
+  "rows": [
+   [
+    "Rhodiola Extract (<i>Rhodiola rosea</i>) (root)",
+    "200 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Rosavins (3.5%)",
+    "7 mg",
+    "**",
+    0
+   ],
+   [
+    "Suma (<i>Pfaffia paniculata</i>) (root)",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "Eleuthero Extract (<i>Eleutherococcus senticosus</i>) (root)",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Eleutherosides (0.8%)",
+    "1.6 mg",
+    "**",
+    0
+   ],
+   [
+    "Schisandra Extract (<i>Schisandra chinensis</i>) (fruit)",
+    "160 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Schisandrins (2%)",
+    "3.2 mg",
+    "**",
+    0
+   ],
+   [
+    "Ashwagandha Extract (<i>Withania somnifera</i>) (root)",
+    "160 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Withanolides (1.5%)",
+    "2.4 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (carbohydrate gum [cellulose], purified water), magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established."
+ },
+ "68958049465": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Capsules",
+  "servings": "60",
+  "rows": [
+   [
+    "Pantothenic Acid (as calcium pantothenate)",
+    "100 mg",
+    "2,000%",
+    1
+   ],
+   [
+    "Iodine (as potassium iodide)",
+    "100 mcg",
+    "67%",
+    0
+   ],
+   [
+    "Selenium (as L-selenomethionine)",
+    "50 mcg",
+    "91%",
+    0
+   ],
+   [
+    "Copper (as gluconate)",
+    "0.5 mg",
+    "56%",
+    0
+   ],
+   [
+    "Manganese (as citrate)",
+    "0.5 mg",
+    "22%",
+    0
+   ],
+   [
+    "L-tyrosine",
+    "500 mg",
+    "**",
+    1
+   ],
+   [
+    "Ashwagandha Extract (<i>Withania somnifera</i>) (root), standardized to 1.5% withanolides",
+    "150 mg",
+    "**",
+    0
+   ],
+   [
+    "Guggul Extract (<i>Commiphora mukul</i>) (gum resin)",
+    "120 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (hypromellose, purified water), microcrystalline cellulose, magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA."
+ },
+ "68958017358": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Bromelain 1000 GDU/g<br>&nbsp;&nbsp;(<i>Ananas comosus</i>) extract (pineapple stem)",
+    "500 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Gelatin capsule (gelatin, purified water), magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established. GDU (Gelatin Digesting Units)."
+ },
+ "68958017365": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Bromelain 1000 GDU/g<br>&nbsp;&nbsp;(<i>Ananas comosus</i>) extract (pineapple stem)",
+    "500 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Gelatin capsule (gelatin, purified water), magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established. GDU (Gelatin Digesting Units)."
+ },
+ "68958028415": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Vegetarian Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin B6 (pyridoxine hydrochloride)",
+    "12.5 mg",
+    "735%",
+    1
+   ],
+   [
+    "Magnesium (glycinate)",
+    "50 mg",
+    "12%",
+    0
+   ],
+   [
+    "Pharma GABA® Gamma-Aminobutyric Acid",
+    "50 mg",
+    "**",
+    0
+   ],
+   [
+    "Lemon Balm Extract 4:1 (<i>Melissa officinalis</i>) (aerial)",
+    "150 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Vegetarian capsule (carbohydrate gum [cellulose], purified water), magnesium stearate (vegetable grade), silica.",
+  "notes": "** Daily Value not established. Pharma GABA® is a registered trademark of Pharma Foods International Co., Ltd. (Japan)."
  }
 }
