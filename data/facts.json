@@ -22988,5 +22988,139 @@
   "foot": "",
   "other": "Vegetarian capsule (hypromellose, purified water), rice flour, magnesium stearate (vegetable grade), stearic acid, silica.",
   "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA."
+ },
+ "68958017259": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Nattokinase (NSK-SD®)<br>&nbsp;&nbsp;(enzyme from whole natto concentrate)<br>&nbsp;&nbsp;(fermented non-GMO soybean)<br>&nbsp;&nbsp;(supplying 2,000 FU†)",
+    "100 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (hypromellose, purified water), magnesium stearate (vegetable grade), silica. Contains soy.",
+  "notes": "† FU (Fibrinolytic Units). ** Daily Value not established. NSK-SD® is a registered trademark of Japan Bio Science Laboratories. Isura® is a registered trademark of ISURA."
+ },
+ "68958046457": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Milk Thistle Extract (<i>Silybum marianum</i>) (seed)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Silymarin (60%)",
+    "60 mg",
+    "**",
+    0
+   ],
+   [
+    "Artichoke (<i>Cynara scolymus</i>) (leaf)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Turmeric Extract (<i>Curcuma longa</i>) (root)",
+    "50 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Curcuminoids (10%)",
+    "5 mg",
+    "**",
+    0
+   ],
+   [
+    "Dandelion Extract (<i>Taraxacum officinale</i>) (root)",
+    "25 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Inulin (25%)",
+    "6.3 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Gelatin capsule (gelatin, purified water), microcrystalline cellulose, magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established."
+ },
+ "68958026169": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Phosphatidylserine<br>&nbsp;&nbsp;From non-GMO Sunflower Lecithin (<i>Helianthus annuus</i>) (seed)<br>&nbsp;&nbsp;(Contains naturally occurring phosphatidylcholine (PC), phosphatidylinositol (PI), and phosphatidylethanolamine (PE))",
+    "100 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water), non-GMO sunflower oil.",
+  "notes": "** Daily Value not established. Sharp-PS® is a registered trademark of Enzymotec Ltd. Manufactured and protected under U.S. Patent #8,324,187. NeuroPS® is a trademark of ISURA."
+ },
+ "68958010205": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "10",
+    "",
+    1
+   ],
+   [
+    "Total Fat",
+    "1 g",
+    "1%†",
+    0
+   ],
+   [
+    "Cholesterol",
+    "5 mg",
+    "2%",
+    0
+   ],
+   [
+    "Vitamin A (palmitate) (cod liver oil)",
+    "750 mcg",
+    "83%",
+    0
+   ],
+   [
+    "Vitamin D (cholecalciferol) (cod liver oil)",
+    "10 mcg (400 IU)",
+    "50%",
+    0
+   ],
+   [
+    "Cod Liver Oil",
+    "1100 mg",
+    "**",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water). Contains fish (cod).",
+  "notes": "† Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established."
  }
 }
