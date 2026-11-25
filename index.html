@@ -1790,7 +1790,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
       if(ok) current.push(i);
     }
     // Pinned results: show a specific product first for certain searches
-    var PINS=[[/\basap\b|silver ?10\b|silver ?sol\b|silversol/,'831060001856']];
+    var CWP=/^clear( (drinks?|beverages?|protein( drinks?)?|whey( protein)?( drinks?)?|powders?))?$/; var PINS=[[/\basap\b|silver ?10\b|silver ?sol\b|silversol/,'831060001856'],[CWP,'658010136051'],[CWP,'658010136044'],[CWP,'658010136068']];
     PINS.forEach(function(pn){ if(pn[0].test(raw)){ var k=-1; current.forEach(function(x,j){if(x[6]===pn[1])k=j}); if(k<0){var it=items.find(function(x){return x[6]===pn[1]}); if(it) current.unshift(it)} else if(k>0) current.unshift(current.splice(k,1)[0]); } });
     // Electrolyte / hydration searches: always lead with Superieur, then every Re-Lyte product
     if(state.dept==='All'&&/\belectrolytes?\b|\bhydrat/.test(raw)){
