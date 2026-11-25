@@ -1751,7 +1751,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     if(!fixed.length) return {items:[],note:''};
     var res=fixed.map(function(w){return rx(w)}), scored=[], full=[];
     for(var k=0;k<items.length;k++){ var s=0; for(var r=0;r<res.length;r++) if(hit(k,res[r])) s++; if(s) scored.push([s,k]); if(s===res.length) full.push(items[k]); }
-    if(full.length&&changed) return {items:full, note:'Showing results for <strong>'+esc(fixed.join(' '))+'</strong>', html:true, fix:true};
+    if(full.length&&changed) return {items:full, note:'Showing results for <strong>'+esc(fixed.join(' '))+'</strong>', html:true, fix:true, fixed:fixed.join(' ')};
     scored.sort(function(x,y){return y[0]-x[0]||x[1]-y[1]});
     if(!scored.length) return {items:[],note:''};
     var top=scored[0][0]; out=scored.filter(function(x){return x[0]===top}).slice(0,12).map(function(x){return items[x[1]]});
@@ -1775,8 +1775,9 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   var BESTSELLERS=[]; /* UPCs, best seller first: add as Tylan names them */
   var LABELQ=/^(potassium iodide|sodium iodide)$/;
   var current=[];
-  function render(){
-    var raw=state.q.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  function render(fr,fixAlt){
+    if(typeof fr!=='string') fr=null;
+    var raw=(fr||state.q).trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
     var protOnly=state.dept==='All'&&PROTSEARCH.test(raw.replace(/['\u2019]/g,'')); var dep=state.dept, kidsOnly=false; if(dep==='All'&&KIDSEARCH.test(raw.replace(/['\u2019]/g,''))){ dep=KIDS; kidsOnly=true; }
     var alts=((kidsOnly||protOnly)?['']:(TAGQ[raw]||[raw])).map(function(a){return a.replace(/['’]/g,'').split(/\s+/).filter(Boolean).map(function(w){
       var e=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
@@ -1864,8 +1865,8 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
         topicNote='<li class="alt-note topic-note"><span class="an-lead">Products matching \u201c'+esc(state.q.trim())+'\u201d</span> Each product below is here because of its name or an ingredient printed on its label. We don\u2019t claim any product treats or prevents anything. Statements on this site have not been evaluated by the FDA. Questions about what\u2019s right for you? Ask us in store or call (208) 356-5284, and talk with your health care provider.</li>';
       }
     }
-    var alt=null;
-    if(!current.length&&raw&&state.dept==='All'){ alt=suggest(raw); if(alt.items.length) current=alt.items; else alt=null; }
+    var alt=fixAlt||null;
+    if(!fr&&!current.length&&raw&&state.dept==='All'){ alt=suggest(raw); if(alt.fix&&alt.fixed) return render(alt.fixed,alt); if(alt.items.length) current=alt.items; else alt=null; }
     count.textContent=alt&&!alt.fix?'No exact match':current.length.toLocaleString()+(current.length===1?' product':' products');
     var slice=current.slice(0,shown);
     list.innerHTML=slice.length?slice.map(function(i){
