@@ -1772,6 +1772,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   function favTag(i){var f=favInfo(i); return f?'<span class="fav-tag" title="'+esc(f.note)+'"><span class="ft-store">'+esc(f.org)+'</span><span class="ft-who">'+esc(f.label)+'</span></span>':''}
   function brandKey(b){return b.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var LABELQ=/^(potassium iodide|sodium iodide)$/;
   var current=[];
   function render(){
     var raw=state.q.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
@@ -1787,6 +1788,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
       if(protOnly&&!(i[0]==='Vitamins & Supplements'&&PROTIN.test(hay[k])&&!PROTEX.test(hay[k]))) continue;
       var ok=false;
       for(var a=0;a<alts.length&&!ok;a++){ var words=alts[a], all=true; for(var w=0;w<words.length;w++){ if(!words[w].test(hay[k])){all=false;break} } ok=all; }
+      if(!ok&&LABELQ.test(raw)){ var lf=(PHOTOS._factsData||{})[i[6]]; if(lf){ var lt=JSON.stringify([lf.rows,lf.other]).toLowerCase(); if(lt.indexOf(raw)>-1) ok=true } }
       if(ok) current.push(i);
     }
     // Pinned results: show a specific product first for certain searches
