@@ -302,6 +302,12 @@ blockquote::before{content:"\201C";font-family:var(--display);font-weight:800;fo
 .search{flex:1 1 280px;min-width:0;position:relative}
 .search input{width:100%;font:inherit;font-size:1rem;padding:.8rem 1rem .8rem 2.6rem;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
 .search input:focus{outline:none;border-color:var(--moss)}
+.search input{padding-right:2.8rem}.search input::-webkit-search-cancel-button{-webkit-appearance:none;display:none}
+.q-clear{position:absolute;right:.4rem;top:50%;transform:translateY(-50%);width:36px;height:36px;border:0;border-radius:50%;background:transparent;color:var(--muted);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.q-clear svg{position:static;transform:none;width:16px;height:16px}
+.q-clear:hover{background:var(--line);color:var(--ink)}
+.q-clear:focus-visible{outline:3px solid var(--honey);outline-offset:1px}
+.search input:placeholder-shown+.q-clear{display:none}
 .search svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted)}
 .toggle{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;font-size:.95rem;cursor:pointer;user-select:none}
 .toggle input{appearance:none;width:44px;height:26px;border-radius:999px;background:var(--line);position:relative;cursor:pointer;transition:background .2s;margin:0}
@@ -1432,6 +1438,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
         <label class="search" for="q">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <input id="q" type="search" placeholder="Try &quot;magnesium&quot; or &quot;gluten free&quot;" autocomplete="off" aria-label="Search products">
+          <button type="button" class="q-clear" id="q-clear" aria-label="Clear search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg></button>
         </label>
       </div>
       <details class="dept-browse" id="dept-browse">
@@ -1847,6 +1854,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     if(!more.hidden) more.textContent='Show more ('+(current.length-shown).toLocaleString()+' left)';
   }
   var timer;
+  document.getElementById('q-clear').addEventListener('click',function(){var i=document.getElementById('q'); i.value=''; i.dispatchEvent(new Event('input',{bubbles:true})); i.focus();});
   document.getElementById('q').addEventListener('input',function(e){clearTimeout(timer); timer=setTimeout(function(){state.q=e.target.value; shown=PAGE; render();},120);});
   more.addEventListener('click',function(){shown+=PAGE*2; render();});
   render();
