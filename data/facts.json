@@ -28711,7 +28711,7 @@
     "Vitamin A (retinyl palmitate) (cod liver oil)",
     "3000 mcg",
     "333%",
-    0
+    1
    ]
   ],
   "foot": "",
@@ -28728,7 +28728,7 @@
     "Biotin",
     "5000 mcg",
     "16,667%",
-    0
+    1
    ],
    [
     "Calcium (dicalcium phosphate)",
@@ -28751,7 +28751,7 @@
     "Vitamin B12 (methylcobalamin)",
     "5000 mcg",
     "208,333%",
-    0
+    1
    ]
   ],
   "foot": "",
@@ -28768,7 +28768,7 @@
     "Vitamin B12 (methylcobalamin)",
     "10,000 mcg",
     "416,667%",
-    0
+    1
    ]
   ],
   "foot": "",
@@ -28785,11 +28785,608 @@
     "Benfotiamine",
     "330 mg",
     "**",
-    0
+    1
    ]
   ],
   "foot": "** Daily Value not established.",
   "other": "Microcrystalline cellulose, vegetarian capsule (hypromellose, purified water), magnesium stearate (vegetable grade), stearic acid, silica.",
   "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958041810": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Milk Thistle Extract (<i>Silybum marianum</i>) (seed)<br>&nbsp;&nbsp;Standardized to 60% silymarins including silybin",
+    "250 mg",
+    "**",
+    1
+   ],
+   [
+    "Dandelion (<i>Taraxacum officinale</i>) (root)",
+    "55 mg",
+    "**",
+    0
+   ],
+   [
+    "Turmeric (<i>Curcuma longa</i>) (root)",
+    "27.5 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Gelatin capsule (gelatin, purified water), rice powder, magnesium stearate (vegetable grade), silica.",
+  "notes": "natural Factors® is a registered trademark of ISURA."
+ },
+ "68958041803": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Milk Thistle Extract (<i>Silybum marianum</i>) (seed)<br>&nbsp;&nbsp;Standardized to 60% silymarins including silybin",
+    "250 mg",
+    "**",
+    1
+   ],
+   [
+    "Dandelion (<i>Taraxacum officinale</i>) (root)",
+    "55 mg",
+    "**",
+    0
+   ],
+   [
+    "Turmeric (<i>Curcuma longa</i>) (root)",
+    "27.5 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Gelatin capsule (gelatin, purified water), rice powder, magnesium stearate (vegetable grade), silica.",
+  "notes": "natural Factors® is a registered trademark of ISURA."
+ },
+ "68958035048": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Calcium (from calcium phosphate dihydrate)",
+    "40 mg",
+    "3%",
+    1
+   ],
+   [
+    "N-Acetyl-L-Cysteine",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "Bromelain (from <i>Ananas comosus</i>) (pineapple stem) 1,000 GDU/g",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Marshmallow Extract 4:1 (<i>Althaea officinalis</i>) (root)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Mullein Extract 4:1 (<i>Verbascum thapsus</i>) (leaf)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Wild Cherry Extract 4:1 (<i>Prunus serotina</i>) (bark)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Horehound Extract 4:1 (<i>Marrubium vulgare</i>) (aerial)",
+    "50 mg",
+    "**",
+    0
+   ],
+   [
+    "Ivy Extract (<i>Hedera helix</i>) (leaf)<br>&nbsp;&nbsp;(standardized to 10% hederacoside)",
+    "50 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Microcrystalline cellulose, dicalcium phosphate dihydrate, croscarmellose sodium, coating (carbohydrate gum [cellulose], glycerin), silica, magnesium stearate (vegetable grade), water for non-medicinal use.",
+  "notes": ""
+ },
+ "68958035055": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Calcium (from dicalcium phosphate dihydrate)",
+    "40 mg",
+    "3%",
+    1
+   ],
+   [
+    "N-Acetyl-L-Cysteine",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "Bromelain (from <i>Ananas comosus</i>) (pineapple stem) 1,000 GDU/g",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Marshmallow Extract 4:1 (<i>Althaea officinalis</i>) (root)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Mullein Extract 4:1 (<i>Verbascum thapsus</i>) (leaf)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Wild Cherry Extract 4:1 (<i>Prunus serotina</i>) (bark)",
+    "100 mg",
+    "**",
+    0
+   ],
+   [
+    "Horehound Extract 4:1 (<i>Marrubium vulgare</i>) (aerial)",
+    "50 mg",
+    "**",
+    0
+   ],
+   [
+    "Ivy Extract (<i>Hedera helix</i>) (leaf)<br>&nbsp;&nbsp;(standardized to 10% hederacoside)",
+    "50 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Microcrystalline cellulose, dicalcium phosphate dihydrate, croscarmellose sodium, coating (carbohydrate gum [cellulose], glycerin), silica, magnesium stearate (vegetable grade). The end of this line is smudged on the picture; printed on the label photos.",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958012636": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Biotin",
+    "10,000 mcg",
+    "33,333%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (carbohydrate gum [cellulose], purified water), magnesium stearate (vegetable grade).",
+  "notes": "Isura® is a trademark of ISURA."
+ },
+ "68958035154": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by NATURAL FACTORS, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Tablets",
+  "servings": "30",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    1
+   ],
+   [
+    "Total Carbohydrate",
+    "1 g",
+    "<1%*",
+    0
+   ],
+   [
+    "Zinc (as citrate)",
+    "30 mg",
+    "273%",
+    0
+   ],
+   [
+    "Sodium",
+    "10 mg",
+    "<1%",
+    0
+   ],
+   [
+    "Testofen® Fenugreek Extract 3:3:1 (<i>Trigonella foenum-graecum</i>) (seed, standardized to 50% saponins)",
+    "600 mg",
+    "**",
+    0
+   ],
+   [
+    "Maca Extract 6:1 (<i>Lepidium meyenii</i>) (root)",
+    "250 mg",
+    "**",
+    0
+   ],
+   [
+    "Sensoril® Ashwagandha Extract (<i>Withania somnifera</i>) (root and leaf), 10% withanolide glycosides",
+    "125 mg",
+    "**",
+    0
+   ],
+   [
+    "Boron (as citrate)",
+    "0.7 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "* Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established.",
+  "other": "Microcrystalline cellulose, sodium starch glycolate, croscarmellose sodium, magnesium stearate (vegetable grade), stearic acid, clear coating (hypromellose, glycerin, silica, titanium dioxide (mineral color) and caramel color).",
+  "notes": "Testofen® is a registered trademark of Kemin Industries, Inc. Sensoril® is a registered trademark of Natreon, Inc. © 2024 Natural Factors."
+ },
+ "68958010168": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Lycopene 6%<br>&nbsp;&nbsp;From 167 mg tomato extract (<i>Lycopersicon esculentum</i>) (fruit)",
+    "10 mg",
+    "†",
+    1
+   ],
+   [
+    "Pumpkin seed oil (<i>Cucurbita pepo</i>) (seed)",
+    "140 mg",
+    "†",
+    0
+   ]
+  ],
+  "foot": "† Daily Value not established.",
+  "other": "Softgel (gelatin, glycerin, purified water), yellow beeswax, soy lecithin.",
+  "notes": ""
+ },
+ "68958016115": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Calcium (citrate)",
+    "350 mg",
+    "27%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Croscarmellose sodium, coating (carbohydrate gum [cellulose], glycerin), magnesium stearate (vegetable grade).",
+  "notes": ""
+ },
+ "68958023342": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Garlic Powder 10:1 Concentrate<br>&nbsp;&nbsp;(<i>Allium sativum</i>) (bulb)",
+    "300 mg",
+    "**",
+    1
+   ],
+   [
+    "Allicin, alliin, gamma-glutamylcysteines",
+    "4800 mcg",
+    "**",
+    0
+   ],
+   [
+    "Reishi Extract 30:1<br>&nbsp;&nbsp;(<i>Ganoderma lucidum</i>) (fruiting body)",
+    "25 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Microcrystalline cellulose, delayed release vegetarian capsule (carbohydrate gum [cellulose], pectin, purified water), croscarmellose sodium, magnesium stearate (vegetable grade), stearic acid, silica.",
+  "notes": "GarlicRich® is a registered trademark of InovoBiologic Inc."
+ },
+ "68958016801": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Zinc (as citrate)",
+    "50 mg",
+    "455%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, stearic acid, magnesium stearate (vegetable grade), silica.",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958049427": {
+  "title": "Supplement Facts",
+  "by": "Product of Canada. Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Vegetarian Capsules",
+  "servings": "60",
+  "rows": [
+   [
+    "Rhodiola Extract (<i>Rhodiola rosea</i>) (root)",
+    "200 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Rosavins (3.5%)",
+    "7 mg",
+    "**",
+    0
+   ],
+   [
+    "Suma (<i>Pfaffia paniculata</i>) (root)",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "Eleuthero Extract (<i>Eleutherococcus senticosus</i>) (root)",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Eleutherosides (0.8%)",
+    "1.6 mg",
+    "**",
+    0
+   ],
+   [
+    "Schisandra Extract (<i>Schisandra chinensis</i>) (fruit)",
+    "160 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Schisandrins (2%)",
+    "3.2 mg",
+    "**",
+    0
+   ],
+   [
+    "Ashwagandha Extract (<i>Withania somnifera</i>) (root)",
+    "160 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Withanolides (1.5%)",
+    "2.4 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (carbohydrate gum [cellulose], purified water), magnesium stearate (vegetable grade).",
+  "notes": "** Daily Value not established."
+ },
+ "68958016887": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Lozenge",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "5",
+    "",
+    1
+   ],
+   [
+    "Total carbohydrates",
+    "1 g",
+    "<1%‡",
+    0
+   ],
+   [
+    "Total sugars",
+    "1 g",
+    "",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Includes 1 g added sugars",
+    "",
+    "2%‡",
+    0
+   ],
+   [
+    "Vitamin C (as sodium ascorbate)",
+    "25 mg",
+    "28%",
+    0
+   ],
+   [
+    "Zinc (as zinc gluconate)",
+    "10 mg",
+    "91%",
+    0
+   ],
+   [
+    "Elderberry extract 4:1<br>&nbsp;&nbsp;(<i>Sambucus nigra</i> subsp. <i>nigra</i>, fruit)",
+    "125 mg",
+    "**",
+    0
+   ],
+   [
+    "Organic echinacea powder<br>&nbsp;&nbsp;(<i>Echinacea purpurea</i>, herb top and root)",
+    "30 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "‡ Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established.",
+  "other": "Cane sugar, natural flavors, citric acid, stearic acid, magnesium stearate (vegetable grade), monk fruit extract.",
+  "notes": "natural Factors® is a registered trademark of ISURA."
+ },
+ "68958355160": {
+  "title": "Supplement Facts",
+  "by": "Product of Canada. wholeearthsea.com. Manufactured by Natural Factors Canada. Distributed by NATURAL FACTORS, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin D3 (cholecalciferol)<br>&nbsp;&nbsp;(from lichen) (whole)",
+    "125 mcg (5000 IU)",
+    "625%",
+    1
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (carbohydrate gum [cellulose], purified water), vegetable lubricant (palm).",
+  "notes": ""
+ },
+ "68958019215": {
+  "title": "Supplement Facts",
+  "by": "Bottled by Natural Factors Canada. Distributed by NATURAL FACTORS, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "1 Scoop (approx. 5 grams)",
+  "servings": "Approx. 100",
+  "rows": [
+   [
+    "Creatine Monohydrate",
+    "5 g",
+    "**",
+    1
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "None.",
+  "notes": "Isura® is a registered trademark of ISURA."
+ },
+ "68958355269": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Scoop or 2 Tablespoons (13 g)",
+  "servings": "Approx. 30",
+  "rows": [
+   [
+    "Calories",
+    "50",
+    "",
+    1
+   ],
+   [
+    "Total Fat",
+    "0.5 g",
+    "<1%*",
+    0
+   ],
+   [
+    "Total Carbohydrates",
+    "4 g",
+    "1%*",
+    0
+   ],
+   [
+    "Dietary Fiber",
+    "3 g",
+    "11%*",
+    0
+   ],
+   [
+    "Protein",
+    "6 g",
+    "",
+    0
+   ],
+   [
+    "Calcium",
+    "50 mg",
+    "4%",
+    0
+   ],
+   [
+    "Iron",
+    "4.4 mg",
+    "24%",
+    0
+   ],
+   [
+    "Sodium",
+    "55 mg",
+    "2%",
+    0
+   ],
+   [
+    "Potassium",
+    "130 mg",
+    "3%",
+    0
+   ],
+   [
+    "<b>Organic Protein Blend</b><br>Fermented pea protein (<i>Pisum sativum</i>), fermented brown rice protein (<i>Oryza sativa</i>), pumpkin seed protein (<i>Cucurbita pepo</i>), sacha seed powder (<i>Chenopodium quinoa</i>).",
+    "7 g",
+    "",
+    0
+   ],
+   [
+    "<b>Organic Fruit, Vegetable &amp; Grass Blend</b><br>Ingredient list printed on the label photos.",
+    "5 g",
+    "",
+    0
+   ],
+   [
+    "Organic Spirulina (<i>Arthrospira platensis</i>) (whole)",
+    "500 mg",
+    "**",
+    0
+   ],
+   [
+    "Organic Acerola Cherry Extract (<i>Malpighia emarginata</i>) (fruit)",
+    "305 mg",
+    "**",
+    0
+   ],
+   [
+    "Organic Apple Pectin",
+    "200 mg",
+    "**",
+    0
+   ],
+   [
+    "<b>Organic Mushroom Blend</b><br>Reishi (<i>Ganoderma lucidum</i>) (whole), reishi (<i>Ganoderma lucidum</i>) (fruiting body), shiitake (<i>Lentinula edodes</i>) (whole), maitake (<i>Grifola frondosa</i>) (whole).",
+    "20 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "* Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established.",
+  "other": "Organic stevia leaf extract.",
+  "notes": ""
  }
 }
