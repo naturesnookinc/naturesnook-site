@@ -28700,5 +28700,96 @@
   "foot": "Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established.",
   "other": "",
   "notes": "Amounts for two scoops and the typical amino acid profile are printed on the label photos. Bioactive Collagen Peptides® is a registered trademark of GELITA AG. Isura® is a registered trademark of ISURA."
+ },
+ "68958010410": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin A (retinyl palmitate) (cod liver oil)",
+    "3000 mcg",
+    "333%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, purified water), organic flaxseed oil. Contains fish (cod).",
+  "notes": "Isura® is a trademark of ISURA."
+ },
+ "68958012629": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Biotin",
+    "5000 mcg",
+    "16,667%",
+    0
+   ],
+   [
+    "Calcium (dicalcium phosphate)",
+    "125 mg",
+    "10%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Microcrystalline cellulose, vegetarian capsule (carbohydrate gum [cellulose], purified water), magnesium stearate (vegetable grade).",
+  "notes": "Natural Factors® is a registered trademark of ISURA."
+ },
+ "68958012476": {
+  "title": "Supplement Facts",
+  "by": "Product of Canada. Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin B12 (methylcobalamin)",
+    "5000 mcg",
+    "208,333%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Lactose, microcrystalline cellulose, croscarmellose sodium, magnesium stearate (vegetable grade). Contains milk.",
+  "notes": ""
+ },
+ "68958012445": {
+  "title": "Supplement Facts",
+  "by": "Product of Canada. Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272",
+  "serving": "1 Tablet",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin B12 (methylcobalamin)",
+    "10,000 mcg",
+    "416,667%",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Mannitol, croscarmellose sodium, flavor (cherry), magnesium stearate (vegetable grade).",
+  "notes": ""
+ },
+ "68958012483": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272",
+  "serving": "2 Capsules",
+  "servings": "15",
+  "rows": [
+   [
+    "Benfotiamine",
+    "330 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Microcrystalline cellulose, vegetarian capsule (hypromellose, purified water), magnesium stearate (vegetable grade), stearic acid, silica.",
+  "notes": "Isura® is a registered trademark of ISURA."
  }
 }
