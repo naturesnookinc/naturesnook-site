@@ -1681,7 +1681,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   var counts={}; items.forEach(function(i){counts[i[0]]=(counts[i[0]]||0)+1});
   var depts=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]});
   depts.unshift('All');
-  var MEMBER='Member deals', SALE='On sale', FAV='Staff picks', KIDS='Kids'; depts.push(KIDS); if(items.some(function(i){return i[7]})) depts.push(SALE); if(items.some(function(i){return i[8]})) depts.push(MEMBER); if(items.some(function(i){return i[10]})) depts.push(FAV);
+  var MEMBER='Member deals', SALE='On sale', FAV='Staff picks', KIDS='Kids', BABY='Baby'; depts.push(KIDS); depts.push(BABY); if(items.some(function(i){return i[7]})) depts.push(SALE); if(items.some(function(i){return i[8]})) depts.push(MEMBER); if(items.some(function(i){return i[10]})) depts.push(FAV);
   var state={q:"",dept:"All"};
   var TAGQ={"multi-vitamins":["multi"],"vitamin a":["vitamin a","carotene"],"minerals":["mineral","magnesium","zinc","iron","calcium","iodine","kelp"],"vitamin c":["vitamin c","liquid c","c-1000","ester-c","reacta-c","camu camu","alphasorb-c","vita-c"],"b vitamins":["vitamin b","b-complex","b complex","b-50","b-100","b-stress","b-total","b-1","b-2","b-6","b-12","b12","b6","biotin","folate","folic","niacin","methylcobalamin","pantothenic","benfotiamine","thiamine","riboflavin","inositol","choline"],"teas":["tea bags"],"capsules":["caps"],"bulk herbs":["powder","bulk"],"spices & seasonings":["spice","seasoning","salt","extract","simmer sauce","gravy","dressing mix","flavor"],"diffusers":["diffuser"],"carrier oils":["carrier","argan","neem","rosehip","rose hip","raspberry seed","rose oil","castor","emu oil"],"whey & plant protein":["whey","protein"],"hair, nail & skin":["hair","nail","skin"],"nuts & dried fruit":["nut","dried"],"fresh eggs & dairy":["egg","milk","dairy"],"grains & flours":["flour","grain"],"refills":["water refill"],"natural sweeteners":["stevia","monk fruit","erythritol","xylitol","allulose","honey"],"homeopathics":["homeopathic"],"greens":["greens"]};
   var chips=document.getElementById('chips'), list=document.getElementById('items'), count=document.getElementById('count'), sec=document.getElementById('find'), more=document.getElementById('more');
@@ -1698,7 +1698,10 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   var STOP={the:1,and:1,for:1,with:1,from:1,brand:1,organic:1,natural:1,capsules:1,caps:1,capsule:1,tablets:1,tablet:1,tabs:1,softgels:1,supplement:1,supplements:1,count:1,pack:1,size:1,best:1,good:1,some:1,any:1,you:1,have:1,carry:1,something:1,like:1,similar:1,mg:1,oz:1,ml:1,pills:1,pill:1,a:1,an:1,of:1,in:1,to:1,my:1,is:1,are:1,what:1,where:1,need:1,want:1,looking:1,buy:1,store:1};
   var KIDRX=/(^|[^a-z0-9])(kids?|kidz|childrens?|child|toddlers?|babies|baby|infants?|bigfriends|big friends|teens?|junior|pediatric)([^a-z0-9]|$)|kid-e|animal parade|calmkids|camilia|teething|diaper/, KIDEX=/prenatal|postnatal|mom & baby|pickle|kidney|baby (spinach|bella|corn|greens|food)|mama/;
   var isKid=hay.map(function(s){return KIDRX.test(s)&&!KIDEX.test(s)});
+  var BABYRX=/(^|[^a-z0-9])(babies|baby|infants?|newborns?)([^a-z0-9]|$)|camilia|teething|diaper|kid-e-col/;
+  var isBaby=hay.map(function(s){return BABYRX.test(s)&&!KIDEX.test(s)});
   var PROTSEARCH=/^(best )?(protein powders?|powdered proteins?|protein supplements?|protein shake powders?|whey powders?)$/, PROTIN=/protein|whey|collagen|casein|egg white|supergreens/, PROTEX=/amino|digest|enzyme|proline|gluten|omega|creamer|caps|capsule|tablet|chew|softgel|beau-t|barleans|bursts/;
+  var BABYSEARCH=/^(babys?|babies|baby products?|baby section|baby care|infants?|newborns?|for babies|for baby)$/;
   var KIDSEARCH=/^(kids?|kids? products?|kids? section|childrens?|children|child|for kids)$/;
   var VCOUNT={}; hay.forEach(function(h){var s={}; h.split(/[^a-z0-9-]+/).forEach(function(w){if(w.length>2&&!s[w]){s[w]=1;VCOUNT[w]=(VCOUNT[w]||0)+1}})});
   var VOCAB=VCOUNT, VLIST=Object.keys(VCOUNT);
@@ -1778,7 +1781,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   function render(fr,fixAlt){
     if(typeof fr!=='string') fr=null;
     var raw=(fr||state.q).trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-    var protOnly=state.dept==='All'&&PROTSEARCH.test(raw.replace(/['\u2019]/g,'')); var dep=state.dept, kidsOnly=false; if(dep==='All'&&KIDSEARCH.test(raw.replace(/['\u2019]/g,''))){ dep=KIDS; kidsOnly=true; }
+    var protOnly=state.dept==='All'&&PROTSEARCH.test(raw.replace(/['\u2019]/g,'')); var dep=state.dept, kidsOnly=false; if(dep==='All'&&KIDSEARCH.test(raw.replace(/['\u2019]/g,''))){ dep=KIDS; kidsOnly=true; } else if(dep==='All'&&BABYSEARCH.test(raw.replace(/['\u2019]/g,''))){ dep=BABY; kidsOnly=true; }
     var alts=((kidsOnly||protOnly)?['']:(TAGQ[raw]||[raw])).map(function(a){return a.replace(/['’]/g,'').split(/\s+/).filter(Boolean).map(function(w){
       var e=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
       return new RegExp('(^|[^a-z0-9])'+e+(w.length<3?'(?![a-z])':''));
@@ -1786,7 +1789,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     current=[];
     for(var k=0;k<items.length;k++){
       var i=items[k];
-      if(dep===KIDS){ if(!isKid[k]) continue; } else if(dep===FAV){ if(!i[10]) continue; } else if(dep===MEMBER){ if(!i[8]) continue; } else if(dep===SALE){ if(!i[7]) continue; } else if(dep!=='All'&&i[0]!==dep) continue;
+      if(dep===KIDS){ if(!isKid[k]) continue; } else if(dep===BABY){ if(!isBaby[k]) continue; } else if(dep===FAV){ if(!i[10]) continue; } else if(dep===MEMBER){ if(!i[8]) continue; } else if(dep===SALE){ if(!i[7]) continue; } else if(dep!=='All'&&i[0]!==dep) continue;
       if(protOnly&&!(i[0]==='Vitamins & Supplements'&&PROTIN.test(hay[k])&&!PROTEX.test(hay[k]))) continue;
       var ok=false;
       for(var a=0;a<alts.length&&!ok;a++){ var words=alts[a], all=true; for(var w=0;w<words.length;w++){ if(!words[w].test(hay[k])){all=false;break} } ok=all; }

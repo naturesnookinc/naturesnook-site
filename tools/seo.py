@@ -106,6 +106,13 @@ PAGES = [
       intro="Nature's Nook carries a shelf of products made for children: chewable and gummy vitamins, kids probiotics, children's herbal formulas, kids toothpaste and toothbrushes, and baby care. Brands include Garden of Life, Nature's Way, Nature's Plus, Solaray, Nordic Naturals, Natural Factors, Spry, Burt's Bees and our own Nature's Nook kids' line.",
       more="Always read the package for age ranges, ingredients and allergens, and talk with your child's health care provider about what is right for them. Ask our staff what is on the shelf today, or open the Kids department in the online list.",
       fda=True),
+ dict(slug='baby-products-rexburg', dept=('BABY', None), href='/?dept=Baby#find', short='Baby Products',
+      title="Baby Products in Rexburg, Idaho | Nature's Nook",
+      desc="Baby lotion, bubble bath, castile soap, baby toothbrushes, baby probiotic drops and diaper cream in Rexburg, Idaho at Nature's Nook.",
+      h1="Baby products in Rexburg",
+      intro="Nature's Nook carries a small shelf of products made for babies: gentle lotion and bubble bath, unscented baby castile soap, baby toothbrushes, baby probiotic drops and powders, diaper cream and teething products. Brands include Burt's Bees, Dr. Bronner's, Mommy's Bliss, Nordic Naturals, SoFresh, Boiron and Hyland's.",
+      more="Always read the package for age ranges, ingredients and allergens, and talk with your baby's health care provider about what is right for them. Ask our staff what is on the shelf today, or open the Baby department in the online list.",
+      fda=True),
  dict(slug='kids-vitamins-rexburg', dept=('KIDS', ('Vitamins & Supplements',)), href='/?q=Kids%20vitamins#find', short="Kids' Vitamins & Chewables",
       title="Kids' Vitamins, Gummies & Chewables in Rexburg, Idaho | Nature's Nook",
       desc="Children's multivitamins, gummies, chewables and kids probiotics in Rexburg, Idaho: Garden of Life, Nature's Way, Nature's Plus, Solaray, Nordic Naturals, SmartyPants and more at Nature's Nook.",
@@ -167,7 +174,7 @@ PAGES = [
 <li><a href="/re-lyte-rexburg/">Redmond Re-Lyte</a> electrolyte drink mixes in dozens of flavors and sizes</li>
 <li><a href="/ancient-nutrition-rexburg/">Ancient Nutrition</a>, <a href="/terry-naturally-rexburg/">Terry Naturally</a>, <a href="/natural-factors-rexburg/">Natural Factors</a> and <a href="/trace-minerals-rexburg/">Trace Minerals</a></li>
 <li><a href="/herbs-tinctures-rexburg/">Herbs and tinctures</a>, including our own Nature's Nook label</li>
-<li><a href="/kids-products-rexburg/">Kids and baby products</a>: children's vitamins, kids probiotics, kids toothpaste and baby care</li>
+<li><a href="/kids-products-rexburg/">Kids</a> and <a href="/baby-products-rexburg/">baby</a> products: children's vitamins, kids probiotics, kids toothpaste and baby care</li>
 <li><a href="/gluten-free-foods-rexburg/">Gluten-free foods</a>, baking supplies and natural groceries</li>
 <li><a href="/essential-oils-rexburg/">Essential oils</a>, <a href="/teas-rexburg/">teas</a> and <a href="/natural-beauty-personal-care-rexburg/">natural personal care</a></li>
 </ul>
@@ -189,6 +196,8 @@ DENY = re.compile(r'proline|burrito|ramen|biscuit|gravy|beauty|bromelain|big sti
 # Kids products: same rule as the Kids chip on the site (index.html KIDRX / KIDEX); keep the two in step
 KIDRX = re.compile(r"(^|[^a-z0-9])(kids?|kidz|childrens?|child|toddlers?|babies|baby|infants?|bigfriends|big friends|teens?|junior|pediatric)([^a-z0-9]|$)|kid-e|animal parade|calmkids|camilia|teething|diaper")
 KIDEX = re.compile(r"prenatal|postnatal|mom & baby|pickle|kidney|baby (spinach|bella|corn|greens|food)|mama")
+# Baby chip (index.html BABYRX): a smaller set inside Kids; keep the two in step
+BABYRX = re.compile(r"(^|[^a-z0-9])(babies|baby|infants?|newborns?)([^a-z0-9]|$)|camilia|teething|diaper|kid-e-col")
 # keep the kids sample lists to plain product names (no condition or symptom wording)
 KIDSKIP = re.compile(r'orega|sooth|hydrosol|anxi|cough|syrup|silver|calm|focus|stress|sleep|bronch|allerg|colic|\bear\b|potty|immun|attention|mellow|pain|oral|cold|sneez|congest|digest|regular|learning|behavior|brain|eye|wellness|biotic|echinacea|teething|nasal|mucus|relief|support',re.I)
 HOMSKIP = re.compile(r'chestal|coldcalm|sinus|oscillo|sleepcalm|stodal|cough|quietude|camilia|calm|symptom|sore|throat|breathe|aller|dander|legs|restful|bioplasma|cold|flu\b|pain|nasal|migrain|vertigo|diarrh|constip|hemorr|sleep|stress|anxi|relief|rescue|teeth|ear\b|cramp|nausea|motion|bladder|hair|nerve|attend|guard|bioallers',re.I)
@@ -197,10 +206,17 @@ def is_kid(x):
     return bool(KIDRX.search(t)) and not KIDEX.search(t)
 
 
+def is_baby(x):
+    t = ' '.join([x['brand'], x['name'], x['variant'], x['form'], x['dept'], x['upc']]).lower().replace("'", '').replace('\u2019', '')
+    return bool(BABYRX.search(t)) and not KIDEX.search(t)
+
+
 def pool(key):
     """products for a page: a department name, or a (regex, depts) filter"""
     if isinstance(key, str) and key.startswith('brand:'):
         return [x for x in P if x['brand'] == key[6:]]
+    if isinstance(key, tuple) and key[0] == 'BABY':
+        return [x for x in P if is_baby(x)]
     if isinstance(key, tuple) and key[0] == 'KIDS':
         return [x for x in P if (key[1] is None or x['dept'] in key[1]) and is_kid(x)]
     if isinstance(key, tuple):
@@ -230,7 +246,7 @@ def examples_for(dept, n=24, full=False):
             continue
         if isinstance(dept, str) and (dept == 'Homeopathic' or dept in ('brand:Boiron', "brand:Hyland's")) and HOMSKIP.search(x['name']):
             continue
-        if isinstance(dept, tuple) and dept[0] == 'KIDS' and KIDSKIP.search(x['name'] + ' ' + x['variant']):
+        if isinstance(dept, tuple) and dept[0] in ('KIDS', 'BABY') and KIDSKIP.search(x['name'] + ' ' + x['variant']):
             continue
         if isinstance(dept, str) and dept.startswith('brand:') and BRAND_SKIP.search(x['name']):
             continue
