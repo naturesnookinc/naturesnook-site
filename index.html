@@ -1772,6 +1772,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
   function favTag(i){var f=favInfo(i); return f?'<span class="fav-tag" title="'+esc(f.note)+'"><span class="ft-store">'+esc(f.org)+'</span><span class="ft-who">'+esc(f.label)+'</span></span>':''}
   function brandKey(b){return b.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var BESTSELLERS=[]; /* UPCs, best seller first: add as Tylan names them */
   var LABELQ=/^(potassium iodide|sodium iodide)$/;
   var current=[];
   function render(){
@@ -1779,7 +1780,7 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
     var protOnly=state.dept==='All'&&PROTSEARCH.test(raw.replace(/['\u2019]/g,'')); var dep=state.dept, kidsOnly=false; if(dep==='All'&&KIDSEARCH.test(raw.replace(/['\u2019]/g,''))){ dep=KIDS; kidsOnly=true; }
     var alts=((kidsOnly||protOnly)?['']:(TAGQ[raw]||[raw])).map(function(a){return a.replace(/['’]/g,'').split(/\s+/).filter(Boolean).map(function(w){
       var e=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      return new RegExp('(^|[^a-z0-9])'+e+(w.length<3?'(?![a-z0-9])':''));
+      return new RegExp('(^|[^a-z0-9])'+e+(w.length<3?'(?![a-z])':''));
     })});
     current=[];
     for(var k=0;k<items.length;k++){
@@ -1790,6 +1791,28 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
       for(var a=0;a<alts.length&&!ok;a++){ var words=alts[a], all=true; for(var w=0;w<words.length;w++){ if(!words[w].test(hay[k])){all=false;break} } ok=all; }
       if(!ok&&LABELQ.test(raw)){ var lf=(PHOTOS._factsData||{})[i[6]]; if(lf){ var lt=JSON.stringify([lf.rows,lf.other]).toLowerCase(); if(lt.indexOf(raw)>-1) ok=true } }
       if(ok) current.push(i);
+    }
+    // Relevance order for text searches: single-ingredient products first, then combinations; within each, house brands, then best sellers
+    if(raw&&!protOnly&&!kidsOnly&&current.length>1){
+      var qw=raw.replace(/['\u2019]/g,'').split(/\s+/).filter(Boolean);
+      var COMBO=/ & | and | plus |\bwith\b|\bratio\b|complex|formula|multi|blend|\+|combo|support$|^cal[ -\/]|\//;
+      var SKIP=/^(calories|total |sugars|includes|cholesterol|sodium)/i;
+      var sc=function(x){
+        var nm=(x[2]+' '+x[3]).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/['\u2019]/g,'');
+        nm=nm.replace(/-/g,'');
+        var qj=qw.join('').replace(/-/g,''), nj=nm.replace(/ /g,''); var inName=qj.length>0&&nj.indexOf(qj)>-1;
+        var fd=(PHOTOS._factsData||{})[x[6]], combo;
+        if(fd&&fd.rows){ var n=0, rt=''; fd.rows.forEach(function(r){ var t=r[0].replace(/<[^>]*>/g,'').replace(/&nbsp;/g,' '); rt+=' '+t.toLowerCase().replace(/-/g,''); if(r[0].indexOf('&nbsp;')!==0&&!SKIP.test(t)) n++ }); combo=n>1;
+          if(!inName&&qj.length>0&&rt.replace(/ /g,'').indexOf(qj)>-1) inName=true; }
+        else combo=COMBO.test(nm);
+        var tier=(inName?0:2)+(combo?1:0);
+        var br=x[1]==="Nature's Nook"?0:(x[1]==='Terry Naturally'||x[1]==='Natural Factors')?1:2;
+        var bs=BESTSELLERS.indexOf(x[6]); bs=bs<0?9999:bs;
+        return [tier,br,bs];
+      };
+      var keyed=current.map(function(x,j){return [sc(x),j,x]});
+      keyed.sort(function(a,b){return a[0][0]-b[0][0]||a[0][1]-b[0][1]||a[0][2]-b[0][2]||a[1]-b[1]});
+      current=keyed.map(function(k){return k[2]});
     }
     // Pinned results: show a specific product first for certain searches
     var CWP=/^clear( (drinks?|beverages?|protein( drinks?)?|whey( protein)?( drinks?)?|powders?))?$/; var PINS=[[/\basap\b|silver ?10\b|silver ?sol\b|silversol/,'831060001856'],[CWP,'658010136051'],[CWP,'658010136044'],[CWP,'658010136068']];
