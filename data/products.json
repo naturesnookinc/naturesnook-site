@@ -29451,8 +29451,7 @@
   "shelf_price": "32.79",
   "upc": "310539977552",
   "pos": "KLEAN CREATINE NSF CERTIFIED FOR SPORT",
-  "source": "creatine & protein shelf photos 2026-10-20",
-  "fav": "Rick"
+  "source": "creatine & protein shelf photos 2026-10-20"
  },
  {
   "name": "Korean Ginseng",
@@ -51923,7 +51922,8 @@
   "source": "creatine & protein shelf photos 2026-10-20",
   "msrp": "35.86",
   "member_off": "3.00",
-  "member_until": "2026-12-29"
+  "member_until": "2026-12-29",
+  "fav": "Rick"
  },
  {
   "name": "RegenerLife NMN Surge",
