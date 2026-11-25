@@ -42232,6 +42232,45 @@
   "source": "nutritional yeast, lecithin, MCT/coconut oil & baking shelf photos 2026-10-20"
  },
  {
+  "name": "Organic Coconut Cream",
+  "variant": "",
+  "form": "13.5 fl oz (400 ml) can",
+  "brand": "Coco Goods",
+  "dept": "Grocery",
+  "price": "3.53",
+  "shelf_price": "3.53",
+  "upc": "818972021080",
+  "pos": "ORGANIC COCONUT CREAM",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25",
+  "msrp": "4.15"
+ },
+ {
+  "name": "Organic Coconut Lite Milk",
+  "variant": "",
+  "form": "13.5 fl oz (400 ml) can",
+  "brand": "Coco Goods",
+  "dept": "Grocery",
+  "price": "3.27",
+  "shelf_price": "3.27",
+  "upc": "818972021127",
+  "pos": "ORGANIC COCONUT LITE MILK",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25",
+  "msrp": "3.85"
+ },
+ {
+  "name": "Organic Coconut Milk",
+  "variant": "",
+  "form": "13.5 fl oz (400 ml) can",
+  "brand": "Coco Goods",
+  "dept": "Grocery",
+  "price": "3.48",
+  "shelf_price": "3.48",
+  "upc": "818972021103",
+  "pos": "ORGANIC COCONUT MILK",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25",
+  "msrp": "4.09"
+ },
+ {
   "name": "Organic Coconut Sugar",
   "variant": "Unrefined",
   "form": "16 oz",
@@ -43847,6 +43886,19 @@
   "msrp": "13.95"
  },
  {
+  "name": "Organic Premium Coconut Oil",
+  "variant": "Great for hair care & body lotion",
+  "form": "7.5 fl oz (222 ml)",
+  "brand": "Coco Goods",
+  "dept": "Beauty & Personal Care",
+  "price": "6.28",
+  "shelf_price": "6.28",
+  "upc": "818972022391",
+  "pos": "COCONUT OIL ORGANIC PREMIUM",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25",
+  "msrp": "7.39"
+ },
+ {
   "name": "Organic Protein Bar",
   "variant": "Chocolate Chip Cookie Dough, plant-based protein",
   "form": "1 bar \u00b7 1.98 oz",
@@ -44774,6 +44826,32 @@
   "upc": "50005",
   "pos": "ORGANIC VERY BERRY MIX",
   "source": "refrigerated bulk dried fruit, nuts, milk & eggs photos 2026-10-21"
+ },
+ {
+  "name": "Organic Virgin Coconut Oil",
+  "variant": "Extra virgin, cold pressed",
+  "form": "15 fl oz (443 ml)",
+  "brand": "Coco Goods",
+  "dept": "Grocery",
+  "price": "6.67",
+  "shelf_price": "6.67",
+  "upc": "818972021233",
+  "pos": "ORGANIC VIRGIN COCONUT OIL",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25",
+  "msrp": "7.85"
+ },
+ {
+  "name": "Organic Virgin Coconut Oil",
+  "variant": "Extra virgin, cold pressed",
+  "form": "30 fl oz (887 ml)",
+  "brand": "Coco Goods",
+  "dept": "Grocery",
+  "price": "11.94",
+  "shelf_price": "11.94",
+  "upc": "818972021288",
+  "pos": "ORGANIC VIRGIN COCONUT OIL",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25",
+  "msrp": "14.05"
  },
  {
   "name": "Organic Virgin Coconut Oil",
@@ -48331,6 +48409,30 @@
   "pos": "PREBIOTIC INULIN FIBER 180",
   "source": "probiotic & digestive enzyme shelf photos 2026-10-15",
   "msrp": "29.99"
+ },
+ {
+  "name": "Prebiotic Soda",
+  "variant": "Classic Cola, 5g sugar",
+  "form": "Refrigerated \u00b7 12 fl oz can",
+  "brand": "Poppi",
+  "dept": "Grocery",
+  "price": "2.49",
+  "shelf_price": "2.49",
+  "upc": "810063710293",
+  "pos": "CLASSIC COLA 12OZ",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25"
+ },
+ {
+  "name": "Prebiotic Soda",
+  "variant": "Doc Pop, 5g sugar",
+  "form": "Refrigerated \u00b7 12 fl oz can",
+  "brand": "Poppi",
+  "dept": "Grocery",
+  "price": "2.49",
+  "shelf_price": "2.49",
+  "upc": "810063710309",
+  "pos": "DOC POP PREBIOTIC SODA",
+  "source": "Coco Goods & Poppi shelf tag photos 2026-11-25"
  },
  {
   "name": "Prebiotic Soda",
