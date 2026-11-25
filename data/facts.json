@@ -25391,7 +25391,7 @@
   ],
   "foot": "",
   "other": "Softgel capsule (gelatin, glycerin, purified water), sunflower oil, yellow beeswax, sunflower lecithin.",
-  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA. ElderCraft® is a registered trademark, exclusively licensed to IPROMA AGS94."
+  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA. ElderCraft® is a registered trademark, exclusively licensed to IPRONA AG/SPA."
  },
  "68958023564": {
   "title": "Supplement Facts",
@@ -29387,6 +29387,123 @@
   ],
   "foot": "* Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established.",
   "other": "Organic stevia leaf extract.",
+  "notes": ""
+ },
+ "68958047065": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "ElderCraft® European Black Elderberry Extract<br>&nbsp;&nbsp;64:1 (<i>Sambucus nigra</i>) (fruit)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "Anthocyanidins (14%)",
+    "14 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel capsule (gelatin, glycerin, purified water), sunflower oil, yellow beeswax, sunflower lecithin.",
+  "notes": "** Daily Value not established. Isura® is a registered trademark of ISURA. ElderCraft® is a registered trademark, exclusively licensed to IPRONA AG/SPA."
+ },
+ "68958354927": {
+  "title": "Supplement Facts",
+  "by": "Manufactured by Natural Factors Canada. Distributed by Natural Factors, 14224 167th Avenue SE, Monroe, WA 98272.",
+  "serving": "2 Softgels",
+  "servings": "75",
+  "rows": [
+   [
+    "Calories",
+    "30",
+    "",
+    1
+   ],
+   [
+    "Total Fat",
+    "3 g",
+    "4%‡",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;Polyunsaturated Fat",
+    "2.5 g",
+    "**",
+    0
+   ],
+   [
+    "Cholesterol",
+    "15 mg",
+    "5%",
+    0
+   ],
+   [
+    "Vitamin D3 (as cholecalciferol)",
+    "25 mcg (1000 IU)",
+    "125%",
+    0
+   ],
+   [
+    "Pharmaceutical Grade Fish Oil Concentrate<br>&nbsp;&nbsp;(molecularly distilled, ultra purified)<br>&nbsp;&nbsp;(anchovy, sardine, mackerel, and/or herring)",
+    "3200 mg",
+    "**",
+    1
+   ],
+   [
+    "&nbsp;&nbsp;Omega-3 Fatty Acids",
+    "2150 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;&nbsp;&nbsp;Eicosapentaenoic Acid (EPA)",
+    "1360 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;&nbsp;&nbsp;Docosahexaenoic Acid (DHA)",
+    "670 mg",
+    "**",
+    0
+   ],
+   [
+    "&nbsp;&nbsp;&nbsp;&nbsp;Docosapentaenoic Acid (DPA)",
+    "120 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "",
+  "other": "Softgel (gelatin, glycerin, water, pectin), flaxseed oil, mixed tocopherols (antioxidant). Contains fish (anchovy, sardine, mackerel, herring).",
+  "notes": "‡ Percent Daily Values are based on a 2,000 calorie diet. ** Daily Value not established. Isura® is a registered trademark of ISURA."
+ },
+ "68958041735": {
+  "title": "Supplement Facts",
+  "by": "",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "<i>Panax ginseng</i> C.A. Meyer Extract (root)",
+    "100 mg",
+    "**",
+    1
+   ],
+   [
+    "Ginsenosides (10%) (Rg1 &amp; Rb1)",
+    "10 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Organic flaxseed oil, softgel (gelatin, glycerin, purified water, carob), yellow beeswax, soy lecithin.",
   "notes": ""
  }
 }
