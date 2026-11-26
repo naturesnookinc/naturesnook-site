@@ -40227,5 +40227,52 @@
   "foot": "** Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established.",
   "other": "Softgel Capsule [bovine gelatin (BSE-free), glycerin, water] and d-alpha Tocopherol (from sunflower). Contains fish (anchovies, sardines, tuna).",
   "notes": "Suggested usage: take 2 softgels twice daily with food. Molecularly distilled fish oil concentrate, tested for PCBs, dioxins, mercury and other heavy metals. Fish oil is product of Peru, Morocco, Mauritius, Malaysia. Caution: for adults only. Consult physician if pregnant/nursing, taking medication, or have a medical condition. Keep out of reach of children. Natural color variation may occur in this product. Store in a cool, dry place after opening."
+ },
+ "733739016621": {
+  "title": "Supplement Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "1 Softgel",
+  "servings": "",
+  "rows": [
+   [
+    "Calories",
+    "10",
+    "",
+    0
+   ],
+   [
+    "Total Fat",
+    "1 g",
+    "1%**",
+    0
+   ],
+   [
+    "Fish Oil Concentrate",
+    "1 g (1,000 mg)",
+    "†",
+    0
+   ],
+   [
+    "Omega-3 Fatty Acids:",
+    "",
+    "",
+    0
+   ],
+   [
+    "Eicosapentaenoic Acid (EPA)***",
+    "500 mg",
+    "†",
+    1
+   ],
+   [
+    "Docosahexaenoic Acid (DHA)***",
+    "250 mg",
+    "†",
+    1
+   ]
+  ],
+  "foot": "** Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established. *** as ethyl esters",
+  "other": "Softgel Capsule [bovine gelatin (BSE-free), glycerin, enteric coating (ethyl cellulose, sodium alginate, ammonium hydroxide, medium-chain triglycerides, oleic acid, stearic acid), water] and Mixed Tocopherols (from sunflower). Contains fish (anchovies).",
+  "notes": "Suggested usage: take 1 softgel 1 to 2 times daily with food. Molecularly distilled, odor controlled, enteric coated. Fish oil is product of Peru. Caution: for adults only. Consult physician if pregnant/nursing, taking medication, or have a medical condition. Keep out of reach of children. Natural color variation may occur in this product. Store in a cool, dry place after opening."
  }
 }
