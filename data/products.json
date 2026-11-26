@@ -15836,7 +15836,8 @@
   "shelf_price": "29.99",
   "upc": "810047241485",
   "pos": "CREATINE MONOHYDRATE FUJI APPLE, ZERO SUGAR",
-  "source": "creatine & protein shelf photos 2026-10-20"
+  "source": "creatine & protein shelf photos 2026-10-20",
+  "notice": "This one is being discontinued. Once our stock is gone, it won't be restocked"
  },
  {
   "name": "Creatine Monohydrate",
@@ -51420,6 +51421,18 @@
   "upc": "18788104391",
   "pos": "RE-LYTE IMMUNITY BLACKBERRY, 45 SERVINGS",
   "source": "Re-Lyte end cap photos 2026-10-20"
+ },
+ {
+  "name": "Re-Lyte Immunity Sample Pack",
+  "variant": "Blackberry & Pineapple Orange, 6 stick packs, 3 of each",
+  "form": "Stick packs \u00b7 6 count \u00b7 1.14 oz (32.3 g)",
+  "brand": "Redmond",
+  "dept": "Vitamins & Supplements",
+  "price": "12.89",
+  "shelf_price": "12.89",
+  "upc": "18788118411",
+  "pos": "IMMUNITY SAMPLE PACK RE-LYTE",
+  "source": "shelf tag photo 2026-11-25"
  },
  {
   "name": "Re-Lyte Kids Electrolyte Drink Mix",
