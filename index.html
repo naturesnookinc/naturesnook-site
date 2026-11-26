@@ -1827,6 +1827,11 @@ header.scrolled{box-shadow:0 10px 24px -20px rgba(27,31,28,.5)}
       var rest=current.filter(function(x){return !isSup(x)&&!isRe(x)});
       current=items.filter(isSup).concat(items.filter(isRe),rest);
     }
+// Pre-workout searches: products named pre-workout first, then every MTN OPS Ignite, then the rest
+    if(state.dept==='All'&&/\bpre[ -]?work ?outs?\b/.test(raw)){
+      var isIg=function(x){return x[1]==='MTN OPS'&&/^ignite/i.test(x[2])}, isPre=function(x){return /pre[ -]?workout/i.test(x[2])};
+      current=current.filter(isPre).concat(items.filter(function(x){return isPre(x)&&current.indexOf(x)<0}),items.filter(isIg),current.filter(function(x){return !isPre(x)&&!isIg(x)}));
+    }
 // Topic search: match by name and by the ingredients printed on the label. No claims about what a product does.
     var topicNote='';
     window.NN_WHY=window.NN_WHY||{}; var WHY=window.NN_WHY; for(var wk in WHY) delete WHY[wk];
