@@ -179,6 +179,7 @@ PAGES = [
 <li><a href="/essential-oils-rexburg/">Essential oils</a>, <a href="/teas-rexburg/">teas</a> and <a href="/natural-beauty-personal-care-rexburg/">natural personal care</a></li>
 </ul>
 <h2>Before you go</h2>
+<p>We are closed Sundays, Thanksgiving Day and Christmas Day.</p>
 <p>Stock changes day to day. If you are driving a long way for one product, call <a href="tel:+12083565284">(208) 356-5284</a> and ask whether it is on the shelf, or <a href="/">search our online list</a> first. Please read each package for ingredients and allergens before you buy.</p>
 <p><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=160+E+Valley+River+Rd+%232%2C+Rexburg%2C+ID+83440">Get directions</a><a class="btn ghost" href="tel:+12083565284">Call the store</a></p>
 """)
@@ -390,7 +391,7 @@ def build(page):
 <p>This is a small sample. Prices and stock change, so the price in store applies.</p>
 <div class="box visit">
 <h2 style="margin-top:0">Visit Nature's Nook</h2>
-<p><strong>160 E Valley River Rd #2, Rexburg, ID 83440</strong><br>Monday&ndash;Friday 9:00 AM&ndash;6:00 PM &middot; Saturday 9:00 AM&ndash;5:00 PM &middot; Sunday, Thanksgiving and Christmas closed<br><a href="tel:+12083565284">(208) 356-5284</a> &middot; <a href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" rel="noopener">Directions</a></p>
+<p><strong>160 E Valley River Rd #2, Rexburg, ID 83440</strong><br>Monday&ndash;Friday 9:00 AM&ndash;6:00 PM &middot; Saturday 9:00 AM&ndash;5:00 PM &middot; Sunday closed<br><a href="tel:+12083565284">(208) 356-5284</a> &middot; <a href="https://www.google.com/maps/place/Nature's+Nook/@43.8328504,-111.7814928,17z/data=!3m1!4b1!4m5!3m4!1s0x53540a4f81e4cd11:0x3eac0f64cb6f41e9!8m2!3d43.8328504!4d-111.7793041" rel="noopener">Directions</a></p>
 </div>
 <h2>More from Nature's Nook</h2>
 <ul class="cats">{others}<li><a href="/">Home</a></li></ul>
