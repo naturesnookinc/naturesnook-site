@@ -2557,31 +2557,6 @@
  },
  {
   "name": "Alpha Lipoic Acid",
-  "variant": "100 mg",
-  "form": "Dietary supplement \u00b7 60 veggie caps",
-  "brand": "NOW Foods",
-  "dept": "Vitamins & Supplements",
-  "price": "11.19",
-  "shelf_price": "11.19",
-  "upc": "733739030405",
-  "pos": "ALPHA LIPOIC ACID 100MG 60 VCA",
-  "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15"
- },
- {
-  "name": "Alpha Lipoic Acid",
-  "variant": "100 mg",
-  "form": "Dietary supplement \u00b7 120 veggie caps",
-  "brand": "NOW Foods",
-  "dept": "Vitamins & Supplements",
-  "price": "20.79",
-  "shelf_price": "20.79",
-  "upc": "733739030412",
-  "pos": "ALPHA LIPOIC ACID 100MG 120 VC",
-  "source": "Eye, antioxidant & CoQ10 aisle photos 2026-10-15",
-  "msrp": "25.99"
- },
- {
-  "name": "Alpha Lipoic Acid",
   "variant": "250 mg",
   "form": "Dietary supplement \u00b7 60 veggie caps",
   "brand": "NOW Foods",
@@ -3076,18 +3051,6 @@
   "pos": "GINSENG AMERICAN POWDER CAPSULES 150 CC",
   "source": "endcap photos 2026-10-14",
   "shelf_price": "18.56"
- },
- {
-  "name": "American Ginseng Extract",
-  "variant": "500 mg, adaptogenic herb",
-  "form": "100 veg capsules",
-  "brand": "NOW Foods",
-  "dept": "Vitamins & Supplements",
-  "price": "15.99",
-  "shelf_price": "15.99",
-  "upc": "733739040046",
-  "pos": "AMERICAN GINSENG EXTRACT",
-  "source": "single herbs E-K & Kyolic shelf photos 2026-10-16"
  },
  {
   "name": "Amino Acid Complex 1000",
@@ -21560,32 +21523,6 @@
  },
  {
   "name": "Flax Oil",
-  "variant": "Organic, 1000 mg",
-  "form": "Dietary supplement \u00b7 100 softgels",
-  "brand": "NOW Foods",
-  "dept": "Vitamins & Supplements",
-  "price": "11.99",
-  "shelf_price": "11.99",
-  "upc": "733739017703",
-  "pos": "FLAX OIL ORGANIC 1000MG 100 SG 50",
-  "source": "Omega & oils aisle photos 2026-10-15",
-  "msrp": "14.99"
- },
- {
-  "name": "Flax Oil",
-  "variant": "Organic, 1000 mg",
-  "form": "Dietary supplement \u00b7 250 softgels",
-  "brand": "NOW Foods",
-  "dept": "Vitamins & Supplements",
-  "price": "23.99",
-  "shelf_price": "23.99",
-  "upc": "733739017727",
-  "pos": "FLAX OIL ORGANIC 1000MG 250 SG",
-  "source": "Omega & oils aisle photos 2026-10-15",
-  "msrp": "29.99"
- },
- {
-  "name": "Flax Oil",
   "variant": "Vegan, 1000 mg",
   "form": "Dietary supplement \u00b7 120 veggie softgels",
   "brand": "NOW Foods",
@@ -39631,18 +39568,6 @@
   "upc": "68958012209",
   "pos": "NIACIN 100 MG 90 TAB",
   "source": "Natural Factors shelf tag photos 2026-11-24"
- },
- {
-  "name": "Niacin",
-  "variant": "500 mg",
-  "form": "Dietary supplement \u00b7 100 veggie caps",
-  "brand": "NOW Foods",
-  "dept": "Vitamins & Supplements",
-  "price": "9.59",
-  "shelf_price": "9.59",
-  "upc": "733739004819",
-  "pos": "NIACIN 500MG 100 CAPS",
-  "source": "B vitamin aisle photos 2026-10-15"
  },
  {
   "name": "Niacin",
