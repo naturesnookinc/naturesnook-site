@@ -24,6 +24,7 @@ Live at **naturesnook.co** via GitHub Pages (this repo's `main` branch, root fol
 **Coupon photos always show the full bottle or box** (the full-size front picture in `photo_lib/w/`, never the cropped card thumbnail from `photo_lib/t/`), on the site coupon, the `coupon/` page and the share/post images.
 
 **Updating the coupon updates everything that goes with it.** `tools/specials.py` now also runs `tools/coupon_page.py`, which rebuilds `coupon/index.html` (the shareable page, with its title, description, link-preview tags and expiry date), `img/coupon-share.jpg` (link preview) and `img/coupon-post.jpg` (social post image). Then check by hand: the "This month" banner in `index.html`, and the Search Console / Bing request to re-fetch /coupon/ if it changed a lot. Run `python3 tools/seo.py` only if the catalog itself changed.
+- When Tylan says "remove" a product, delete it from `data/products.json` entirely (no notice, no hiding); the `notice` line below is only for when he says it is being discontinued but still on the shelf.
 - Discontinued brands: set `notice` on the product in `data/products.json` (shown as a plain line under the price in the product view). Biochem has it (Nov 2026). Remove the product when it sells out.
 - Never add manufacturer/brand coupons. Yellow staff-pick tags go in `fav`.
 - The register (Catapult) inventory export is private and is **not** stored in this public repo.
