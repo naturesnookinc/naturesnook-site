@@ -55942,5 +55942,103 @@
   "foot": "* Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established.",
   "other": "Softgel Capsule [bovine gelatin (BSE-free), glycerin, water, carob], Beeswax and Soy Lecithin. Contains soy. MCT Oil from coconut/palm kernel oil. Made and quality tested in the USA with globally sourced ingredients.",
   "notes": "The usage directions, cautions and the rest of the allergen statement are printed on the label photos."
+ },
+ "733739042538": {
+  "title": "Nutrition Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "1/2 tsp (1 g)",
+  "servings": "about 85",
+  "rows": [
+   [
+    "Calories",
+    "0",
+    "",
+    0
+   ],
+   [
+    "Total Fat",
+    "0 g",
+    "0%",
+    0
+   ],
+   [
+    "Sodium",
+    "0 mg",
+    "0%",
+    0
+   ],
+   [
+    "Total Carbohydrate",
+    "&lt;1 g",
+    "&lt;1%",
+    0
+   ],
+   [
+    "Protein",
+    "0 g",
+    "",
+    0
+   ]
+  ],
+  "foot": "Not a significant source of saturated fat, trans fat, cholesterol, dietary fiber, total sugars, added sugars, vitamin D, calcium, iron, and potassium.",
+  "other": "Ingredient: Organic Matcha Green Tea Powder. Certified Organic by QAI. Product of Japan. Culinary grade. Approx. 16 mg caffeine per 1 g serving.",
+  "notes": "Enjoy in tea, smoothies, baking and lattes. For a cup of tea: add 1/2 teaspoon to 4 oz of hot water (approximately 180°F), stir in a zigzag motion until froth forms."
+ },
+ "733739045881": {
+  "title": "Supplement Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "1 Veg Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Bacopa Extract (<i>Bacopa monnieri</i>) (Standardized to min. 40% Bacosides)",
+    "450 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Hypromellose (cellulose capsule), Microcrystalline Cellulose, Silicon Dioxide and Stearic Acid (vegetable source). Not manufactured with yeast, wheat, gluten, soy, corn, milk, egg, fish, shellfish or tree nut ingredients. Produced in a GMP facility that processes other ingredients containing these allergens. Natural color variation may occur in this product. Store in a cool, dry place after opening.",
+  "notes": "Caution: For adults only. Bacopa may cause gastrointestinal discomfort in sensitive individuals. Consult physician if pregnant/nursing, taking medication (especially MAO inhibitors, cholinergic and anti-cholinergic medications, acetylcholinesterase inhibitors, or thyroid hormones), or have a medical condition (especially hyperthyroidism). Keep out of reach of children."
+ },
+ "733739046024": {
+  "title": "Supplement Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "1 Veg Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Butterbur Extract Complex (<i>Petasites hybridus</i>) (Root)",
+    "75 mg",
+    "**",
+    0
+   ],
+   [
+    "Feverfew Complex (<i>Tanacetum parthenium</i>) (Aerial Parts)",
+    "200 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Hypromellose (cellulose capsule), Microcrystalline Cellulose, Maltodextrin (non-GMO), Potato Starch, Stearic Acid (vegetable source) and Silicon Dioxide. Made and quality tested in the USA with globally sourced ingredients. Not manufactured with wheat, gluten, soy, milk, egg, fish, shellfish, tree nut or sesame ingredients. Produced in a GMP facility that processes other ingredients containing these allergens. Natural color variation may occur in this product.",
+  "notes": "Caution: For adults only. Not recommended for pregnant/nursing women or individuals with liver disease. Consult physician if taking medication or have a medical condition. Keep out of reach of children."
+ },
+ "733739046031": {
+  "title": "Supplement Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "1 Veg Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Ashwagandha Extract (<i>Withania somnifera</i>) (Root and Leaf) (min. 2.5% Total Withanolides - 11 mg)",
+    "450 mg",
+    "**",
+    0
+   ]
+  ],
+  "foot": "** Daily Value not established.",
+  "other": "Hypromellose (cellulose capsule), Stearic Acid (vegetable source) and Rice Flour. Made and quality tested in the USA with globally sourced ingredients. Not manufactured with yeast, wheat, gluten, soy, milk, egg, fish, shellfish, tree nut or sesame ingredients. Produced in a GMP facility that processes other ingredients containing these allergens. Natural color variation may occur in this product. Store in a cool, dry place after opening.",
+  "notes": "Caution: For adults only. Not recommended for pregnant/nursing women. Consult physician if taking medication (especially thyroid hormones) or have a medical condition (especially thyroid, liver, and gastrointestinal conditions, including ulcers). This product may cause digestive upset in some sensitive individuals. If you experience any gastrointestinal discomfort after using this product, discontinue use. Discontinue use if rash/itching occurs. Keep out of reach of children."
  }
 }
