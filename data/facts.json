@@ -53106,11 +53106,41 @@
     "2 mg",
     "87%",
     0
+   ],
+   [
+    "Chromium (from Chromium Picolinate)",
+    "60 mcg",
+    "171%",
+    0
+   ],
+   [
+    "Molybdenum (from Sodium Molybdate)",
+    "35 mcg",
+    "78%",
+    0
+   ],
+   [
+    "Potassium (from Potassium Chloride)",
+    "40 mg",
+    "1%",
+    0
+   ],
+   [
+    "Lutein (from Marigold Flowers Extract) (<i>Tagetes erecta</i>) (FloraGLO&reg;)",
+    "100 mcg",
+    "†",
+    1
+   ],
+   [
+    "Lycopene (from Tomato Extract)",
+    "100 mcg",
+    "†",
+    0
    ]
   ],
   "foot": "† Daily Value not established.",
-  "other": "Microcrystalline Cellulose, Croscarmellose Sodium, Stearic Acid (vegetable source), Vegetarian Coating (hypromellose (cellulose), stearic acid, sunflower lecithin, triethyl citrate, sunflower oil) and Silicon Dioxide. Vitamin E from non-GMO soy (highly refined).",
-  "notes": "The label continues with Chromium, Molybdenum, Potassium, Lutein (FloraGLO&reg;) and Lycopene rows; their amounts and % Daily Values are printed on the label photos. WARNING: Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6. Keep this product out of reach of children. In case of accidental overdose, call a doctor or poison control center immediately."
+  "other": "Microcrystalline Cellulose, Croscarmellose Sodium, Stearic Acid (vegetable source), Vegetarian Coating [hypromellose (cellulose), stearic acid (vegetable source), sunflower lecithin, triethyl citrate, sunflower oil] and Silicon Dioxide. Vitamin E from non-GMO soy (highly refined). Made and quality tested in the USA with globally sourced ingredients. Not manufactured with wheat, gluten, milk, egg, fish, shellfish, tree nut or sesame ingredients. Produced in a GMP facility that processes other ingredients containing these allergens. Albion&trade; and Ferrochel&trade; are trademarks of Balchem Corporation or its subsidiaries. Aquamin&reg; is a registered trademark of Marigot Limited. FloraGLO&reg; is a registered trademark of Kemin Industries, Inc.",
+  "notes": "WARNING: Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6. Keep this product out of reach of children. In case of accidental overdose, call a doctor or poison control center immediately. Caution: For adults only. Consult physician if pregnant/nursing, taking medication, or have a medical condition. Keep out of reach of children. This product contains Biotin which may interfere with some blood test results. Go to nowfoods.com/biotinlab for details."
  },
  "733739037725": {
   "title": "Supplement Facts",
@@ -53511,5 +53541,572 @@
   "foot": "* Percent Daily Values are based on a 2,000 calorie diet. † Daily Value not established.",
   "other": "De-ionized Water, Vegetable Glycerin, Xylitol, Natural Flavors, Sunflower Lecithin, Citric Acid, L-Malic Acid, Potassium Chloride, Xanthan Gum and Potassium Sorbate (as preservative). Vitamin E from non-GMO soy. Not manufactured with wheat, gluten, milk, egg, fish, shellfish or sesame ingredients. Produced in a GMP facility that processes other ingredients containing these allergens. This unique formula utilizes brown rice protein as a stabilizing agent for maximum bioavailability of the vitamins, minerals and phytonutrients. Refrigerate after opening to preserve flavor. †† Wild Berry Concentrate consists of chokeberry, elderberry, blueberry, black currant and apple fruit concentrates. ††† VitaBerry&reg; Fruit Blend consists of grape and grape seed extract, wild blueberry and wild blueberry extract, raspberry and raspberry seed concentrate, cranberry, prune, tart cherry, wild bilberry and wild bilberry extract, and strawberry. **This product may contain insignificant amounts of naturally occurring iron present in colloidal minerals.",
   "notes": "Caution: Contains Xylitol, which is harmful to pets."
+ },
+ "733739037756": {
+  "title": "Supplement Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "1 Veg Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin A (95% as Retinyl Palmitate and 5% as Beta-Carotene)",
+    "1,500 mcg",
+    "167%",
+    0
+   ],
+   [
+    "Vitamin C (as Ascorbic Acid)",
+    "60 mg",
+    "67%",
+    0
+   ],
+   [
+    "Vitamin D (as Ergocalciferol)",
+    "10 mcg (400 IU)",
+    "50%",
+    0
+   ],
+   [
+    "Vitamin E (as d-alpha Tocopheryl Succinate)",
+    "20 mg",
+    "133%",
+    0
+   ],
+   [
+    "Vitamin K (as Phytonadione K-1)",
+    "80 mcg",
+    "67%",
+    0
+   ],
+   [
+    "Thiamin (Vitamin B-1) (from Thiamin HCl)",
+    "1.5 mg",
+    "125%",
+    0
+   ],
+   [
+    "Riboflavin (Vitamin B-2)",
+    "1.7 mg",
+    "131%",
+    0
+   ],
+   [
+    "Niacin (Vitamin B-3) (as Niacinamide)",
+    "20 mg",
+    "125%",
+    0
+   ],
+   [
+    "Vitamin B-6 (from Pyridoxine HCl)",
+    "2 mg",
+    "118%",
+    0
+   ],
+   [
+    "Folate",
+    "680 mcg DFE (400 mcg folic acid)",
+    "170%",
+    0
+   ],
+   [
+    "Vitamin B-12 (as Methylcobalamin)",
+    "18 mcg",
+    "750%",
+    0
+   ],
+   [
+    "Biotin",
+    "300 mcg",
+    "1000%",
+    0
+   ],
+   [
+    "Pantothenic Acid (Vitamin B-5) (from Calcium Pantothenate)",
+    "10 mg",
+    "200%",
+    0
+   ],
+   [
+    "Calcium [from Calcium Carbonate (Aquamin&reg; Seaweed Derived Minerals)]",
+    "20 mg",
+    "2%",
+    0
+   ],
+   [
+    "Iodine (from Potassium Iodide)",
+    "150 mcg",
+    "100%",
+    0
+   ],
+   [
+    "Magnesium (from Magnesium Oxide and Aquamin&reg; Seaweed Derived Minerals)",
+    "15 mg",
+    "4%",
+    0
+   ],
+   [
+    "Zinc (from Zinc Bisglycinate) (TRAACS&trade;)",
+    "10 mg",
+    "91%",
+    0
+   ],
+   [
+    "Selenium (from L-Selenomethionine)",
+    "35 mcg",
+    "64%",
+    0
+   ],
+   [
+    "Copper (from Copper Bisglycinate) (TRAACS&trade;)",
+    "1 mg",
+    "111%",
+    0
+   ],
+   [
+    "Manganese (from Manganese Bisglycinate) (TRAACS&trade;)",
+    "2 mg",
+    "87%",
+    0
+   ],
+   [
+    "Chromium (from Chromium Picolinate)",
+    "120 mcg",
+    "343%",
+    0
+   ],
+   [
+    "Molybdenum (from Sodium Molybdate)",
+    "75 mcg",
+    "167%",
+    0
+   ],
+   [
+    "Potassium (from Potassium Chloride)",
+    "10 mg",
+    "&lt;1%",
+    0
+   ],
+   [
+    "Organic Fruit &amp; Veggie Blend (Organic Cauliflower, Organic Spinach, Organic Carrot, Organic Beet, Organic Tomato, Organic Blueberry, Organic Cranberry, Organic Cherry, Organic Raspberry and Organic Strawberry)",
+    "50 mg",
+    "†",
+    1
+   ],
+   [
+    "Lutein (from Marigold Flowers Extract) (<i>Tagetes erecta</i>) (FloraGLO&reg;)",
+    "100 mcg",
+    "†",
+    0
+   ],
+   [
+    "Lycopene (from Tomato Extract)",
+    "100 mcg",
+    "†",
+    0
+   ]
+  ],
+  "foot": "† Daily Value not established.",
+  "other": "Hypromellose (cellulose capsule), Microcrystalline Cellulose, Stearic Acid (vegetable source) and Silicon Dioxide. Vitamin E from non-GMO soy.",
+  "notes": ""
+ },
+ "733739037763": {
+  "title": "Supplement Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "1 Veg Capsule",
+  "servings": "",
+  "rows": [
+   [
+    "Vitamin A (95% as Retinyl Palmitate and 5% as Beta-Carotene)",
+    "1,500 mcg",
+    "167%",
+    0
+   ],
+   [
+    "Vitamin C (as Ascorbic Acid)",
+    "60 mg",
+    "67%",
+    0
+   ],
+   [
+    "Vitamin D (as Ergocalciferol)",
+    "10 mcg (400 IU)",
+    "50%",
+    0
+   ],
+   [
+    "Vitamin E (as d-alpha Tocopheryl Succinate)",
+    "20 mg",
+    "133%",
+    0
+   ],
+   [
+    "Vitamin K (as Phytonadione K-1)",
+    "80 mcg",
+    "67%",
+    0
+   ],
+   [
+    "Thiamin (Vitamin B-1) (from Thiamin HCl)",
+    "1.5 mg",
+    "125%",
+    0
+   ],
+   [
+    "Riboflavin (Vitamin B-2)",
+    "1.7 mg",
+    "131%",
+    0
+   ],
+   [
+    "Niacin (Vitamin B-3) (as Niacinamide)",
+    "20 mg",
+    "125%",
+    0
+   ],
+   [
+    "Vitamin B-6 (from Pyridoxine HCl)",
+    "2 mg",
+    "118%",
+    0
+   ],
+   [
+    "Folate",
+    "680 mcg DFE (400 mcg folic acid)",
+    "170%",
+    0
+   ],
+   [
+    "Vitamin B-12 (as Methylcobalamin)",
+    "18 mcg",
+    "750%",
+    0
+   ],
+   [
+    "Biotin",
+    "300 mcg",
+    "1000%",
+    0
+   ],
+   [
+    "Pantothenic Acid (Vitamin B-5) (from Calcium Pantothenate)",
+    "10 mg",
+    "200%",
+    0
+   ],
+   [
+    "Calcium [from Calcium Carbonate (Aquamin&reg; Seaweed Derived Minerals)]",
+    "20 mg",
+    "2%",
+    0
+   ],
+   [
+    "Iodine (from Potassium Iodide)",
+    "150 mcg",
+    "100%",
+    0
+   ],
+   [
+    "Magnesium [from Magnesium Oxide and Magnesium Carbonate (Aquamin&reg; Seaweed Derived Minerals)]",
+    "15 mg",
+    "4%",
+    0
+   ],
+   [
+    "Zinc (from Zinc Bisglycinate) (Albion&trade;)",
+    "10 mg",
+    "91%",
+    0
+   ],
+   [
+    "Selenium (from L-Selenomethionine)",
+    "35 mcg",
+    "64%",
+    0
+   ],
+   [
+    "Copper (from Copper Bisglycinate) (Albion&trade;)",
+    "1 mg",
+    "111%",
+    0
+   ],
+   [
+    "Manganese (from Manganese Bisglycinate) (Albion&trade;)",
+    "2 mg",
+    "87%",
+    0
+   ],
+   [
+    "Chromium (from Chromium Picolinate)",
+    "120 mcg",
+    "343%",
+    0
+   ],
+   [
+    "Molybdenum (from Sodium Molybdate)",
+    "75 mcg",
+    "167%",
+    0
+   ],
+   [
+    "Potassium (from Potassium Chloride)",
+    "10 mg",
+    "&lt;1%",
+    0
+   ],
+   [
+    "Organic Fruit &amp; Veggie Blend (Organic Cauliflower, Organic Spinach, Organic Carrot, Organic Beet, Organic Tomato, Organic Blueberry, Organic Cranberry, Organic Cherry, Organic Raspberry and Organic Strawberry)",
+    "50 mg",
+    "†",
+    1
+   ],
+   [
+    "Lutein (from Marigold Flowers Extract) (<i>Tagetes erecta</i>) (FloraGLO&reg;)",
+    "100 mcg",
+    "†",
+    0
+   ],
+   [
+    "Lycopene (from Tomato Extract)",
+    "100 mcg",
+    "†",
+    0
+   ]
+  ],
+  "foot": "† Daily Value not established.",
+  "other": "Hypromellose (cellulose capsule), Microcrystalline Cellulose, Stearic Acid (vegetable source) and Silicon Dioxide. Vitamin E from non-GMO soy (highly refined). Not manufactured with wheat, gluten, milk, egg, fish, shellfish, tree nut or sesame ingredients. Produced in a GMP facility that processes other ingredients containing these allergens. Store in a cool, dry place after opening. Albion&trade; is a trademark of Balchem Corporation or its subsidiaries. FloraGLO&reg; is a registered trademark of Kemin Industries, Inc. Aquamin&reg; is a registered trademark of Marigot Ltd, Cork, Ireland.",
+  "notes": "Caution: For adults only. Consult physician if pregnant/nursing, taking medication, or have a medical condition. Keep out of reach of children. This product contains Biotin which may interfere with some blood test results. Go to nowfoods.com/biotinlab for details."
+ },
+ "733739037886": {
+  "title": "Supplement Facts",
+  "by": "NOW Foods, Bloomingdale, IL",
+  "serving": "2 Veg Capsules",
+  "servings": "90",
+  "rows": [
+   [
+    "Vitamin A (100% as Beta-Carotene)",
+    "3,750 mcg",
+    "417%",
+    0
+   ],
+   [
+    "Vitamin C (from Calcium Ascorbate)",
+    "250 mg",
+    "278%",
+    0
+   ],
+   [
+    "Vitamin D (as Ergocalciferol)",
+    "2.5 mcg (100 IU)",
+    "13%",
+    0
+   ],
+   [
+    "Vitamin E (from d-alpha Tocopheryl Succinate)",
+    "67 mg",
+    "447%",
+    0
+   ],
+   [
+    "Thiamin (Vitamin B-1) (from Thiamin HCl)",
+    "25 mg",
+    "2083%",
+    0
+   ],
+   [
+    "Riboflavin (Vitamin B-2)",
+    "25 mg",
+    "1923%",
+    0
+   ],
+   [
+    "Niacin (Vitamin B-3) (as Niacinamide)",
+    "25 mg",
+    "156%",
+    0
+   ],
+   [
+    "Vitamin B-6 (from Pyridoxine HCl)",
+    "25 mg",
+    "1471%",
+    0
+   ],
+   [
+    "Folate",
+    "680 mcg DFE (400 mcg folic acid)",
+    "170%",
+    0
+   ],
+   [
+    "Vitamin B-12 (as Cyanocobalamin)",
+    "100 mcg",
+    "4167%",
+    0
+   ],
+   [
+    "Biotin",
+    "50 mcg",
+    "167%",
+    0
+   ],
+   [
+    "Pantothenic Acid (Vitamin B-5) (from Calcium Pantothenate)",
+    "25 mg",
+    "500%",
+    0
+   ],
+   [
+    "Choline (from Choline Bitartrate)",
+    "25 mg",
+    "5%",
+    0
+   ],
+   [
+    "Calcium (from Calcium Ascorbate, Carbonate and Citrate)",
+    "50 mg",
+    "4%",
+    0
+   ],
+   [
+    "Iodine (from Kelp)",
+    "75 mcg",
+    "50%",
+    0
+   ],
+   [
+    "Magnesium (from Mag. Oxide and Citrate)",
+    "50 mg",
+    "12%",
+    0
+   ],
+   [
+    "Zinc (from Zinc Picolinate)",
+    "7.5 mg",
+    "68%",
+    0
+   ],
+   [
+    "Selenium (from L-Selenomethionine)",
+    "25 mcg",
+    "45%",
+    0
+   ],
+   [
+    "Copper (from Copper Bisglycinate) (Albion&trade;)",
+    "0.25 mg",
+    "28%",
+    0
+   ],
+   [
+    "Manganese (from Manganese Bisglycinate) (Albion&trade;)",
+    "2.5 mg",
+    "109%",
+    0
+   ],
+   [
+    "Chromium (from Chromium Picolinate)",
+    "50 mcg",
+    "143%",
+    0
+   ],
+   [
+    "Molybdenum (from Sodium Molybdate)",
+    "25 mcg",
+    "56%",
+    0
+   ],
+   [
+    "Potassium (from Potassium Chloride)",
+    "12.5 mg",
+    "&lt;1%",
+    0
+   ],
+   [
+    "Organic Spirulina",
+    "125 mg",
+    "†",
+    1
+   ],
+   [
+    "Organic Chlorella (Broken Cell Wall)",
+    "50 mg",
+    "†",
+    0
+   ],
+   [
+    "Alfalfa Juice Concentrate",
+    "50 mg",
+    "†",
+    0
+   ],
+   [
+    "Green Tea Extract (Leaf)",
+    "25 mg",
+    "†",
+    0
+   ],
+   [
+    "Inositol",
+    "25 mg",
+    "†",
+    0
+   ],
+   [
+    "PABA (Para-Aminobenzoic Acid)",
+    "15 mg",
+    "†",
+    0
+   ],
+   [
+    "Asian Ginseng (<i>Panax ginseng</i>) (Root)",
+    "50 mg",
+    "†",
+    0
+   ],
+   [
+    "Citrus Bioflavonoid Complex",
+    "25 mg",
+    "†",
+    0
+   ],
+   [
+    "Rutin (from <i>Sophora japonica</i> Flower Bud)",
+    "12.5 mg",
+    "†",
+    0
+   ],
+   [
+    "Bromelain (2400 GDU/g) (from Pineapple)",
+    "20 mg",
+    "†",
+    0
+   ],
+   [
+    "Papain (2000 USP/mg) (from Papaya)",
+    "12.5 mg",
+    "†",
+    0
+   ],
+   [
+    "Protease Blend (2000 SAP/g &amp; 200 LAP/g)",
+    "12.5 mg",
+    "†",
+    0
+   ],
+   [
+    "Lipase (80,000 LU/g)",
+    "12.5 mg",
+    "†",
+    0
+   ],
+   [
+    "Amylase (5000 SKB/g)",
+    "5 mg",
+    "†",
+    0
+   ]
+  ],
+  "foot": "† Daily Value not established.",
+  "other": "Hypromellose (cellulose capsule), Magnesium Stearate (vegetable source), Silicon Dioxide, Microcrystalline Cellulose and Stearic Acid (vegetable source). Vitamin E from non-GMO soy (highly refined). Made and quality tested in the USA with globally sourced ingredients. Not manufactured with wheat, gluten, milk, egg, fish, shellfish, tree nut or sesame ingredients. Produced in a GMP facility that processes other ingredients containing these allergens. Store in a cool, dry place after opening. Albion&trade; is a trademark of Balchem Corporation or its subsidiaries.",
+  "notes": "Caution: For adults only. Consult physician if pregnant/nursing, taking medication, or have a medical condition. Keep out of reach of children. This product contains Biotin which may interfere with some blood test results. Go to nowfoods.com/biotinlab for details."
  }
 }
